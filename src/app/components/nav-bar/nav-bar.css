@@ -1,0 +1,56 @@
+nav {
+  position: relative;
+  isolation: isolate;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+  margin-bottom: 2em;
+  height: var(--nav-height);
+
+  border-bottom: rgba(255, 255, 255, 0.25) 2px solid;
+  border-radius: 0 0 50px 50px;
+
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(15px);
+
+  box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.35);
+
+  z-index: 1;
+}
+
+nav::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+
+  background-image: url('assets/Noise.png');
+  background-repeat: repeat;
+  opacity: 0.15;
+  mix-blend-mode: overlay;
+}
+
+.position {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.position.left {
+  justify-content: flex-start;
+}
+
+.position.right {
+  justify-content: flex-end;
+}
+.logo {
+  height: 100%;
+  max-height: var(--nav-height);
+  width: auto;
+  object-fit: contain;
+}

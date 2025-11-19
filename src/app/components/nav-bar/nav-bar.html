@@ -1,1 +1,17 @@
-<p>nav-bar works!</p>
+<nav>
+    <ul class="position left">
+        <li><a routerLink="/overThorbouw" routerLinkActive="active">Over Thorbouw</a></li>
+        <li><a routerLink="/fotos" routerLinkActive="active">Foto's Realisaties</a></li>
+        <li><a routerLink="/advies" routerLinkActive="active">Bouwkundig advies</a></li>
+        
+    </ul>
+    <div>
+        <a routerLink="/home" routerLinkActive="active"><img class="logo" src="/Thorbouw-Logo-Light.png" alt="Logo of Thorbrouw"></a>
+    </div>
+    <ul class="position right">
+        <li><a routerLink="/werkwijze" routerLinkActive="active">Werkwijze</a></li>
+        <li><a routerLink="/projectontwikkeling" routerLinkActive="active">Projectontwikkeling & Wonen</a></li>
+        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
