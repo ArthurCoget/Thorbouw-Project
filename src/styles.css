@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Primary/Accent Colors */
+  --color-primary: #12316B; 
+  --color-secondary: #5C76AD; 
+  --color-dark: #242223;
+
+  /* Neutral Colors */
+  --color-white: #FFFFFF;
+  --color-light-grey: #D8DCE6; 
+  --color-grey: #8E94A8;     
+  --color-darkgrey: #4A474A;
+
+  /* Original Variables */
+  /*
+  --color-original-primary: #183C80;
+  --color-original-secondary: #3F5A93;
+  --color-original-darkgrey: #3F3D3E;
+  --color-original-grey: #B5B9C7;
+  */
+
+
+  --font-family: "Montserrat", sans-serif;
+
+  --nav-height: 92px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-white);
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
