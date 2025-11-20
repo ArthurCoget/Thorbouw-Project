@@ -162,9 +162,23 @@ a.active {
   }
 
   a {
+    padding: 1em 0;
     font-size: 1.1em;
+  }
+  
+  .nav-list li{
+    padding: 0;
   }
 
 }
 
 /* End of Navbar Layout and Structure for Mobile */
+
+
+/**
+  * Continue implementation of navbar facility: https://www.youtube.com/watch?v=pBv7igaxfQE
+  * Hamburger menu animation: https://www.youtube.com/watch?v=R00QiudbD4Y
+  */
+
+
+  
