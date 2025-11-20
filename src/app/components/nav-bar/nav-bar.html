@@ -3,15 +3,15 @@
         <a routerLink="/home" (click)="closeMenu()">
             <img class="logo mobile-logo" src="/Thorbouw-Logo-Light.png" alt="Logo">
         </a>
-        <button class="hamburger">
+        <button class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen" aria-label="Toggle menu">
             WIP Text
         </button>
     </div>
-    <div class="nav_links">
+    <div class="nav-links" [class.open]="isMenuOpen">
         <ul class="nav-list left">
             @for (link of navLinks.slice(0, 3); track link.path){
             <li>
-                <a [routerLink]="link.path" routerLinkActive="active">{{link.label}}</a>
+                <a [routerLink]="link.path" routerLinkActive="active" (click)="closeMenu()">{{link.label}}</a>
             </li>
             }
         </ul>
@@ -23,7 +23,7 @@
         <ul class="nav-list right">
             @for (link of navLinks.slice(3); track link.path){
             <li>
-                <a [routerLink]="link.path" routerLinkActive="active">{{link.label}}</a>
+                <a [routerLink]="link.path" routerLinkActive="active" (click)="closeMenu()">{{link.label}}</a>
             </li>
             }
         </ul>

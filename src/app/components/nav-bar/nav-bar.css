@@ -1,12 +1,11 @@
 /* NavBar Glassmorphism Styling */
-
-nav {
+.mobile-nav,
+.nav-links {
   position: relative;
   isolation: isolate;
 
   padding: 0 1em;
-  margin-bottom: 2em;
-  height: var(--nav-height);
+  margin-bottom: 1.5em;
 
   border-bottom: rgba(255, 255, 255, 0.25) 2px solid;
   border-radius: 0 0 50px 50px;
@@ -16,10 +15,11 @@ nav {
 
   box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.35);
 
-  z-index: 1;
+  z-index: 2;
 }
 
-nav::after {
+.mobile-nav::after,
+.nav-links::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -28,17 +28,17 @@ nav::after {
 
   background-image: url('assets/Noise.png');
   background-repeat: repeat;
-  opacity: 0.15;
+  opacity: 0.1;
   mix-blend-mode: overlay;
 }
 
-/* Navbar Layout and Structure for Desktop */
-
-.nav_links {
+.nav-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+/* Navbar Layout and Structure for Desktop */
 
 .nav-list {
   flex: 1;
@@ -64,18 +64,21 @@ nav::after {
 
 /* Links */
 
+li {
+  padding: 1em 0;
+}
+
 a {
   font-weight: 700;
   font-size: 1.25em;
   position: relative;
-
 }
 
 a::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   height: 3px;
   width: 100%;
   background-color: var(--color-secondary);
@@ -95,7 +98,6 @@ a.active {
   color: var(--color-secondary);
 }
 
-
 /* Responsive Font Sizes for Desktop */
 
 @media (max-width: 1500px) {
@@ -112,208 +114,57 @@ a.active {
 
 /* End of Navbar Layout and Structure for Desktop */
 
-
 /* Navbar Layout and Structure for Mobile */
 
-/* End of Navbar Layout and Structure for Mobile */
-
-
-
-/* --- BASE VARIABLES & RESET --- 
-:host {
-  --nav-height: 80px; /* Adjust as needed 
-  --color-secondary: #f39c12; /* Example color 
-  display: block;
-  position: relative;
-  z-index: 1000;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* --- GLASSMORPHISM SHARED CLASS --- */
-/* Applying this to the main container so both mobile/desktop inherit it 
-.nav-content {
-  isolation: isolate;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  backdrop-filter: blur(15px);
-  border-bottom: rgba(255, 255, 255, 0.25) 2px solid;
-  box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.35);
-}
-
-/* --- DESKTOP LAYOUT (Default) --- 
-.nav-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2em;
-  height: var(--nav-height);
-  border-radius: 0 0 50px 50px;
-  transition: transform 0.3s ease-in-out;
-}
-
-/* Noise Texture 
-.nav-content::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-  background-image: url('assets/Noise.png');
-  background-repeat: repeat;
-  opacity: 0.15;
-  mix-blend-mode: overlay;
-  z-index: -1;
-}
-
-/* The lists of links 
-.nav-list {
-  display: flex;
-  gap: 20px;
-  flex: 1; /* Take up available space 
-}
-
-.nav-list.left { justify-content: flex-end; } /* Push left links toward logo 
-.nav-list.right { justify-content: flex-start; } /* Push right links toward logo 
-
-.desktop-logo-container {
-  margin: 0 30px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  max-height: 60px;
-  width: auto;
-}
-
-/* Link Styling 
-a {
-  text-decoration: none;
-  color: white; /* Assuming dark background/glass 
-  font-weight: 700;
-  font-size: 1.1em;
-  position: relative;
-  transition: color 0.3s;
-}
-
-a.active, a:hover {
-  color: var(--color-secondary);
-}
-
-/* Underline Animation 
-a::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 3px;
-  background-color: var(--color-secondary);
-  transition: width 0.3s ease-in-out;
-}
-
-a.active::after, a:hover::after {
-  width: 100%;
-}
-
-/* --- MOBILE LAYOUT (< 1000px) --- 
-.mobile-header {
-  display: none; /* Hidden on desktop 
-}
-
 @media (max-width: 1000px) {
-  
-  /* 1. Show Mobile Header Bar 
-  .mobile-header {
+  .desktop-logo-container {
+    display: none;
+  }
+
+  .mobile-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    height: var(--nav-height);
-    /* Give the header itself the glass look on mobile 
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0;
+
+    padding: 0 3em;
+    margin: 0;
   }
 
-  .mobile-logo {
-    max-height: 50px;
-  }
-
-  /* 2. Transform the Nav Content into a Drawer/Menu 
-  .nav-content {
+  .nav-links {
     position: fixed;
-    top: var(--nav-height); /* Start below the header 
-    left: 0;
-    width: 100%;
-    height: calc(100vh - var(--nav-height));
-    
-    flex-direction: column; /* Stack items vertically 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    
-    border-radius: 0; /* Remove rounded corners 
-    background: rgba(0, 0, 0, 0.85); /* Darker bg for readability 
-    backdrop-filter: blur(20px);
-    
-    /* Animation: Slide out to the right by default 
-    transform: translateX(100%); 
+
+    width: 100%;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease-in-out;
+
+    z-index: 1;
   }
 
-  /* When menu is open, slide it in 
-  .nav-content.open {
-    transform: translateX(0);
+  .nav-links.open {
+    transform: translateY(0);
   }
 
   .nav-list {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    flex: 0; /* Don't stretch 
-    gap: 30px;
+
   }
 
-  .desktop-logo-container {
-    display: none; /* Hide the center logo inside the menu 
+  .nav-links, .nav-list li, .nav-list a {
+    display: block;
+    width: 100%;
+    text-align: center;
   }
-  
-  /* Increase font size for mobile touch targets 
+
   a {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
+
 }
 
-/* --- HAMBURGER BUTTON --- 
-.hamburger {
-  background: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 5px;
-  z-index: 1100;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: white;
-  transition: 0.3s;
-  border-radius: 2px;
-}
-
-/* Hamburger Animation to X 
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
-}
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
-} */
+/* End of Navbar Layout and Structure for Mobile */

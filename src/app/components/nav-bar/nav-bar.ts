@@ -21,6 +21,7 @@ export class NavBar {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+    console.log("Toggling menu. Current state: ", this.isMenuOpen)
   }
 
   closeMenu() {
