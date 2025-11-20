@@ -39,18 +39,50 @@ nav::after {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-}
-.position.left {
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
-.position.right {
-  justify-content: flex-end;
-}
 .logo {
   height: 100%;
   max-height: var(--nav-height);
   width: auto;
   object-fit: contain;
+
+  margin-top: 10px;
 }
+
+a {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+a::after {
+  content: '';
+  display: block;
+  width: 0;
+  left: 0;
+  height: 3px;
+  background-color: var(--color-secondary);
+
+  bottom: 0px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+a.active {
+  color: var(--color-secondary)
+}
+
+a.active::after {
+  width: 100%;
+}
+
+
+
