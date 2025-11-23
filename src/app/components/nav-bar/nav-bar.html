@@ -3,11 +3,12 @@
         <a routerLink="/home" (click)="closeMenu()">
             <img class="logo mobile-logo" src="/Thorbouw-Logo-Light.png" alt="Logo">
         </a>
-        <button class="hamburger" (click)="toggleMenu()" [class.active]="isMenuOpen" aria-label="Toggle menu">
+        <span id="nav-label" hidden>Navigation</span>
+        <button #hamburger class="hamburger" (click)="toggleMenu()" aria-expanded="false" aria-labelledby="nav-label">
             WIP Text
         </button>
     </div>
-    <div class="nav-links" [class.open]="isMenuOpen">
+    <div #navLinksContainer class="nav-links" [class.open]="isMenuOpen" role="dialog" aria-labelledby="nav-label">
         <ul class="nav-list left">
             @for (link of navLinks.slice(0, 3); track link.path){
             <li>
@@ -29,4 +30,6 @@
         </ul>
     </div>
 </nav>
-<router-outlet></router-outlet>
+<div #main>
+    <router-outlet></router-outlet>
+</div>
