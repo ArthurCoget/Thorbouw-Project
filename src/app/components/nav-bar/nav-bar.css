@@ -1,42 +1,9 @@
-/* NavBar Glassmorphism Styling */
-
-.mobile-nav,
-.nav-links {
-  position: relative;
-  isolation: isolate;
-
-  padding: 0 1em;
-  margin-bottom: 1.5em;
-
-  border-bottom: rgba(255, 255, 255, 0.25) 2px solid;
-  border-radius: 0 0 50px 50px;
-
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
-  backdrop-filter: blur(15px);
-
-  box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.35);
-
-  z-index: 2;
-}
-
-.mobile-nav::after,
-.nav-links::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  pointer-events: none;
-
-  background-image: url('assets/Noise.png');
-  background-repeat: repeat;
-  opacity: 0.1;
-  mix-blend-mode: overlay;
-}
-
 .nav-links {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  z-index: 2;
 }
 
 /* Navbar Layout and Structure for Desktop */
@@ -62,8 +29,6 @@
   max-height: var(--nav-height);
   width: auto;
   object-fit: contain;
-
-  overflow: hidden;
 }
 
 /* Links */
@@ -104,6 +69,10 @@ a.active {
   color: var(--color-secondary);
 }
 
+.no-transition {
+  transition: none !important;
+}
+
 /* Responsive Font Sizes for Desktop */
 
 @media (max-width: 1500px) {
@@ -135,9 +104,6 @@ a.active {
     height: calc(var(--nav-height) / 1.25);
 
     padding: 0 3em;
-    margin: 0;
-
-    box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.35);
 
     overflow: hidden;
 
@@ -217,6 +183,5 @@ a.active {
 /* End of Navbar Layout and Structure for Mobile */
 
 /**
-  * Continue implementation of navbar facility: https://www.youtube.com/watch?v=pBv7igaxfQE
   * Hamburger menu animation: https://www.youtube.com/watch?v=R00QiudbD4Y
   */

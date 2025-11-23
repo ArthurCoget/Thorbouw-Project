@@ -2,11 +2,10 @@ import {
   Component,
   ViewChild,
   ElementRef,
-  Renderer2,
-  AfterViewInit,
   HostListener,
   Inject,
   PLATFORM_ID,
+  AfterViewInit,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
@@ -17,16 +16,25 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.css',
 })
-export class NavBar implements AfterViewInit {
-  @ViewChild('hamburger') hamburgerButton!: ElementRef;
+export class NavBarComponent implements AfterViewInit {
   @ViewChild('navLinksContainer') navLinksContainer!: ElementRef;
-  @ViewChild('main') mainContent!: ElementRef;
 
-  constructor(private renderer: Renderer2, @Inject(PLATFORM_ID) private platformId: Object) {}
+  isMenuOpen: boolean = false;
+  isMobile: boolean = false;
+  disableTransition: boolean = false;
+
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
-      this.updateLayout(window.innerWidth);
+      setTimeout(() => this.updateLayout(window.innerWidth));
+    }
+  }
+
+  @HostListener('transitionend', ['$event'])
+  onTransitionEnd(event: TransitionEvent) {
+    if (!this.isMenuOpen) {
+      this.disableTransition = true;
     }
   }
 
@@ -36,8 +44,10 @@ export class NavBar implements AfterViewInit {
       this.updateLayout(event.target.innerWidth);
     }
   }
-
-  isMenuOpen = false;
+  @HostListener('document:keydown.escape')
+  onEscape() {
+    this.closeMenu();
+  }
 
   navLinks = [
     { label: 'Over Thorbouw', path: '/overThorbouw' },
@@ -49,52 +59,28 @@ export class NavBar implements AfterViewInit {
   ];
 
   updateLayout(width: number) {
-    const isMobile = width <= 1000;
+    this.isMobile = width <= 1000;
 
-    if (isMobile) {
-      // MOBILE LAYOUT
-      console.log('Mobile layout activated');
-      this.renderer.setAttribute(this.navLinksContainer.nativeElement, 'inert', '');
-      this.renderer.setStyle(this.navLinksContainer.nativeElement, 'transition', 'none');
-    } else {
-      // DESKTOP LAYOUT
-      console.log('Desktop layout activated');
-      this.closeMenu();
-      this.renderer.removeAttribute(this.navLinksContainer.nativeElement, 'inert');
-      this.closeMenu();
+    if (!this.isMobile) {
+      this.closeMenu(true);
     }
   }
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
-    if (this.isMenuOpen) {
-      this.renderer.removeAttribute(this.navLinksContainer.nativeElement, 'inert');
-      this.renderer.removeStyle(this.navLinksContainer.nativeElement, 'transition');
-      this.renderer.setAttribute(this.mainContent.nativeElement, 'inert', '');
-    } else {
+    this.disableTransition = false;
+
+    if (!this.isMenuOpen) {
       this.closeMenu();
     }
-    this.renderer.setAttribute(
-      this.hamburgerButton.nativeElement,
-      'aria-expanded',
-      this.isMenuOpen.toString()
-    );
   }
 
-  closeMenu() {
+  closeMenu(force = false) {
     this.isMenuOpen = false;
 
-    this.renderer.setAttribute(this.navLinksContainer.nativeElement, 'inert', '');
-    this.renderer.removeAttribute(this.mainContent.nativeElement, 'inert', '');
-
-    setTimeout(() => {
-      this.renderer.setStyle(this.navLinksContainer.nativeElement, 'transition', 'none');
-    }, 300);
-
-    this.renderer.setAttribute(
-      this.hamburgerButton.nativeElement,
-      'aria-expanded',
-      this.isMenuOpen.toString()
-    );
+    if (force) {
+      this.disableTransition = true;
+      return;
+    }
   }
 }

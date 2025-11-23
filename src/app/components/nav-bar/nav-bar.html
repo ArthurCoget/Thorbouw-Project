@@ -1,14 +1,14 @@
 <nav class="nav-bar">
-    <div class="mobile-nav">
+    <div class="mobile-nav glassmorphism">
         <a routerLink="/home" (click)="closeMenu()">
             <img class="logo mobile-logo" src="/Thorbouw-Logo-Light.png" alt="Logo">
         </a>
         <span id="nav-label" hidden>Navigation</span>
-        <button #hamburger class="hamburger" (click)="toggleMenu()" aria-expanded="false" aria-labelledby="nav-label">
+        <button #hamburger class="hamburger" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen" aria-labelledby="nav-label">
             WIP Text
         </button>
     </div>
-    <div #navLinksContainer class="nav-links" [class.open]="isMenuOpen" role="dialog" aria-labelledby="nav-label">
+    <div #navLinksContainer class="nav-links glassmorphism" [class.no-transition]="disableTransition" [class.open]="isMenuOpen" [attr.inert]="!isMenuOpen && isMobile ? '' : null" role="dialog" aria-labelledby="nav-label">
         <ul class="nav-list left">
             @for (link of navLinks.slice(0, 3); track link.path){
             <li>
@@ -30,6 +30,6 @@
         </ul>
     </div>
 </nav>
-<div #main>
+<div [attr.inert]="isMenuOpen ? '' : null">
     <router-outlet></router-outlet>
 </div>
