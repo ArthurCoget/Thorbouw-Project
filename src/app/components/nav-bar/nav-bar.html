@@ -4,11 +4,21 @@
             <img class="logo mobile-logo" src="/Thorbouw-Logo-Light.png" alt="Logo">
         </a>
         <span id="nav-label" hidden>Navigation</span>
-        <button #hamburger class="hamburger" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen" aria-labelledby="nav-label">
-            WIP Text
+        <button class="hamburger" (click)="toggleMenu()" [class.isReady]="isReady" [attr.aria-expanded]="isReady ? isMenuOpen : null" aria-controls="nav-links"
+            aria-labelledby="nav-label">
+            <svg class="hamburger-svg" viewBox="0 0 100 100" width="50">
+                <line class="line top" x1="10" x2="90" y1="30" y2="30" stroke-linecap="round" stroke-width="10"
+                    stroke-dasharray="80" stroke-dashoffset="0"></line>
+                <line class="line middle" x1="90" x2="10" y1="50" y2="50" stroke-linecap="round" stroke-width="10"
+                    stroke-dasharray="80" stroke-dashoffset="0"></line>
+                <line class="line bottom" x1="10" x2="90" y1="70" y2="70" stroke-linecap="round" stroke-width="10"
+                    stroke-dasharray="80" stroke-dashoffset="0"></line>
+            </svg>
         </button>
     </div>
-    <div #navLinksContainer class="nav-links glassmorphism" [class.no-transition]="disableTransition" [class.open]="isMenuOpen" [attr.inert]="!isMenuOpen && isMobile ? '' : null" role="dialog" aria-labelledby="nav-label">
+    <div id="nav-links" class="nav-links glassmorphism" [class.no-transition]="disableTransition"
+        [class.open]="isMenuOpen" [attr.inert]="!isMenuOpen && isMobile ? '' : null" role="dialog"
+        aria-labelledby="nav-label">
         <ul class="nav-list left">
             @for (link of navLinks.slice(0, 3); track link.path){
             <li>

@@ -133,7 +133,6 @@ a.active {
   .nav-links.open {
     transform: translateY(0);
     z-index: 4;
-
   }
 
   .nav-list {
@@ -158,17 +157,117 @@ a.active {
     padding: 0;
   }
 
-  .hamburger {
+  /* .hamburger {
     border: none;
     background: none;
 
     display: block;
     margin-inline-start: auto;
     cursor: pointer;
+  } */
+}
+
+/* End of Navbar Layout and Structure for Mobile */
+
+/* Hamburger Menu Styles */
+button {
+  background: none;
+  border-radius: 10px;
+  border: 2px solid var(--btn-color, #000);
+  cursor: pointer;
+}
+
+.hamburger {
+  --btn-color: #000;
+}
+.hamburger-svg {
+  stroke: var(--btn-color);
+}
+
+.hamburger.isReady[aria-expanded='false'] :is(.top, .middle, .bottom) {
+  animation: closeNavMenu 0.75s forwards;
+}
+
+.hamburger.isReady[aria-expanded='true'] :is(.top, .middle, .bottom) {
+  animation: openNavMenu 0.75s forwards;
+}
+
+.hamburger .top {
+  /* Magic Number here :( */
+  transform-origin: 45px 40px;
+  --rotation: 135deg;
+  --opacity: 1;
+}
+.hamburger .middle {
+  /* Middle line stays horizontal */
+  transform-origin: center;
+  --rotation: 360deg;
+  --opacity: 0;
+}
+
+.hamburger .bottom {
+  /* Magic Number here :( */
+  transform-origin: 45px 60px;
+  --rotation: -135deg;
+  --opacity: 1;
+}
+
+@keyframes openNavMenu {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  40% {
+    stroke-dashoffset: 79.9;
+  }
+  60% {
+    opacity: var(--opacity);
+    stroke-dashoffset: 79.9;
+    rotate: var(--rotation);
+  }
+  100% {
+    opacity: var(--opacity);
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+}
+
+@keyframes closeNavMenu {
+  0% {
+    opacity: var(--opacity);
+    stroke-dashoffset: 0;
+    rotate: var(--rotation);
+  }
+  40% {
+    opacity: var(--opacity);
+    stroke-dashoffset: 79.9;
+    rotate: var(--rotation);
+  }
+  60% {
+    stroke-dashoffset: 79.9;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
 
 @media (max-width: 1000px) and (prefers-reduced-motion) {
+  .hamburger.isReady[aria-expanded='false'] :is(.top, .middle, .bottom),
+  .hamburger.isReady[aria-expanded='true'] :is(.top, .middle, .bottom) {
+    animation: none !important;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .hamburger[aria-expanded='true'] .middle {
+    opacity: 0; /* fade out middle line */
+  }
+  .hamburger[aria-expanded='true'] .top {
+    transform-origin: 45px 40px;
+    rotate: 135deg; 
+  }
+  .hamburger[aria-expanded='true'] .bottom {
+    transform-origin: 45px 60px;
+    rotate: -135deg; 
+  }
   .nav-links {
     translate: 0;
     opacity: 0;
@@ -179,8 +278,6 @@ a.active {
     opacity: 1;
   }
 }
-
-/* End of Navbar Layout and Structure for Mobile */
 
 /**
   * Hamburger menu animation: https://www.youtube.com/watch?v=R00QiudbD4Y
