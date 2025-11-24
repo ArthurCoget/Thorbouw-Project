@@ -67,7 +67,7 @@ a {
   border-radius: inherit;
   pointer-events: none;
 
-  background-image: url('../public/Noise.png');
+  background-image: url('/Noise.png');
   background-repeat: repeat;
   opacity: 0.1;
   mix-blend-mode: overlay;
