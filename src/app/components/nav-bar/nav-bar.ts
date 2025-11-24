@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, PLATFORM_ID, AfterViewInit } from '@angular/core';
+import { Component, HostListener, Inject, PLATFORM_ID, AfterContentInit } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.css',
 })
-export class NavBarComponent implements AfterViewInit {
+export class NavBarComponent implements AfterContentInit {
   isMenuOpen: boolean = false;
   isMobile: boolean = false;
   disableTransition: boolean = false;
@@ -16,7 +16,7 @@ export class NavBarComponent implements AfterViewInit {
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
-  ngAfterViewInit() {
+  ngAfterContentInit() {
     if (isPlatformBrowser(this.platformId)) {
       setTimeout(() => this.updateLayout(window.innerWidth));
     }
