@@ -172,13 +172,12 @@ a.active {
 /* Hamburger Menu Styles */
 button {
   background: none;
-  border-radius: 10px;
-  border: 2px solid var(--btn-color, #000);
+  border: none;
   cursor: pointer;
 }
 
 .hamburger {
-  --btn-color: #000;
+  --btn-color: var(--color-dark);
 }
 .hamburger-svg {
   stroke: var(--btn-color);
