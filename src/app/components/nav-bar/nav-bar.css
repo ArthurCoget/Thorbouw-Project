@@ -132,7 +132,7 @@ a.active {
 
   .nav-links.open {
     transform: translateY(0);
-    z-index: 4;
+    z-index: 2;
   }
 
   .nav-list {
@@ -156,15 +156,6 @@ a.active {
   .nav-list li {
     padding: 0;
   }
-
-  /* .hamburger {
-    border: none;
-    background: none;
-
-    display: block;
-    margin-inline-start: auto;
-    cursor: pointer;
-  } */
 }
 
 /* End of Navbar Layout and Structure for Mobile */
@@ -198,7 +189,6 @@ button {
   --opacity: 1;
 }
 .hamburger .middle {
-  /* Middle line stays horizontal */
   transform-origin: center;
   --rotation: 360deg;
   --opacity: 0;
@@ -277,7 +267,3 @@ button {
     opacity: 1;
   }
 }
-
-/**
-  * Hamburger menu animation: https://www.youtube.com/watch?v=R00QiudbD4Y
-  */
