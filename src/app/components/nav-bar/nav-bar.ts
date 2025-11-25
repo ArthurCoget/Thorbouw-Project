@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, PLATFORM_ID, AfterContentInit, inject } from '@angular/core';
+import { Component, HostListener, Inject, PLATFORM_ID, inject, AfterViewInit } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { LayoutService } from '../../services/layout';
@@ -9,7 +9,7 @@ import { LayoutService } from '../../services/layout';
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.css',
 })
-export class NavBarComponent implements AfterContentInit {
+export class NavBarComponent implements AfterViewInit {
 
   protected layoutService = inject(LayoutService)
 
@@ -19,9 +19,11 @@ export class NavBarComponent implements AfterContentInit {
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
-  ngAfterContentInit() {
+ ngAfterViewInit() {
     if (isPlatformBrowser(this.platformId)) {
-      setTimeout(() => this.updateLayout(window.innerWidth));
+      setTimeout(() => {
+        this.updateLayout(window.innerWidth);
+      });
     }
   }
 

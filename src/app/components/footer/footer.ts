@@ -1,8 +1,4 @@
-import {
-  Component,
-  Inject,
-  PLATFORM_ID,
-} from '@angular/core';
+import { Component, Inject, PLATFORM_ID } from '@angular/core';
 import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { isPlatformBrowser } from '@angular/common';
 
@@ -13,11 +9,10 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrl: './footer.css',
 })
 export class FooterComponent {
-
   footerImages = ['FooterImage1.png', 'FooterImage2.jpg', 'FooterImage3.jpg', 'FooterImage4.jpg'];
 
   nextImage: string | null = null;
-  currentImage = this.footerImages[0];
+  currentImage = '/footer/FooterImage1.png';
 
   constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: Object) {
     this.router.events.subscribe((event) => {
@@ -38,6 +33,7 @@ export class FooterComponent {
       const imageName = this.footerImages[index];
 
       const url = `/footer/${imageName}`;
+
 
       this.loadImage(url);
     }
