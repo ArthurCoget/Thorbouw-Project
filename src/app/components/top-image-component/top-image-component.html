@@ -1,4 +1,4 @@
-<div class="hero-image-container">
-    <div class="hero-background" [style.background-image]="'url(' + image_url + ')'"></div>
+<div class="hero-image-container" [class.hero-home]="home_page">
+    <img [src]="image_url" alt="Hero image" class="hero-background">
     <div class="hero-content"></div>
 </div>

@@ -9,10 +9,15 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrl: './footer.css',
 })
 export class FooterComponent {
-  footerImages = ['FooterImage1.png', 'FooterImage2.jpg', 'FooterImage3.jpg', 'FooterImage4.jpg'];
+  footerImages = [
+    'FooterImage1.webp',
+    'FooterImage2.webp',
+    'FooterImage3.webp',
+    'FooterImage4.webp',
+  ];
 
   nextImage: string | null = null;
-  currentImage = '/footer/FooterImage1.png';
+  currentImage = '/footer/FooterImage1.webp';
 
   constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: Object) {
     this.router.events.subscribe((event) => {
@@ -34,7 +39,6 @@ export class FooterComponent {
 
       const url = `/footer/${imageName}`;
 
-
       this.loadImage(url);
     }
   }
@@ -50,9 +54,16 @@ export class FooterComponent {
   }
 
   preloadNextImage() {
-    const index = Math.floor(Math.random() * this.footerImages.length);
-    const fileName = this.footerImages[index];
-    const nextUrl = `/footer/${fileName}`;
+    let index: number;
+    let nextUrl: string;
+
+    do {
+      index = Math.floor(Math.random() * this.footerImages.length);
+      console.log(index)
+      const fileName = this.footerImages[index];
+      nextUrl = `/footer/${fileName}`;
+      console.log(nextUrl)
+    } while (nextUrl === this.currentImage && this.footerImages.length > 1);
 
     const img = new Image();
     img.src = nextUrl;
