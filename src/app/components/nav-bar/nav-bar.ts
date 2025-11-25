@@ -1,15 +1,18 @@
-import { Component, HostListener, Inject, PLATFORM_ID, AfterContentInit } from '@angular/core';
+import { Component, HostListener, Inject, PLATFORM_ID, AfterContentInit, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { LayoutService } from '../../services/layout';
 
 @Component({
   selector: 'app-nav-bar',
-  imports: [RouterLink, RouterLinkActive, RouterOutlet],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.css',
 })
 export class NavBarComponent implements AfterContentInit {
-  isMenuOpen: boolean = false;
+
+  protected layoutService = inject(LayoutService)
+
   isMobile: boolean = false;
   disableTransition: boolean = false;
   isReady: boolean = false;
@@ -24,7 +27,7 @@ export class NavBarComponent implements AfterContentInit {
 
   @HostListener('transitionend', ['$event'])
   onTransitionEnd(event: TransitionEvent) {
-    if (!this.isMenuOpen) {
+    if (!this.layoutService.isMenuOpen()) {
       this.disableTransition = true;
     }
   }
@@ -58,10 +61,10 @@ export class NavBarComponent implements AfterContentInit {
   }
 
   toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
+    this.layoutService.toggleMenu();
     this.disableTransition = false;
 
-    if (!this.isMenuOpen) {
+    if (!this.layoutService.isMenuOpen()) {
       this.closeMenu();
     } else{
       this.isReady = true
@@ -69,7 +72,7 @@ export class NavBarComponent implements AfterContentInit {
   }
 
   closeMenu(force = false) {
-    this.isMenuOpen = false;
+    this.layoutService.closeMenu()
 
     if (force) {
       this.disableTransition = true;

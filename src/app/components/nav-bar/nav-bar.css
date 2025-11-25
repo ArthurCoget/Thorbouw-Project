@@ -1,9 +1,12 @@
 .nav-links {
+  position: absolute;
+  width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  z-index: 2;
+  z-index: 10;
 }
 
 /* Navbar Layout and Structure for Desktop */
@@ -97,6 +100,9 @@ a.active {
   }
 
   .mobile-nav {
+    position: absolute;
+    width: 100%;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,7 +114,7 @@ a.active {
     overflow: hidden;
 
     margin-bottom: 2em;
-    z-index: 3;
+    z-index: 9;
   }
 
   .mobile-logo {
@@ -127,12 +133,12 @@ a.active {
     transform: translateY(-200%);
     transition: transform 0.3s ease-in-out;
 
-    z-index: 1;
+    z-index: 8;
   }
 
   .nav-links.open {
     transform: translateY(0);
-    z-index: 2;
+    z-index: 9;
   }
 
   .nav-list {
@@ -251,11 +257,11 @@ button {
   }
   .hamburger[aria-expanded='true'] .top {
     transform-origin: 45px 40px;
-    rotate: 135deg; 
+    rotate: 135deg;
   }
   .hamburger[aria-expanded='true'] .bottom {
     transform-origin: 45px 60px;
-    rotate: -135deg; 
+    rotate: -135deg;
   }
   .nav-links {
     translate: 0;

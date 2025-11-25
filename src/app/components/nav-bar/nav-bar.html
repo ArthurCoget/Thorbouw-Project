@@ -4,7 +4,7 @@
             <img class="logo mobile-logo" src="/Thorbouw-Logo-Light.png" alt="Logo">
         </a>
         <span id="nav-label" hidden>Navigation</span>
-        <button class="hamburger" (click)="toggleMenu()" [class.isReady]="isReady" [attr.aria-expanded]="isReady ? isMenuOpen : null" aria-controls="nav-links"
+        <button class="hamburger" (click)="toggleMenu()" [class.isReady]="isReady" [attr.aria-expanded]="isReady ? layoutService.isMenuOpen() : null" aria-controls="nav-links"
             aria-labelledby="nav-label">
             <svg class="hamburger-svg" viewBox="0 0 100 100" width="50">
                 <line class="line top" x1="10" x2="90" y1="30" y2="30" stroke-linecap="round" stroke-width="10"
@@ -17,7 +17,7 @@
         </button>
     </div>
     <div id="nav-links" class="nav-links glassmorphism" [class.no-transition]="disableTransition"
-        [class.open]="isMenuOpen" [attr.inert]="!isMenuOpen && isMobile ? '' : null" role="dialog"
+        [class.open]="layoutService.isMenuOpen()" [attr.inert]="!layoutService.isMenuOpen() && isMobile ? '' : null" role="dialog"
         aria-labelledby="nav-label">
         <ul class="nav-list left">
             @for (link of navLinks.slice(0, 3); track link.path){
@@ -40,6 +40,3 @@
         </ul>
     </div>
 </nav>
-<div [attr.inert]="isMenuOpen ? '' : null">
-    <router-outlet></router-outlet>
-</div>
