@@ -74,8 +74,13 @@
   margin-left: -0.75em;
 
   border: 2px solid var(--color-light-grey);
+
+  transition: ease-in-out .3s;
 }
 .hero-content > a:hover {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  background-color: var(--color-light-grey);
 }
 
 @media (max-width: 1400px) {
