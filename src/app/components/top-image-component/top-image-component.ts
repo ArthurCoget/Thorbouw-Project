@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-top-image-component',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './top-image-component.html',
   styleUrl: './top-image-component.css',
 })

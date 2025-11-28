@@ -59,10 +59,8 @@ export class FooterComponent {
 
     do {
       index = Math.floor(Math.random() * this.footerImages.length);
-      console.log(index)
       const fileName = this.footerImages[index];
       nextUrl = `/footer/${fileName}`;
-      console.log(nextUrl)
     } while (nextUrl === this.currentImage && this.footerImages.length > 1);
 
     const img = new Image();

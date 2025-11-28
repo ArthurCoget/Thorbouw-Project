@@ -1,4 +1,8 @@
 <div class="hero-image-container" [class.hero-home]="home_page">
-    <img [src]="image_url" alt="Hero image" class="hero-background">
-    <div class="hero-content"></div>
+    <img [src]="image_url" alt="Hero image" class="hero-background" [class.hero-home]="home_page">
+    <div class="hero-content" [class.glassmorphism]="home_page">
+        <h1>Volhoudbaar bouwen aan een nieuwe wereld</h1>
+        <p [class.hero-home-none]="home_page" >Aanemer gezocht?</p>
+        <a [class.hero-home-none]="home_page" [routerLink]="'/contact'">Contacteer Thorbouw voor Volhoudbaar wonen</a>
+    </div>
 </div>
