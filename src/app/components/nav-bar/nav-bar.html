@@ -1,7 +1,7 @@
 <nav class="nav-bar">
     <div class="mobile-nav glassmorphism">
         <a routerLink="/home" (click)="closeMenu()">
-            <img class="logo mobile-logo" src="/Thorbouw-Logo-Light.png" alt="Logo">
+            <img class="logo mobile-logo" src="/logo/Thorbouw-Logo-Light.webp" alt="Logo">
         </a>
         <span id="nav-label" hidden>Navigation</span>
         <button class="hamburger" (click)="toggleMenu()" [class.isReady]="isReady" [attr.aria-expanded]="isReady ? layoutService.isMenuOpen() : null" aria-controls="nav-links"
@@ -28,7 +28,7 @@
         </ul>
         <div class="desktop-logo-container">
             <a routerLink="/home">
-                <img class="logo" src="/Thorbouw-Logo-Light.png" alt="Logo Of Thorbouw">
+                <img class="logo" src="/logo/Thorbouw-Logo-Light.webp" alt="Logo Of Thorbouw">
             </a>
         </div>
         <ul class="nav-list right">
