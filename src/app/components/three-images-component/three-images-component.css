@@ -80,24 +80,6 @@ h2 {
   font-size: 1.25em;
 }
 
-.card-overlay a {
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-  font-weight: 500;
-  padding: 1em;
-
-  border-radius: 15px;
-  border: solid 2px var(--color-white);
-  transition: ease-in-out 0.3s;
-}
-
-.card-overlay a:hover {
-  border: solid 2px var(--color-secondary);
-
-  background-color: var(--color-white);
-  color: var(--color-secondary);
-}
-
 @media (max-width: 1400px) {
   .card-overlay {
     width: 65%;

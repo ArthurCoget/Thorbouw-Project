@@ -1,4 +1,13 @@
-import { Component, signal, ElementRef, effect, HostListener, computed } from '@angular/core';
+import {
+  Component,
+  signal,
+  ElementRef,
+  effect,
+  HostListener,
+  computed,
+  OnDestroy,
+  AfterViewInit,
+} from '@angular/core';
 import { ICarouselImage } from '../../interfaces/carousel-image.data';
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 
@@ -8,7 +17,12 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
   templateUrl: './image-carousel-component.html',
   styleUrl: './image-carousel-component.css',
 })
-export class ImageCarouselComponent {
+export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
+  private readonly AUTO_SLIDE_DELAY = 8000;
+  private readonly ANIMATION_DURATION = 750;
+  private readonly INFO_FADE_DURATION = 375;
+  private readonly INTERSECTION_THRESHOLD = 0.2;
+
   items = signal<ICarouselImage[]>([
     {
       id: 1,
@@ -30,8 +44,8 @@ export class ImageCarouselComponent {
 
   activeItem = computed(() => this.items()[this.currentIndex()]);
 
-  private autoSlideTimeout: any;
-  private observer!: IntersectionObserver;
+  private autoSlideTimeout: ReturnType<typeof setTimeout> | null = null;
+  private observer?: IntersectionObserver;
 
   constructor(private elementRef: ElementRef) {}
 
@@ -40,82 +54,87 @@ export class ImageCarouselComponent {
       (entries) => {
         this.isVisible.set(entries[0].isIntersecting);
       },
-      { threshold: 0.2 }
+      { threshold: this.INTERSECTION_THRESHOLD }
     );
 
     this.observer.observe(this.elementRef.nativeElement);
   }
 
-  private startAutoSlide() {
+  ngOnDestroy(): void {
     this.clearAutoSlide();
-    this.autoSlideTimeout = setTimeout(() => {
-      this.next();
-      this.startAutoSlide();
-    }, 8000);
+    this.observer?.disconnect();
   }
 
-  private clearAutoSlide() {
+  private startAutoSlide(): void {
+    this.clearAutoSlide();
+    this.autoSlideTimeout = setTimeout(() => {
+      this.handleSlide('next');
+    }, this.AUTO_SLIDE_DELAY);
+  }
+
+  private clearAutoSlide(): void {
     if (this.autoSlideTimeout) {
       clearTimeout(this.autoSlideTimeout);
       this.autoSlideTimeout = null;
     }
   }
 
-  autoSlideEffect = effect(() => {
-    const visible = this.isVisible();
-
-    if (visible) {
+  private autoSlideEffect = effect((onCleanup) => {
+    if (this.isVisible()) {
       this.startAutoSlide();
-    } else {
-      this.clearAutoSlide();
     }
+
+    onCleanup(() => this.clearAutoSlide());
   });
 
-  getItemClass(index: number) {
+  getItemClass(index: number): string {
     const current = this.currentIndex();
     const total = this.items().length;
 
     if (index === current) return 'active';
-    if (index === (current + 1) % total) return 'next';
-    if (index === (current - 1 + total) % total) return 'prev';
 
+    const nextIndex = (current + 1) % total;
     const prevIndex = (current - 1 + total) % total;
-    const isBeforePrev = index === (prevIndex - 1 + total) % total;
 
+    if (index === nextIndex) return 'next';
+    if (index === prevIndex) return 'prev';
+
+    // Determine if item is in the "before prev" or "after next" position
+    const isBeforePrev = index === (prevIndex - 1 + total) % total;
     return isBeforePrev ? 'hidden-prev' : 'hidden-next';
   }
 
-  next() {
-    this.handleSlide('next');
+  handleCardClick(index: number): void {
+    if (this.isAnimating()) return;
+
+    const itemClass = this.getItemClass(index);
+    if (itemClass === 'prev') {
+      this.handleSlide('prev');
+    } else if (itemClass === 'next') {
+      this.handleSlide('next');
+    }
   }
 
-  previous() {
-    this.handleSlide('prev');
-  }
-
-  private handleSlide(direction: 'next' | 'prev') {
+  private handleSlide(direction: 'next' | 'prev'): void {
     if (this.isAnimating()) return;
 
     this.isAnimating.set(true);
-    this.isAnimatingInfo.set(true)
+    this.isAnimatingInfo.set(true);
 
     const total = this.items().length;
-
     this.currentIndex.update((i) =>
       direction === 'next' ? (i + 1) % total : (i - 1 + total) % total
     );
-    setTimeout(() => {
-      this.isAnimatingInfo.set(false);
-    }, 300);
+
+    setTimeout(() => this.isAnimatingInfo.set(false), this.INFO_FADE_DURATION);
     setTimeout(() => {
       this.isAnimating.set(false);
-    }, 600);
-
-    this.startAutoSlide();
+      this.startAutoSlide();
+    }, this.ANIMATION_DURATION);
   }
 
   @HostListener('document:visibilitychange')
-  onVisibilityChange() {
+  onVisibilityChange(): void {
     if (document.hidden) {
       this.clearAutoSlide();
     } else if (this.isVisible()) {
