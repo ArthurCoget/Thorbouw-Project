@@ -1,0 +1,21 @@
+<div class="carousel-container">
+
+    <div class="carousel">
+        @for (item of items(); track item.id; let i = $index) {
+        <div class="carousel-card" [ngClass]="getItemClass(i)"
+            (click)="getItemClass(i) === 'prev' ? previous() : getItemClass(i) === 'next' ? next() : null">
+            <img [ngSrc]="item.img" alt="{{item.title}}" width="1200" height="800" loading="eager">
+        </div>
+        }
+    </div>
+
+    <div class="info-wrapper">
+        <div class="extra-info-container" [class.fade-content]="isAnimatingInfo()">
+            <div class="info-text">
+                <span class="date">Datum<br><strong>{{ activeItem().date }}</strong></span>
+                <span class="project">Project<br><strong>{{ activeItem().title }}</strong></span>
+            </div>
+            <button class="info-btn">Meer Info</button>
+        </div>
+    </div>
+</div>
