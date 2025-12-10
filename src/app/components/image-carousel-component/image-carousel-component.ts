@@ -19,8 +19,8 @@ import { CommonModule, NgOptimizedImage } from '@angular/common';
 })
 export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
   private readonly AUTO_SLIDE_DELAY = 8000;
-  private readonly ANIMATION_DURATION = 750;
-  private readonly INFO_FADE_DURATION = 375;
+  private readonly ANIMATION_DURATION = 700;
+  private readonly INFO_FADE_DURATION = 350;
   private readonly INTERSECTION_THRESHOLD = 0.2;
 
   items = signal<ICarouselImage[]>([
@@ -46,6 +46,11 @@ export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
 
   private autoSlideTimeout: ReturnType<typeof setTimeout> | null = null;
   private observer?: IntersectionObserver;
+
+  private readonly SWIPE_THRESHOLD = 50;
+
+  private touchStartX = 0;
+  private touchStartY = 0;
 
   constructor(private elementRef: ElementRef) {}
 
@@ -91,17 +96,15 @@ export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
     const current = this.currentIndex();
     const total = this.items().length;
 
+    const next = (current + 1) % total;
+    const prev = (current - 1 + total) % total;
+
     if (index === current) return 'active';
+    if (index === next) return 'next';
+    if (index === prev) return 'prev';
 
-    const nextIndex = (current + 1) % total;
-    const prevIndex = (current - 1 + total) % total;
-
-    if (index === nextIndex) return 'next';
-    if (index === prevIndex) return 'prev';
-
-    // Determine if item is in the "before prev" or "after next" position
-    const isBeforePrev = index === (prevIndex - 1 + total) % total;
-    return isBeforePrev ? 'hidden-prev' : 'hidden-next';
+    const beforePrev = (prev - 1 + total) % total;
+    return index === beforePrev ? 'hidden-prev' : 'hidden-next';
   }
 
   handleCardClick(index: number): void {
@@ -121,10 +124,12 @@ export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
     this.isAnimating.set(true);
     this.isAnimatingInfo.set(true);
 
-    const total = this.items().length;
-    this.currentIndex.update((i) =>
-      direction === 'next' ? (i + 1) % total : (i - 1 + total) % total
-    );
+    requestAnimationFrame(() => {
+      const total = this.items().length;
+      this.currentIndex.update((i) =>
+        direction === 'next' ? (i + 1) % total : (i - 1 + total) % total
+      );
+    });
 
     setTimeout(() => this.isAnimatingInfo.set(false), this.INFO_FADE_DURATION);
     setTimeout(() => {
@@ -139,6 +144,35 @@ export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
       this.clearAutoSlide();
     } else if (this.isVisible()) {
       this.startAutoSlide();
+    }
+  }
+
+  onTouchStart(event: TouchEvent): void {
+    this.touchStartX = event.changedTouches[0].screenX;
+    this.touchStartY = event.changedTouches[0].screenY;
+  }
+
+  onTouchEnd(event: TouchEvent): void {
+    if (this.isAnimating()) return;
+
+    const touchEndX = event.changedTouches[0].screenX;
+    const touchEndY = event.changedTouches[0].screenY;
+
+    this.handleSwipeGesture(touchEndX, touchEndY);
+  }
+
+  private handleSwipeGesture(endX: number, endY: number): void {
+    const deltaX = endX - this.touchStartX;
+    const deltaY = endY - this.touchStartY;
+
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+      if (Math.abs(deltaX) > this.SWIPE_THRESHOLD) {
+        if (deltaX > 0) {
+          this.handleSlide('prev');
+        } else {
+          this.handleSlide('next');
+        }
+      }
     }
   }
 }

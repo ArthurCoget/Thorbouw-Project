@@ -1,28 +1,30 @@
 .carousel-container {
+  --main-card-width: 45%;
+
   position: relative;
 
   width: 100%;
-  height: 775px;
+  height: clamp(400px, 82vh, 775px);
   margin: 0 auto;
+
+  touch-action: pan-y;
 }
 .carousel {
   /* Transition Variables */
-  --transition-duration: 0.75s;
-  --transition-timing: cubic-bezier(0.34, .95, 0.64, 1);
+  --duration: 0.7s;
+  --ease: cubic-bezier(0.34, 1, 0.64, 1);
 
   /* Carousel Variables */
-  --carousel-depth: 250px;
-  --carousel-rotation: 25deg;
-  --side-card-scale: 0.7;
-  --side-card-offset: 45%;
-}
+  --depth: clamp(80px, 15vw, 220px);
+  --rotation: 26deg;
+  --side-scale: 0.72;
+  --side-offset: clamp(20%, 25vw, 50%);
 
-.carousel {
   position: relative;
 
-  height: 600px;
+  height: clamp(225px, 60vh, 600px);
   width: 100%;
-  perspective: 1200px;
+  perspective: 1300px;
 
   transform-style: preserve-3d;
 
@@ -36,24 +38,22 @@
 }
 
 .carousel-card {
-  display: flex;
-  align-items: center;
-
   position: absolute;
-
+  top: 0;
   height: 100%;
-  width: 45%;
-
-  transform-style: preserve-3d;
-  transform-origin: center center calc(-1 * var(--carousel-depth));
+  width: var(--main-card-width);
 
   border-radius: 10px 10px 0 0;
 
-  will-change: transform, filter, opacity;
+  transform-style: preserve-3d;
+  transform-origin: center center calc(-1 * var(--depth));
 
-  transition: transform var(--transition-duration) var(--transition-timing),
-    opacity var(--transition-duration) var(--transition-timing),
-    filter var(--transition-duration) var(--transition-timing);
+  will-change: transform, filter, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+
+  transition: transform var(--duration) var(--ease), opacity var(--duration) var(--ease),
+    filter var(--duration) var(--ease);
 
   overflow: hidden;
 }
@@ -63,15 +63,20 @@
   height: 100%;
   object-fit: cover;
   display: block;
+
+  transform: translateZ(0);
+  will-change: transform;
+  transition: transform 0.3s ease-out;
 }
 
 .carousel-card.active {
   z-index: 5;
+  transform: rotateY(0deg);
 }
 
 .carousel-card.prev,
 .carousel-card.next {
-  --hover-transition-card: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+  --hover-transition-card: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 
   border-radius: 10px;
 
@@ -81,7 +86,7 @@
   transition: var(--hover-transition-card);
 }
 .carousel-card.prev img,
-.carousel-card.next img{
+.carousel-card.next img {
   transition: var(--hover-transition-card);
 }
 
@@ -96,33 +101,28 @@
 }
 
 .carousel-card.prev {
-  transform: translateX(calc(-1 * var(--side-card-offset)))
-    rotateY(calc(-1 * var(--carousel-rotation))) translateZ(var(--carousel-depth))
-    scale(var(--side-card-scale));
+  transform: translateX(calc(-1 * var(--side-offset))) rotateY(calc(-1 * var(--rotation)))
+    translateZ(var(--depth)) scale(var(--side-scale));
 }
 
 .carousel-card.next {
-  transform: translateX(var(--side-card-offset)) rotateY(var(--carousel-rotation))
-    translateZ(var(--carousel-depth)) scale(var(--side-card-scale));
+  transform: translateX(var(--side-offset)) rotateY(var(--rotation)) translateZ(var(--depth))
+    scale(var(--side-scale));
 }
 
 .carousel-card.hidden-prev,
 .carousel-card.hidden-next {
   opacity: 0;
-  z-index: -5;
-  filter: grayscale(100%);
-  transition: transform var(--transition-duration) var(--transition-timing),
-    opacity var(--transition-duration) var(--transition-timing);
-
   pointer-events: none;
-}
-
-.carousel-card.hidden-next {
-  transform: rotateY(90deg) scale(0.5);
+  z-index: -1;
 }
 
 .carousel-card.hidden-prev {
   transform: rotateY(-90deg) scale(0.5);
+}
+
+.carousel-card.hidden-next {
+  transform: rotateY(90deg) scale(0.5);
 }
 
 /* Info Card */
@@ -135,14 +135,15 @@
 }
 
 .extra-info-container {
-  width: 45%;
+  width: var(--main-card-width);
   background: var(--color-grey);
-  height: 100px;
-
+  height: clamp(75px, 10vh, 100px);
   padding: 0 min(45px, 2.5%);
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   transition: opacity 0.3s ease-in;
   transform: translateZ(0);
   border-radius: 0 0 10px 10px;
@@ -158,7 +159,7 @@
   width: 65%;
   color: var(--color-darkgrey);
   font-weight: 500;
-  font-size: clamp(0.5rem, calc(1vw + 0.5rem), 1.25rem);
+  font-size: clamp(0.25rem, calc(0.5vw + 0.5rem), 1.25rem);
 }
 
 .info-text span {
@@ -169,4 +170,24 @@
 
 .info-text strong {
   color: #000;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 1000px) {
+  .carousel-container {
+    --main-card-width: 80%;
+  }
+}
+
+@media (max-height: 730px) {
+  .carousel-container {
+    height: clamp(400px, 90vh, 775px);
+  }
+}
+
+@media (max-height: 500px) {
+  .carousel-container {
+    height: clamp(400px, 95vh, 775px);
+  }
 }
