@@ -1,4 +1,4 @@
-<div class="carousel-container" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">>
+<div class="carousel-container" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
     <div class="carousel">
         @for (item of items(); track item.id; let i = $index) {
         <div class="carousel-card" [ngClass]="getItemClass(i)" (click)="handleCardClick(i)">
