@@ -1,14 +1,14 @@
 :root {
   /* Primary/Accent Colors */
-  --color-primary: #12316B; 
-  --color-secondary: #5C76AD; 
+  --color-primary: #12316b;
+  --color-secondary: #5c76ad;
   --color-dark: #242223;
 
   /* Neutral Colors */
-  --color-white: #FFFFFF;
-  --color-light-grey: #D8DCE6; 
-  --color-grey: #8E94A8;     
-  --color-darkgrey: #4A474A;
+  --color-white: #ffffff;
+  --color-light-grey: #d8dce6;
+  --color-grey: #8e94a8;
+  --color-darkgrey: #4a474a;
 
   /* Original Variables */
   /*
@@ -18,27 +18,34 @@
   --color-original-grey: #B5B9C7;
   */
 
-
-  --font-family: "Montserrat", sans-serif;
+  --font-family: 'Montserrat', sans-serif;
 
   --nav-height: 92px;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
-    background-color: var(--color-white);
-    font-family: var(--font-family);
+  background-color: var(--color-white);
+  font-family: var(--font-family);
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 /* NavBar Glassmorphism Styling */
@@ -57,7 +64,6 @@ a {
   backdrop-filter: blur(15px);
 
   box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.35);
-
 }
 
 .glassmorphism::after {

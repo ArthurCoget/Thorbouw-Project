@@ -7,9 +7,11 @@ import {
   computed,
   OnDestroy,
   AfterViewInit,
+  Inject,
+  PLATFORM_ID,
 } from '@angular/core';
 import { ICarouselImage } from '../../interfaces/carousel-image.data';
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { CommonModule, NgOptimizedImage, isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-image-carousel-component',
@@ -52,9 +54,11 @@ export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
   private touchStartX = 0;
   private touchStartY = 0;
 
-  constructor(private elementRef: ElementRef) {}
+  constructor(private elementRef: ElementRef, @Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngAfterViewInit(): void {
+    if (!isPlatformBrowser(this.platformId)) return;
+
     this.observer = new IntersectionObserver(
       (entries) => {
         this.isVisible.set(entries[0].isIntersecting);

@@ -88,6 +88,7 @@ footer h3 {
 .contact {
   svg {
     max-height: 48px;
+    max-width: 48px;
   }
   .contact-info {
     padding: 1em 0;
@@ -97,7 +98,10 @@ footer h3 {
     flex-direction: row;
 
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    width: min(15em, 100%);
+    margin: 0 auto;
   }
 
   .detailed-info {
@@ -108,6 +112,11 @@ footer h3 {
     margin-left: 1em;
   }
 }
+
+.stay-connected .contact-info a{
+    width: min(10em, 75%);
+
+  }
 
 .footer-info-container {
   margin-top: 2em;
@@ -138,6 +147,7 @@ footer h3 {
 
 .footer-logo {
   max-height: 80px;
+  max-width: 80px;
 }
 
 .footer-meta {
@@ -165,6 +175,7 @@ footer h3 {
   .contact {
     svg {
       max-height: 38px;
+      max-width: 38px;
     }
   }
 }
@@ -178,6 +189,7 @@ footer h3 {
   .contact {
     svg {
       max-height: 30px;
+      max-width: 30px;
     }
   }
 
