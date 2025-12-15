@@ -1,0 +1,127 @@
+:host {
+  --component-height: 550px;
+  --clip-angle-offset: 75px;
+  --card-overlay-width: 70%;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  text-align: center;
+
+  margin: 1em 0;
+
+  font-size: 2em;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  height: var(--component-height);
+  background-color: var(--color-primary);
+
+  margin-bottom: 2em;
+
+  outline: 5px solid var(--color-secondary);
+}
+
+.image-holder {
+  height: var(--component-height);
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+
+  clip-path: polygon(var(--clip-angle-offset) 0%, 100% 0%, calc(100% - var(--clip-angle-offset)) 100%, 0% 100%);
+}
+
+.content-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  border-radius: 25px;
+
+  width: var(--card-overlay-width);
+  height: 90%;
+  margin: auto;
+}
+
+.card-overlay h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1em;
+
+  font-size: clamp(0.9rem, 1vw + 0.25rem, 1.5rem);
+
+  word-wrap: break-word;
+}
+
+.card-overlay p {
+  font-weight: 500;
+  margin-bottom: 1em;
+
+  font-size: clamp(0.85rem, 1vw + 0.25rem, 1.25em);
+}
+
+@media (max-width: 1400px) {
+  :host {
+    --card-overlay-width: 65%;
+    --clip-angle-offset: 65px
+  }
+}
+
+@media (max-width: 1100px) {
+  :host {
+    --component-height: 450px;
+    --clip-angle-offset: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  :host {
+    --component-height: 400px;
+    --card-overlay-width: 45%;
+    --clip-angle-offset: 100px;
+  }
+  .image-container {
+    flex-direction: column;
+
+    height: auto;
+  }
+
+  .image-holder:nth-of-type(even) {
+    clip-path: polygon(0% 0%, calc(100% - var(--clip-angle-offset)) 0%, 100% 100%, var(--clip-angle-offset) 100%);
+  }
+  .image-holder {
+    width: 100%;
+  }
+
+  .card-overlay h3 {
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.5rem);
+  }
+
+  .card-overlay p {
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.25rem);
+  }
+}
+
+@media (max-width: 600px) {
+  :host {
+    --component-height: 350px;
+    --card-overlay-width: 60%;
+    --clip-angle-offset: 80px;
+  }
+}

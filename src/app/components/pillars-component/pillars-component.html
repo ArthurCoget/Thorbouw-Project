@@ -1,0 +1,20 @@
+<section>
+    @if(title) {
+    <h2>{{ title }}</h2>
+    }
+    <article class="image-container">
+        @for (pillar of pillars; track pillar.id) {
+        <div class="image-holder">
+            <div class="content-inner">
+                <img [ngSrc]="pillar.imageSrc" [alt]="pillar.title" fill class="pillar-image">
+
+                <div class="card-overlay glassmorphism">
+                    <h3>{{ pillar.title }}</h3>
+                    <p>{{ pillar.description }}</p>
+                    <a [routerLink]="pillar.link" class="link-btn">{{ pillar.linkText }}</a>
+                </div>
+            </div>
+        </div>
+        }
+    </article>
+</section>

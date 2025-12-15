@@ -123,7 +123,9 @@ a.active {
 
   .nav-links {
     position: absolute;
-    top: calc(var(--nav-height) / 1.25);
+    /* WIP: For the moment fixed height"
+    /*top: calc(var(--nav-height) / 1.25);*/
+    top: 128px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,7 +140,7 @@ a.active {
 
   .nav-links.open {
     transform: translateY(0);
-    z-index: 9;
+    z-index: 8;
   }
 
   .nav-list {
