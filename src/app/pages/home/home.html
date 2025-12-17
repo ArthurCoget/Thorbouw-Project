@@ -1,7 +1,7 @@
 <section>
     <app-top-image-component [hero_image]="'LandingHero.webp'" [home_page]="true"></app-top-image-component>
     <div class="top-page-hero-container">
-        <img src="/logo/Thorbouw-Logo-White-Background.webp" alt="Logo of Thorbouw" class="logo-hero">
+        <img ngSrc="/logo/Thorbouw-Logo-White-Background.webp" height="250" width="250" alt="Logo of Thorbouw" class="logo-hero">
         <div class="top-text-container">
             <p class="blue-text">Groen bouwen of traditioneel of een combinatie van beiden? Energiezuinige woning of
                 appartement kopen?
@@ -18,7 +18,7 @@
         <h2 class="middle-title">Van meubel tot verbouwingen met totaalinrichting.</h2>
         <p>Hebt u interesse? Neem zeker een kijkje door onze vorige projecten voor wat meer informatie.</p>
     </div>
-    <app-image-carousel-component></app-image-carousel-component>
+    <app-image-carousel-component [items]="carouselImages"></app-image-carousel-component>
     <div class="botom-container">
         <div class="botom-text-container">
             <h3>Wist u dat?</h3>

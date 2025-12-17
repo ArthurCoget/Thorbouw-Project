@@ -3,10 +3,12 @@ import { TopImageComponent } from '../../components/top-image-component/top-imag
 import { PillarsComponent } from '../../components/pillars-component/pillars-component';
 import { ImageCarouselComponent } from '../../components/image-carousel-component/image-carousel-component';
 import { IPillar } from '../../interfaces/pillar.data';
+import { ICarouselImage } from '../../interfaces/carousel-image.data';
+import { NgOptimizedImage } from "@angular/common";
 
 @Component({
   selector: 'app-home',
-  imports: [TopImageComponent, PillarsComponent, ImageCarouselComponent],
+  imports: [TopImageComponent, PillarsComponent, ImageCarouselComponent, NgOptimizedImage],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
@@ -40,6 +42,20 @@ export class Home {
       link: '/advies',
       linkText: 'Laat u duurzaam adviseren',
     },
+  ];
+
+  carouselImages: ICarouselImage[] = [
+    {
+      id: 1,
+      img: 'verbouwing-linden/VerbouwingLinden-Carousel.webp',
+      title: 'Verbouwing in Linden',
+      date: '06/2018',
+    },
+    { id: 6, img: '/placeholder/1-placeholder.webp', title: 'Garden Office', date: '05/2022' },
+    { id: 2, img: '/placeholder/2-placeholder.webp', title: 'Modern Glasshouse', date: '09/2019' },
+    { id: 3, img: '/placeholder/3-placeholder.webp', title: 'Classic Renovation', date: '02/2020' },
+    { id: 4, img: '/placeholder/4-placeholder.webp', title: 'City Loft', date: '11/2021' },
+    { id: 5, img: '/placeholder/5-placeholder.webp', title: 'Garden Office', date: '05/2022' },
   ];
 
 }

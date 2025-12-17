@@ -3,15 +3,17 @@ import {
   signal,
   ElementRef,
   effect,
-  HostListener,
   computed,
   OnDestroy,
-  AfterViewInit,
   Inject,
   PLATFORM_ID,
+  input,
+  AfterViewInit,
+  ChangeDetectorRef,
 } from '@angular/core';
 import { ICarouselImage } from '../../interfaces/carousel-image.data';
 import { CommonModule, NgOptimizedImage, isPlatformBrowser } from '@angular/common';
+import { CarouselAlternativeRotationService } from '../../services/carousel-alternative-rotation-service';
 
 @Component({
   selector: 'app-image-carousel-component',
@@ -19,53 +21,53 @@ import { CommonModule, NgOptimizedImage, isPlatformBrowser } from '@angular/comm
   templateUrl: './image-carousel-component.html',
   styleUrl: './image-carousel-component.css',
 })
-export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
+export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
+  private readonly SWIPE_THRESHOLD = 50;
+
   private readonly AUTO_SLIDE_DELAY = 8000;
   private readonly ANIMATION_DURATION = 700;
   private readonly INFO_FADE_DURATION = 350;
   private readonly INTERSECTION_THRESHOLD = 0.2;
 
-  items = signal<ICarouselImage[]>([
-    {
-      id: 1,
-      img: 'verbouwing-linden/VerbouwingLinden-Carousel.webp',
-      title: 'Verbouwing in Linden',
-      date: '06/2018',
-    },
-    { id: 6, img: '/placeholder/1-placeholder.webp', title: 'Garden Office', date: '05/2022' },
-    { id: 2, img: '/placeholder/2-placeholder.webp', title: 'Modern Glasshouse', date: '09/2019' },
-    { id: 3, img: '/placeholder/3-placeholder.webp', title: 'Classic Renovation', date: '02/2020' },
-    { id: 4, img: '/placeholder/4-placeholder.webp', title: 'City Loft', date: '11/2021' },
-    { id: 5, img: '/placeholder/5-placeholder.webp', title: 'Garden Office', date: '05/2022' },
-  ]);
+  items = input.required<ICarouselImage[]>();
+  showInfo = input(true);
+  firstInfoCard = input('Datum');
+  secondInfoCard = input('Project');
+  buttonInfo = input('Meer Info');
 
   currentIndex = signal(0);
   isVisible = signal(false);
   isAnimating = signal(false);
   isAnimatingInfo = signal(false);
 
-  activeItem = computed(() => this.items()[this.currentIndex()]);
+  activeItem = computed(() => (this.items().length ? this.items()[this.currentIndex()] : null));
 
-  private autoSlideTimeout: ReturnType<typeof setTimeout> | null = null;
   private observer?: IntersectionObserver;
 
-  private readonly SWIPE_THRESHOLD = 50;
-
-  private touchStartX = 0;
-  private touchStartY = 0;
-
-  constructor(private elementRef: ElementRef, @Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    private elementRef: ElementRef,
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private alternativeRotator: CarouselAlternativeRotationService,
+    private cdr: ChangeDetectorRef
+  ) {}
 
   ngAfterViewInit(): void {
     if (!isPlatformBrowser(this.platformId)) return;
 
     this.observer = new IntersectionObserver(
       (entries) => {
-        this.isVisible.set(entries[0].isIntersecting);
+        const isIntersecting = entries[0].isIntersecting;
+        this.isVisible.set(isIntersecting);
+
+        if (isIntersecting) {
+          this.startAutoSlide();
+        } else {
+          this.clearAutoSlide();
+        }
+        this.cdr.markForCheck();
       },
       { threshold: this.INTERSECTION_THRESHOLD }
     );
-
     this.observer.observe(this.elementRef.nativeElement);
   }
 
@@ -75,26 +77,12 @@ export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
   }
 
   private startAutoSlide(): void {
-    this.clearAutoSlide();
-    this.autoSlideTimeout = setTimeout(() => {
-      this.handleSlide('next');
-    }, this.AUTO_SLIDE_DELAY);
+    this.alternativeRotator.start(this.AUTO_SLIDE_DELAY, () => this.handleSlide('next'));
   }
 
   private clearAutoSlide(): void {
-    if (this.autoSlideTimeout) {
-      clearTimeout(this.autoSlideTimeout);
-      this.autoSlideTimeout = null;
-    }
+    this.alternativeRotator.stop();
   }
-
-  private autoSlideEffect = effect((onCleanup) => {
-    if (this.isVisible()) {
-      this.startAutoSlide();
-    }
-
-    onCleanup(() => this.clearAutoSlide());
-  });
 
   getItemClass(index: number): string {
     const current = this.currentIndex();
@@ -142,41 +130,24 @@ export class ImageCarouselComponent implements AfterViewInit, OnDestroy {
     }, this.ANIMATION_DURATION);
   }
 
-  @HostListener('document:visibilitychange')
-  onVisibilityChange(): void {
-    if (document.hidden) {
-      this.clearAutoSlide();
-    } else if (this.isVisible()) {
-      this.startAutoSlide();
-    }
+  onTouchStart(e: TouchEvent) {
+    this.alternativeRotator.swipeStart(e);
   }
 
-  onTouchStart(event: TouchEvent): void {
-    this.touchStartX = event.changedTouches[0].screenX;
-    this.touchStartY = event.changedTouches[0].screenY;
+  onTouchEnd(e: TouchEvent) {
+    this.alternativeRotator.swipeDetect(
+      e,
+      this.SWIPE_THRESHOLD,
+      () => this.handleSlide('next'),
+      () => this.handleSlide('prev')
+    );
   }
 
-  onTouchEnd(event: TouchEvent): void {
-    if (this.isAnimating()) return;
-
-    const touchEndX = event.changedTouches[0].screenX;
-    const touchEndY = event.changedTouches[0].screenY;
-
-    this.handleSwipeGesture(touchEndX, touchEndY);
-  }
-
-  private handleSwipeGesture(endX: number, endY: number): void {
-    const deltaX = endX - this.touchStartX;
-    const deltaY = endY - this.touchStartY;
-
-    if (Math.abs(deltaX) > Math.abs(deltaY)) {
-      if (Math.abs(deltaX) > this.SWIPE_THRESHOLD) {
-        if (deltaX > 0) {
-          this.handleSlide('prev');
-        } else {
-          this.handleSlide('next');
-        }
-      }
-    }
+  onKeydown(e: KeyboardEvent) {
+    this.alternativeRotator.handleKeyEvents(
+      e,
+      () => this.handleSlide('next'),
+      () => this.handleSlide('prev')
+    );
   }
 }

@@ -1,19 +1,23 @@
 <div class="carousel-container" (touchstart)="onTouchStart($event)" (touchend)="onTouchEnd($event)">
     <div class="carousel">
         @for (item of items(); track item.id; let i = $index) {
-        <div class="carousel-card" [ngClass]="getItemClass(i)" (click)="handleCardClick(i)">
-            <img [ngSrc]="item.img" [alt]="item.title" width="1200" height="800" loading="eager">
-        </div>
+        <button type="button" class="carousel-card" [ngClass]="getItemClass(i)" (click)="handleCardClick(i)" (keydown)="onKeydown($event)"
+            [attr.aria-label]="'View project ' + item.title" [attr.aria-current]="i === currentIndex() ? 'true' : null">
+
+            <img [ngSrc]="item.img" [alt]="item.title" fill loading="eager">
+        </button>
         }
     </div>
 
+    @if(showInfo()){
     <div class="info-wrapper">
         <div class="extra-info-container" [class.fade-content]="isAnimatingInfo()">
             <div class="info-text">
-                <span class="date">Datum<br><strong>{{ activeItem().date }}</strong></span>
-                <span class="project">Project<br><strong>{{ activeItem().title }}</strong></span>
+                <span class="date">{{ firstInfoCard() }}<br><strong>{{ activeItem()?.date }}</strong></span>
+                <span class="project">{{ secondInfoCard() }}<br><strong>{{ activeItem()?.title }}</strong></span>
             </div>
-            <button class="link-btn">Meer Info</button>
+            <button class="link-btn">{{ buttonInfo() }}</button>
         </div>
     </div>
+    }
 </div>

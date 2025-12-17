@@ -1,6 +1,20 @@
-.carousel-container {
+:host {
   --main-card-width: 45%;
 
+  /* Transition Variables */
+  --duration: 0.7s;
+  --ease: cubic-bezier(0.34, 1, 0.64, 1);
+
+  /* Carousel Variables */
+  --carousel-depth: clamp(80px, 15vw, 220px);
+  --carousel-rotation: 26deg;
+  --carousel-side-scale: 0.72;
+  --carousel-side-offset: clamp(20%, 25vw, 50%);
+
+  --hover-transition-card: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.carousel-container {
   position: relative;
 
   width: 100%;
@@ -12,16 +26,6 @@
   filter: drop-shadow(3px 6px 15px var(--color-darkgrey));
 }
 .carousel {
-  /* Transition Variables */
-  --duration: 0.7s;
-  --ease: cubic-bezier(0.34, 1, 0.64, 1);
-
-  /* Carousel Variables */
-  --depth: clamp(80px, 15vw, 220px);
-  --rotation: 26deg;
-  --side-scale: 0.72;
-  --side-offset: clamp(20%, 25vw, 50%);
-
   position: relative;
 
   height: clamp(225px, 60vh, 600px);
@@ -37,6 +41,13 @@
   justify-content: center;
 
   overflow: hidden;
+
+  button {
+    border: none;
+  }
+  button:not(.active) {
+    cursor: pointer;
+  }
 }
 
 .carousel-card {
@@ -48,9 +59,9 @@
   border-radius: 10px 10px 0 0;
 
   transform-style: preserve-3d;
-  transform-origin: center center calc(-1 * var(--depth));
+  transform-origin: center center calc(-1 * var(--carousel-depth));
 
-  will-change: transform, filter, opacity;
+  will-change: transform;
   transform: translateZ(0);
   backface-visibility: hidden;
 
@@ -67,7 +78,6 @@
   display: block;
 
   transform: translateZ(0);
-  will-change: transform;
   transition: transform 0.3s ease-out;
 }
 
@@ -78,8 +88,6 @@
 
 .carousel-card.prev,
 .carousel-card.next {
-  --hover-transition-card: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
-
   border-radius: 10px;
 
   filter: grayscale(100%);
@@ -103,13 +111,14 @@
 }
 
 .carousel-card.prev {
-  transform: translateX(calc(-1 * var(--side-offset))) rotateY(calc(-1 * var(--rotation)))
-    translateZ(var(--depth)) scale(var(--side-scale));
+  transform: translateX(calc(-1 * var(--carousel-side-offset)))
+    rotateY(calc(-1 * var(--carousel-rotation))) translateZ(var(--carousel-depth))
+    scale(var(--carousel-side-scale));
 }
 
 .carousel-card.next {
-  transform: translateX(var(--side-offset)) rotateY(var(--rotation)) translateZ(var(--depth))
-    scale(var(--side-scale));
+  transform: translateX(var(--carousel-side-offset)) rotateY(var(--carousel-rotation))
+    translateZ(var(--carousel-depth)) scale(var(--carousel-side-scale));
 }
 
 .carousel-card.hidden-prev,
@@ -177,19 +186,58 @@
 /* Responsive Layout */
 
 @media (max-width: 1000px) {
-  .carousel-container {
+  :host {
     --main-card-width: 80%;
   }
 }
 
 @media (max-height: 730px) {
   .carousel-container {
-    height: clamp(400px, 90vh, 775px);
+    min-height: clamp(400px, 90vh, 775px);
+    height: auto;
   }
 }
 
 @media (max-height: 500px) {
   .carousel-container {
-    height: clamp(400px, 95vh, 775px);
+    min-height: clamp(400px, 95vh, 775px);
+    height: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-card {
+    transition: opacity 0.6s ease-in, filter 0.6s ease-in !important;
+    transform-origin: center center;
+    transform: translateZ(0); 
+  }
+
+  .carousel-card.active {
+    transform: translateX(0) scale(1) !important;
+    opacity: 1;
+    filter: grayscale(0%);
+    z-index: 10;
+  }
+
+  .carousel-card.prev,
+  .carousel-card.next {
+    opacity: 1; 
+    filter: grayscale(100%);
+    z-index: 5;
+  }
+
+  .carousel-card.prev {
+    transform: translateX(calc(-1 * var(--carousel-side-offset))) scale(var(--carousel-side-scale)) !important;
+  }
+
+  .carousel-card.next {
+    transform: translateX(var(--carousel-side-offset)) scale(var(--carousel-side-scale)) !important;
+  }
+
+  .carousel-card.hidden-prev,
+  .carousel-card.hidden-next {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(0) scale(0.5) !important; 
   }
 }
