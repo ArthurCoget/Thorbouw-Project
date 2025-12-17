@@ -71,7 +71,7 @@ export class FooterComponent {
     {
       id: 'map',
       icon: `${this.FOOTER_SVG_PATH}/map.svg`,
-      href: 'https://www.google.com/maps/place/Thorbouw+Bv/@50.8635075,4.6996564,17z',
+      href: 'https://maps.app.goo.gl/jWfsQAAXfc1Zs39F6',
       text: ['Hoveniersdreef 64', '3001 Heverlee'],
       ariaLabel: 'View our location on Google Maps',
       alt: 'Google Maps Icon',
