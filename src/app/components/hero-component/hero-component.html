@@ -1,0 +1,22 @@
+<section
+  class="hero"
+  [class.hero-complete]="isCompleteVariant"
+  role="banner"
+  [attr.aria-label]="content.title"
+>
+  <img [ngSrc]="imageUrl" [alt]="content.altText" class="hero-background" fill priority />
+
+  <div class="hero-content" [class.glassmorphism]="isCompleteVariant">
+    <h1 class="hero-title">{{ content.title }}</h1>
+    @if (completeHero) {
+    <p class="hero-subtitle">{{ completeHero.subtitle }}</p>
+    <a
+      [routerLink]="completeHero.buttonLink"
+      class="link-btn special-size-btn"
+      [attr.aria-label]="completeHero.buttonText"
+    >
+      {{ completeHero.buttonText }}
+    </a>
+    }
+  </div>
+</section>

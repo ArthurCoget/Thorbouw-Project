@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { IPillar } from '../../interfaces/pillar.data';
+import { IPillar } from '../../interfaces/pillar';
 import { NgOptimizedImage } from '@angular/common';
 
 @Component({
@@ -10,7 +10,6 @@ import { NgOptimizedImage } from '@angular/common';
   styleUrl: './pillars-component.css',
 })
 export class PillarsComponent {
-
   @Input({ required: true })
   pillars!: IPillar[];
 

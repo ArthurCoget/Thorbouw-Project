@@ -11,7 +11,7 @@ import {
   AfterViewInit,
   ChangeDetectorRef,
 } from '@angular/core';
-import { ICarouselImage } from '../../interfaces/carousel-image.data';
+import { ICarouselImage } from '../../interfaces/carousel-image';
 import { CommonModule, NgOptimizedImage, isPlatformBrowser } from '@angular/common';
 import { CarouselAlternativeRotationService } from '../../services/carousel-alternative-rotation-service';
 
