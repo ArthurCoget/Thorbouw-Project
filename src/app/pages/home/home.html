@@ -10,61 +10,48 @@
     />
     <div class="top-text-container">
       <p class="blue-text">
-        Groen bouwen of traditioneel of een combinatie van beiden? Energiezuinige woning of
-        appartement kopen? Milieubewust renoveren of inrichten?
+        {{ homeContent.topContainerTextBlue }}
       </p>
       <p>
-        Duurzame aannemer Thorbouw deelt met véél plezier zijn eindeloze passie voor vol te houden
-        woonvormen oftewel ‘volhoudbaar wonen’. Wij bouwen, renoveren en ontwikkelen voor een vaste
-        prijs en volgens uw budget uw zorgeloze thuis en een duurzame toekomst in Vlaams-Brabant. 
+        {{ homeContent.topContainerText }}
       </p>
     </div>
   </div>
   <app-pillars-component title="Pijlers" [pillars]="pillars"></app-pillars-component>
   <div class="text-container-center">
-    <h2 class="middle-title">Van meubel tot verbouwingen met totaalinrichting.</h2>
+    <h2 class="middle-title">{{ homeContent.middleTitle }}</h2>
     <p>
-      Hebt u interesse? Neem zeker een kijkje door onze vorige projecten voor wat meer informatie.
+      {{ homeContent.middleText }}
     </p>
   </div>
   <app-image-carousel-component [items]="carouselImages"></app-image-carousel-component>
-  <div class="botom-container">
-    <div class="botom-text-container">
-      <h3>Wist u dat?</h3>
+  <div class="bottom-container">
+    <div class="bottom-text-container">
+      <h3>{{ homeContent.bottomTitle }}</h3>
       <p>
-        De Zuid-Afrikaanse taal zit boordevol warme termen, zoals volhoudbaar wat letterlijk
-        duurzaam betekent. Met een volhoudbare aanpak respecteren ze oorsprong, houden ze vol in het
-        nu en zorgen ze dat het houdbaar blijft voor wie na hen komt.
+        {{ homeContent.bottomTextIntro }}
       </p>
       <p>
-        Het verschil tussen duurzaam en volhoudbaar? Duurzaam is niet noodzakelijk ecologisch. Denk
-        bijvoorbeeld aan tuinmeubilair uit gerecycleerde pvc in je tuin. Na jaren buiten in weer en
-        wind zit uw tuin vol microplastic. Thorbouw licht alle voor- en nadelen toe van de
-        verschillende materialen, zodat je als klant een voor jezelf verantwoorde keuze kan maken.
-        Wie kiest voor een volhoudbare aanpak, maakt de juiste keuze voor zichzelf, de volgende
-        generaties en onze planeet. Deze wijze spreuk van de Canadese Haida indianen vat het perfect
-        samen: „We erven de wereld niet van onze ouders, maar lenen de wereld van onze kinderen.”
+        {{ homeContent.bottomTextMiddle }}
       </p>
       <p>
-        Als aannemersbedrijf in Leuven zetten wij 100% in op toekomstgericht wonen. We adviseren
-        haalbare ingrepen, betaalbare energie-oplossingen en zowel traditionele als natuurlijke
-        bouwmaterialen. Ethiek en integriteit houden wij hoog in het vaandel, onze klanten correct
-        informeren maakt deel uit van onze werkwijze.
+        {{ homeContent.bottomTextEnd }}
       </p>
       <p>
-        Algemeen aannemer en binnenhuisarchitect Jan Vansteenwegen begeleidt u, samen met de
-        <a href="https://northsouth.be/" target="_blank" rel="noopener noreferrer"
-          >North South Architecten</a
-        >, naar een huis, appartement, kangoeroewoning of nieuwbouwproject met respect voor onze
-        planeet en met veel liefde voor de volgende generatie Leuvenaars. Wij bieden u het volledige
-        totaalpakket: woningbouw, verbouwing, inrichting, meubilair en tuin. Volledig op uw maat en
-        met oog voor het milieu.
+        <span>{{ homeContent.bottomTextConclusionBeforeLink }}</span>
+        <a href="https://northsouth.be/" target="_blank" rel="noopener noreferrer">{{
+          homeContent.bottomTextConlcusionLink
+        }}</a>
+        <span> {{ homeContent.bottomTextConclusionAfterLink }} </span>
       </p>
     </div>
     <div class="image-container">
       <img
-        src="/homeImages/botomImageHome.webp"
+        ngSrc="/homeImages/botomImageHome.webp"
         alt="Image of a house where Thorbouw did some renovations"
+        fill
+        priority="false"
+        loading="lazy"
       />
     </div>
   </div>
