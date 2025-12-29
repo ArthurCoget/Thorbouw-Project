@@ -1,3 +1,10 @@
+:host {
+  /* WIP: For the moment fixed height"
+  /* --nav-bar-height: calc(var(--nav-height) / 1.25);*/
+  --nav-bar-height: 128px;
+  --reduced-motion-hamburger: 0.5s;
+}
+
 .nav-links {
   position: absolute;
   width: 100%;
@@ -27,11 +34,7 @@
 /* Logo styling */
 
 .logo {
-  display: block;
-  height: 100%;
   max-height: var(--nav-height);
-  width: auto;
-  object-fit: contain;
 }
 
 /* Links */
@@ -42,7 +45,7 @@ li {
 
 a {
   font-weight: 700;
-  font-size: 1.25em;
+  font-size: clamp(0.85rem, calc(1vw + 0.25rem), 1.25rem);
   position: relative;
 
   overflow: hidden;
@@ -74,20 +77,6 @@ a.active {
 
 .no-transition {
   transition: none !important;
-}
-
-/* Responsive Font Sizes for Desktop */
-
-@media (max-width: 1500px) {
-  a {
-    font-size: 1em;
-  }
-}
-
-@media (max-width: 1200px) {
-  a {
-    font-size: 0.85em;
-  }
 }
 
 /* End of Navbar Layout and Structure for Desktop */
@@ -123,9 +112,7 @@ a.active {
 
   .nav-links {
     position: absolute;
-    /* WIP: For the moment fixed height"
-    /*top: calc(var(--nav-height) / 1.25);*/
-    top: 128px;
+    top: var(--nav-bar-height);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +120,7 @@ a.active {
 
     width: 100%;
     transform: translateY(-200%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform var(--nav-links-animation-duration) ease-in-out;
 
     z-index: 8;
   }
@@ -169,29 +156,31 @@ a.active {
 /* End of Navbar Layout and Structure for Mobile */
 
 /* Hamburger Menu Styles */
+
 button {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.hamburger {
-  --btn-color: var(--color-dark);
-}
 .hamburger-svg {
-  stroke: var(--btn-color);
+  stroke: var(--color-dark);
 }
 
-.hamburger.isReady[aria-expanded='false'] :is(.top, .middle, .bottom) {
-  animation: closeNavMenu 0.75s forwards;
+.hamburger[aria-expanded='false'] :is(.top, .middle, .bottom) {
+  animation: closeNavMenu var(--hamburger-animation-duration) forwards;
 }
 
-.hamburger.isReady[aria-expanded='true'] :is(.top, .middle, .bottom) {
-  animation: openNavMenu 0.75s forwards;
+.hamburger[aria-expanded='true'] :is(.top, .middle, .bottom) {
+  animation: openNavMenu var(--hamburger-animation-duration) forwards;
+}
+
+.hamburger.no-transition :is(.top, .middle, .bottom),
+.hamburger.no-transition :is(.top, .middle, .bottom) {
+  animation: none !important;
 }
 
 .hamburger .top {
-  /* Magic Number here :( */
   transform-origin: 45px 40px;
   --rotation: 135deg;
   --opacity: 1;
@@ -203,7 +192,6 @@ button {
 }
 
 .hamburger .bottom {
-  /* Magic Number here :( */
   transform-origin: 45px 60px;
   --rotation: -135deg;
   --opacity: 1;
@@ -248,14 +236,14 @@ button {
 }
 
 @media (max-width: 1000px) and (prefers-reduced-motion) {
-  .hamburger.isReady[aria-expanded='false'] :is(.top, .middle, .bottom),
-  .hamburger.isReady[aria-expanded='true'] :is(.top, .middle, .bottom) {
+  .hamburger[aria-expanded='false'] :is(.top, .middle, .bottom),
+  .hamburger[aria-expanded='true'] :is(.top, .middle, .bottom) {
     animation: none !important;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity var(--reduced-motion-hamburger) ease-in-out;
   }
 
   .hamburger[aria-expanded='true'] .middle {
-    opacity: 0; /* fade out middle line */
+    opacity: 0;
   }
   .hamburger[aria-expanded='true'] .top {
     transform-origin: 45px 40px;
@@ -268,7 +256,7 @@ button {
   .nav-links {
     translate: 0;
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity var(--reduced-motion-hamburger) ease-in-out;
   }
 
   .nav-links.open {
