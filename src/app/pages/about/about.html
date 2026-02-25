@@ -1,1 +1,35 @@
-<app-top-image-component [content]="heroContent"></app-top-image-component>
+<section class="about-top">
+  <app-top-image-component [content]="heroContent" />
+
+  <div class="about-grid">
+    <div class="about-image">
+      <img
+        ngSrc="/aboutImages/ThorbouwAbout.webp"
+        alt="Thorbouw founder"
+        width="285"
+        height="428"
+      />
+    </div>
+
+    <div class="about-text">
+      <h2>{{ aboutContent.aboutTopTitle }}</h2>
+      <p>{{ aboutContent.aboutTopSubText }}</p>
+    </div>
+
+    <div class="about-stats">
+      <h3 class="stat-label">
+        {{ aboutContent.numberOfProjectsLabel }}
+      </h3>
+
+      <div class="stat-circle">
+        <img ngSrc="/aboutImages/SvgWorking.svg" height="45" width="45" class="test" alt="" />
+        <svg viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" />
+        </svg>
+        <span class="stat-number">
+          {{ aboutContent.numberOfProjects }}
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
