@@ -2,6 +2,7 @@
   --hero-height-simple: 450px;
   --hero-height-complete: 700px;
   --hero-clip-angle: 80%;
+  --hero-object-position-y: 65%;
 }
 
 .hero {
@@ -29,7 +30,7 @@
 
 .hero-background {
   object-fit: cover;
-  object-position: center 65%;
+  object-position: center var(--hero-object-position-y);
   z-index: 1;
 }
 

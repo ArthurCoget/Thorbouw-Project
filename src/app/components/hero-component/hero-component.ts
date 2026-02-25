@@ -13,6 +13,7 @@ export class HeroComponent {
   private readonly IMAGE_BASE_PATH = '/hero-images';
 
   @Input({ required: true }) content!: IHeroContent;
+  @Input() customImagePosition: number = 65;
 
   get imageUrl(): string {
     return `${this.IMAGE_BASE_PATH}/${this.content.image}`;
