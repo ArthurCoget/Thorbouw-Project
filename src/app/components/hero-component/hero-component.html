@@ -5,7 +5,14 @@
   [attr.aria-label]="content.title"
   [style.--hero-object-position-y.%]="customImagePosition"
 >
-  <img [ngSrc]="imageUrl" [alt]="content.altText" class="hero-background" fill priority />
+  <img
+    [ngSrc]="imageUrl"
+    [alt]="content.altText"
+    class="hero-background"
+    fill
+    priority
+    fetchpriority="high"
+  />
 
   <div class="hero-content" [class.glassmorphism]="isCompleteVariant">
     <h1 class="hero-title">{{ content.title }}</h1>

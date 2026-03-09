@@ -1,0 +1,42 @@
+:host {
+  --header-width: 60%;
+}
+
+.content-header-container {
+  max-width: var(--header-width);
+  margin: 3em auto;
+  text-align: center;
+}
+
+.contact-title {
+  color: var(--color-secondary);
+  margin-bottom: 1em;
+  font-size: clamp(1.5rem, calc(2vw + 0.5rem), 2.5rem);
+}
+.contact-subtitle {
+  color: var(--color-darkgrey);
+  font-size: 1.25em;
+  font-size: clamp(0.75rem, calc(2vw + 0.25rem), 1.25rem);
+
+  margin: 0 4rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+
+  max-width: 80%;
+
+  margin: 3em auto;
+  justify-items: center;
+}
+
+@media (max-width: 750px) {
+  :host {
+    --header-width: 85%;
+  }
+  .contact-subtitle {
+    margin: 0 2rem;
+  }
+}
