@@ -9,8 +9,8 @@
     <p class="contact-subtitle">{{ contactContent.contactSubTitle }}</p>
   </div>
   <div class="contact-grid">
-    @for (item of list; track $index) {
-      <app-contact-card></app-contact-card>
+    @for (item of list; track item.id) {
+      <app-info-card [content]="item" class="full-width"></app-info-card>
     }
   </div>
 </section>

@@ -15,7 +15,6 @@
 }
 .contact-subtitle {
   color: var(--color-darkgrey);
-  font-size: 1.25em;
   font-size: clamp(0.75rem, calc(2vw + 0.25rem), 1.25rem);
 
   margin: 0 4rem;
@@ -23,13 +22,17 @@
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 4rem;
 
   max-width: 80%;
 
   margin: 3em auto;
   justify-items: center;
+}
+
+.full-width {
+  width: 100%;
 }
 
 @media (max-width: 750px) {
@@ -38,5 +41,11 @@
   }
   .contact-subtitle {
     margin: 0 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 }
