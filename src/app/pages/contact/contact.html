@@ -1,1 +1,16 @@
-<p>contact works!</p>
+<section>
+  <app-top-image-component
+    [content]="heroContent"
+    [customImagePosition]="35"
+  ></app-top-image-component>
+
+  <div class="content-header-container">
+    <h1 class="contact-title">{{ contactContent.contactTitle }}</h1>
+    <p class="contact-subtitle">{{ contactContent.contactSubTitle }}</p>
+  </div>
+  <div class="contact-grid">
+    @for (item of list; track item.id) {
+      <app-info-card [content]="item" class="full-width"></app-info-card>
+    }
+  </div>
+</section>
