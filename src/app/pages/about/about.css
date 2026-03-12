@@ -95,7 +95,7 @@
   }
 
   .about-grid {
-    margin: 2em auto;
+    margin-top: 2em;
     gap: 2rem;
   }
 }

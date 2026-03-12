@@ -2,7 +2,6 @@ import {
   Component,
   signal,
   ElementRef,
-  effect,
   computed,
   OnDestroy,
   Inject,
@@ -48,7 +47,7 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
     private elementRef: ElementRef,
     @Inject(PLATFORM_ID) private platformId: Object,
     private alternativeRotator: CarouselAlternativeRotationService,
-    private cdr: ChangeDetectorRef
+    private cdr: ChangeDetectorRef,
   ) {}
 
   ngAfterViewInit(): void {
@@ -66,7 +65,7 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
         }
         this.cdr.markForCheck();
       },
-      { threshold: this.INTERSECTION_THRESHOLD }
+      { threshold: this.INTERSECTION_THRESHOLD },
     );
     this.observer.observe(this.elementRef.nativeElement);
   }
@@ -119,7 +118,7 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
     requestAnimationFrame(() => {
       const total = this.items().length;
       this.currentIndex.update((i) =>
-        direction === 'next' ? (i + 1) % total : (i - 1 + total) % total
+        direction === 'next' ? (i + 1) % total : (i - 1 + total) % total,
       );
     });
 
@@ -139,7 +138,7 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
       e,
       this.SWIPE_THRESHOLD,
       () => this.handleSlide('next'),
-      () => this.handleSlide('prev')
+      () => this.handleSlide('prev'),
     );
   }
 
@@ -147,7 +146,7 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
     this.alternativeRotator.handleKeyEvents(
       e,
       () => this.handleSlide('next'),
-      () => this.handleSlide('prev')
+      () => this.handleSlide('prev'),
     );
   }
 }
