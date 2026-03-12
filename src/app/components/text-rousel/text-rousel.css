@@ -1,0 +1,88 @@
+:host {
+  --component-height: 550px;
+}
+
+.text-rousel-container {
+  height: var(--component-height);
+  background-color: var(--color-secondary);
+
+  outline: 5px solid var(--color-primary);
+
+  margin: 2em 0;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: var(--color-white);
+  text-align: center;
+
+  margin: 1em 0;
+
+  font-size: clamp(1.75rem, calc(2vw + 0.5rem), 3rem);
+
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.75);
+}
+
+.titles-holders {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5em;
+
+  margin-bottom: 2em;
+}
+
+.titles-holders button {
+  position: relative;
+  color: var(--color-white);
+  font-size: clamp(1.25rem, calc(2vw + 0.25rem), 1.75rem);
+  transition: color 0.3s ease;
+  font-weight: 550;
+
+  border: none;
+  background: none;
+
+  padding-bottom: 5px;
+}
+
+.titles-holders button.active,
+.titles-holders button:hover {
+  cursor: pointer;
+  color: var(--color-dark);
+}
+
+.titles-holders button::after {
+  content: '';
+  position: absolute;
+  left: -5px;
+  bottom: 0px;
+  height: 3px;
+  width: 110%;
+  background-color: var(--color-secondary);
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s ease-in-out;
+}
+.titles-holders button:hover::after,
+.titles-holders button.active::after {
+  background-color: var(--color-dark);
+  transform: scaleX(1);
+}
+
+.description-holders {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 1.5em;
+}
+
+.description-holders p {
+  max-width: 80%;
+  font-size: clamp(1rem, calc(2vw + 0.25rem), 1.5rem);
+  color: var(--color-white);
+  text-align: center;
+  font-weight: 450;
+}

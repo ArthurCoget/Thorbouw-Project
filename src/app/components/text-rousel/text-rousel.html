@@ -1,0 +1,13 @@
+<div class="text-rousel-container">
+  <h2>{{ title }}</h2>
+  <div class="titles-holders">
+    @for (item of content; track item.id) {
+      <button [class.active]="item.id === activeId" (click)="getDescriptionById(item.id)">
+        {{ item.title }}
+      </button>
+    }
+  </div>
+  <div class="description-holders">
+    <p>{{ displayedItem }}</p>
+  </div>
+</div>
