@@ -7,6 +7,8 @@
   padding: 0 1.5rem;
   font-size: 0.95rem;
   color: var(--color-primary);
+
+  margin-top: 8em;
 }
 
 .breadcrumb a {
