@@ -2,12 +2,15 @@
   <h2>{{ title }}</h2>
   <div class="titles-holders">
     @for (item of content; track item.id) {
-      <button [class.active]="item.id === activeId" (click)="getDescriptionById(item.id)">
+      <button [class.active]="item.id === activeId" (click)="getInfoById(item.id)">
         {{ item.title }}
       </button>
     }
   </div>
   <div class="description-holders">
-    <p>{{ displayedItem }}</p>
+    <div class="svg-container">
+      <img [ngSrc]="displayedSvg" height="32" width="32" alt="" />
+      <p>{{ displayedItem }}</p>
+    </div>
   </div>
 </div>
