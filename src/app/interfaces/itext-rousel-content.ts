@@ -4,10 +4,3 @@ export interface ITextRouselContent {
   description: string;
   svg: string;
 }
-
-export function getRouselById(
-  content: ITextRouselContent[],
-  id: number,
-): ITextRouselContent | undefined {
-  return content.find((value: ITextRouselContent) => value.id === id);
-}

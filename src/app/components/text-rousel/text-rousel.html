@@ -8,9 +8,13 @@
     }
   </div>
   <div class="description-holders">
-    <div class="svg-container">
-      <img [ngSrc]="displayedSvg" height="32" width="32" alt="" />
-      <p>{{ displayedItem }}</p>
-    </div>
+    @for (item of content; track item.id) {
+      <div class="description-item" [class.active]="item.id === activeId">
+        <div class="svg-container">
+          <img [ngSrc]="item.svg" height="32" width="32" alt="" />
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
+    }
   </div>
 </div>
