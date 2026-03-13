@@ -7,16 +7,17 @@ import { Werkwijze } from './pages/werkwijze/werkwijze';
 import { Project } from './pages/project/project';
 import { Contact } from './pages/contact/contact';
 import { Error } from './pages/error/error';
-
+import { Sitemap } from './pages/sitemap/sitemap';
 
 export const routes: Routes = [
   { path: 'home', component: Home },
   { path: 'overThorbouw', component: About },
   { path: 'fotos', component: Fotos },
-  { path: 'advies', component: Advies},
+  { path: 'advies', component: Advies },
   { path: 'werkwijze', component: Werkwijze },
   { path: 'projectontwikkeling', component: Project },
   { path: 'contact', component: Contact },
-  { path: '', redirectTo: '/home', pathMatch: 'full' }, 
-  { path: '**', component: Error }
+  { path: 'sitemap', component: Sitemap },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: Error },
 ];
