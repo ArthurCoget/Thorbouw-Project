@@ -28,9 +28,10 @@
 }
 
 h2 {
-  font-size: clamp(1.75rem, 2.5vw, 3rem);
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
   color: var(--color-primary);
   margin-bottom: 1.5em;
+  text-align: center;
 }
 
 li,
@@ -105,12 +106,16 @@ li,
   }
 
   ul {
+    margin: 0 1em;
     margin-bottom: 2em;
+
     li {
       color: var(--color-white);
       text-align: center;
 
       font-weight: 500;
+
+      margin-bottom: 1em;
     }
   }
 }
