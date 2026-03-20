@@ -7,7 +7,19 @@ export const ABOUT_CONTENT = {
     'Welkom bij Thorbouw, uw betrouwbare bouwpartner en algemeen aannemersbedrijf met een visie op de toekomst en een groot hart voor de volgende generaties. Persoonlijk en milieubewust aankopen, bouwen, renoveren, inrichten of ontwikkelen in Leuven en ruime omgeving. Ruime ervaring in zowel traditionele als bio-ecologische bouwtechnieken.',
   numberOfProjectsLabel: 'Afgeleverde Projecten',
   numberOfProjects: '26',
+  aboutBottomTitle: 'Herkent u zich in de visie van Thorbouw?',
 };
+
+export const ABOUT_BOTTOM_LIST = [
+  'Volhoudbaar: Thorbouw werkt in het nu, met een blik op morgen.',
+  'Eerlijk: Duiding in het verschil tussen traditionele en bio-ecologische bouwtechnieken zodat je een gefundeerde keuze kan maken als klant. ',
+  'Correcte prijszetting waarbij aan alles gedacht wordt.',
+  'Low tech: M.a.w. inzetten op de isolatieschil en zo weinig mogelijk technieken inzetten om tot een energiezuinige woning te komen.',
+  'Natuurlijk: respect voor fauna en flora en fascinatie voor water.',
+  'Haalbaar: traditioneel of bio-ecologisch wonen zonder extreme ingrepen binnen je eigen grenzen en mogelijkheden.',
+  'Familiaal: de bewoner met zijn/haar ritme, waarden en gezin staan voorop.',
+];
+
 export const ABOUT_VALUES: ITextRouselContent[] = [
   {
     id: 1,

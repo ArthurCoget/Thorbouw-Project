@@ -6,6 +6,10 @@
   --icon-size: 48px;
 }
 
+:host.overlap-mode footer {
+  margin-top: calc(var(--footer-height) * -0.15);
+}
+
 footer {
   position: relative;
   width: 100%;

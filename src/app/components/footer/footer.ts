@@ -1,4 +1,12 @@
-import { Component, DestroyRef, inject, Inject, PLATFORM_ID } from '@angular/core';
+import {
+  Component,
+  DestroyRef,
+  inject,
+  Inject,
+  PLATFORM_ID,
+  Input,
+  HostBinding,
+} from '@angular/core';
 import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
@@ -19,6 +27,12 @@ export class FooterComponent {
     'FooterImage3.webp',
     'FooterImage4.webp',
   ];
+
+  @Input() overlap = false;
+
+  @HostBinding('class.overlap-mode') get overlapMode() {
+    return this.overlap;
+  }
 
   currentImageIndex = 0;
   currentImage = `${this.FOOTER_IMAGE_PATH}/${this.footerImages[this.currentImageIndex]}`;

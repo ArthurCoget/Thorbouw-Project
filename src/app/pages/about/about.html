@@ -36,4 +36,12 @@
 <section class="about-main-content">
   <app-text-rousel title="Onze Waardes" [content]="aboutValues"></app-text-rousel>
   <app-triple-text-info [content]="aboutMoreUs"></app-triple-text-info>
+  <div class="bottom-text">
+    <h2>{{ aboutContent.aboutBottomTitle }}</h2>
+    <ul>
+      @for (item of aboutList; track $index) {
+        <li>{{ item }}</li>
+      }
+    </ul>
+  </div>
 </section>

@@ -14,11 +14,14 @@
     z-index: 10;
   }
 </style>
-<div class=opbouw>
+<div class="opbouw">
   <b>Website is in opbouw, sommige paginas zijn onvolledig.</b>
 </div>
 <app-nav-bar></app-nav-bar>
 <main id="main-content" [attr.inert]="layoutService.isMenuOpen() ? '' : null">
   <router-outlet></router-outlet>
 </main>
-<app-footer [attr.inert]="layoutService.isMenuOpen() ? '' : null"></app-footer>
+<app-footer
+  [class.overlap-mode]="isAboutPage"
+  [attr.inert]="layoutService.isMenuOpen() ? '' : null"
+></app-footer>
