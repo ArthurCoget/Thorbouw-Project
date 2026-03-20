@@ -1,4 +1,5 @@
 import { ITextRouselContent } from '../interfaces/itext-rousel-content';
+import { ITripleText } from '../interfaces/itriple-text';
 
 export const ABOUT_CONTENT = {
   aboutTopTitle: 'Wie Zijn We?',
@@ -63,5 +64,32 @@ export const ABOUT_VALUES: ITextRouselContent[] = [
     description:
       'Kwaliteit staat bij ons voorop. We gebruiken alleen de beste materialen en werken met ervaren vakmensen om ervoor te zorgen dat elk project van de hoogste kwaliteit is.',
     svg: '/aboutImages/Quality.svg',
+  },
+];
+
+export const ABOUT_MORE_US: ITripleText[] = [
+  {
+    id: 1,
+    title: 'Ervaren, oprecht en gepassioneerd',
+    description_one:
+      'Met een loopbaan van 27 jaar bouwkennis en de steeds groter wordende drang om iets te doen aan de vervuiling, de huidige wegwerpmaatschappij en de negatieve impact van de bouwwereld op ons milieu, begint hij in september 2018 de opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven. ',
+    desctiption_two:
+      'Eind 2018 lanceert hij dan de Bvba Thorbouw: een ecologisch bouwbedrijf dat een rechtlijnige, transparante en persoonlijke aanpak hanteert. Met Thorbouw wil hij niet alleen vandaag inzetten op puur bouwen en comfortabel wonen, hij wil ook investeren in morgen en een zorgeloos leven voor de volgende generaties. Het doel? De verspilling een halt toeroepen en een mooie harmonie tot stand brengen tussen mens en natuur. Thorbouw houdt graag rekening met fauna-inclusief (ver)bouwen, elektrosmog en geobiologie, indien gewenst kan ook hier meer informatie over gegeven worden.',
+  },
+  {
+    id: 2,
+    title: 'Jong, ambitieus en nieuwsgierig',
+    description_one:
+      'We hebben heel wat ervaring in het bouwen, verbouwen en renoveren van woningen, maar we zijn ook jong, ambitieus en nieuwsgierig. We willen graag bijleren en groeien in ons vakgebied, en we staan open voor nieuwe ideeën en technieken.',
+    desctiption_two:
+      'Dit zien we ook terug in onze projecten, we zijn steeds op zoek naar innovatieve oplossingen en duurzame materialen om onze klanten de best mogelijke resultaten te bieden.',
+  },
+  {
+    id: 3,
+    title: 'Goed omringd, deskundig en professioneel',
+    description_one:
+      'We zijn goed omringd door een netwerk van deskundigen en professionele partners, waardoor we altijd de beste adviezen en diensten kunnen bieden.',
+    desctiption_two:
+      'Onze expertise en professionaliteit zorgen ervoor dat we uw project succesvol af kunnen ronden, binnen het aangegeven budget en tijdschema.',
   },
 ];

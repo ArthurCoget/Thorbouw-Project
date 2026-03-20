@@ -1,0 +1,62 @@
+<section class="triple-text-info">
+  <h2>Meer Over Ons</h2>
+
+  <div class="titles-holders">
+    @for (item of content; track item.id) {
+      <button
+        class="title-item"
+        [class.active]="item.id === activeId"
+        (click)="getInfoById(item.id)"
+      >
+        {{ item.title }}
+      </button>
+    }
+  </div>
+  <div class="description-holders">
+    @for (item of content; track item.id) {
+      <div class="description-item" [class.active]="item.id === activeId">
+        <div class="description-container">
+          <p>{{ item.description_one }}</p>
+          <div class="middle-section">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/3-100-thorbouw/"
+              class="link-btn border"
+            >
+              <img
+                ngSrc="/SVGs/LinkedIn.svg"
+                width="48"
+                height="48"
+                alt="LinkedIn Icon"
+                priority
+              />LinkedIn</a
+            >
+            <img
+              ngSrc="/aboutImages/InstagramQR.webp"
+              width="128"
+              height="128"
+              alt="Instagram QR Code"
+            />
+            <a
+              class="link-btn border"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/thorbouw/"
+            >
+              <img
+                ngSrc="/footer/svg/instagram.svg"
+                width="48"
+                height="48"
+                alt="Instagram Icon"
+                priority
+              />
+              Instagram
+            </a>
+          </div>
+          <p>{{ item.desctiption_two }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</section>

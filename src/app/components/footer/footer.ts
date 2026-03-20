@@ -25,7 +25,10 @@ export class FooterComponent {
 
   private destroyRef = inject(DestroyRef);
 
-  constructor(private router: Router, @Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    private router: Router,
+    @Inject(PLATFORM_ID) private platformId: Object,
+  ) {}
 
   ngOnInit(): void {
     this.initializeImageRotation();
@@ -39,7 +42,7 @@ export class FooterComponent {
     this.router.events
       .pipe(
         takeUntilDestroyed(this.destroyRef),
-        filter((event) => event instanceof NavigationEnd)
+        filter((event) => event instanceof NavigationEnd),
       )
       .subscribe(() => this.rotateBackgroundImage());
   }
@@ -56,7 +59,7 @@ export class FooterComponent {
 
   readonly navLinks = [
     { route: '/home', label: 'Home Pagina' },
-    { route: '/about', label: 'Over Thorbouw' },
+    { route: '/overThorbouw', label: 'Over Thorbouw' },
     { route: '/fotos', label: "Foto's & Realisitaties" },
     { route: '/advies', label: 'Bouwkunding Advies' },
     { route: '/werkwijze', label: 'Werkwijze' },
