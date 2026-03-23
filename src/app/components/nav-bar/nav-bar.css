@@ -33,6 +33,10 @@
 
 /* Logo styling */
 
+.desktop-logo-container {
+  overflow-y: hidden;
+}
+
 .logo {
   max-height: var(--nav-height);
 }

@@ -78,30 +78,29 @@ export const ABOUT_VALUES: ITextRouselContent[] = [
     svg: '/aboutImages/Quality.svg',
   },
 ];
-
 export const ABOUT_MORE_US: ITripleText[] = [
   {
     id: 1,
     title: 'Ervaren, oprecht en gepassioneerd',
     description_one:
-      'Met een loopbaan van 27 jaar bouwkennis en de steeds groter wordende drang om iets te doen aan de vervuiling, de huidige wegwerpmaatschappij en de negatieve impact van de bouwwereld op ons milieu, begint hij in september 2018 de opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven. ',
+      'Met meer dan 27 jaar ervaring in de bouwsector en een groeiend bewustzijn rond milieu-impact en duurzaamheid, ontstond de drang om het anders aan te pakken. In september 2018 startte daarom de opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven, met als doel bewuster en toekomstgericht te bouwen.',
     desctiption_two:
-      'Eind 2018 lanceert hij dan de Bvba Thorbouw: een ecologisch bouwbedrijf dat een rechtlijnige, transparante en persoonlijke aanpak hanteert. Met Thorbouw wil hij niet alleen vandaag inzetten op puur bouwen en comfortabel wonen, hij wil ook investeren in morgen en een zorgeloos leven voor de volgende generaties. Het doel? De verspilling een halt toeroepen en een mooie harmonie tot stand brengen tussen mens en natuur. Thorbouw houdt graag rekening met fauna-inclusief (ver)bouwen, elektrosmog en geobiologie, indien gewenst kan ook hier meer informatie over gegeven worden.',
+      'Eind 2018 lanceert hij dan de Bvba Thorbouw: een ecologisch bouwbedrijf dat een rechtlijnige, transparante en persoonlijke aanpak hanteert. Met Thorbouw wil hij niet alleen vandaag inzetten op puur bouwen en comfortabel wonen, maar ook investeren in morgen en een zorgeloos leven voor de volgende generaties, met aandacht voor mens, natuur en omgeving.',
   },
   {
     id: 2,
     title: 'Jong, ambitieus en nieuwsgierig',
     description_one:
-      'We hebben heel wat ervaring in het bouwen, verbouwen en renoveren van woningen, maar we zijn ook jong, ambitieus en nieuwsgierig. We willen graag bijleren en groeien in ons vakgebied, en we staan open voor nieuwe ideeën en technieken.',
+      'Ondanks onze ervaring in nieuwbouw, renovaties en verbouwingen blijven we bewust jong en gedreven in onze aanpak. Onze ambitie en nieuwsgierigheid zorgen ervoor dat we continu willen bijleren en groeien, met aandacht voor kwaliteit, detail en een sterke betrokkenheid bij elk project dat we realiseren.',
     desctiption_two:
-      'Dit zien we ook terug in onze projecten, we zijn steeds op zoek naar innovatieve oplossingen en duurzame materialen om onze klanten de best mogelijke resultaten te bieden.',
+      'Deze ingesteldheid zien we ook terug in onze projecten, waar we voortdurend op zoek gaan naar innovatieve oplossingen en duurzame materialen. Zo combineren we nieuwe inzichten met praktijkervaring om onze klanten een kwalitatief, toekomstgericht en doordacht eindresultaat te bieden.',
   },
   {
     id: 3,
     title: 'Goed omringd, deskundig en professioneel',
     description_one:
-      'We zijn goed omringd door een netwerk van deskundigen en professionele partners, waardoor we altijd de beste adviezen en diensten kunnen bieden.',
+      'We kunnen rekenen op een sterk netwerk van deskundigen en betrouwbare partners, elk met hun eigen specialisatie binnen de bouwsector. Deze samenwerkingen stellen ons in staat om kennis te delen en elk project te ondersteunen met de juiste expertise, van voorbereiding tot uitvoering.',
     desctiption_two:
-      'Onze expertise en professionaliteit zorgen ervoor dat we uw project succesvol af kunnen ronden, binnen het aangegeven budget en tijdschema.',
+      'Dankzij deze sterke samenwerkingen kunnen we elk project met vertrouwen aanpakken en tot in detail uitwerken. We waken over kwaliteit, budget en planning, zodat het eindresultaat niet alleen technisch klopt, maar ook volledig aansluit bij de verwachtingen van de klant.',
   },
 ];
