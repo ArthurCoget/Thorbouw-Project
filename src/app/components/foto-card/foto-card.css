@@ -53,6 +53,17 @@
   background-image: var(--card-image-2);
 }
 
+.img-container {
+  position: absolute;
+  top: 55px;
+  left: 15px;
+  bottom: 80px;
+  right: 15px;
+  background: var(--color-light-grey);
+  transition: 0.5s;
+  z-index: 1;
+}
+
 @media (hover: hover) {
   .card:hover:before {
     transform: rotate(30deg);
@@ -63,21 +74,14 @@
     transform: rotate(15deg);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   }
-}
 
-.img-container {
-  position: absolute;
-  top: 55px;
-  left: 15px;
-  bottom: 15px;
-  right: 15px;
-  background: var(--color-light-grey);
-  transition: 0.5s;
-  z-index: 1;
-}
+  .img-container {
+    bottom: 15px;
+  }
 
-.card:hover .img-container {
-  bottom: 80px;
+  .card:hover .img-container {
+    bottom: 80px;
+  }
 }
 
 .img-container img {
