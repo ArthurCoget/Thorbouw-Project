@@ -4,8 +4,6 @@
 
 .content-header-container {
   max-width: var(--header-width);
-  margin: 3em auto;
-  text-align: center;
 }
 
 .contact-title {

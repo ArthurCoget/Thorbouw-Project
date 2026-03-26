@@ -1,0 +1,18 @@
+:host {
+  --header-width: 60%;
+}
+
+.content-header-container {
+  max-width: var(--header-width);
+  margin-bottom: -2em;
+}
+
+@media (max-width: 750px) {
+  :host {
+    --header-width: 95%;
+  }
+
+  .content-header-container {
+    margin-bottom: 1em;
+  }
+}
