@@ -6,10 +6,10 @@
   --ease: cubic-bezier(0.34, 1, 0.64, 1);
 
   /* Carousel Variables */
-  --carousel-depth: clamp(50px, 10vw, 180px);
+  --carousel-depth: clamp(50px, 15vw, 220px);
   --carousel-rotation: 0deg;
-  --carousel-side-scale: 0.72;
-  --carousel-side-offset: clamp(15%, 25vw, 40%);
+  --carousel-side-scale: 0.5;
+  --carousel-side-offset: clamp(15%, 25vw, 50%);
 
   --hover-transition-card: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
