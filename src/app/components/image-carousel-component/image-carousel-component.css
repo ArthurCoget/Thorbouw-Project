@@ -1,15 +1,15 @@
 :host {
-  --main-card-width: 45%;
+  --main-card-width: 55%;
 
   /* Transition Variables */
   --duration: 0.7s;
   --ease: cubic-bezier(0.34, 1, 0.64, 1);
 
   /* Carousel Variables */
-  --carousel-depth: clamp(80px, 15vw, 220px);
-  --carousel-rotation: 26deg;
+  --carousel-depth: clamp(50px, 10vw, 180px);
+  --carousel-rotation: 0deg;
   --carousel-side-scale: 0.72;
-  --carousel-side-offset: clamp(20%, 25vw, 50%);
+  --carousel-side-offset: clamp(15%, 25vw, 40%);
 
   --hover-transition-card: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
@@ -65,7 +65,9 @@
   transform: translateZ(0);
   backface-visibility: hidden;
 
-  transition: transform var(--duration) var(--ease), opacity var(--duration) var(--ease),
+  transition:
+    transform var(--duration) var(--ease),
+    opacity var(--duration) var(--ease),
     filter var(--duration) var(--ease);
 
   overflow: hidden;
@@ -207,9 +209,11 @@
 
 @media (prefers-reduced-motion: reduce) {
   .carousel-card {
-    transition: opacity 0.6s ease-in, filter 0.6s ease-in !important;
+    transition:
+      opacity 0.6s ease-in,
+      filter 0.6s ease-in !important;
     transform-origin: center center;
-    transform: translateZ(0); 
+    transform: translateZ(0);
   }
 
   .carousel-card.active {
@@ -221,7 +225,7 @@
 
   .carousel-card.prev,
   .carousel-card.next {
-    opacity: 1; 
+    opacity: 1;
     filter: grayscale(100%);
     z-index: 5;
   }
@@ -238,6 +242,6 @@
   .carousel-card.hidden-next {
     opacity: 0;
     pointer-events: none;
-    transform: translateX(0) scale(0.5) !important; 
+    transform: translateX(0) scale(0.5) !important;
   }
 }

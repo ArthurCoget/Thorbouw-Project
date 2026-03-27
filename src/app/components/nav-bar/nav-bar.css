@@ -1,6 +1,4 @@
 :host {
-  /* WIP: For the moment fixed height"
-  /* --nav-bar-height: calc(var(--nav-height) / 1.25);*/
   --nav-bar-height: 128px;
   --reduced-motion-hamburger: 0.5s;
 }
