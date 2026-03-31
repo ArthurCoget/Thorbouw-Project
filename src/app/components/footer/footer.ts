@@ -71,6 +71,15 @@ export class FooterComponent {
     this.currentImage = `${this.FOOTER_IMAGE_PATH}/${this.footerImages[this.currentImageIndex]}`;
   }
 
+  openSections: Record<string, boolean> = {
+    quicklinks: false,
+    contact: false,
+    stayConnected: false,
+  };
+  toggleSection(section: string): void {
+    this.openSections[section] = !this.openSections[section];
+  }
+
   readonly navLinks = [
     { route: '/home', label: 'Home Pagina' },
     { route: '/overThorbouw', label: 'Over Thorbouw' },

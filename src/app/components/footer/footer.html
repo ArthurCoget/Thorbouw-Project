@@ -1,75 +1,128 @@
 <footer>
-    <img class="footer-background" [ngSrc]="currentImage" alt="Backgroud Images of other projects" loading="lazy" fill>
-    <div class="footer-overlay"></div>
-    <div class="footer-content">
-        <h2 class="footer-title">Laat mij u helpen met slim & groen bouwen</h2>
-        <p class="footer-text">Jan Vansteenwegen werkt nauw samen met zijn echtgenote Stefanie Wilms waardoor ze samen
-            elk project optillen naar een hoger niveau. Laat jezelf overtuigen door een bezoek aan <a
-                href="https://stefaniewilms.be/" target="_blank" rel="noopener noreferrer"
-                aria-label="Visit Stefanie Wilms website">haar website</a>.</p>
-        <div class="bottom-links quicklinks">
-            <h3>Quicklinks</h3>
-            <ul class="footer-info-container">
-                @for (link of navLinks; track link.label){
-                <li> <a [routerLink]="link.route">{{ link.label }}</a></li>
-                }
-            </ul>
+  <img
+    class="footer-background"
+    [ngSrc]="currentImage"
+    alt="Backgroud Images of other projects"
+    loading="lazy"
+    fill
+  />
+  <div class="footer-overlay"></div>
+  <div class="footer-content">
+    <h2 class="footer-title">Laat mij u helpen met slim & groen bouwen</h2>
+    <p class="footer-text">
+      Jan Vansteenwegen werkt nauw samen met zijn echtgenote Stefanie Wilms waardoor ze samen elk
+      project optillen naar een hoger niveau. Laat jezelf overtuigen door een bezoek aan <a
+        href="https://stefaniewilms.be/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Visit Stefanie Wilms website"
+        >haar website</a
+      >.
+    </p>
+    <div class="bottom-links quicklinks">
+      <div class="mobile-toggle" (click)="toggleSection('quicklinks')">
+        <h3>Quicklinks</h3>
+        <span class="arrow" [class.open]="openSections['quicklinks']">&#8964;</span>
+      </div>
+      <ul class="footer-info-container" [class.is-open]="openSections['quicklinks']">
+        <div>
+          @for (link of navLinks; track link.label) {
+            <li>
+              <a [routerLink]="link.route">{{ link.label }}</a>
+            </li>
+          }
         </div>
-        <div class="bottom-links contact">
-            <h3>Contact</h3>
-            <ul class="footer-info-container">
-                @for (contact of contactInfo; track contact.id){
-                <li>
-                    <div class="contact-info">
-                        <a [href]="contact.href" [target]="contact.id === 'map' ? '_blank' : '_self'"
-                            [rel]="contact.id === 'map' ? 'noopener norefferer' : ''"
-                            [attr.aria-label]="contact.ariaLabel">
-                            <img [ngSrc]="contact.icon" [alt]="contact.alt" loading="lazy" width="48" height="48">
-                            <div class="detailed-info">
-                                @for(line of contact.text; track line){
-                                <p>{{line}}</p>
-                                }
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                }
-            </ul>
-        </div>
-        <div class="bottom-links stay-connected">
-            <h3>Stay Connected</h3>
-            <ul class="footer-info-container">
-                @for (social of socialLinks; track social.id){
-                <li>
-                    <div class="contact-info">
-                        <a [href]="social.href" target='_blank' rel="noopener noreferrer"
-                            [attr.aria-label]="social.ariaLabel">
-                            <img [ngSrc]="social.icon" [alt]="social.alt" loading="lazy" width="48" height="48">
-                            <div class="detailed-info">
-                                @for(line of social.text; track line){
-                                <p>{{line}}</p>
-                                }
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                }
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-line-container">
-                <div class="line"></div>
-                <img src="/logo/Thorbouw-Logo-Dark.webp" class="footer-logo" alt="Company logo" />
-                <div class="line"></div>
-            </div>
-            <div class="footer-meta">
-                <span>© Copyright 2025 Thorbouw BVBA, All Rights reserved</span>
-                <span>Website gemaakt door:
-                    <a href="https://www.linkedin.com/in/arthur-coget-inf/" target="_blank"
-                        rel="noopener noreferrer">Arthur Coget</a>
-                    && Tom Lauwers
-                </span>
-            </div>
-        </div>
+      </ul>
     </div>
+    <div class="bottom-links contact">
+      <div class="mobile-toggle" (click)="toggleSection('contact')">
+        <h3>Contact</h3>
+        <span class="arrow" [class.open]="openSections['contact']">&#8964;</span>
+      </div>
+      <ul class="footer-info-container" [class.is-open]="openSections['contact']">
+        <div>
+          @for (contact of contactInfo; track contact.id) {
+            <li>
+              <div class="contact-info">
+                <a
+                  [href]="contact.href"
+                  [target]="contact.id === 'map' ? '_blank' : '_self'"
+                  [rel]="contact.id === 'map' ? 'noopener norefferer' : ''"
+                  [attr.aria-label]="contact.ariaLabel"
+                >
+                  <img
+                    [ngSrc]="contact.icon"
+                    [alt]="contact.alt"
+                    loading="lazy"
+                    width="48"
+                    height="48"
+                  />
+                  <div class="detailed-info">
+                    @for (line of contact.text; track line) {
+                      <p>{{ line }}</p>
+                    }
+                  </div>
+                </a>
+              </div>
+            </li>
+          }
+        </div>
+      </ul>
+    </div>
+    <div class="bottom-links stay-connected">
+      <div class="mobile-toggle" (click)="toggleSection('stayConnected')">
+        <h3>Stay Connected</h3>
+        <span class="arrow" [class.open]="openSections['stayConnected']">&#8964;</span>
+      </div>
+      <ul class="footer-info-container" [class.is-open]="openSections['stayConnected']">
+        <div>
+          @for (social of socialLinks; track social.id) {
+            <li>
+              <div class="contact-info">
+                <a
+                  [href]="social.href"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  [attr.aria-label]="social.ariaLabel"
+                >
+                  <img
+                    [ngSrc]="social.icon"
+                    [alt]="social.alt"
+                    loading="lazy"
+                    width="48"
+                    height="48"
+                  />
+                  <div class="detailed-info">
+                    @for (line of social.text; track line) {
+                      <p>{{ line }}</p>
+                    }
+                  </div>
+                </a>
+              </div>
+            </li>
+          }
+        </div>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-line-container">
+        <div class="line"></div>
+        <img src="/logo/Thorbouw-Logo-Dark.webp" class="footer-logo" alt="Company logo" />
+        <div class="line"></div>
+      </div>
+      <div class="footer-meta">
+        <span>© Copyright 2025 Thorbouw BVBA, All Rights reserved</span>
+        <span
+          >Website gemaakt door:
+          <a
+            href="https://www.linkedin.com/in/arthur-coget-inf/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Arthur Coget</a
+          >
+          && Tom Lauwers
+        </span>
+      </div>
+    </div>
+  </div>
 </footer>
