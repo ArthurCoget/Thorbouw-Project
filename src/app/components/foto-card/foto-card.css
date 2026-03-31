@@ -1,6 +1,6 @@
 :host {
-  --card-width: 400px;
-  --card-height: 450px;
+  --card-width: 425px;
+  --card-height: 475px;
 
   --card-image: url('https://images.unsplash.com/photo-1549417229-aa67d3263c09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
   --card-image-2: url('https://images.unsplash.com/photo-1548094878-84ced0f6896d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
@@ -80,7 +80,7 @@
   }
 
   .card:hover .img-container {
-    bottom: 80px;
+    bottom: 100px;
   }
 }
 
@@ -99,21 +99,21 @@
   position: absolute;
   left: 10px;
   right: 10px;
-  bottom: 10px;
-  height: 60px;
+  bottom: 15px;
+  height: 75px;
   text-align: center;
 }
 
 .card-details h3 {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: var(--color-primary);
   text-transform: uppercase;
 }
 
 .card-details p {
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 0.85rem;
   color: var(--color-secondary);
   margin-top: 5px;
 }
