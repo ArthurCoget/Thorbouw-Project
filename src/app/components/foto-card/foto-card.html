@@ -1,18 +1,23 @@
 <section class="foto-card">
   <div class="card-container">
-    <a href="">
-      <div class="card">
-        <h2>Metamorfose te Wespelaar</h2>
+    <a [routerLink]="['/fotos', project.slug]">
+      <div
+        class="card"
+        [style.--card-image]="'url(' + project.cardImage2 + ')'"
+        [style.--card-image-2]="'url(' + project.cardImage3 + ')'"
+      >
+        <h2>{{ project.title }}</h2>
         <div class="img-container">
           <img
-            src="/fotos&realisaties/WespelaarFotoCard.webp"
+            [src]="project.cardImage"
+            [alt]="project.cardImageAlt"
             alt="Foto van verbouwing in Wespelaar"
           />
         </div>
         <div class="card-details">
-          <h3>Modern wooncomfort, vakkundig gerealiseerd</h3>
+          <h3>{{ project.subtitle }}</h3>
           <p>
-            Met kwalitatieve materialen en oog voor detail realiseren we duurzame woonoplossingen.
+            {{ project.description }}
           </p>
         </div>
       </div>

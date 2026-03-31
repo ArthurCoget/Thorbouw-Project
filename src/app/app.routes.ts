@@ -13,6 +13,11 @@ export const routes: Routes = [
   { path: 'home', component: Home },
   { path: 'overThorbouw', component: About },
   { path: 'fotos', component: Fotos },
+  {
+    path: 'fotos/:slug',
+    loadComponent: () =>
+      import('./pages/project-detail/project-detail').then((m) => m.ProjectDetail),
+  },
   { path: 'advies', component: Advies },
   { path: 'werkwijze', component: Werkwijze },
   { path: 'projectontwikkeling', component: Project },
