@@ -5,9 +5,9 @@ export interface INavLink {
 
 export const NAV_LINKS: INavLink[] = [
   { label: 'Over Thorbouw', path: '/overThorbouw' },
+  { label: 'Werkwijze', path: '/werkwijze' },
   { label: "Foto's Realisaties", path: '/fotos' },
   { label: 'Bouwkundig advies', path: '/advies' },
-  { label: 'Werkwijze', path: '/werkwijze' },
   { label: 'Projectontwikkeling & Wonen', path: '/projectontwikkeling' },
   { label: 'Contact', path: '/contact' },
 ];
