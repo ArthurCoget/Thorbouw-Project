@@ -3,14 +3,14 @@
     <a [routerLink]="['/fotos', project.slug]">
       <div
         class="card"
-        [style.--card-image]="'url(' + project.cardImage2 + ')'"
-        [style.--card-image-2]="'url(' + project.cardImage3 + ')'"
+        [style.--card-image]="'url(' + project.cardImages[1].src + ')'"
+        [style.--card-image-2]="'url(' + project.cardImages[2].src + ')'"
       >
         <h2>{{ project.title }}</h2>
         <div class="img-container">
           <img
-            [src]="project.cardImage"
-            [alt]="project.cardImageAlt"
+            [src]="project.cardImages[0].src"
+            [alt]="project.cardImages[0].alt"
             alt="Foto van verbouwing in Wespelaar"
           />
         </div>

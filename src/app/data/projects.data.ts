@@ -9,10 +9,20 @@ export const PROJECTS: IProjectContent[] = [
       'Met kwalitatieve materialen en oog voor detail realiseren we duurzame woonoplossingen.',
     location: 'Wespelaar',
     year: 2024,
-    cardImage: '/fotos&realisaties/Wespelaar/WespelaarFotoCard.webp',
-    cardImageAlt: 'Foto van verbouwing in Wespelaar',
-    cardImage2: '/fotos&realisaties/Wespelaar/WespelaarFotoCard2.webp',
-    cardImage3: '/fotos&realisaties/Wespelaar/WespelaarFotoCard3.webp',
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Wespelaar/WespelaarFotoCard.webp',
+        alt: 'Foto van verbouwing in Wespelaar',
+      },
+      {
+        src: '/fotos&realisaties/Wespelaar/WespelaarFotoCard2.webp',
+        alt: 'Foto van verbouwing in Wespelaar',
+      },
+      {
+        src: '/fotos&realisaties/Wespelaar/WespelaarFotoCard3.webp',
+        alt: 'Foto van verbouwing in Wespelaar',
+      },
+    ],
     images: [
       {
         src: '/fotos&realisaties/Wespelaar/WespelaarFotoCardUpscaled.webp',

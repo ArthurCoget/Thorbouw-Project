@@ -1,12 +1,11 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProjectService } from '../../services/project';
-import { IProjectContent, IProjectImage } from '../../interfaces/iproject-content';
+import { IProjectContent } from '../../interfaces/iproject-content';
 import { IHeroContent } from '../../interfaces/hero-content';
 import { HeroComponent } from '../../components/hero-component/hero-component';
 import { ImageCarouselComponent } from '../../components/image-carousel-component/image-carousel-component';
 import { ICarouselImage } from '../../interfaces/carousel-image';
-import { count } from 'console';
 
 @Component({
   selector: 'app-project-detail',
@@ -31,18 +30,18 @@ export class ProjectDetail implements OnInit {
     const slug = this.route.snapshot.paramMap.get('slug');
     this.project = this.projectService.getBySlug(slug ?? '');
 
-    if (this.project != undefined) {
+    if (this.project) {
       this.heroContent = {
         variant: 'simple',
         title: this.project.title,
         image: this.project.images[0].src,
         altText: this.project.images[0].alt,
       };
-      var count = 0;
-      this.project.images.forEach((image) => {
-        this.items.push({ id: count, img: image.src, title: image.alt });
-        count++;
-      });
+      this.items = this.project.images.map((image, index) => ({
+        id: index,
+        img: image.src,
+        title: image.alt,
+      }));
     }
   }
 }
