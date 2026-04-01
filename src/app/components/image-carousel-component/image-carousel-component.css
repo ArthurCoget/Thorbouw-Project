@@ -73,6 +73,15 @@
   overflow: hidden;
 }
 
+.no-info {
+  border-radius: 10px;
+}
+
+.no-info-container {
+  height: auto;
+  margin: 3em 0;
+}
+
 .carousel-card img {
   width: 100%;
   height: 100%;

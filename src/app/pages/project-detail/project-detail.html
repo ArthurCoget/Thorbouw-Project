@@ -1,3 +1,8 @@
 <section class="project-detail">
   <app-top-image-component [noPath]="true" [content]="heroContent"></app-top-image-component>
+  <div class="content-header-container">
+    <h1 class="title">{{ project?.subtitle }}</h1>
+    <p class="subtitle">{{ project?.description }}</p>
+  </div>
+  <app-image-carousel-component [items]="items" [showInfo]="false"></app-image-carousel-component>
 </section>
