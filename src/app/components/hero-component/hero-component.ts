@@ -14,9 +14,14 @@ export class HeroComponent {
 
   @Input({ required: true }) content!: IHeroContent;
   @Input() customImagePosition: number = 65;
+  @Input() noPath: boolean = false;
 
   get imageUrl(): string {
-    return `${this.IMAGE_BASE_PATH}/${this.content.image}`;
+    if (this.noPath) {
+      return this.content.image;
+    } else {
+      return `${this.IMAGE_BASE_PATH}/${this.content.image}`;
+    }
   }
 
   get isCompleteVariant(): boolean {

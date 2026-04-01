@@ -15,7 +15,7 @@ export const PROJECTS: IProjectContent[] = [
     cardImage3: '/fotos&realisaties/Wespelaar/WespelaarFotoCard3.webp',
     images: [
       {
-        src: '/fotos&realisaties/Wespelaar/WespelaarFotoCard.webp',
+        src: '/fotos&realisaties/Wespelaar/WespelaarFotoCardUpscaled.webp',
         alt: 'Foto van verbouwing in Wespelaar',
       },
     ],
