@@ -1,8 +1,14 @@
 <section class="project-detail">
   <app-top-image-component [noPath]="true" [content]="heroContent"></app-top-image-component>
+  <nav class="breadcrumb">
+    <a routerLink="/fotos">Foto's</a>
+    <span>›</span>
+    <span>{{ project?.title }}</span>
+  </nav>
   <div class="content-header-container">
     <h1 class="title">{{ project?.subtitle }}</h1>
     <p class="subtitle">{{ project?.description }}</p>
   </div>
   <app-image-carousel-component [items]="items" [showInfo]="false"></app-image-carousel-component>
+  <app-image-gallery></app-image-gallery>
 </section>

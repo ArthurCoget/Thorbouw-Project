@@ -1,15 +1,16 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProjectService } from '../../services/project';
 import { IProjectContent } from '../../interfaces/iproject-content';
 import { IHeroContent } from '../../interfaces/hero-content';
 import { HeroComponent } from '../../components/hero-component/hero-component';
 import { ImageCarouselComponent } from '../../components/image-carousel-component/image-carousel-component';
 import { ICarouselImage } from '../../interfaces/carousel-image';
+import { ImageGallery } from '../../components/image-gallery/image-gallery';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [HeroComponent, ImageCarouselComponent],
+  imports: [HeroComponent, ImageCarouselComponent, RouterLink, ImageGallery],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css',
 })

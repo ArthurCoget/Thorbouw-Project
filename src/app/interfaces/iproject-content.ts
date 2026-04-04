@@ -1,6 +1,9 @@
 export interface IProjectImage {
   src: string;
   alt: string;
+  title?: string;
+  category?: string;
+  description?: string;
 }
 
 export interface IProjectContent {
