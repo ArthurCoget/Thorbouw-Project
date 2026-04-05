@@ -1,0 +1,23 @@
+<section class="gallery-container">
+  <div class="gallery">
+    @for (item of items; track item.src; let i = $index) {
+      <figure
+        class="gallery-item"
+        tabindex="0"
+        role="button"
+        [attr.aria-label]="'Open ' + item.title"
+      >
+        <img [src]="item.src" [alt]="item.alt" class="gallery-img" loading="lazy" />
+        <figcaption class="gallery-caption">
+          <span class="caption-category">{{ item.category }}</span>
+          <h3 class="caption-title">{{ item.title }}</h3>
+          <p class="caption-desc">{{ item.description }}</p>
+          <span class="cta">
+            <span class="cta-line"></span>
+            Bekijken
+          </span>
+        </figcaption>
+      </figure>
+    }
+  </div>
+</section>

@@ -1,0 +1,120 @@
+:host {
+  --caption-ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --hover-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --color-accent: #e4f0ff;
+  --color-base: #92aae5;
+}
+
+.gallery-container {
+  min-height: 100vh;
+  padding: 0 2.5em 2.5em;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
+  grid-auto-rows: 18em;
+  grid-auto-flow: dense;
+  gap: 1em;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+@media (width > 680px) {
+  .gallery-item:first-child {
+    grid-area: span 2 / span 2;
+  }
+  .gallery-item:nth-child(4n + 1) {
+    grid-row: span 2;
+  }
+  .gallery-item:nth-child(4n + 2) {
+    grid-column: span 2;
+  }
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: grid;
+
+  border-radius: 10px;
+
+  box-shadow: 1px 3px 10px var(--color-darkgrey);
+}
+
+.gallery-img {
+  grid-area: 1/1;
+  transition:
+    transform 0.5s var(--hover-ease),
+    filter 0.5s ease;
+}
+.gallery-item:hover .gallery-img {
+  transform: scale(1.1);
+  filter: brightness(0.75) saturate(1.5);
+}
+
+.gallery-caption {
+  grid-area: 1/1;
+  align-self: end;
+  z-index: 1;
+  padding: 1.5rem 1.25rem 1.125rem;
+  color: var(--color-accent);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.45) 50%,
+    transparent 100%
+  );
+  opacity: 0;
+  transform: translateY(0.5rem);
+  transition:
+    opacity 0.45s var(--caption-ease),
+    transform 0.45s var(--caption-ease);
+}
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.caption-category {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.15rem;
+}
+.caption-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-base);
+}
+
+.caption-desc {
+  font-size: 1rem;
+  color: var(--color-lightgrey);
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-top: 0.5rem;
+}
+.cta-line {
+  display: block;
+  width: 1.5em;
+  height: 2px;
+  background: var(--color-base);
+}

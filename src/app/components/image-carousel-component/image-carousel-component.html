@@ -5,7 +5,7 @@
   [class.no-info-container]="!showInfo()"
 >
   <div class="carousel">
-    @for (item of items(); track item.id; let i = $index) {
+    @for (item of displayedItems(); track item.id; let i = $index) {
       <button
         type="button"
         class="carousel-card"

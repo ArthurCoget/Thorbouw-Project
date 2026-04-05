@@ -33,6 +33,11 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
   firstInfoCard = input('Datum');
   secondInfoCard = input('Project');
   buttonInfo = input('Meer Info');
+  maxNumberOfItems = input(false);
+
+  displayedItems = computed(() =>
+    this.maxNumberOfItems() ? this.items().slice(0, 5) : this.items(),
+  );
 
   currentIndex = signal(0);
   isVisible = signal(false);

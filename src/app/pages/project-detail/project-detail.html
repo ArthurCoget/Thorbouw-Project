@@ -9,6 +9,13 @@
     <h1 class="title">{{ project?.subtitle }}</h1>
     <p class="subtitle">{{ project?.description }}</p>
   </div>
-  <app-image-carousel-component [items]="items" [showInfo]="false"></app-image-carousel-component>
+  <app-image-carousel-component
+    [maxNumberOfItems]="true"
+    [items]="items"
+    [showInfo]="false"
+  ></app-image-carousel-component>
+  <div class="content-header-container no-description">
+    <h2 class="title">{{ DETAILS_CONTENT.galleryTitle }}</h2>
+  </div>
   <app-image-gallery></app-image-gallery>
 </section>

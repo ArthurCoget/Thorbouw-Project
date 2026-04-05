@@ -45,4 +45,8 @@ export class ProjectDetail implements OnInit {
       }));
     }
   }
+
+  readonly DETAILS_CONTENT = {
+    galleryTitle: 'Overzicht van alle afbeeldingen van dit project',
+  };
 }
