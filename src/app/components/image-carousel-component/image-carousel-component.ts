@@ -35,16 +35,22 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
   buttonInfo = input('Meer Info');
   maxNumberOfItems = input(false);
 
-  displayedItems = computed(() =>
-    this.maxNumberOfItems() ? this.items().slice(0, 5) : this.items(),
-  );
+  displayedItems = computed(() => {
+    const items = this.items();
+    if (!this.maxNumberOfItems()) return items;
+
+    const shuffled = [...items].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, 6);
+  });
 
   currentIndex = signal(0);
   isVisible = signal(false);
   isAnimating = signal(false);
   isAnimatingInfo = signal(false);
 
-  activeItem = computed(() => (this.items().length ? this.items()[this.currentIndex()] : null));
+  activeItem = computed(() =>
+    this.displayedItems().length ? this.displayedItems()[this.currentIndex()] : null,
+  );
 
   private observer?: IntersectionObserver;
 
@@ -90,7 +96,7 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
 
   getItemClass(index: number): string {
     const current = this.currentIndex();
-    const total = this.items().length;
+    const total = this.displayedItems().length;
 
     const next = (current + 1) % total;
     const prev = (current - 1 + total) % total;
@@ -121,7 +127,7 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
     this.isAnimatingInfo.set(true);
 
     requestAnimationFrame(() => {
-      const total = this.items().length;
+      const total = this.displayedItems().length;
       this.currentIndex.update((i) =>
         direction === 'next' ? (i + 1) % total : (i - 1 + total) % total,
       );

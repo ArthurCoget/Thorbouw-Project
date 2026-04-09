@@ -1,7 +1,7 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProjectService } from '../../services/project';
-import { IProjectContent } from '../../interfaces/iproject-content';
+import { IProjectContent, IProjectImage } from '../../interfaces/iproject-content';
 import { IHeroContent } from '../../interfaces/hero-content';
 import { HeroComponent } from '../../components/hero-component/hero-component';
 import { ImageCarouselComponent } from '../../components/image-carousel-component/image-carousel-component';
@@ -19,7 +19,8 @@ export class ProjectDetail implements OnInit {
   private projectService = inject(ProjectService);
 
   project: IProjectContent | undefined;
-  items: ICarouselImage[] = [];
+  carouselImages: ICarouselImage[] = [];
+  images: IProjectImage[] = [];
   heroContent: IHeroContent = {
     variant: 'simple',
     title: '',
@@ -38,11 +39,12 @@ export class ProjectDetail implements OnInit {
         image: this.project.images[0].src,
         altText: this.project.images[0].alt,
       };
-      this.items = this.project.images.map((image, index) => ({
+      this.carouselImages = this.project.images.map((image, index) => ({
         id: index,
         img: image.src,
         title: image.alt,
       }));
+      this.images = this.project.images;
     }
   }
 

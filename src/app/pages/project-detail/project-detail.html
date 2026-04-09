@@ -11,11 +11,11 @@
   </div>
   <app-image-carousel-component
     [maxNumberOfItems]="true"
-    [items]="items"
+    [items]="carouselImages"
     [showInfo]="false"
   ></app-image-carousel-component>
   <div class="content-header-container no-description">
     <h2 class="title">{{ DETAILS_CONTENT.galleryTitle }}</h2>
   </div>
-  <app-image-gallery></app-image-gallery>
+  <app-image-gallery [items]="images"></app-image-gallery>
 </section>

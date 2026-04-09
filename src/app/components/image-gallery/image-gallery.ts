@@ -1,4 +1,15 @@
-import { Component, ElementRef, viewChild, signal, AfterViewInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  AfterViewInit,
+  OnDestroy,
+  viewChild,
+  signal,
+  inject,
+  PLATFORM_ID,
+  Input,
+} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { IProjectImage } from '../../interfaces/iproject-content';
 
 @Component({
@@ -7,87 +18,55 @@ import { IProjectImage } from '../../interfaces/iproject-content';
   templateUrl: './image-gallery.html',
   styleUrl: './image-gallery.css',
 })
-export class ImageGallery {
-  focusImageRef = viewChild<ElementRef>('focusedImage');
+export class ImageGallery implements AfterViewInit, OnDestroy {
+  @Input({ required: true }) items: IProjectImage[] = [];
 
-  readonly items: IProjectImage[] = [
-    {
-      src: 'https://images.unsplash.com/photo-1458668383970-8ddd3927deed?w=1200&q=80',
-      alt: 'Alpine peaks rising above the clouds',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200&q=80',
-      alt: 'Classic automobile on an empty road',
-      title: 'Open Road',
-      category: 'Automobile',
-      description: 'The freedom of the asphalt horizon',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1466970601638-4e5fb6556584?w=1200&q=80',
-      alt: 'Misty mountain valley at dawn',
-      title: 'Morning Veil',
-      category: 'Mountains',
-      description: 'Dawn breaks over the ancient valley',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1472396961693-142e6e269027?w=1200&q=80',
-      alt: 'Deer standing in a meadow',
-      title: 'Still Presence',
-      category: 'Wildlife',
-      description: 'A moment held in amber light',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=1200&q=80',
-      alt: 'Vintage bicycle against a wall',
-      title: 'Au Revoir',
-      category: 'Lifestyle',
-      description: 'Resting between journeys',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=1200&q=80',
-      alt: 'Minimal workspace with laptop',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1532103054090-3491f1a05d0d?w=1200&q=80',
-      alt: 'Abstract office architecture',
-      title: 'Geometry',
-      category: 'Architecture',
-      description: 'Lines that define the modern age',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1599033153041-e88627ca70bb?w=1200&q=80',
-      alt: 'City skyline at dusk',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1507097634215-e82e6b518529?w=1200&q=80',
-      alt: 'Aerial city view at night',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1528988719300-046ff7faf8cb?w=1200&q=80',
-      alt: 'Snow-capped mountain range',
-      title: 'First Light',
-      category: 'Mountains',
-      description: 'Untouched by time or tide',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1200&q=80',
-      alt: 'Ocean wave crashing on shore',
-      title: 'The Shore',
-      category: 'Ocean',
-      description: 'Between the land and the infinite',
-    },
-    {
-      src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200&q=80',
-      alt: 'Lake reflecting the mountains',
-      title: 'Mirror Lake',
-      category: 'Mountains',
-      description: "Nature's perfect symmetry",
-    },
-  ];
+  private platformId = inject(PLATFORM_ID);
+  private resizeObserver: ResizeObserver | null = null;
+
+  readonly galleryRef = viewChild<ElementRef<HTMLElement>>('gallery');
+
+  focusImageRef = viewChild<ElementRef>('focusedImage');
 
   activeIndex = signal<number | null>(null);
 
   isImageOpen = signal(false);
+
+  ngAfterViewInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.setupResizeObserver();
+    }
+  }
+
+  private setupResizeObserver(): void {
+    const galleryEl = this.galleryRef()?.nativeElement;
+    if (!galleryEl) return;
+
+    this.resizeObserver?.disconnect();
+    this.resizeObserver = new ResizeObserver(() => this.fixLastRow());
+    this.resizeObserver.observe(galleryEl);
+    this.fixLastRow();
+  }
+
+  private fixLastRow(): void {
+    const galleryEl = this.galleryRef()?.nativeElement;
+    if (!galleryEl) return;
+
+    const figures = galleryEl.querySelectorAll<HTMLElement>('.gallery-item');
+    figures.forEach((fig) => fig.classList.remove('last-row'));
+
+    let maxTop = -Infinity;
+    figures.forEach((fig) => {
+      const top = fig.getBoundingClientRect().top;
+      if (top > maxTop) maxTop = top;
+    });
+
+    figures.forEach((fig) => {
+      if (Math.round(fig.getBoundingClientRect().top) === Math.round(maxTop)) {
+        fig.classList.add('last-row');
+      }
+    });
+  }
 
   openImage(index: number): void {
     this.activeIndex.set(index);
@@ -117,5 +96,9 @@ export class ImageGallery {
     const current = this.activeIndex();
     if (current === null) return;
     this.activeIndex.set((current + 1) % this.items.length);
+  }
+
+  ngOnDestroy(): void {
+    this.resizeObserver?.disconnect();
   }
 }
