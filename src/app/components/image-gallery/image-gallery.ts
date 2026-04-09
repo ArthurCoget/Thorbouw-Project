@@ -1,4 +1,4 @@
-import { Component, ElementRef, viewChild, signal } from '@angular/core';
+import { Component, ElementRef, viewChild, signal, AfterViewInit } from '@angular/core';
 import { IProjectImage } from '../../interfaces/iproject-content';
 
 @Component({
@@ -8,6 +8,8 @@ import { IProjectImage } from '../../interfaces/iproject-content';
   styleUrl: './image-gallery.css',
 })
 export class ImageGallery {
+  focusImageRef = viewChild<ElementRef>('focusedImage');
+
   readonly items: IProjectImage[] = [
     {
       src: 'https://images.unsplash.com/photo-1458668383970-8ddd3927deed?w=1200&q=80',
@@ -82,4 +84,38 @@ export class ImageGallery {
       description: "Nature's perfect symmetry",
     },
   ];
+
+  activeIndex = signal<number | null>(null);
+
+  isImageOpen = signal(false);
+
+  openImage(index: number): void {
+    this.activeIndex.set(index);
+    this.isImageOpen.set(true);
+    setTimeout(() => {
+      this.focusImageRef()?.nativeElement.focus();
+    });
+  }
+
+  closeImage(): void {
+    this.isImageOpen.set(false);
+    this.activeIndex.set(null);
+  }
+
+  get activeItem(): IProjectImage | null {
+    const index = this.activeIndex();
+    return index !== null ? this.items[index] : null;
+  }
+
+  prevItem(): void {
+    const current = this.activeIndex();
+    if (current === null) return;
+    this.activeIndex.set((current - 1 + this.items.length) % this.items.length);
+  }
+
+  nextItem(): void {
+    const current = this.activeIndex();
+    if (current === null) return;
+    this.activeIndex.set((current + 1) % this.items.length);
+  }
 }
