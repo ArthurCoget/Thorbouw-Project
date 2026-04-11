@@ -8,12 +8,16 @@ import {
   inject,
   PLATFORM_ID,
   Input,
+  ChangeDetectionStrategy,
+  computed,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { IProjectImage } from '../../interfaces/iproject-content';
-
+import { CarouselAlternativeRotationService } from '../../services/carousel-alternative-rotation-service';
+import { DOCUMENT } from '@angular/common';
 @Component({
   selector: 'app-image-gallery',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
   templateUrl: './image-gallery.html',
   styleUrl: './image-gallery.css',
@@ -22,14 +26,18 @@ export class ImageGallery implements AfterViewInit, OnDestroy {
   @Input({ required: true }) items: IProjectImage[] = [];
 
   private platformId = inject(PLATFORM_ID);
+  private document = inject(DOCUMENT);
+  private alternativeRotator = inject(CarouselAlternativeRotationService);
+
+  private readonly SWIPE_THRESHOLD = 50;
+  private readonly galleryRef = viewChild<ElementRef<HTMLDivElement>>('gallery');
+  private readonly focusImageRef = viewChild<ElementRef<HTMLDivElement>>('focusedImage');
+
   private resizeObserver: ResizeObserver | null = null;
-
-  readonly galleryRef = viewChild<ElementRef<HTMLElement>>('gallery');
-
-  focusImageRef = viewChild<ElementRef>('focusedImage');
+  private preventTouchMove = (e: TouchEvent) => e.preventDefault();
+  private focusTimeoutId: ReturnType<typeof setTimeout> | null = null;
 
   activeIndex = signal<number | null>(null);
-
   isImageOpen = signal(false);
 
   ngAfterViewInit() {
@@ -68,23 +76,34 @@ export class ImageGallery implements AfterViewInit, OnDestroy {
     });
   }
 
+  ngOnDestroy(): void {
+    this.resizeObserver?.disconnect();
+    this.cleanUpEventListeners();
+  }
+
   openImage(index: number): void {
     this.activeIndex.set(index);
     this.isImageOpen.set(true);
-    setTimeout(() => {
-      this.focusImageRef()?.nativeElement.focus();
-    });
+
+    if (isPlatformBrowser(this.platformId)) {
+      this.document.body.style.overflow = 'hidden';
+      this.document.documentElement.style.overflow = 'hidden';
+      this.document.addEventListener('touchmove', this.preventTouchMove, { passive: false });
+    }
+
+    this.focusTimeoutId = setTimeout(() => this.focusImageRef()?.nativeElement.focus());
   }
 
   closeImage(): void {
     this.isImageOpen.set(false);
     this.activeIndex.set(null);
+    this.cleanUpEventListeners();
   }
 
-  get activeItem(): IProjectImage | null {
+  activeItem = computed(() => {
     const index = this.activeIndex();
     return index !== null ? this.items[index] : null;
-  }
+  });
 
   prevItem(): void {
     const current = this.activeIndex();
@@ -98,7 +117,38 @@ export class ImageGallery implements AfterViewInit, OnDestroy {
     this.activeIndex.set((current + 1) % this.items.length);
   }
 
-  ngOnDestroy(): void {
-    this.resizeObserver?.disconnect();
+  onTouchStart(e: TouchEvent) {
+    this.alternativeRotator.swipeStart(e);
+  }
+
+  onTouchEnd(e: TouchEvent) {
+    this.alternativeRotator.swipeDetect(
+      e,
+      this.SWIPE_THRESHOLD,
+      () => this.nextItem(),
+      () => this.prevItem(),
+    );
+  }
+
+  onKeydown(e: KeyboardEvent) {
+    if (e.key === 'Escape') {
+      this.closeImage();
+      return;
+    }
+    this.alternativeRotator.handleKeyEvents(
+      e,
+      () => this.nextItem(),
+      () => this.prevItem(),
+    );
+  }
+
+  private cleanUpEventListeners(): void {
+    if (this.focusTimeoutId !== null) clearTimeout(this.focusTimeoutId);
+
+    if (isPlatformBrowser(this.platformId)) {
+      this.document.body.style.overflow = '';
+      this.document.documentElement.style.overflow = '';
+      this.document.removeEventListener('touchmove', this.preventTouchMove);
+    }
   }
 }

@@ -8,6 +8,7 @@
         [attr.aria-label]="'Open ' + item.title"
         (click)="openImage(i)"
         (keydown.enter)="openImage(i)"
+        (keydown.space)="openImage(i); $event.preventDefault()"
       >
         <img [src]="item.src" [alt]="item.alt" class="gallery-img" loading="lazy" />
         <figcaption class="gallery-caption">
@@ -29,35 +30,41 @@
     #focusedImage
     class="focus-image"
     (click)="closeImage()"
-    (keydown.escape)="closeImage()"
     tabindex="-1"
     role="dialog"
     aria-modal="true"
-    [attr.aria-label]="activeItem?.title"
+    [attr.aria-label]="activeItem()?.title"
+    (touchstart)="onTouchStart($event)"
+    (touchend)="onTouchEnd($event)"
+    (keydown)="onKeydown($event)"
   >
+    <button
+      class="close-image"
+      (click)="closeImage(); $event.stopPropagation()"
+      aria-label="Close the image"
+    >
+      <svg width="35" height="35" viewBox="0 0 20 20" fill="none">
+        <line
+          x1="4"
+          y1="4"
+          x2="16"
+          y2="16"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+        <line
+          x1="16"
+          y1="4"
+          x2="4"
+          y2="16"
+          stroke="currentColor"
+          stroke-width="3"
+          stroke-linecap="round"
+        />
+      </svg>
+    </button>
     <div class="focus-image-item" (click)="$event.stopPropagation()">
-      <button class="close-image" (click)="closeImage()" aria-label="Close the image">
-        <svg width="35" height="35" viewBox="0 0 20 20" fill="none">
-          <line
-            x1="4"
-            y1="4"
-            x2="16"
-            y2="16"
-            stroke="currentColor"
-            stroke-width="3"
-            stroke-linecap="round"
-          />
-          <line
-            x1="16"
-            y1="4"
-            x2="4"
-            y2="16"
-            stroke="currentColor"
-            stroke-width="3"
-            stroke-linecap="round"
-          />
-        </svg>
-      </button>
       <button
         class="focus-image-nav focus-image-nav-prev"
         (click)="prevItem()"
@@ -74,14 +81,14 @@
         </svg>
       </button>
 
-      @if (activeItem) {
+      @if (activeItem(); as item) {
         <div class="focus-image-item-container">
-          <img [src]="activeItem.src" [alt]="activeItem.alt" class="focus-image-img" />
+          <img [src]="item.src" [alt]="item.alt" class="focus-image-img" />
         </div>
         <div class="focus-image-info">
-          <span class="info-category">{{ activeItem.category }}</span>
-          <h2 class="info-title">{{ activeItem.title }}</h2>
-          <p class="info-desc">{{ activeItem.description }}</p>
+          <span class="info-category">{{ item.category }}</span>
+          <h2 class="info-title">{{ item.title }}</h2>
+          <p class="info-desc">{{ item.description }}</p>
           <span class="info-counter"> {{ (activeIndex() ?? 0) + 1 }} / {{ items.length }} </span>
         </div>
       }
