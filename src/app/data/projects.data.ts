@@ -102,4 +102,31 @@ export const PROJECTS: IProjectContent[] = [
       },
     ],
   },
+  {
+    slug: 'herent',
+    title: 'Nieuwbouw te Herent',
+    subtitle: 'Hedendaagse nieuwbouw met focus op kwaliteit en comfort',
+    description:
+      'Voor dit nieuwbouwproject in Herent realiseerden we een moderne woning met hoogwaardige afwerking en oog voor detail. Duurzaamheid en wooncomfort stonden centraal in elke fase van het bouwproces.',
+    location: 'Herent',
+    year: 2025,
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Herent/Herent_1.webp',
+        alt: 'Foto van nieuwbouw in Herent',
+      },
+      {
+        src: '/fotos&realisaties/Herent/Herent_2.webp',
+        alt: 'Foto van nieuwbouw in Herent',
+      },
+      {
+        src: '/fotos&realisaties/Herent/Herent_3.webp',
+        alt: 'Foto van nieuwbouw in Herent',
+      },
+    ],
+    images: Array.from({ length: 50 }, (_, i) => ({
+      src: `/fotos&realisaties/Herent/Herent_${i + 1}.webp`,
+      alt: 'Foto van nieuwbouw in Herent',
+    })),
+  },
 ];

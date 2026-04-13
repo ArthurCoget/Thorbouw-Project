@@ -116,6 +116,11 @@
   font-size: 0.85rem;
   color: var(--color-secondary);
   margin-top: 5px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 @media (max-width: 450px) {
