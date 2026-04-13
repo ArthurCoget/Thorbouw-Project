@@ -23,19 +23,18 @@
 }
 
 @media (width > 680px) {
-  .gallery-item:first-child:not(.last-row) {
+  .gallery-item:first-child {
     grid-area: span 2 / span 2;
   }
-  .gallery-item:nth-child(4n + 1):not(.last-row) {
+  .gallery-item:nth-child(4n + 1) {
     grid-row: span 2;
   }
-  .gallery-item:nth-child(4n + 2):not(.last-row) {
+  .gallery-item:nth-child(4n + 2) {
     grid-column: span 2;
   }
-}
-
-.last-row {
-  grid-row: span 1;
+  .gallery-item.last-row {
+    grid-row: span 1;
+  }
 }
 
 .gallery-item {
