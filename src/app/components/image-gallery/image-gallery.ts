@@ -1,17 +1,15 @@
 import {
   Component,
   ElementRef,
-  AfterViewInit,
   OnDestroy,
   viewChild,
   signal,
   inject,
   PLATFORM_ID,
-  Input,
+  input,
   ChangeDetectionStrategy,
   computed,
   effect,
-  DestroyRef,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { IProjectImage } from '../../interfaces/iproject-content';
@@ -25,7 +23,7 @@ import { DOCUMENT } from '@angular/common';
   styleUrl: './image-gallery.css',
 })
 export class ImageGallery implements OnDestroy {
-  @Input({ required: true }) items: IProjectImage[] = [];
+  items = input.required<IProjectImage[]>();
 
   private platformId = inject(PLATFORM_ID);
   private document = inject(DOCUMENT);
@@ -57,10 +55,13 @@ export class ImageGallery implements OnDestroy {
 
   private fixLastRow(): void {
     const galleryEl = this.galleryRef()?.nativeElement;
-    if (!galleryEl) return;
+    if (!galleryEl || !isPlatformBrowser(this.platformId)) return;
 
     const figures = Array.from(galleryEl.querySelectorAll<HTMLElement>('.gallery-item'));
-    figures.forEach((fig) => fig.classList.remove('last-row'));
+    figures.forEach((fig) => {
+      fig.classList.remove('last-row');
+      fig.classList.remove('last-column');
+    });
     if (figures.length === 0) return;
 
     const columnCount = window
@@ -82,11 +83,6 @@ export class ImageGallery implements OnDestroy {
       totalBlocks,
     );
 
-    console.log(
-      `Columns: ${columnCount}, Rows: ${rowCount}, Total Blocks: ${totalBlocks}, Elements: ${figures.length}`,
-    );
-    console.log(`Last row has vertical item: ${lastRowHasVerticalItem}`);
-
     if (lastRowHasVerticalItem) {
       totalBlocks -= 1;
       rowCount -= 1;
@@ -106,7 +102,12 @@ export class ImageGallery implements OnDestroy {
       lastRowHasHorizontalItem,
     );
 
-    if (!lastRowHasVerticalItem) {
+    if (elementsInLastRow === 99) {
+      figures.at(-1)?.classList.add('last-column');
+      elementsInLastRow = 3;
+    }
+
+    if (!lastRowHasVerticalItem && elementsInLastRow != 1) {
       elementsInLastRow -= 1;
     }
 
@@ -114,8 +115,9 @@ export class ImageGallery implements OnDestroy {
   }
 
   ngOnDestroy(): void {
+    if (this.resizeDebounceId !== null) cancelAnimationFrame(this.resizeDebounceId);
     this.resizeObserver?.disconnect();
-    this.resizeObserver = new ResizeObserver(() => this.fixLastRowDebounced());
+    this.resizeObserver = null;
     this.cleanUpEventListeners();
   }
 
@@ -128,7 +130,7 @@ export class ImageGallery implements OnDestroy {
       this.document.documentElement.style.overflow = 'hidden';
       this.document.addEventListener('touchmove', this.preventTouchMove, { passive: false });
     }
-
+    if (this.focusTimeoutId !== null) clearTimeout(this.focusTimeoutId);
     this.focusTimeoutId = setTimeout(() => this.focusImageRef()?.nativeElement.focus());
   }
 
@@ -140,7 +142,7 @@ export class ImageGallery implements OnDestroy {
 
   activeItem = computed(() => {
     const index = this.activeIndex();
-    return index !== null ? this.items[index] : null;
+    return index !== null ? this.items()[index] : null;
   });
 
   prevItem(): void {
@@ -211,8 +213,7 @@ export class ImageGallery implements OnDestroy {
   ): boolean {
     if (Number.isInteger((numberOfElements - 1) / 4)) return true;
     const totalCells = columns * (rows - 1);
-    console.log('Totalcells minus one:', totalCells);
-    if (blocks > totalCells) {
+    if (blocks >= totalCells) {
       return false;
     }
     return true;
@@ -243,6 +244,9 @@ export class ImageGallery implements OnDestroy {
     const totalCells = columns * rows;
     const emptyCells = totalCells - numberOfBlocks;
     const numberOfElementsInLastRow = columns - emptyCells;
+    if (numberOfElementsInLastRow === 0) {
+      return 99;
+    }
     return horizontal ? numberOfElementsInLastRow - 1 : numberOfElementsInLastRow;
   }
 

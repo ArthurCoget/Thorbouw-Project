@@ -13,10 +13,11 @@ import {
 import { ICarouselImage } from '../../interfaces/carousel-image';
 import { CommonModule, NgOptimizedImage, isPlatformBrowser } from '@angular/common';
 import { CarouselAlternativeRotationService } from '../../services/carousel-alternative-rotation-service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-image-carousel-component',
-  imports: [CommonModule, NgOptimizedImage],
+  imports: [CommonModule, NgOptimizedImage, RouterLink],
   templateUrl: './image-carousel-component.html',
   styleUrl: './image-carousel-component.css',
 })

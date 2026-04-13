@@ -35,6 +35,9 @@
   .gallery-item.last-row {
     grid-row: span 1;
   }
+  .gallery-item.last-column {
+    grid-column: span 1;
+  }
 }
 
 .gallery-item {

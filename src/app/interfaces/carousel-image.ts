@@ -3,4 +3,5 @@ export interface ICarouselImage {
   img: string;
   title: string;
   date?: string;
+  slug?: string;
 }

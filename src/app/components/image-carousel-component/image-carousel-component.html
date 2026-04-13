@@ -32,7 +32,9 @@
             >{{ secondInfoCard() }}<br /><strong>{{ activeItem()?.title }}</strong></span
           >
         </div>
-        <button class="link-btn">{{ buttonInfo() }}</button>
+        <button class="link-btn" [routerLink]="['/fotos', activeItem()?.slug]">
+          {{ buttonInfo() }}
+        </button>
       </div>
     </div>
   }

@@ -1,6 +1,6 @@
 <section class="gallery-container">
   <div class="gallery" #gallery>
-    @for (item of items; track item.src; let i = $index) {
+    @for (item of items(); track item.src; let i = $index) {
       <figure
         class="gallery-item"
         tabindex="0"
@@ -89,7 +89,7 @@
           <span class="info-category">{{ item.category }}</span>
           <h2 class="info-title">{{ item.title }}</h2>
           <p class="info-desc">{{ item.description }}</p>
-          <span class="info-counter"> {{ (activeIndex() ?? 0) + 1 }} / {{ items.length }} </span>
+          <span class="info-counter"> {{ (activeIndex() ?? 0) + 1 }} / {{ items().length }} </span>
         </div>
       }
       <button
