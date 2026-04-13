@@ -142,19 +142,19 @@ export class ImageGallery implements OnDestroy {
 
   activeItem = computed(() => {
     const index = this.activeIndex();
-    return index !== null ? this.items()[index] : null;
+    return index !== null ? this.items().at(index) : null;
   });
 
   prevItem(): void {
     const current = this.activeIndex();
     if (current === null) return;
-    this.activeIndex.set((current - 1 + this.items.length) % this.items.length);
+    this.activeIndex.set((current - 1 + this.items().length) % this.items().length);
   }
 
   nextItem(): void {
     const current = this.activeIndex();
     if (current === null) return;
-    this.activeIndex.set((current + 1) % this.items.length);
+    this.activeIndex.set((current + 1) % this.items().length);
   }
 
   onTouchStart(e: TouchEvent) {
