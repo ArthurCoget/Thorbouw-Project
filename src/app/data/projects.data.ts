@@ -131,8 +131,8 @@ export const PROJECTS: IProjectContent[] = [
     })),
   },
   {
-    slug: 'jusiuslipsius',
-    title: 'Renovatie voor Jusius Lipsius',
+    slug: 'justiuslipsius',
+    title: 'Renovatie voor Justius Lipsius',
     subtitle: 'Historische renovatie met respect voor erfgoed en moderne woonbehoeften',
     description:
       'Voor de renovatie van deze historische woning in Leuven combineerden we vakmanschap met moderne technieken om een comfortabele leefruimte te creëren, terwijl we het karakter en de charme van het oorspronkelijke gebouw behouden.',
@@ -140,15 +140,15 @@ export const PROJECTS: IProjectContent[] = [
     year: 2024,
     cardImages: [
       {
-        src: '/fotos&realisaties/JusiusLipsius/JusiusLipsius_1.webp',
+        src: '/fotos&realisaties/JustiusLipsius/Justius_1.webp',
         alt: 'Foto van renovatie in Leuven',
       },
       {
-        src: '/fotos&realisaties/JusiusLipsius/Lipsius_1.webp',
+        src: '/fotos&realisaties/JustiusLipsius/Lipsius_1.webp',
         alt: 'Foto van renovatie in Leuven',
       },
       {
-        src: '/fotos&realisaties/JusiusLipsius/Justius_15.webp',
+        src: '/fotos&realisaties/JustiusLipsius/Justius_15.webp',
         alt: 'Foto van renovatie in Leuven',
       },
     ],
