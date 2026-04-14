@@ -1,10 +1,25 @@
 :host {
   --header-width: 60%;
+  --padding-between-projects: 6em;
 }
 
 .content-header-container {
   max-width: var(--header-width);
   margin-bottom: -2em;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding-bottom: var(--padding-between-projects);
+}
+
+.projects-container app-foto-card {
+  margin: 0 calc(var(--padding-between-projects) / 2 * -1)
+    calc(var(--padding-between-projects) * -1) calc(var(--padding-between-projects) / 2 * -1);
 }
 
 @media (max-width: 750px) {
