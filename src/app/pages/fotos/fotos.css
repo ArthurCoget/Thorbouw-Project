@@ -22,9 +22,10 @@
     calc(var(--padding-between-projects) * -1) calc(var(--padding-between-projects) / 2 * -1);
 }
 
-@media (max-width: 750px) {
+@media (width < 750px) {
   :host {
     --header-width: 95%;
+    --padding-between-projects: 0em;
   }
 
   .content-header-container {

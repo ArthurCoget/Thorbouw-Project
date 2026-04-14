@@ -133,7 +133,7 @@ export const PROJECTS: IProjectContent[] = [
   {
     slug: 'justiuslipsius',
     title: 'Renovatie voor Justius Lipsius',
-    subtitle: 'Historische renovatie met respect voor erfgoed en moderne woonbehoeften',
+    subtitle: 'Renovatie met respect voor moderne woonbehoeften',
     description:
       'Voor de renovatie van deze historische woning in Leuven combineerden we vakmanschap met moderne technieken om een comfortabele leefruimte te creëren, terwijl we het karakter en de charme van het oorspronkelijke gebouw behouden.',
     location: 'Leuven',

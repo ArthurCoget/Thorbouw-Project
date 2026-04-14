@@ -57,14 +57,14 @@
   position: absolute;
   top: 55px;
   left: 15px;
-  bottom: 80px;
+  bottom: 105px;
   right: 15px;
   background: var(--color-light-grey);
   transition: 0.5s;
   z-index: 1;
 }
 
-@media (hover: hover) {
+@media (hover: hover) and (width > 550px) {
   .card:hover:before {
     transform: rotate(30deg);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
@@ -100,7 +100,7 @@
   left: 10px;
   right: 10px;
   bottom: 15px;
-  height: 75px;
+  height: 80px;
   text-align: center;
 }
 
@@ -123,12 +123,19 @@
   overflow: hidden;
 }
 
-@media (max-width: 450px) {
+@media (width < 550px) {
   :host {
     --card-width: 350px;
     --card-height: 400px;
   }
   .card-container {
     padding: 1em;
+  }
+}
+
+@media (height <= 450px) {
+  :host {
+    --card-width: 500px;
+    --card-height: 325px;
   }
 }
