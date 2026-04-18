@@ -1,6 +1,5 @@
 import { IHeroContent } from '../interfaces/hero-content';
 import { IPillar } from '../interfaces/pillar';
-import { ICarouselImage } from '../interfaces/carousel-image';
 
 export const HOME_HERO_CONTENT: IHeroContent = {
   variant: 'complete',
@@ -41,21 +40,6 @@ export const HOME_PILLARS: IPillar[] = [
     link: '/advies',
     linkText: 'Laat u duurzaam adviseren',
   },
-];
-
-export const CAROUSEL_IMAGES: ICarouselImage[] = [
-  {
-    id: 1,
-    img: 'fotos&realisaties/Herent/Herent_1.webp',
-    title: 'Nieuwbouw in Herent',
-    date: '06/2018',
-    slug: 'herent',
-  },
-  { id: 6, img: '/placeholder/1-placeholder.webp', title: 'Garden Office', date: '05/2022' },
-  { id: 2, img: '/placeholder/2-placeholder.webp', title: 'Modern Glasshouse', date: '09/2019' },
-  { id: 3, img: '/placeholder/3-placeholder.webp', title: 'Classic Renovation', date: '02/2020' },
-  { id: 4, img: '/placeholder/4-placeholder.webp', title: 'City Loft', date: '11/2021' },
-  { id: 5, img: '/placeholder/5-placeholder.webp', title: 'Garden Office', date: '05/2022' },
 ];
 
 export const HOME_CONTENT = {
