@@ -7,10 +7,11 @@ import { HeroComponent } from '../../components/hero-component/hero-component';
 import { ImageCarouselComponent } from '../../components/image-carousel-component/image-carousel-component';
 import { ICarouselImage } from '../../interfaces/carousel-image';
 import { ImageGallery } from '../../components/image-gallery/image-gallery';
+import { InteractiveLeuvenMap } from '../../components/interactive-leuven-map/interactive-leuven-map';
 
 @Component({
   selector: 'app-project-detail',
-  imports: [HeroComponent, ImageCarouselComponent, RouterLink, ImageGallery],
+  imports: [HeroComponent, ImageCarouselComponent, RouterLink, ImageGallery, InteractiveLeuvenMap],
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css',
 })
