@@ -21,9 +21,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "styles": ["src/styles.css"],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -61,7 +59,8 @@
               "buildTarget": "thorbouw-project:build:production"
             },
             "development": {
-              "buildTarget": "thorbouw-project:build:development"
+              "buildTarget": "thorbouw-project:build:development",
+              "allowedHosts": ["localhost", "192.168.1.25", "0.0.0.0"]
             }
           },
           "defaultConfiguration": "development"
@@ -79,9 +78,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
-            ]
+            "styles": ["src/styles.css"]
           }
         }
       }
