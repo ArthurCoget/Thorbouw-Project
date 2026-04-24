@@ -1,5 +1,5 @@
 import { IProjectContent } from '../interfaces/iproject-content';
-import { IMAGES_JUSTIUS_LIPSIUS } from './project-images.data';
+import { IMAGES_JUSTIUS_LIPSIUS, IMAGES_UTEN } from './project-images.data';
 
 export const PROJECTS: IProjectContent[] = [
   {
@@ -153,5 +153,28 @@ export const PROJECTS: IProjectContent[] = [
       },
     ],
     images: IMAGES_JUSTIUS_LIPSIUS,
+  },
+  {
+    slug: 'uten',
+    title: 'Renovatie te Ottenburg',
+    subtitle: 'Renovatie met oog voor detail en kwaliteit',
+    description: 'Renovatie in Ottenburd waarbij de link met natuur en buitenleven centraal staat.',
+    location: 'Ottenburg',
+    year: 2024,
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Uten/Uten_1.webp',
+        alt: 'Foto van renovatie in Ottenburg',
+      },
+      {
+        src: '/fotos&realisaties/Uten/Uten_2.webp',
+        alt: 'Foto van renovatie in Ottenburg',
+      },
+      {
+        src: '/fotos&realisaties/Uten/Uten_3.webp',
+        alt: 'Foto van renovatie in Ottenburg',
+      },
+    ],
+    images: IMAGES_UTEN,
   },
 ];
