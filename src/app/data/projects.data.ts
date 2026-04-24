@@ -1,5 +1,11 @@
 import { IProjectContent } from '../interfaces/iproject-content';
-import { IMAGES_JUSTIUS_LIPSIUS, IMAGES_MEULEN, IMAGES_UTEN } from './project-images.data';
+import {
+  IMAGES_JUSTIUS_LIPSIUS,
+  IMAGES_MEULEN,
+  IMAGES_SUCAET,
+  IMAGES_UTEN,
+  IMAGES_VERHOEF,
+} from './project-images.data';
 
 export const PROJECTS: IProjectContent[] = [
   {
@@ -200,5 +206,54 @@ export const PROJECTS: IProjectContent[] = [
       },
     ],
     images: IMAGES_MEULEN,
+  },
+  {
+    slug: 'sucaet',
+    title: 'Renovatie voor Heverlee',
+    offset: 35,
+    subtitle: 'Renovatie met focus op moderniteit en comfort',
+    description:
+      'Voor deze renovatie in Heverlee hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.',
+    location: 'Heverlee',
+    year: 2024,
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Sucaet/heverlee_1.webp',
+        alt: 'Foto van renovatie in Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Sucaet/heverlee_10.webp',
+        alt: 'Foto van renovatie in Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Sucaet/heverlee_20.webp',
+        alt: 'Foto van renovatie in Heverlee',
+      },
+    ],
+    images: IMAGES_SUCAET,
+  },
+  {
+    slug: 'verhoef',
+    title: 'Renovatie te Hoog Linden',
+    subtitle: 'Renovatie met focus op moderniteit en comfort',
+    description:
+      'Voor deze renovatie in Hoog Linden hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.',
+    location: 'Hoog Linden',
+    year: 2024,
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Verhoef/verhoef_1.webp',
+        alt: 'Foto van renovatie in Hoog Linden',
+      },
+      {
+        src: '/fotos&realisaties/Verhoef/verhoef_10.webp',
+        alt: 'Foto van renovatie in Hoog Linden',
+      },
+      {
+        src: '/fotos&realisaties/Verhoef/verhoef_20.webp',
+        alt: 'Foto van renovatie in Hoog Linden',
+      },
+    ],
+    images: IMAGES_VERHOEF,
   },
 ];

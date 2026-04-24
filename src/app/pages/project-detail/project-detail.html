@@ -1,5 +1,9 @@
 <section class="project-detail">
-  <app-top-image-component [noPath]="true" [content]="heroContent"></app-top-image-component>
+  <app-top-image-component
+    [noPath]="true"
+    [content]="heroContent"
+    [customImagePosition]="project?.offset || 65"
+  ></app-top-image-component>
   <nav class="breadcrumb">
     <a routerLink="/fotos">Foto's</a>
     <span>›</span>

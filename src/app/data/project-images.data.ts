@@ -206,3 +206,104 @@ export const IMAGES_MEULEN = [
     prefix: meulenPrefix,
   }),
 ];
+
+const sucaetLink = '/fotos&realisaties/Sucaet';
+const sucaetPrefix = 'heverlee';
+export const IMAGES_SUCAET = [
+  ...createImages(1, 10, sucaetLink, 'Foto van renovatie in Heverlee exterieur', {
+    category: 'Exterieur',
+    prefix: sucaetPrefix,
+  }),
+  ...createImages(11, 11, sucaetLink, 'Foto van renovatie in Heverlee living', {
+    category: 'Interieur',
+    title: 'Living',
+    description: 'Prachtige gezellige living ruimte',
+    prefix: sucaetPrefix,
+  }),
+  ...createImages(12, 18, sucaetLink, 'Foto van renovatie in Heverlee eetkamer', {
+    category: 'Interieur',
+    title: 'Eetkamer',
+    description: 'Ruime eetkamer met een grote eettafel',
+    prefix: sucaetPrefix,
+  }),
+  ...createImages(19, 20, sucaetLink, 'Foto van renovatie in Heverlee keuken', {
+    category: 'Interieur',
+    title: 'Keuken',
+    prefix: sucaetPrefix,
+  }),
+  ...createImages(21, 24, sucaetLink, 'Foto van renovatie in Heverlee bureau', {
+    category: 'Interieur',
+    title: 'Bureau',
+    prefix: sucaetPrefix,
+  }),
+  ...createImages(25, 25, sucaetLink, 'Foto van renovatie in Heverlee trappen', {
+    category: 'Interieur',
+    title: 'Trappen',
+    description:
+      'Trappen die zich bevinden op de eerste verdieping van de woning met glazen balustrade',
+    prefix: sucaetPrefix,
+  }),
+  ...createImages(26, 28, sucaetLink, 'Foto van renovatie in Heverlee badkamer', {
+    category: 'Interieur',
+    title: 'Badkamer',
+    prefix: sucaetPrefix,
+  }),
+  ...createImages(29, 32, sucaetLink, 'Foto van renovatie in Heverlee slaapkamer', {
+    category: 'Interieur',
+    title: 'Slaapkamer',
+    prefix: sucaetPrefix,
+  }),
+  ...createImages(33, 36, sucaetLink, 'Foto van renovatie in Heverlee trappen/hal', {
+    category: 'Interieur',
+    title: 'Trappen/Hal',
+    prefix: sucaetPrefix,
+  }),
+  ...createImages(37, 45, sucaetLink, 'Foto van renovatie in Heverlee exterieur', {
+    category: 'Exterieur',
+    prefix: sucaetPrefix,
+  }),
+];
+
+const verhoefLink = '/fotos&realisaties/Verhoef';
+const verhoefPrefix = 'verhoef';
+export const IMAGES_VERHOEF = [
+  ...createImages(1, 1, verhoefLink, 'Foto van renovatie in Leuven badkamer', {
+    category: 'Interieur',
+    title: 'Badkamer',
+    prefix: verhoefPrefix,
+  }),
+  ...createImages(2, 2, verhoefLink, 'Foto van renovatie in Leuven kamer/bureau', {
+    category: 'Interieur',
+    title: 'Kamer/Bureau',
+    prefix: verhoefPrefix,
+  }),
+  ...createImages(3, 3, verhoefLink, 'Foto van renovatie in Leuven woonkamer', {
+    category: 'Interieur',
+    title: 'Woonkamer',
+    prefix: verhoefPrefix,
+  }),
+  ...createImages(5, 10, verhoefLink, 'Foto van renovatie in Leuven badkamer', {
+    category: 'Interieur',
+    title: 'Badkamer',
+    prefix: verhoefPrefix,
+  }),
+  ...createImages(11, 12, verhoefLink, 'Foto van renovatie in Leuven kamer/bureau', {
+    category: 'Interieur',
+    title: 'Kamer/Bureau',
+    prefix: verhoefPrefix,
+  }),
+  ...createImages(13, 15, verhoefLink, 'Foto van renovatie in Leuven trappen', {
+    category: 'Interieur',
+    title: 'Trappen',
+    prefix: verhoefPrefix,
+  }),
+  ...createImages(16, 19, verhoefLink, 'Foto van renovatie in Leuven veranda', {
+    category: 'Interieur',
+    title: 'Veranda',
+    prefix: verhoefPrefix,
+  }),
+  ...createImages(20, 25, verhoefLink, 'Foto van renovatie in Leuven exterieur', {
+    category: 'Exterieur',
+    prefix: verhoefPrefix,
+  }),
+];

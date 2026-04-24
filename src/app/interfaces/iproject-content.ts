@@ -1,3 +1,5 @@
+import { off } from 'process';
+
 export interface IProjectImage {
   src: string;
   alt: string;
@@ -15,6 +17,7 @@ export interface IProjectContent {
   year: number;
   cardImages: IProjectImage[];
   images: IProjectImage[];
+  offset?: number;
 }
 
 export function createImages(
