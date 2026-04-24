@@ -92,62 +92,117 @@ export const IMAGES_JUSTIUS_LIPSIUS = [
 ];
 
 const utenLink = '/fotos&realisaties/Uten';
-const prefix = 'Uten';
+const utenPrefix = 'Uten';
 export const IMAGES_UTEN = [
   ...createImages(1, 1, utenLink, 'Foto van renovatie in Ottenburg living', {
     category: 'Interieur',
     title: 'Living',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(2, 16, utenLink, 'Foto van renovatie in Ottenburg exterieur', {
     category: 'Exterieur',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(17, 17, utenLink, 'Foto van renovatie in Ottenburg inkom hall', {
     category: 'Interieur',
     title: 'Inkom hall',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(18, 18, utenLink, 'Foto van renovatie in Ottenburg trappen hall', {
     category: 'Interieur',
     title: 'Trappen hall',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(19, 22, utenLink, 'Foto van renovatie in Ottenburg badkamer', {
     category: 'Interieur',
     title: 'Badkamer',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(23, 23, utenLink, 'Foto van renovatie in Ottenburg slaapkamer', {
     category: 'Interieur',
     title: 'Slaapkamer',
     description: 'Renovatie van de kinderkamer',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(24, 24, utenLink, 'Foto van renovatie in Ottenburg slaapkamer', {
     category: 'Interieur',
     title: 'Slaapkamer',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(25, 27, utenLink, 'Foto van renovatie in Ottenburg keuken eiland', {
     category: 'Interieur',
     title: 'Keuken eiland',
     description: 'Prachtige keuken met een groot eiland in het midden',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(28, 28, utenLink, 'Foto van renovatie in Ottenburg keuken', {
     category: 'Interieur',
     title: 'Keuken',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(29, 29, utenLink, 'Foto van renovatie in Ottenburg ontspanningsruimte', {
     category: 'Interieur',
     title: 'Ontspanningsruimte',
-    prefix: prefix,
+    prefix: utenPrefix,
   }),
   ...createImages(30, 30, utenLink, 'Foto van renovatie in Ottenburg art studio', {
     category: 'Interieur',
     title: 'Art studio',
-    prefix: prefix,
+    prefix: utenPrefix,
+  }),
+];
+
+const meulenLink = '/fotos&realisaties/Vandermeulen';
+const meulenPrefix = 'leuven';
+export const IMAGES_MEULEN = [
+  ...createImages(1, 3, meulenLink, 'Foto van renovatie in Leuven bureau', {
+    category: 'Interieur',
+    title: 'Bureau',
+    prefix: meulenPrefix,
+  }),
+  ...createImages(4, 5, meulenLink, 'Foto van renovatie in Leuven living', {
+    category: 'Interieur',
+    title: 'Living',
+    prefix: meulenPrefix,
+  }),
+  ...createImages(6, 6, meulenLink, 'Foto van renovatie in Leuven waskot', {
+    category: 'Interieur',
+    title: 'Waskot',
+    prefix: meulenPrefix,
+  }),
+  ...createImages(7, 10, meulenLink, 'Foto van renovatie in Leuven keuken', {
+    category: 'Interieur',
+    title: 'Keuken',
+    prefix: meulenPrefix,
+  }),
+  ...createImages(11, 11, meulenLink, 'Foto van renovatie in Leuven klerenkast', {
+    category: 'Interieur',
+    title: 'Klerenkast',
+    prefix: meulenPrefix,
+  }),
+  ...createImages(12, 14, meulenLink, 'Foto van renovatie in Leuven slaapkamer', {
+    category: 'Interieur',
+    title: 'Slaapkamer',
+    prefix: meulenPrefix,
+  }),
+  ...createImages(15, 17, meulenLink, 'Foto van renovatie in Leuven living', {
+    category: 'Interieur',
+    title: 'Living',
+    prefix: meulenPrefix,
+  }),
+  ...createImages(18, 23, meulenLink, 'Foto van renovatie in Leuven gang/hal', {
+    category: 'Interieur',
+    title: 'Gang/Hal',
+    prefix: meulenPrefix,
+  }),
+  ...createImages(24, 25, meulenLink, 'Foto van renovatie in Leuven spoelbakken badkamer', {
+    category: 'Interieur',
+    title: 'Spoelbakken Badkamer',
+    prefix: meulenPrefix,
+  }),
+  ...createImages(26, 27, meulenLink, 'Foto van renovatie in Leuven eettafel', {
+    category: 'Interieur',
+    title: 'Eettafel',
+    prefix: meulenPrefix,
   }),
 ];

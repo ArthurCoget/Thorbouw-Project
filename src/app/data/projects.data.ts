@@ -1,5 +1,5 @@
 import { IProjectContent } from '../interfaces/iproject-content';
-import { IMAGES_JUSTIUS_LIPSIUS, IMAGES_UTEN } from './project-images.data';
+import { IMAGES_JUSTIUS_LIPSIUS, IMAGES_MEULEN, IMAGES_UTEN } from './project-images.data';
 
 export const PROJECTS: IProjectContent[] = [
   {
@@ -157,7 +157,7 @@ export const PROJECTS: IProjectContent[] = [
   {
     slug: 'uten',
     title: 'Renovatie te Ottenburg',
-    subtitle: 'Renovatie met oog voor detail en kwaliteit',
+    subtitle: 'Renovatie met een focus op verbinding met de natuur',
     description: 'Renovatie in Ottenburd waarbij de link met natuur en buitenleven centraal staat.',
     location: 'Ottenburg',
     year: 2024,
@@ -176,5 +176,29 @@ export const PROJECTS: IProjectContent[] = [
       },
     ],
     images: IMAGES_UTEN,
+  },
+  {
+    slug: 'meulen',
+    title: 'Renovatie te Leuven',
+    subtitle: 'Renovatie met focus op het creëren van een warme en gezellige leefruimte',
+    description:
+      'Oude woning in leuven gerenoveerd tot een warme en gezellige leefruimte. De renovatie omvatte het behoud van karakteristieke elementen, terwijl moderne voorzieningen werden geïntegreerd om een comfortabele en functionele woonomgeving te creëren.',
+    location: 'Leuven',
+    year: 2024,
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Vandermeulen/leuven_1.webp',
+        alt: 'Foto van renovatie in Leuven',
+      },
+      {
+        src: '/fotos&realisaties/Vandermeulen/leuven_10.webp',
+        alt: 'Foto van renovatie in Leuven',
+      },
+      {
+        src: '/fotos&realisaties/Vandermeulen/leuven_15.webp',
+        alt: 'Foto van renovatie in Leuven',
+      },
+    ],
+    images: IMAGES_MEULEN,
   },
 ];
