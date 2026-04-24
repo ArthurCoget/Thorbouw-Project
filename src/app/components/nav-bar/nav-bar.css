@@ -60,7 +60,7 @@ a::after {
   bottom: -5px;
   height: 3px;
   width: 100%;
-  background-color: var(--color-secondary);
+  background-color: var(--color-white);
 
   transform: scaleX(0);
   transform-origin: left;
@@ -74,7 +74,7 @@ a.active::after {
 
 a:hover,
 a.active {
-  color: var(--color-secondary);
+  color: var(--color-white);
 }
 
 .no-transition {
