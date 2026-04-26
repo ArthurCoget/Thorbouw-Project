@@ -9,33 +9,20 @@
   max-width: 1400px;
 
   border: solid 2px var(--color-primary);
-  overflow: hidden;
-  cursor: grab;
-}
-.image-container:active {
-  cursor: grabbing;
 }
 
-.zoom-wrapper {
-  position: relative;
+.map-wrapper {
   width: 100%;
-  will-change: transform;
-  aspect-ratio: 16/9;
-}
-.zoom-wrapper img {
-  user-select: none;
-  pointer-events: none;
+  height: 500px;
 }
 
-.zone {
-  position: absolute;
+.custom-zone-marker {
   cursor: pointer;
 }
 
-.zone:hover .flag {
+.custom-zone-marker:hover .flag {
   fill: var(--color-secondary);
 }
-
 .legend {
   position: absolute;
   left: 0;
@@ -44,7 +31,7 @@
   height: 90px;
   width: 200px;
 
-  background-color: white;
+  background-color: var(--color-white);
   border-radius: 0 10px 0 0;
 
   display: flex;
@@ -52,6 +39,7 @@
   justify-content: center;
 
   cursor: default;
+  z-index: 1001;
 }
 
 .legend-info {
