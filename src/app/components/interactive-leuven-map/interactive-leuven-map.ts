@@ -5,6 +5,8 @@ import {
   afterNextRender,
   ViewEncapsulation,
   Input,
+  OnChanges,
+  SimpleChanges,
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { LngLatBounds } from 'maplibre-gl';
@@ -16,13 +18,15 @@ import { LngLatBounds } from 'maplibre-gl';
   styleUrl: './interactive-leuven-map.css',
   encapsulation: ViewEncapsulation.None,
 })
-export class InteractiveLeuvenMap {
+export class InteractiveLeuvenMap implements OnChanges {
   @ViewChild('mapContainer') mapContainerRef!: ElementRef<HTMLDivElement>;
 
   @Input('mapCenter') mapCenter?: [number, number] = [4.7005, 50.8798];
   @Input('zones') zones?: { coords: [number, number]; slug: string }[];
 
   private map: any;
+  private maplibregl: any;
+  private markers: any[] = [];
 
   constructor(private router: Router) {
     afterNextRender(() => {
@@ -30,15 +34,25 @@ export class InteractiveLeuvenMap {
     });
   }
 
+  ngOnChanges(changes: SimpleChanges): void {
+    if (!this.map) return;
+
+    if (changes['mapCenter'] || changes['zones']) {
+      this.clearMarkers();
+      this.map.flyTo({ center: this.mapCenter, zoom: 13 });
+      this.addMarkers(this.maplibregl);
+    }
+  }
+
   private async initMap() {
-    const maplibregl = (await import('maplibre-gl')).default;
+    this.maplibregl = (await import('maplibre-gl')).default;
 
     const maxBounds = new LngLatBounds(
       [4.418231, 50.7366], // Southwest coordinates
       [5.101988, 50.991537], // Northeast coordinates
     );
 
-    this.map = new maplibregl.Map({
+    this.map = new this.maplibregl.Map({
       container: this.mapContainerRef.nativeElement,
       style: {
         version: 8,
@@ -68,11 +82,16 @@ export class InteractiveLeuvenMap {
       touchPitch: false,
     });
 
-    this.map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+    this.map.addControl(new this.maplibregl.NavigationControl({ showCompass: false }), 'top-right');
 
     console.log(this.zones);
 
-    this.addMarkers(maplibregl);
+    this.addMarkers(this.maplibregl);
+  }
+
+  private clearMarkers(): void {
+    this.markers.forEach((marker) => marker.remove());
+    this.markers = [];
   }
 
   private addMarkers(maplibregl: any): void {
@@ -83,6 +102,7 @@ export class InteractiveLeuvenMap {
       link.href = `/fotos/${zone.slug}`;
 
       link.addEventListener('click', (e) => {
+        e.preventDefault();
         this.router.navigate(['/fotos', zone.slug]);
       });
 
@@ -94,7 +114,11 @@ export class InteractiveLeuvenMap {
 
       link.appendChild(el);
 
-      new maplibregl.Marker({ element: link }).setLngLat(zone.coords).addTo(this.map);
+      const marker = new maplibregl.Marker({ element: link })
+        .setLngLat(zone.coords)
+        .addTo(this.map);
+
+      this.markers.push(marker);
     });
   }
 }

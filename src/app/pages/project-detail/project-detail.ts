@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { ProjectService } from '../../services/project';
 import { IProjectContent, IProjectImage } from '../../interfaces/iproject-content';
@@ -8,6 +8,7 @@ import { ImageCarouselComponent } from '../../components/image-carousel-componen
 import { ICarouselImage } from '../../interfaces/carousel-image';
 import { ImageGallery } from '../../components/image-gallery/image-gallery';
 import { InteractiveLeuvenMap } from '../../components/interactive-leuven-map/interactive-leuven-map';
+import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-project-detail',
@@ -15,7 +16,9 @@ import { InteractiveLeuvenMap } from '../../components/interactive-leuven-map/in
   templateUrl: './project-detail.html',
   styleUrl: './project-detail.css',
 })
-export class ProjectDetail implements OnInit {
+export class ProjectDetail implements OnInit, OnDestroy {
+  private destroy$ = new Subject<void>();
+
   private route = inject(ActivatedRoute);
   private projectService = inject(ProjectService);
 
@@ -33,23 +36,30 @@ export class ProjectDetail implements OnInit {
     this.projectService.getAllCoords();
 
   ngOnInit(): void {
-    const slug = this.route.snapshot.paramMap.get('slug');
-    this.project = this.projectService.getBySlug(slug ?? '');
+    this.route.paramMap.pipe(takeUntil(this.destroy$)).subscribe((params) => {
+      const slug = params.get('slug');
+      this.project = this.projectService.getBySlug(slug ?? '');
 
-    if (this.project) {
-      this.heroContent = {
-        variant: 'simple',
-        title: this.project.title,
-        image: this.project.images[0].src,
-        altText: this.project.images[0].alt,
-      };
-      this.carouselImages = this.project.images.map((image, index) => ({
-        id: index,
-        img: image.src,
-        title: image.alt,
-      }));
-      this.images = this.project.images;
-    }
+      if (this.project) {
+        this.heroContent = {
+          variant: 'simple',
+          title: this.project.title,
+          image: this.project.images[0].src,
+          altText: this.project.images[0].alt,
+        };
+        this.carouselImages = this.project.images.map((image, index) => ({
+          id: index,
+          img: image.src,
+          title: image.alt,
+        }));
+        this.images = this.project.images;
+      }
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
   readonly DETAILS_CONTENT = {
