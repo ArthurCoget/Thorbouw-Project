@@ -23,13 +23,6 @@
   outline: none;
 }
 
-.custom-zone-marker {
-  cursor: pointer;
-}
-
-.custom-zone-marker:hover .flag {
-  fill: var(--color-secondary);
-}
 .legend {
   position: absolute;
   left: 0;

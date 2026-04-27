@@ -11,6 +11,10 @@ export class ProjectService {
   }
 
   getBySlug(slug: string): IProjectContent | undefined {
-    return PROJECTS.find((p) => p.slug === slug);
+    return this.getAll().find((p) => p.slug === slug);
+  }
+
+  getAllCoords(): { coords: [number, number]; slug: string }[] {
+    return this.getAll().map((p) => ({ coords: p.locationCoord, slug: p.slug }));
   }
 }

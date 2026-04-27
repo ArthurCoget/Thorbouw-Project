@@ -29,6 +29,9 @@ export class ProjectDetail implements OnInit {
     altText: '',
   };
 
+  readonly allCoords: { coords: [number, number]; slug: string }[] =
+    this.projectService.getAllCoords();
+
   ngOnInit(): void {
     const slug = this.route.snapshot.paramMap.get('slug');
     this.project = this.projectService.getBySlug(slug ?? '');

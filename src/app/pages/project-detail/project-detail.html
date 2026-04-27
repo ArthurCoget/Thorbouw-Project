@@ -26,5 +26,8 @@
     <h2 class="title">{{ DETAILS_CONTENT.mapTitile }}</h2>
     <p class="subtitle">{{ DETAILS_CONTENT.mapSubtitle }}</p>
   </div>
-  <app-interactive-leuven-map></app-interactive-leuven-map>
+  <app-interactive-leuven-map
+    [mapCenter]="project?.locationCoord"
+    [zones]="allCoords"
+  ></app-interactive-leuven-map>
 </section>

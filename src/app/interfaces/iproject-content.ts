@@ -14,6 +14,7 @@ export interface IProjectContent {
   subtitle: string;
   description: string;
   location: string;
+  locationCoord: [number, number];
   year: number;
   cardImages: IProjectImage[];
   images: IProjectImage[];

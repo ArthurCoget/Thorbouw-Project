@@ -1,12 +1,12 @@
 import {
   Component,
-  signal,
   ElementRef,
   ViewChild,
   afterNextRender,
   ViewEncapsulation,
   Input,
 } from '@angular/core';
+import { Router } from '@angular/router';
 import { LngLatBounds } from 'maplibre-gl';
 
 @Component({
@@ -20,15 +20,11 @@ export class InteractiveLeuvenMap {
   @ViewChild('mapContainer') mapContainerRef!: ElementRef<HTMLDivElement>;
 
   @Input('mapCenter') mapCenter?: [number, number] = [4.7005, 50.8798];
+  @Input('zones') zones?: { coords: [number, number]; slug: string }[];
 
   private map: any;
 
-  zones = signal([
-    { id: 1, lat: 50.8798, lng: 4.7005 },
-    { id: 2, lat: 50.865, lng: 4.68 },
-  ]);
-
-  constructor() {
+  constructor(private router: Router) {
     afterNextRender(() => {
       this.initMap();
     });
@@ -74,7 +70,31 @@ export class InteractiveLeuvenMap {
 
     this.map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
 
+    console.log(this.zones);
+
     this.addMarkers(maplibregl);
   }
-  private addMarkers(maplibregl: any): void {}
+
+  private addMarkers(maplibregl: any): void {
+    if (!this.zones) return;
+
+    this.zones.forEach((zone) => {
+      const link = document.createElement('a');
+      link.href = `/fotos/${zone.slug}`;
+
+      link.addEventListener('click', (e) => {
+        this.router.navigate(['/fotos', zone.slug]);
+      });
+
+      const el = document.createElement('img');
+      el.src = zone.coords === this.mapCenter ? 'SVGs/active_map_flag.svg' : 'SVGs/map_flag.svg';
+      el.style.width = '35px';
+      el.style.height = '35px';
+      el.style.cursor = 'pointer';
+
+      link.appendChild(el);
+
+      new maplibregl.Marker({ element: link }).setLngLat(zone.coords).addTo(this.map);
+    });
+  }
 }

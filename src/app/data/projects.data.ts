@@ -15,6 +15,7 @@ export const PROJECTS: IProjectContent[] = [
     description:
       'Met kwalitatieve materialen en oog voor detail realiseren we duurzame woonoplossingen.',
     location: 'Wespelaar',
+    locationCoord: [4.636699, 50.95818],
     year: 2024,
     cardImages: [
       {
@@ -116,6 +117,7 @@ export const PROJECTS: IProjectContent[] = [
     description:
       'Voor dit nieuwbouwproject in Herent realiseerden we een moderne woning met hoogwaardige afwerking en oog voor detail. Duurzaamheid en wooncomfort stonden centraal in elke fase van het bouwproces.',
     location: 'Herent',
+    locationCoord: [4.671824, 50.90535],
     year: 2025,
     cardImages: [
       {
@@ -143,6 +145,7 @@ export const PROJECTS: IProjectContent[] = [
     description:
       'Voor de renovatie van deze historische woning in Leuven combineerden we vakmanschap met moderne technieken om een comfortabele leefruimte te creëren, terwijl we het karakter en de charme van het oorspronkelijke gebouw behouden.',
     location: 'Leuven',
+    locationCoord: [4.703989, 50.88378],
     year: 2024,
     cardImages: [
       {
@@ -166,6 +169,7 @@ export const PROJECTS: IProjectContent[] = [
     subtitle: 'Renovatie met een focus op verbinding met de natuur',
     description: 'Renovatie in Ottenburd waarbij de link met natuur en buitenleven centraal staat.',
     location: 'Ottenburg',
+    locationCoord: [4.611899, 50.75265],
     year: 2024,
     cardImages: [
       {
@@ -190,6 +194,7 @@ export const PROJECTS: IProjectContent[] = [
     description:
       'Oude woning in leuven gerenoveerd tot een warme en gezellige leefruimte. De renovatie omvatte het behoud van karakteristieke elementen, terwijl moderne voorzieningen werden geïntegreerd om een comfortabele en functionele woonomgeving te creëren.',
     location: 'Leuven',
+    locationCoord: [4.692895, 50.87609],
     year: 2024,
     cardImages: [
       {
@@ -215,6 +220,7 @@ export const PROJECTS: IProjectContent[] = [
     description:
       'Voor deze renovatie in Heverlee hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.',
     location: 'Heverlee',
+    locationCoord: [4.690487, 50.85946],
     year: 2024,
     cardImages: [
       {
@@ -239,6 +245,7 @@ export const PROJECTS: IProjectContent[] = [
     description:
       'Voor deze renovatie in Hoog Linden hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.',
     location: 'Hoog Linden',
+    locationCoord: [4.765579, 50.90407],
     year: 2024,
     cardImages: [
       {
