@@ -8,12 +8,19 @@
   width: 90dvw;
   max-width: 1400px;
 
+  max-height: 90dvh;
+
   border: solid 2px var(--color-primary);
+  aspect-ratio: 16 / 9;
 }
 
 .map-wrapper {
   width: 100%;
-  height: 500px;
+  height: 100%;
+}
+
+.maplibregl-canvas {
+  outline: none;
 }
 
 .custom-zone-marker {

@@ -5,8 +5,9 @@ import {
   ViewChild,
   afterNextRender,
   ViewEncapsulation,
+  Input,
 } from '@angular/core';
-import * as L from 'leaflet';
+import { LngLatBounds } from 'maplibre-gl';
 
 @Component({
   selector: 'app-interactive-leuven-map',
@@ -17,48 +18,63 @@ import * as L from 'leaflet';
 })
 export class InteractiveLeuvenMap {
   @ViewChild('mapContainer') mapContainerRef!: ElementRef<HTMLDivElement>;
-  private map!: L.Map;
+
+  @Input('mapCenter') mapCenter?: [number, number] = [4.7005, 50.8798];
+
+  private map: any;
+
   zones = signal([
     { id: 1, lat: 50.8798, lng: 4.7005 },
     { id: 2, lat: 50.865, lng: 4.68 },
   ]);
+
   constructor() {
     afterNextRender(() => {
       this.initMap();
     });
   }
+
   private async initMap() {
-    const leaflet = await import('leaflet');
-    const container = this.mapContainerRef.nativeElement;
-    if (!container.offsetWidth || !container.offsetHeight) {
-      console.warn('Map container has no dimensions');
-      return;
-    }
-    const mapBounds = leaflet.latLngBounds(
-      leaflet.latLng(50.976743, 4.589639),
-      leaflet.latLng(50.73879, 4.817716),
+    const maplibregl = (await import('maplibre-gl')).default;
+
+    const maxBounds = new LngLatBounds(
+      [4.418231, 50.7366], // Southwest coordinates
+      [5.101988, 50.991537], // Northeast coordinates
     );
-    this.map = leaflet.map(this.mapContainerRef.nativeElement, {
-      center: [50.8798, 4.7005],
+
+    this.map = new maplibregl.Map({
+      container: this.mapContainerRef.nativeElement,
+      style: {
+        version: 8,
+        sources: {
+          osm: {
+            type: 'raster',
+            tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'],
+            tileSize: 256,
+            attribution: '© OpenStreetMap contributors',
+          },
+        },
+        layers: [
+          {
+            id: 'osm-layer',
+            type: 'raster',
+            source: 'osm',
+            minzoom: 0,
+            maxzoom: 19,
+          },
+        ],
+      },
+      center: this.mapCenter,
       zoom: 13,
-      minZoom: 11,
-      maxZoom: 18,
-      maxBounds: mapBounds,
-      maxBoundsViscosity: 1.0,
-      zoomControl: false,
-    });
-    leaflet
-      .tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors',
-      })
-      .addTo(this.map);
-    this.map.whenReady(() => {
-      setTimeout(() => {
-        this.map.invalidateSize();
-      }, 1000);
+      minZoom: 7,
+      maxZoom: 16,
+      maxBounds: maxBounds,
+      touchPitch: false,
     });
 
-    this.addMarkers(leaflet);
+    this.map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+
+    this.addMarkers(maplibregl);
   }
-  private addMarkers(leaflet: typeof L): void {}
+  private addMarkers(maplibregl: any): void {}
 }

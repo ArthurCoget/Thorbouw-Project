@@ -52,5 +52,7 @@ export class ProjectDetail implements OnInit {
   readonly DETAILS_CONTENT = {
     galleryTitle: 'Overzicht van alle afbeeldingen van dit project',
     mapTitile: 'Kaart met al onze projecten',
+    mapSubtitle:
+      'U mag scrollen om in en uit te zoomen en slepen om te navigeren. Klik op een marker voor meer informatie over dat project. De markers weergeven geen exacte locatie van onze projecten, maar geven een indicatie van de buurt waar ze zich bevinden.',
   };
 }
