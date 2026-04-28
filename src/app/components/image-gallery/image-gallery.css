@@ -95,6 +95,7 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   margin-bottom: 0.15rem;
+  overflow: hidden;
 }
 .caption-title,
 .info-title {
@@ -102,6 +103,7 @@
   font-weight: 700;
   color: var(--color-base);
   padding-bottom: 0.25em;
+  overflow: hidden;
 }
 
 .caption-desc {
@@ -116,6 +118,7 @@
   color: var(--color-lightgrey);
   margin: 0;
   padding-bottom: 0.25em;
+  overflow: hidden;
 }
 
 .cta {
@@ -256,6 +259,7 @@
   font-weight: 500;
   color: var(--color-base);
   align-self: flex-end;
+  overflow: hidden;
 }
 
 @media (width <= 640px) {
