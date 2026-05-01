@@ -1,0 +1,18 @@
+<section class="image-text-container" [class.reverse]="reverse" [class.light]="light">
+  <h2 [id]="content.id" class="title">
+    {{ content.title }}
+  </h2>
+
+  <div class="content-container">
+    <div class="text-container">
+      @for (item of content.blocks; track $index) {
+        <h3 class="smaller-title">{{ item.subtitle }}</h3>
+        <p class="description">{{ item.description }}</p>
+      }
+    </div>
+
+    <div class="image-container">
+      <img [src]="content.image" [alt]="content.imageAlt" loading="lazy" decoding="async" />
+    </div>
+  </div>
+</section>

@@ -19,5 +19,7 @@ export class TimelineComponent {
   @Input({ required: true }) items!: {
     title: string;
     description: string;
+    link: string;
+    fragment: string;
   }[];
 }

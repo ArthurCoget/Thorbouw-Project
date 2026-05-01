@@ -6,4 +6,13 @@
       [items]="timelineItems"
     ></app-timeline-component>
   </div>
+  <div>
+    @for (item of items; track $index) {
+      <app-text-and-image-component
+        [content]="item"
+        [reverse]="$index % 2 === 1"
+        [light]="$index % 2 === 1"
+      />
+    }
+  </div>
 </section>

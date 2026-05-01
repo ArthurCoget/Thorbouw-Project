@@ -4,8 +4,12 @@
     <p class="subtitle extra-margin">
       {{ titleAndDescriptionAndButton.description }}
     </p>
-    <a routerLink="{{ titleAndDescriptionAndButton.buttonLink }}" class="link-btn">
-      {{ titleAndDescriptionAndButton.buttonFragment }}
+    <a
+      routerLink="{{ titleAndDescriptionAndButton.buttonLink }}"
+      fragment="{{ titleAndDescriptionAndButton.buttonFragment }}"
+      class="link-btn"
+    >
+      {{ titleAndDescriptionAndButton.buttonText }}
     </a>
   </div>
   <div class="right-container">
@@ -19,7 +23,9 @@
         </div>
         <div class="timeline-content">
           <div class="content-title-container">
-            <h3>{{ item.title }}</h3>
+            <a [routerLink]="item.link" [fragment]="item.fragment">
+              <h3>{{ item.title }}</h3>
+            </a>
           </div>
           <p class="subtitle faster-shrink">
             {{ item.description }}
