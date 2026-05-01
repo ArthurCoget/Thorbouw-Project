@@ -1,1 +1,9 @@
-<p>werkwijze works!</p>
+<section class="werkwijze">
+  <app-top-image-component [content]="heroContent" [customImagePosition]="55" />
+  <div>
+    <app-timeline-component
+      [titleAndDescriptionAndButton]="titleAndDescriptionAndButton"
+      [items]="timelineItems"
+    ></app-timeline-component>
+  </div>
+</section>

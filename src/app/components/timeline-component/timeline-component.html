@@ -1,0 +1,31 @@
+<section class="timeline-container">
+  <div class="left-container">
+    <h2 class="title">{{ titleAndDescriptionAndButton.title }}</h2>
+    <p class="subtitle extra-margin">
+      {{ titleAndDescriptionAndButton.description }}
+    </p>
+    <a routerLink="{{ titleAndDescriptionAndButton.buttonLink }}" class="link-btn">
+      {{ titleAndDescriptionAndButton.buttonFragment }}
+    </a>
+  </div>
+  <div class="right-container">
+    @for (item of items; track $index) {
+      <div class="timeline-content-container">
+        <div class="timeline-line-container">
+          <svg class="circle-svg" viewBox="0 0 50 50">
+            <circle cx="25" cy="25" r="15" fill="#12316b" />
+          </svg>
+          <div class="line"></div>
+        </div>
+        <div class="timeline-content">
+          <div class="content-title-container">
+            <h3>{{ item.title }}</h3>
+          </div>
+          <p class="subtitle faster-shrink">
+            {{ item.description }}
+          </p>
+        </div>
+      </div>
+    }
+  </div>
+</section>
