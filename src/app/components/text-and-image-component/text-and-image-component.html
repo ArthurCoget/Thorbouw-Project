@@ -10,8 +10,11 @@
         <p class="description">{{ item.description }}</p>
       }
     </div>
-
-    <div class="image-container">
+    <div
+      [class.force-image-scale]="forceImgScale"
+      [style.--forced-scale.px]="customImageScale"
+      class="image-container"
+    >
       <img [src]="content.image" [alt]="content.imageAlt" loading="lazy" decoding="async" />
     </div>
   </div>

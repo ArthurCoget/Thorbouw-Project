@@ -1,3 +1,7 @@
+:host {
+  --forced-scale: 325px;
+}
+
 .image-text-container {
   padding: 2em 2.5%;
   background-color: var(--color-white);
@@ -28,6 +32,10 @@
 .text-container,
 .image-container {
   flex: 1;
+}
+
+.force-image-scale {
+  max-height: var(--forced-scale);
 }
 
 .smaller-title {

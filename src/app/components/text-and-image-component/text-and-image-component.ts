@@ -12,4 +12,6 @@ export class TextAndImageComponent {
   @Input({ required: true }) content!: TextImageContent;
   @Input() reverse = false;
   @Input() light = false;
+  @Input() forceImgScale = false;
+  @Input() customImageScale: number = 325;
 }

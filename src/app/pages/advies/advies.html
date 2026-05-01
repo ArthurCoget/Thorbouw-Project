@@ -1,1 +1,8 @@
-<p>advies works!</p>
+<section class="advies-container">
+  <app-top-image-component [content]="heroContent" [customImagePosition]="70" />
+
+  <div class="advies-content">
+    <app-text-and-image-component [content]="topAdvies" [forceImgScale]="true">
+    </app-text-and-image-component>
+  </div>
+</section>
