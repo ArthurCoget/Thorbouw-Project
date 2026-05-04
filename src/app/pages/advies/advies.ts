@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { HeroComponent } from '../../components/hero-component/hero-component';
 import { IHeroContent } from '../../interfaces/hero-content';
-import { TextAndImageComponent } from '../../components/text-and-image-component/text-and-image-component';
-import { TextImageContent } from '../../interfaces/text-and-image-content';
-import { TOP_ADVIES_TEXT } from '../../data/advies.data';
+import { HeroCtaComponent } from '../../components/hero-cta-component/hero-cta-component';
+import { CTA_ADVIES_CONTENT } from '../../data/advies.data';
 
 @Component({
   selector: 'app-advies',
-  imports: [HeroComponent, TextAndImageComponent],
+  imports: [HeroComponent, HeroCtaComponent],
   templateUrl: './advies.html',
   styleUrl: './advies.css',
 })
@@ -19,5 +18,5 @@ export class Advies {
     title: 'Bouwkundig Advies',
   };
 
-  readonly topAdvies: TextImageContent = TOP_ADVIES_TEXT;
+  readonly topAdvies = CTA_ADVIES_CONTENT;
 }

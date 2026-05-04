@@ -1,0 +1,24 @@
+<section class="cta-component">
+  <div class="text-container">
+    <h2 class="title">{{ ctaContent.title1 }}</h2>
+    <p class="subtitle">
+      {{ ctaContent.subtitle1 }}
+    </p>
+    <div class="link-holder">
+      <a class="link-btn" [routerLink]="ctaContent.link_btn1">{{ ctaContent.btn1 }}</a>
+    </div>
+  </div>
+  <div class="cta-container">
+    <h3 class="title smaller">{{ ctaContent.title2 }}</h3>
+    <p class="subtitle">
+      {{ ctaContent.subtitle2 }}
+    </p>
+    <div class="link-holder">
+      <a class="link-btn" [routerLink]="ctaContent.link_btn2">{{ ctaContent.btn2 }}</a>
+    </div>
+  </div>
+
+  <div class="image">
+    <img [src]="ctaContent.img" [alt]="ctaContent.imgAlt" />
+  </div>
+</section>
