@@ -80,7 +80,7 @@ export const TEXT_AND_IMAGE_CONTENT: TextImageContent[] = [
       {
         subtitle: 'Transparantie zonder verrassingen',
         description:
-          'U ontvangt een duidelijke offerte met vaste prijs. Alles wordt helder uitgelegd: materialen, werken en planning. Zo weet u exact waar u aan toe bent en komt u nooit voor onverwachte kosten te staan – een aanpak waar eerlijkheid centraal staat.',
+          'U ontvangt een duidelijke offerte met vaste prijs. Alles wordt helder uitgelegd: materialen, werken en planning. Zo weet u exact waar u aan toe bent en komt u nooit voor onverwachte kosten te staan, een aanpak waar eerlijkheid centraal staat.',
       },
     ],
   },
