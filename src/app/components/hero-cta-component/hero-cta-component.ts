@@ -1,10 +1,9 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-hero-cta-component',
-  imports: [RouterLink, NgOptimizedImage],
+  imports: [RouterLink],
   templateUrl: './hero-cta-component.html',
   styleUrl: './hero-cta-component.css',
 })
