@@ -8,7 +8,7 @@ export const NAV_LINKS: INavLink[] = [
   { label: 'Werkwijze', path: '/werkwijze' },
   { label: "Foto's Realisaties", path: '/fotos' },
   { label: 'Bouwkundig advies', path: '/advies' },
-  { label: 'Projectontwikkeling & Wonen', path: '/projectontwikkeling' },
+/*  { label: 'Projectontwikkeling & Wonen', path: '/projectontwikkeling' },*/
   { label: 'Contact', path: '/contact' },
 ];
 

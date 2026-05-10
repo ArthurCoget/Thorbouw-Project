@@ -140,8 +140,8 @@ export const PROJECTS: IProjectContent[] = [
   },
   {
     slug: 'justiuslipsius',
-    title: 'Renovatie voor Justius Lipsius',
-    subtitle: 'Renovatie met respect voor moderne woonbehoeften',
+    title: 'Appartement Justius Lipsius',
+    subtitle: 'Appartement met respect voor moderne woonbehoeften',
     description:
       'Voor de renovatie van deze historische woning in Leuven combineerden we vakmanschap met moderne technieken om een comfortabele leefruimte te creëren, terwijl we het karakter en de charme van het oorspronkelijke gebouw behouden.',
     location: 'Leuven',
@@ -165,24 +165,24 @@ export const PROJECTS: IProjectContent[] = [
   },
   {
     slug: 'uten',
-    title: 'Renovatie te Ottenburg',
-    subtitle: 'Renovatie met een focus op verbinding met de natuur',
-    description: 'Renovatie in Ottenburd waarbij de link met natuur en buitenleven centraal staat.',
+    title: 'Nieuwbouw te Ottenburg',
+    subtitle: 'Nieuwbouw met een focus op verbinding met de natuur',
+    description: 'Nieuwbouw in Ottenburg waarbij de link met natuur en buitenleven centraal staat.',
     location: 'Ottenburg',
     locationCoord: [4.611899, 50.75265],
     year: 2024,
     cardImages: [
       {
         src: '/fotos&realisaties/Uten/Uten_1.webp',
-        alt: 'Foto van renovatie in Ottenburg',
+        alt: 'Foto van nieuwbouw in Ottenburg',
       },
       {
         src: '/fotos&realisaties/Uten/Uten_2.webp',
-        alt: 'Foto van renovatie in Ottenburg',
+        alt: 'Foto van nieuwbouw in Ottenburg',
       },
       {
         src: '/fotos&realisaties/Uten/Uten_3.webp',
-        alt: 'Foto van renovatie in Ottenburg',
+        alt: 'Foto van nieuwbouw in Ottenburg',
       },
     ],
     images: IMAGES_UTEN,

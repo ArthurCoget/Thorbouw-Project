@@ -24,6 +24,14 @@ export const CONTACT_LIST: IInfoContent[] = [
     ariaLabel: 'View our location on Google Maps',
   },
   {
+    id: 'phone',
+    title: 'Snelste manier om ons te bereiken: Bel ons',
+    description: 'Heeft u vragen of wilt u meer informatie? Bel ons op 0032 475 530 214.',
+    link: 'tel:+32475530214',
+    linkText: 'Bel ons',
+    ariaLabel: 'Call us',
+  },
+  {
     id: 'mail',
     title: 'Contacteer ons via email',
     description:
@@ -31,14 +39,6 @@ export const CONTACT_LIST: IInfoContent[] = [
     link: 'mailto:info@thorbouw.be',
     linkText: 'Stuur een email',
     ariaLabel: 'Send us an email',
-  },
-  {
-    id: 'phone',
-    title: 'Bel ons',
-    description: 'Heeft u vragen of wilt u meer informatie? Bel ons op 0032 475 530 214.',
-    link: 'tel:+32475530214',
-    linkText: 'Bel ons',
-    ariaLabel: 'Call us',
   },
   {
     id: 'whatsapp',
