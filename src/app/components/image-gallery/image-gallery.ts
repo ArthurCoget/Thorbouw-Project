@@ -82,11 +82,6 @@ export class ImageGallery implements OnDestroy {
       columnCount,
       totalBlocks,
     );
-    console.log('Number of figures:', figures.length);
-    console.log('Number of coloms:', columnCount);
-    console.log('Number of rows:', rowCount);
-    console.log('Number of blocks:', totalBlocks);
-    console.log('Does last row have a vertical item?', lastRowHasVerticalItem);
 
     if (lastRowHasVerticalItem) {
       totalBlocks -= 1;
@@ -99,8 +94,6 @@ export class ImageGallery implements OnDestroy {
       rowCount,
       totalBlocks,
     );
-
-    console.log('Does last row have a horizontal item?', lastRowHasHorizontalItem);
 
     let elementsInLastRow = this.countElementsInLastRow(
       totalBlocks,
@@ -120,11 +113,8 @@ export class ImageGallery implements OnDestroy {
       figures.at(-1)?.classList.add('last-column');
       elementsInLastRow = 4;
     } else if (!lastRowHasVerticalItem && elementsInLastRow != 1) {
-      console.log('Last row before removing one:', elementsInLastRow);
       elementsInLastRow -= 1;
     }
-
-    console.log('Number of elements is last row:', elementsInLastRow);
 
     if (figures.length >= 5) {
       figures.slice(-elementsInLastRow).forEach((fig) => fig.classList.add('last-row'));
@@ -231,7 +221,6 @@ export class ImageGallery implements OnDestroy {
     if (Number.isInteger((numberOfElements - 1) / 4)) return true;
     const totalCells = columns * (rows - 1);
     if (totalCells + 1 === blocks) return true;
-    console.warn('Total number of cells', totalCells);
     if (blocks >= totalCells) {
       return false;
     }
@@ -264,10 +253,6 @@ export class ImageGallery implements OnDestroy {
     const totalCells = columns * rows;
     const emptyCells = totalCells - numberOfBlocks;
     const numberOfElementsInLastRow = columns - emptyCells;
-
-    console.warn('Calculating the cells: ', totalCells);
-    console.warn('Calculating the empty cells: ', emptyCells);
-    console.warn('Calculationg elements in last row: ', numberOfElementsInLastRow);
 
     if (numberOfElementsInLastRow <= 0) {
       return -99;
