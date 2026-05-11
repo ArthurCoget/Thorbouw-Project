@@ -120,6 +120,19 @@ li,
   }
 }
 
+.link-holder {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+
+  width: 100%;
+  padding: 1em 0;
+}
+
+.link-btn {
+  background-color: var(--color-primary);
+}
+
 @media (max-width: 1050px) {
   :host {
     --grid-columns: 192px 1fr 192px;

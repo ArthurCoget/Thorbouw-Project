@@ -12,10 +12,11 @@ import { TextRousel } from '../../components/text-rousel/text-rousel';
 import { ITextRouselContent } from '../../interfaces/itext-rousel-content';
 import { TripleTextInfo } from '../../components/triple-text-info/triple-text-info';
 import { ITripleText } from '../../interfaces/itriple-text';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about',
-  imports: [HeroComponent, NgOptimizedImage, TextRousel, TripleTextInfo],
+  imports: [HeroComponent, NgOptimizedImage, TextRousel, TripleTextInfo, RouterLink],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })
