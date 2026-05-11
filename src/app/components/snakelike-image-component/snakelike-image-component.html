@@ -1,0 +1,33 @@
+<section
+  class="snakelike-component"
+  [class.alternative-color]="snakeItem.alternativeColor"
+  [class.vertical]="snakeItem.type === 'vertical'"
+  [class.horizontal]="snakeItem.type === 'horizontal'"
+  [class.image-left]="snakeItem.imageLeft"
+>
+  <div class="main-image">
+    <img [src]="snakeItem.mainImage.src" [alt]="snakeItem.mainImage.alt" loading="lazy" />
+  </div>
+
+  @for (text of snakeItem.texts; track $index) {
+    <div
+      class="text-container"
+      [class.alternative-color]="snakeItem.alternativeColor"
+      [class.text-first]="$index === 0"
+      [class.text-second]="$index === 1"
+    >
+      <h3 class="title smaller">{{ text.title }}</h3>
+      <p class="subtitle">{{ text.subtitle }}</p>
+    </div>
+  }
+
+  @if (snakeItem.secondaryImage) {
+    <div class="secondary-image">
+      <img
+        [src]="snakeItem.secondaryImage.src"
+        [alt]="snakeItem.secondaryImage.alt"
+        loading="lazy"
+      />
+    </div>
+  }
+</section>

@@ -1,1 +1,10 @@
-<p>advies works!</p>
+<section class="advies-container">
+  <app-top-image-component [content]="heroContent" [customImagePosition]="70" />
+
+  <div class="advies-content">
+    <app-hero-cta-component [ctaContent]="topAdvies"></app-hero-cta-component>
+    @for (item of snakeItems; track $index) {
+      <app-snakelike-image-component [snakeItem]="item"></app-snakelike-image-component>
+    }
+  </div>
+</section>

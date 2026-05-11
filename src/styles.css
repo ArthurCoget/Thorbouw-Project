@@ -30,6 +30,10 @@
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--color-white);
   font-family: var(--font-family);
@@ -80,6 +84,7 @@ img {
 }
 
 .link-btn {
+  display: inline-block;
   background-color: var(--color-secondary);
   color: var(--color-white);
   border: none;

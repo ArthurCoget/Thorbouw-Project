@@ -1,1 +1,18 @@
-<p>werkwijze works!</p>
+<section class="werkwijze">
+  <app-top-image-component [content]="heroContent" [customImagePosition]="55" />
+  <div>
+    <app-timeline-component
+      [titleAndDescriptionAndButton]="titleAndDescriptionAndButton"
+      [items]="timelineItems"
+    ></app-timeline-component>
+  </div>
+  <div>
+    @for (item of items; track $index) {
+      <app-text-and-image-component
+        [content]="item"
+        [reverse]="$index % 2 === 1"
+        [light]="$index % 2 === 1"
+      />
+    }
+  </div>
+</section>

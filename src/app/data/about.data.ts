@@ -83,7 +83,7 @@ export const ABOUT_MORE_US: ITripleText[] = [
     id: 1,
     title: 'Ervaren, oprecht en gepassioneerd',
     description_one:
-      'Met meer dan 27 jaar ervaring in de bouwsector en een groeiend bewustzijn rond milieu-impact en duurzaamheid, ontstond de drang om het anders aan te pakken. In september 2018 startte daarom de opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven, met als doel bewuster en toekomstgericht te bouwen.',
+      'Met meer dan 32 jaar ervaring in de bouwsector en een groeiend bewustzijn rond milieu-impact en duurzaamheid, ontstond de drang om het anders aan te pakken. In september 2018 startte daarom de opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven, met als doel bewuster en toekomstgericht te bouwen.',
     desctiption_two:
       'Eind 2018 lanceert hij dan de Bvba Thorbouw: een ecologisch bouwbedrijf dat een rechtlijnige, transparante en persoonlijke aanpak hanteert. Met Thorbouw wil hij niet alleen vandaag inzetten op puur bouwen en comfortabel wonen, maar ook investeren in morgen en een zorgeloos leven voor de volgende generaties, met aandacht voor mens, natuur en omgeving.',
   },
