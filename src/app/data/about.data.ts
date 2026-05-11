@@ -6,7 +6,7 @@ export const ABOUT_CONTENT = {
   aboutTopSubText:
     'Welkom bij Thorbouw, uw betrouwbare bouwpartner en algemeen aannemersbedrijf met een visie op de toekomst en een groot hart voor de volgende generaties. Persoonlijk en milieubewust aankopen, bouwen, renoveren, inrichten of ontwikkelen in Leuven en ruime omgeving. Ruime ervaring in zowel traditionele als bio-ecologische bouwtechnieken.',
   numberOfProjectsLabel: 'Afgeleverde Projecten',
-  numberOfProjects: '26',
+  numberOfProjects: '50',
   aboutBottomTitle: 'Herkent u zich in de visie van Thorbouw?',
 };
 
@@ -78,12 +78,14 @@ export const ABOUT_VALUES: ITextRouselContent[] = [
     svg: '/aboutImages/Quality.svg',
   },
 ];
+
+const START_YEAR = 1994;
+
 export const ABOUT_MORE_US: ITripleText[] = [
   {
     id: 1,
     title: 'Ervaren, oprecht en gepassioneerd',
-    description_one:
-      'Met meer dan 32 jaar ervaring in de bouwsector en een groeiend bewustzijn rond milieu-impact en duurzaamheid, ontstond de drang om het anders aan te pakken. In september 2018 startte daarom de opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven, met als doel bewuster en toekomstgericht te bouwen.',
+    description_one: `Met meer dan ${new Date().getFullYear() - START_YEAR} jaar ervaring in de bouwsector en een groeiend bewustzijn rond milieu-impact en duurzaamheid, ontstond de drang om het anders aan te pakken. In september 2018 startte daarom de opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven, met als doel bewuster en toekomstgericht te bouwen.`,
     desctiption_two:
       'Eind 2018 lanceert hij dan de Bvba Thorbouw: een ecologisch bouwbedrijf dat een rechtlijnige, transparante en persoonlijke aanpak hanteert. Met Thorbouw wil hij niet alleen vandaag inzetten op puur bouwen en comfortabel wonen, maar ook investeren in morgen en een zorgeloos leven voor de volgende generaties, met aandacht voor mens, natuur en omgeving.',
   },
