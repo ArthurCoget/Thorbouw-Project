@@ -1,6 +1,6 @@
 <div class="info-card">
   <h2>{{ content.title }}</h2>
-  <p>{{ content.description }}</p>
+  <p [innerHTML]="content.description"></p>
   <a
     href="{{ content.link }}"
     target="_blank"

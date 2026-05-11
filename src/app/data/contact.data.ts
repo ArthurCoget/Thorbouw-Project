@@ -18,7 +18,7 @@ export const CONTACT_LIST: IInfoContent[] = [
     id: 'map',
     title: 'Onze Locatie',
     description:
-      'U kunt ons vinden op Hoveniersdreef 64, 3001 Heverlee. Klik hier om onze locatie op Google Maps te bekijken.',
+      'U kunt ons vinden op <b>Hoveniersdreef 64, 3001 Heverlee</b>. Klik hier om onze locatie op Google Maps te bekijken.',
     link: 'https://maps.app.goo.gl/jWfsQAAXfc1Zs39F6',
     linkText: 'Bekijk op Google Maps',
     ariaLabel: 'View our location on Google Maps',
@@ -26,7 +26,7 @@ export const CONTACT_LIST: IInfoContent[] = [
   {
     id: 'phone',
     title: 'Snelste manier om ons te bereiken: Bel ons',
-    description: 'Heeft u vragen of wilt u meer informatie? Bel ons op 0032 475 530 214.',
+    description: 'Heeft u vragen of wilt u meer informatie? Bel ons op <b>0032 475 530 214</b>.',
     link: 'tel:+32475530214',
     linkText: 'Bel ons',
     ariaLabel: 'Call us',
@@ -35,7 +35,7 @@ export const CONTACT_LIST: IInfoContent[] = [
     id: 'mail',
     title: 'Contacteer ons via email',
     description:
-      'Heeft u vragen of wilt u meer informatie? Stuur ons een email op info@thorbouw.be en we zullen zo snel mogelijk reageren.',
+      'Heeft u vragen of wilt u meer informatie? Stuur ons een email op <b>info@thorbouw.be</b> en we zullen zo snel mogelijk reageren.',
     link: 'mailto:info@thorbouw.be',
     linkText: 'Stuur een email',
     ariaLabel: 'Send us an email',
