@@ -137,5 +137,13 @@ export class FooterComponent {
       ariaLabel: 'Follow us on Instagram',
       alt: 'Instagram Icon',
     },
+    {
+      id: 'linkedin',
+      icon: `${this.FOOTER_SVG_PATH}/linkedIn.svg`,
+      href: 'https://www.linkedin.com/in/3-100-thorbouw/',
+      text: ['LinkedIn'],
+      ariaLabel: 'Follow us on LinkedIn',
+      alt: 'LinkedIn Icon',
+    },
   ];
 }
