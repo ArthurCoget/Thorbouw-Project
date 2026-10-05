@@ -88,8 +88,10 @@ export class FooterComponent {
     { route: '/werkwijze', label: 'Werkwijze' },
     { route: '/project', label: 'Projectontwikkiling & Wonen' },
     { route: '/contact', label: 'Contact' },
+    /*
     { route: '/privacy', label: 'Privacy' },
     { route: '/voorwaarde', label: 'Algemene Voorwaarden' },
+    */
     { route: '/sitemap', label: 'Sitemap' },
   ];
 
@@ -121,26 +123,18 @@ export class FooterComponent {
   ];
 
   readonly socialLinks = [
-    /* {
+    {
       id: 'whatsapp',
       icon: `${this.FOOTER_SVG_PATH}/whatsapp.svg`,
       href: 'https://api.whatsapp.com/send?phone=32475530214',
       text: ['WhatsApp'],
       ariaLabel: 'Contact us on WhatsApp',
       alt: 'Whatsapp Icon',
-    },*/
-    {
-      id: 'LinkedIn',
-      icon: `${this.FOOTER_SVG_PATH}/LinkedIn.svg`,
-      href: 'https://www.linkedin.com/in/3-100-thorbouw/',
-      text: ['LinkedIn'],
-      ariaLabel: 'Vind ons bij LinkedIn.',
-      alt: 'LinkedIn Icon',
     },
     {
       id: 'vibe',
       icon: `${this.FOOTER_SVG_PATH}/VIBE-logo.svg`,
-      href: 'https://https://www.vibe.be/',
+      href: 'https://www.vibe.be/',
       text: ['Vibe'],
       ariaLabel: 'Vind ons bij vibe.',
       alt: 'Vibe Icon',
@@ -155,7 +149,7 @@ export class FooterComponent {
     },
     {
       id: 'linkedin',
-      icon: `${this.FOOTER_SVG_PATH}/linkedIn.svg`,
+      icon: `${this.FOOTER_SVG_PATH}/LinkedIn.svg`,
       href: 'https://www.linkedin.com/in/3-100-thorbouw/',
       text: ['LinkedIn'],
       ariaLabel: 'Follow us on LinkedIn',

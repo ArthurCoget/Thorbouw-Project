@@ -189,10 +189,9 @@ export const PROJECTS: IProjectContent[] = [
   },
   {
     slug: 'Engelen',
-    title: 'verbouwing in Engelen',
+    title: 'Modernisering in Engelen',
     subtitle: 'Modernisering Bad- en slaapkamer',
-    description:
-      'Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.',
+    description: 'Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.',
     location: 'Engelen',
     locationCoord: [4.636699, 50.95818],
     year: 2014,
@@ -299,10 +298,9 @@ export const PROJECTS: IProjectContent[] = [
   },
   {
     slug: 'Haasrode',
-    title: 'project in Haasrode',
-    subtitle: 'verbouwing in Haasrode.',
-    description:
-      'Verbouwing van de leef en wasruimten.',
+    title: 'Wasbeurt in Haasrode',
+    subtitle: 'Verbouwing in Haasrode.',
+    description: 'Verbouwing van de leef en wasruimten.',
     location: 'Haasrode',
     locationCoord: [4.72616, 50.83461],
     year: 2015,
@@ -364,8 +362,7 @@ export const PROJECTS: IProjectContent[] = [
     slug: 'Borchpoorte',
     title: 'project in Borchpoorte',
     subtitle: 'verbouwing in Borchpoorte.',
-    description:
-      'Verbouwing van de leef en wasruimten.',
+    description: 'Verbouwing van de leef en wasruimten.',
     location: 'Borchpoorte',
     locationCoord: [4.72616, 50.83461],
     year: 2015,
@@ -389,14 +386,12 @@ export const PROJECTS: IProjectContent[] = [
         alt: 'Foto van verbouwing in Borchpoorte',
       },
     ],
-  },
-  */
+  },*/
   {
     slug: 'Heverlee',
-    title: 'project in Heverlee',
-    subtitle: 'verbouwing in Heverlee.',
-    description:
-      'Inrichting wookamer en verbouwing veranda.',
+    title: 'Stijlvolle verbouwing',
+    subtitle: 'Verbouwing in Heverlee.',
+    description: 'Inrichting wookamer en verbouwing veranda.',
     location: 'Heverlee',
     locationCoord: [4.69872, 50.85272],
     year: 2015,

@@ -102,6 +102,8 @@ footer h3 {
 .stay-connected {
   grid-column: 4;
   grid-row: 4;
+
+  margin-bottom: -5em;
 }
 
 .stay-connected,
@@ -225,6 +227,8 @@ footer h3 {
   .stay-connected {
     grid-column: 1;
     grid-row: 5;
+
+    margin-bottom: 0;
   }
   .footer-bottom {
     grid-column: 1;
