@@ -1,5 +1,6 @@
 import { IProjectContent } from '../interfaces/iproject-content';
 import {
+  IMAGES_BRANDTS,
   IMAGES_JUSTIUS_LIPSIUS,
   IMAGES_MEULEN,
   IMAGES_SUCAET,
@@ -9,118 +10,29 @@ import {
 
 export const PROJECTS: IProjectContent[] = [
   {
-    slug: 'wespelaar',
-    title: 'Metamorfose te Wespelaar',
+    slug: 'Brandts',
+    title: 'Nieuwbouw Korbeek-Lo',
     subtitle: 'Modern wooncomfort, vakkundig gerealiseerd',
     description:
       'Met kwalitatieve materialen en oog voor detail realiseren we duurzame woonoplossingen.',
-    location: 'Wespelaar',
-    locationCoord: [4.636699, 50.95818],
+    location: 'Korbeek-Lo',
+    locationCoord: [4.76687, 50.862358],
     year: 2024,
     cardImages: [
       {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar001HR.webp',
-        alt: 'Foto van woonkamer Wespelaar',
+        src: '/fotos&realisaties/BuurBrandts/brandts_1.webp',
+        alt: 'Foto van nieuwbouw in Korbeek-Lo',
       },
       {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar002HR.webp',
-        alt: 'Foto van trap woonkamer Wespelaar',
+        src: '/fotos&realisaties/BuurBrandts/brandts_10.webp',
+        alt: 'Foto van nieuwbouw in Korbeek-Lo',
       },
       {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar003HR.webp',
-        alt: 'Foto van woonkamer Wespelaar',
+        src: '/fotos&realisaties/BuurBrandts/brandts_20.webp',
+        alt: 'Foto van nieuwbouw in Korbeek-Lo',
       },
     ],
-    images: [
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar001HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar002HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar003HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar004HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar005HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar006HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar007HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar008HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar009HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar010HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar011HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar012HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar014HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar015HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar016HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar017HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar018HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar019HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar020HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar021HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar022HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-      {
-        src: '/fotos&realisaties/Wespelaar/Wespelaar023HR.webp',
-        alt: 'Foto van verbouwing in Wespelaar',
-      },
-    ],
+    images: IMAGES_BRANDTS,
   },
   {
     slug: 'herent',
