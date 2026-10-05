@@ -3,7 +3,7 @@ import { TextImageContent } from '../interfaces/text-and-image-content';
 export const TIMELINE_TITLE_AND_DESCRIPTION_AND_BUTTON = {
   title: 'Thorbouw werkwijze process',
   description:
-    'We willen uw ervaringen in de renovatie van uw woning zo goed mogelijk maken. Daarom hebben we een duidelijk proces ontwikkeld dat u stap voor stap begeleidt. Van de eerste kennismaking tot de oplevering en nazorg, we staan altijd klaar om u te ondersteunen en te zorgen dat alles soepel verloopt.',
+    'We willen uw ervaringen in renovatie, inrichting en tuinaanleg van uw woning zo goed mogelijk maken. Daarom hebben we een duidelijk proces ontwikkeld dat u in 4 stappen begeleid. Van de eerste kennismaking tot de oplevering en nazorg, we staan altijd klaar om u te ondersteunen en te zorgen dat alles soepel verloopt.',
   buttonText: 'Lees meer',
   buttonLink: '/werkwijze',
   buttonFragment: 'step-1',
@@ -11,130 +11,119 @@ export const TIMELINE_TITLE_AND_DESCRIPTION_AND_BUTTON = {
 
 export const TIMELINE_ITEMS = [
   {
-    title: 'Eerste Kennismaking',
+    title: 'Raming',
     link: '/werkwijze',
     fragment: 'step-1',
     description:
-      'Laten we elkaar eens leren kennen. We bespreken uw visie en hoe we kunnen samenwerken. We geven u ook een eerste prijsindicatie, zodat we weten of we op één lijn zitten.',
+       'Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u uw plannen voor.',
+      //'
   },
   {
-    title: 'Ontwerp en Offerte',
+    title: 'Voorstudie',
     link: '/werkwijze',
     fragment: 'step-2',
     description:
-      'We ontwerpen samen uw renovatie en doen een offerte. U krijgt een duidelijk overzicht van de kosten en de uitvoering.',
+      'We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is uitgetekend.',
   },
   {
-    title: 'Uitvoering',
+    title: 'Contractfase',
     link: '/werkwijze',
     fragment: 'step-3',
     description:
-      'We starten de renovatie en houden u op de hoogte van de voortgang. We zorgen ervoor dat alles volgens plan verloopt.',
-  },
-  {
-    title: 'Oplevering',
-    link: '/werkwijze',
-    fragment: 'step-4',
-    description:
-      'We leveren het project op en zorgen ervoor dat alles naar wens is. We staan klaar om eventuele vragen te beantwoorden en zorgen voor een soepele overgang.',
+      'Hier steken we de armen uit de mouwen en maken we uw project realiteit.',
   },
   {
     title: 'Nazorg',
     link: '/werkwijze',
-    fragment: 'step-5',
+    fragment: 'step-4',
     description:
-      'We bieden nazorg en ondersteuning na de oplevering. We willen ervoor zorgen dat u tevreden bent met het resultaat en staan klaar om eventuele problemen op te lossen.',
+      'We bieden nazorg en ondersteuning na de oplevering. We willen ervoor zorgen dat u tevreden bent met het resultaat en staan altijd voor u klaar.',
   },
 ];
 
 export const TEXT_AND_IMAGE_CONTENT: TextImageContent[] = [
   {
     id: 'step-1',
-    title: 'Eerste Kennismaking',
+    title: 'Raming',
     image: '/werkwijze/FirstStep.webp',
     imageAlt: 'Foto van een verbouwd huis in de sneeuw',
     blocks: [
       {
-        subtitle: 'Uw verhaal, onze start',
-        description:
-          'Bij Thorbouw begint alles met luisteren. Geen standaardoplossingen, maar een persoonlijke aanpak waarbij uw wensen, levensstijl en toekomstplannen centraal staan. Wij geloven dat een woning meer is dan bouwen alleen – het is een plek waar u jarenlang zorgeloos wil leven.',
+        subtitle: 'Onze samenwerking',
+        description: 'begint met het in kaart brengen van uw wensen en het opstellen van een gedetailleerde lijst met een geraamd totaalbudget.  Of u al een vast budget heeft of dat wij een schatting voor u maken, de eerste stap kost slechts €75/u ex btw. Dit bedrag dient als voorschot voor de voorstudie en het wordt ook opgenomen in het totaalbudget van uw project.',
       },
       {
-        subtitle: 'Eerlijk advies vanaf dag één',
-        description:
-          'We geven u meteen transparant en realistisch advies. Geen verkooppraatjes, maar duidelijke inzichten in wat haalbaar is binnen uw budget en situatie. Dankzij onze expertise in zowel traditionele als bio-ecologische bouwmethodes begeleiden we u naar de juiste keuzes voor vandaag én morgen.',
+        subtitle: 'Eerlijk advies',
+        description: 'is onze toewijding vanaf het eerste moment. We geven u transparant en realistisch advies, geen verkooppraatjes. Duidelijke inzichten in wat haalbaar is binnen uw budget en situatie zorgt voor een project afgeleverd zonder concessies in kwaliteit.',
+      },
+      {
+        subtitle: 'Met onze expertise',
+        description: 'in zowel traditionale als bio-ecologische bouwmethodes begeleiden we u naar de juiste keuzes voor vandaag en morgen.',
       },
     ],
   },
   {
     id: 'step-2',
-    title: 'Ontwerp en Offerte',
+    title: 'Voorstudie',
     image: '/werkwijze/SecondStep.webp',
     imageAlt: 'Foto van een vernieuwde keuken',
     blocks: [
       {
-        subtitle: 'Slim en toekomstgericht ontwerp',
+        subtitle: 'Na het bepalen van het budget',
         description:
-          'We vertalen uw ideeën naar een doordacht ontwerp waarin comfort, energiezuinigheid en esthetiek samenkomen. Door te focussen op oriëntatie, natuurlijke materialen en slimme oplossingen creëren we een woning die niet alleen mooi is, maar ook duurzaam en efficiënt.',
+          'gaan we gezamenlijk aan de slag met de voorstudie.  Tijdens deze studie worden, in samenspraak met u, plannen gemaakt die naadloos aansluiten op het eerder vastgestelde budget en uw wensen. Het opstellen van deze plannen gebeurd stapsgewijs, eerst een voorontwerp en dan verschillende aanpassingen tot alles naar jullie wens is uitgetekend.  Ook deze som, die je betaald voor deze voorstudie, zit inbegrepen in het totaalbudget.',
       },
       {
-        subtitle: 'Transparantie zonder verrassingen',
+        subtitle: 'U ontvangt',
         description:
-          'U ontvangt een duidelijke offerte met vaste prijs. Alles wordt helder uitgelegd: materialen, werken en planning. Zo weet u exact waar u aan toe bent en komt u nooit voor onverwachte kosten te staan, een aanpak waar eerlijkheid centraal staat.',
+          'een duidelijke offerte met 1 vaste prijs. Alles wordt helder uitgelegd: materialen, werken en planning. Zo weet u exact waar u aan toe bent en komt u nooit voor onverwachte kosten te staan. Een aanpak waar eerlijkheid centraal staat.',
+      },
+      {
+        subtitle: 'De voorstudie',
+        description:
+          'kost €3.500 a €5.000 ex btw, afhankelijk van de grootte van uw project. Zo bespaart u geld in het opstellen van een kleiner project.',
       },
     ],
   },
   {
     id: 'step-3',
-    title: 'Uitvoering',
+    title: 'Contractfase',
     image: '/werkwijze/ThirdStep.webp',
     imageAlt: 'Foto van een verbouwd huis ',
     blocks: [
       {
-        subtitle: 'Vakmanschap en nauwgezette opvolging',
+        subtitle: 'Deze Stap',
         description:
-          'Tijdens de uitvoering zorgen wij voor een strakke planning en dagelijkse opvolging van de werf. Ons team van ervaren vakmensen werkt efficiënt en met oog voor detail, zodat uw project perfect wordt gerealiseerd volgens afspraak.',
+          'is een volledige ontzorging van A tot Z.  Nu we het exacte budget kennen en uw wensen volledig in kaart en op plan hebben gezet tijdens de voorstudie, gaan we over naar de contractfase.  Tijdens deze fase worden de gemaakte plannen gefinaliseerd en ingediend bij de stad.  Wij bepalen eveneens samen de laatste details, stellen een realistische timing voorop en zorgen voor een vlekkeloze uitvoering en opvolging van al de nodige werken.  Van plaatsbeschrijvingen tot vergunningsaanvragen, van ABR-verzekering tot praktische voorzieningen zoals toilet en aanvraag, plaatsing en keuring van de tijdelijke werfkast, het controleren van alle belangrijke details, wij regelen het allemaal.',
       },
       {
-        subtitle: 'Duurzaam bouwen in de praktijk',
+        subtitle: 'Uw project',
         description:
-          'Wij kiezen bewust voor volhoudbare materialen en slimme bouwtechnieken. Door in te zetten op isolatie, natuurlijke ventilatie en doordachte oplossingen vermijden we onnodig complexe technieken en bouwen we een woning die écht toekomstgericht is.',
+          'is in goede handen. Wij staan garant voor een zorgeloos proces van begin tot eind. Ook tijdens de contractfase staan wij open voor aanpassingen en opmerkingen.',
+      },
+      {
+        subtitle: 'Tijdens de uitvoering',
+        description:
+          'zorgen wij voor een strakke planning en dagelijkse opvolging van de werf. Ons team van ervaren vakmensen werkt efficiënt en met oog voor detail, zodat uw project perfect volgens afspraak gerealiseerd wordt.',
       },
     ],
   },
+  // nazorg is niet in de originele uitleg manier van werken, maar voeg ik toe
   {
     id: 'step-4',
-    title: 'Oplevering',
+    title: 'Nazorg',
     image: '/werkwijze/FourthStep.webp',
-    imageAlt: 'Foto van een verbouwd huis met zicht op de terres and tuin',
+    imageAlt: 'Foto van een verbouwd huis met zicht van het terras op de tuin',
     blocks: [
       {
-        subtitle: 'Tot in de puntjes afgewerkt',
-        description:
-          'Bij de oplevering nemen we samen elk detail door. Uw woning wordt afgewerkt zoals afgesproken, tot in de kleinste puntjes. Wij nemen pas genoegen wanneer alles volledig aan uw verwachtingen voldoet.',
-      },
-      {
-        subtitle: 'Klaar voor een zorgeloze toekomst',
+        subtitle: 'Klaar voor een zorgenloze toekomst',
         description:
           'U krijgt niet alleen een afgewerkt project, maar een duurzame thuis waarin comfort, energie-efficiëntie en levenskwaliteit centraal staan. Een investering waar u jarenlang van geniet.',
       },
-    ],
-  },
-  {
-    id: 'step-5',
-    title: 'Nazorg',
-    image: '/werkwijze/FifthStep.webp',
-    imageAlt: 'Geronoveerde slaapkamer met zicht op de gang',
-    blocks: [
       {
-        subtitle: 'Blijvende ondersteuning',
+        subtitle: 'We blijven bereikbaar',
         description:
-          'Ook na de oplevering blijven wij bereikbaar. Heeft u vragen of wenst u advies? Wij staan voor u klaar. Onze betrokkenheid stopt niet bij de sleuteloverdracht.',
-      },
-      {
-        subtitle: 'Een partner op lange termijn',
-        description:
-          'Wij bouwen niet alleen woningen, maar ook relaties. Dankzij onze nazorg en opvolging bent u zeker van een partner die met u meedenkt, vandaag én in de toekomst. Dat is voor ons echte kwaliteit en vertrouwen.',
+          'na de oplevering blijven we open voor vragen, advies of gedachteveranderingen. Als u uw project later nog wil uitbreiden of aanpassen kunt u dus zeker bij ons terecht, zo kunnen we meteen verder.',
       },
     ],
   },

@@ -41,7 +41,12 @@ export const ADVIES_SNAKE_CONTENT: ISnakeContent[] = [
   {
     title: 'Voorkom dure fouten',
     subtitle:
-      'Met professioneel bouwkundig advies voorkomt u verkeerde keuzes, onverwachte kosten en technische problemen achteraf.',
+      'Met professioneel bouwkundig advies voorkomt u verkeerde keuzes, onverwachte kosten en technische problemen achteraf. We leiden de weg door een landschap met putten als vendor lock-in, schijnkwaliteit en verborgen kosten.',
+  },
+  {
+    title: 'Fauna inclusief bouwen',
+    subtitle:
+      'In onze projecten houden we rekening met huidieren en andere dieren in uw omgeving.',
   },
   {
     title: 'Slim renoveren',
@@ -59,9 +64,14 @@ export const ADVIES_SNAKE_CONTENT: ISnakeContent[] = [
       'Waar mogelijk adviseren we natuurlijke en duurzame materialen die bijdragen aan een gezonde en energiezuinige woning.',
   },
   {
+    title: 'Hand in hand met natuur',
+    subtitle:
+      'Door samen te werken met de seizoenen kunnen we technische problemen aanpakken. Zo onstaat er ruimte voor duurzame oplossingen die meegroeien met veranderende omstandigheden.',
+  },
+  {
     title: 'Een partner die meedenkt',
     subtitle:
-      'Wij geloven in samenwerken op lange termijn en begeleiden u alsof het ons eigen project is.',
+      'Wij geloven in samenwerken op lange termijn en werken steeds af alsof het ons eigen project is.',
   },
 ];
 export const ADVIES_SNAKE_IMAGES: ISnakeImage[] = [
@@ -83,4 +93,5 @@ export const ADVIES_SNAKE_IMAGES: ISnakeImage[] = [
     alt: 'Foto van gelijksvloers in een huis gerenoveerd door Thorbouw',
   },
   { src: '/advies/SmallVertical3.webp', alt: 'Afgewerkte slaapkamer door Thorbouw' },
+  { src: '/advies/VerticalImage4.webp', alt: 'Foto van veranda getrokken vanuit vijver' },
 ];

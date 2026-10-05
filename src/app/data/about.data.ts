@@ -14,7 +14,7 @@ export const ABOUT_BOTTOM_LIST = [
   'Volhoudbaar: Thorbouw werkt in het nu, met een blik op morgen.',
   'Eerlijk: Duiding in het verschil tussen traditionele en bio-ecologische bouwtechnieken zodat je een gefundeerde keuze kan maken als klant. ',
   'Correcte prijszetting waarbij aan alles gedacht wordt.',
-  'Low tech: M.a.w. inzetten op de isolatieschil en zo weinig mogelijk technieken inzetten om tot een energiezuinige woning te komen.',
+  'Low tech: M.a.w. eerst inzetten op de isolatieschil en zo weinig mogelijk technieken gebruiken om tot een energiezuinige woning te komen.',
   'Natuurlijk: respect voor fauna en flora en fascinatie voor water.',
   'Haalbaar: traditioneel of bio-ecologisch wonen zonder extreme ingrepen binnen je eigen grenzen en mogelijkheden.',
   'Familiaal: de bewoner met zijn/haar ritme, waarden en gezin staan voorop.',
@@ -53,21 +53,21 @@ export const ABOUT_VALUES: ITextRouselContent[] = [
     id: 5,
     title: 'Planning',
     description:
-      'We maken gedetailleerde planningen voor elk project, zodat u altijd weet wat er gebeurt en wanneer. We zorgen ervoor dat alle werkzaamheden op elkaar zijn afgestemd voor een efficiënte uitvoering.',
+      'We maken gedetailleerde planningen voor elk project, zodat u altijd weet wat waar en wanneer gebeurt. We zorgen ervoor dat alle werkzaamheden op elkaar zijn afgestemd voor een efficiënte uitvoering.',
     svg: '/aboutImages/Planning.svg',
   },
   {
     id: 6,
     title: 'Verantwoordelijkheid',
     description:
-      'We nemen volledige verantwoordelijkheid voor de kwaliteit van ons werk en de tevredenheid van onze klanten. We streven ernaar om elk project tot een succesvol einde te brengen.',
+      'We nemen volledige verantwoordelijkheid over de kwaliteit van ons werk en de tevredenheid van onze klanten. We streven ernaar om elk project tot een succesvol einde te brengen.',
     svg: '/aboutImages/Responsibility.svg',
   },
   {
     id: 7,
     title: 'Begeleiding',
     description:
-      'We bieden uitgebreide begeleiding gedurende het hele bouwproces, van de eerste concepten tot de uiteindelijke oplevering, om ervoor te zorgen dat uw visie werkelijkheid wordt.',
+      'We bieden uitgebreide begeleiding gedurende het hele bouwproces, vanaf het eerste verkennend gesprek tot de uiteindelijke oplevering, om ervoor te zorgen dat uw visie werkelijkheid wordt.',
     svg: '/aboutImages/Guidance.svg',
   },
   {

@@ -1,4 +1,4 @@
-# Thor Bouw – Modern Website Redesign (Angular)
+# ThorBouw – Modern Website Redesign (Angular)
 
 This repository contains a modern redesign of the **Thor Bouw** website.  
 The original site can be found at: https://www.thorbouw.be/

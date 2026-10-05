@@ -7,7 +7,7 @@ export const HOME_HERO_CONTENT: IHeroContent = {
   altText:
     'Modern sustainable house built with wood and glass showcasing eco-friendly architecture',
   title: 'Volhoudbaar bouwen aan een nieuwe wereld',
-  subtitle: 'Aanemer gezocht?',
+  subtitle: 'Aannemer gezocht?',
   buttonText: 'Contacteer Thorbouw voor Volhoudbaar wonen',
   buttonLink: '/contact',
 };

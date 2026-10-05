@@ -187,4 +187,298 @@ export const PROJECTS: IProjectContent[] = [
     ],
     images: IMAGES_VERHOEF,
   },
+  {
+    slug: 'Engelen',
+    title: 'verbouwing in Engelen',
+    subtitle: 'Modernisering Bad- en slaapkamer',
+    description:
+      'Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.',
+    location: 'Engelen',
+    locationCoord: [4.636699, 50.95818],
+    year: 2014,
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Engelen/Engelen001HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen002HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen003HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+    ],
+    images: [
+      {
+        src: '/fotos&realisaties/Engelen/Engelen001HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen002HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen003HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen004HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen005HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen006HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen007HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen008HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen009HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen010HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen011HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen012HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen013HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen014HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen015HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen016HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen017HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen018HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen019HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen020HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+      {
+        src: '/fotos&realisaties/Engelen/Engelen021HR.webp',
+        alt: 'Foto van verbouwing in Engelen',
+      },
+    ],
+  },
+  {
+    slug: 'Haasrode',
+    title: 'project in Haasrode',
+    subtitle: 'verbouwing in Haasrode.',
+    description:
+      'Verbouwing van de leef en wasruimten.',
+    location: 'Haasrode',
+    locationCoord: [4.72616, 50.83461],
+    year: 2015,
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Haasrode/4DSF6667.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/5DSF6545.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/6DSF6660.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+    ],
+    images: [
+      {
+        src: '/fotos&realisaties/Haasrode/4DSF6667.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/5DSF6545.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/6DSF6660.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/8DSF6613.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/_DSF6540.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/_DSF6561.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/_DSF6573.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/_DSF6598.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+      {
+        src: '/fotos&realisaties/Haasrode/_DSF6603.webp',
+        alt: 'Foto van verbouwing in Haasrode',
+      },
+    ],
+  },
+  /*
+  {
+    slug: 'Borchpoorte',
+    title: 'project in Borchpoorte',
+    subtitle: 'verbouwing in Borchpoorte.',
+    description:
+      'Verbouwing van de leef en wasruimten.',
+    location: 'Borchpoorte',
+    locationCoord: [4.72616, 50.83461],
+    year: 2015,
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Borchpoorte/DSC_0077.bewerkt.webp',
+        alt: 'Foto van verbouwing in Borchpoorte',
+      },
+      {
+        src: '/fotos&realisaties/Borchpoorte/kant_brussel.webp',
+        alt: 'Foto van verbouwing in Borchpoorte',
+      },
+    ],
+    images: [
+      {
+        src: '/fotos&realisaties/Borchpoorte/DSC_0077.bewerkt.webp',
+        alt: 'Foto van verbouwing in Borchpoorte',
+      },
+      {
+        src: '/fotos&realisaties/Borchpoorte/kant_brussel.webp',
+        alt: 'Foto van verbouwing in Borchpoorte',
+      },
+    ],
+  },
+  */
+  {
+    slug: 'Heverlee',
+    title: 'project in Heverlee',
+    subtitle: 'verbouwing in Heverlee.',
+    description:
+      'Inrichting wookamer en verbouwing veranda.',
+    location: 'Heverlee',
+    locationCoord: [4.69872, 50.85272],
+    year: 2015,
+    cardImages: [
+      {
+        src: '/fotos&realisaties/Heverlee/achtergevelvanafpadvoorterras.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/achtergevelvanuitvijver.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/eethoekmetzichtopkeukentelefoonhoekeninkomhall.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+    ],
+    images: [
+      {
+        src: '/fotos&realisaties/Heverlee/achtergevelvanafpadvoorterras.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/achtergevelvanuitvijver.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/eethoekmetzichtopkeukentelefoonhoekeninkomhall.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/interinkomhall2.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/interlivingkast.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/keukenoverzicht.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/living.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/paal.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/paalmeteetkamerkastenzichtkeuken2.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/tweemannekesmetzichtnaaroverloop.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/vanafeettafeloptelefoonhoekeninkomhall.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/vanafvoordeurnaarvijverenterras.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/voordeur.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/voorgevelvierkant.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/zichtoptuindeur.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+      {
+        src: '/fotos&realisaties/Heverlee/zichtvanuitvijveroptafelkleinterras.webp',
+        alt: 'Fotos van verbouwing Heverlee',
+      },
+    ],
+  },
 ];

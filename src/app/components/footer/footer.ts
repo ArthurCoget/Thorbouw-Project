@@ -83,13 +83,13 @@ export class FooterComponent {
   readonly navLinks = [
     { route: '/home', label: 'Home Pagina' },
     { route: '/overThorbouw', label: 'Over Thorbouw' },
-    { route: '/fotos', label: "Foto's & Realisitaties" },
-    { route: '/advies', label: 'Bouwkunding Advies' },
+    { route: '/fotos', label: "Foto's & Realisaties" },
+    { route: '/advies', label: 'Bouwkundig Advies' },
     { route: '/werkwijze', label: 'Werkwijze' },
     { route: '/project', label: 'Projectontwikkiling & Wonen' },
     { route: '/contact', label: 'Contact' },
     { route: '/privacy', label: 'Privacy' },
-    { route: '/voorwaarde', label: 'Algemene Voorwaarde' },
+    { route: '/voorwaarde', label: 'Algemene Voorwaarden' },
     { route: '/sitemap', label: 'Sitemap' },
   ];
 
@@ -121,13 +121,29 @@ export class FooterComponent {
   ];
 
   readonly socialLinks = [
-    {
+    /* {
       id: 'whatsapp',
       icon: `${this.FOOTER_SVG_PATH}/whatsapp.svg`,
       href: 'https://api.whatsapp.com/send?phone=32475530214',
       text: ['WhatsApp'],
       ariaLabel: 'Contact us on WhatsApp',
       alt: 'Whatsapp Icon',
+    },*/
+    {
+      id: 'LinkedIn',
+      icon: `${this.FOOTER_SVG_PATH}/LinkedIn.svg`,
+      href: 'https://www.linkedin.com/in/3-100-thorbouw/',
+      text: ['LinkedIn'],
+      ariaLabel: 'Vind ons bij LinkedIn.',
+      alt: 'LinkedIn Icon',
+    },
+    {
+      id: 'vibe',
+      icon: `${this.FOOTER_SVG_PATH}/VIBE-logo.svg`,
+      href: 'https://https://www.vibe.be/',
+      text: ['Vibe'],
+      ariaLabel: 'Vind ons bij vibe.',
+      alt: 'Vibe Icon',
     },
     {
       id: 'instagram',

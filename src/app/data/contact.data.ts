@@ -8,9 +8,9 @@ export const HERO_CONTACT_CONTENT: IHeroContent = {
   title: 'Contact',
 };
 export const CONTACT_CONTENT = {
-  contactTitle: 'Neem zeker contact op, indien u vragen heeft zijn wij er om u te helpen.',
+  contactTitle: 'Neem zeker contact op. Indien u vragen heeft zijn wij er om u te helpen.',
   contactSubTitle:
-    'We zijn alle dagen van de week open en in het weekend zijn we in de voormiddag berijkbaar.',
+    'We helpen u met plezier verder.',
 };
 
 export const CONTACT_LIST: IInfoContent[] = [
@@ -40,6 +40,7 @@ export const CONTACT_LIST: IInfoContent[] = [
     linkText: 'Stuur een email',
     ariaLabel: 'Send us an email',
   },
+  /*
   {
     id: 'whatsapp',
     title: 'Contacteer ons via WhatsApp',
@@ -48,6 +49,7 @@ export const CONTACT_LIST: IInfoContent[] = [
     linkText: 'Stuur een bericht via WhatsApp',
     ariaLabel: 'Contact us on WhatsApp',
   },
+  */
   {
     id: 'instagram',
     title: 'Volg ons op Instagram',
@@ -55,5 +57,13 @@ export const CONTACT_LIST: IInfoContent[] = [
     link: 'https://www.instagram.com/thorbouw/',
     linkText: 'Bekijk op Instagram',
     ariaLabel: 'Follow us on Instagram',
+  },
+  {
+    id: 'LinkedIn',
+    title: 'Volg ons op LinkedIn',
+    description: "Bekijk onze LinkedIn-pagina voor de nieuwste updates en foto's.",
+    link: 'https://www.linkedin.com/in/3-100-thorbouw/',
+    linkText: 'Bekijk op LinkedIn',
+    ariaLabel: 'Follow us on LinkedIn',
   },
 ];
