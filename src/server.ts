@@ -12,21 +12,13 @@ const browserDistFolder = join(import.meta.dirname, '../browser');
 const app = express();
 const angularApp = new AngularNodeAppEngine();
 
-/**
- * Example Express Rest API endpoints can be defined here.
- * Uncomment and define endpoints as necessary.
- *
- * Example:
- * ```ts
- * app.get('/api/{*splat}', (req, res) => {
- *   // Handle API request
- * });
- * ```
- */
+const supported = ['nl', 'fr', 'en'];
 
-/**
- * Serve static files from /browser
- */
+app.get('/', (req, res) => {
+  const lang = req.acceptsLanguages(supported) || 'en';
+  res.redirect(302, `/${lang}/`);
+});
+
 app.use(
   express.static(browserDistFolder, {
     maxAge: '1y',
@@ -41,9 +33,7 @@ app.use(
 app.use((req, res, next) => {
   angularApp
     .handle(req)
-    .then((response) =>
-      response ? writeResponseToNodeResponse(response, res) : next(),
-    )
+    .then((response) => (response ? writeResponseToNodeResponse(response, res) : next()))
     .catch(next);
 });
 

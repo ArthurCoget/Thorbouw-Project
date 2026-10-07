@@ -4,62 +4,54 @@ import { IPillar } from '../interfaces/pillar';
 export const HOME_HERO_CONTENT: IHeroContent = {
   variant: 'complete',
   image: 'LandingHero.webp',
-  altText:
-    'Modern sustainable house built with wood and glass showcasing eco-friendly architecture',
-  title: 'Volhoudbaar bouwen aan een nieuwe wereld',
-  subtitle: 'Aannemer gezocht?',
-  buttonText: 'Contacteer Thorbouw voor Volhoudbaar wonen',
+  altText: $localize`:@@home.hero.alt:Modern, duurzaam huis, gebouwd met hout en glas, dat een voorbeeld is van milieuvriendelijke architectuur`,
+  title: $localize`:@@home.hero.title:Volhoudbaar bouwen aan een nieuwe wereld`,
+  subtitle: $localize`:@@home.hero.subtitle:Aannemer gezocht?`,
+  buttonText: $localize`:@@home.hero.button:Contacteer Thorbouw voor Volhoudbaar wonen`,
   buttonLink: '/contact',
 };
 
 export const HOME_PILLARS: IPillar[] = [
   {
     id: '1',
-    title: 'Duurzaam Wonen',
-    description:
-      'Uw huis omtoveren tot energiezuinige thuis? Toekomstgericht bouwen? Kleiner wonen? Thorbouw is gespecialiseerd in volhoudbaar (ver)bouwen & inrichten.',
+    title: $localize`:@@home.pillar.sustainable.title:Duurzaam Wonen`,
+    description: $localize`:@@home.pillar.sustainable.description:Uw huis omtoveren tot energiezuinige thuis? Toekomstgericht bouwen? Kleiner wonen? Thorbouw is gespecialiseerd in volhoudbaar (ver)bouwen & inrichten.`,
     imageSrc: '/three-images/Three-Image-2.webp',
     link: '/projectontwikkeling',
-    linkText: 'Investeer in milieubewust wonen',
+    linkText: $localize`:@@home.pillar.sustainable.link:Investeer in milieubewust wonen`,
   },
   {
     id: '2',
-    title: 'Projectontwikkeling',
-    description:
-      'Leegstaand pand of een stuk grond te verkavelen? Zin in cohousing of samenhuizen? Thorbouw zet zijn schouders onder uw vooruitstrevend bouwproject.',
+    title: $localize`:@@home.pillar.development.title:Projectontwikkeling`,
+    description: $localize`:@@home.pillar.development.description:Leegstaand pand of een stuk grond te verkavelen? Zin in cohousing of samenhuizen? Thorbouw zet zijn schouders onder uw vooruitstrevend bouwproject.`,
     imageSrc: '/three-images/Three-Image-1.webp',
     link: '/projectontwikkeling',
-    linkText: 'Maak kennis met onze projectaanpak',
+    linkText: $localize`:@@home.pillar.development.link:Maak kennis met onze projectaanpak`,
   },
   {
     id: '3',
-    title: 'Bouwkundig Advies',
-    description:
-      'Stap van uw woonverhaal in Leuven & ruime omgeving. Wij vergezellen u met eerlijke feedback tijdens een huisbezichtiging.',
+    title: $localize`:@@home.pillar.advice.title:Bouwkundig Advies`,
+    description: $localize`:@@home.pillar.advice.description:Stap in uw woonverhaal in Leuven & ruime omgeving. Wij vergezellen u met eerlijke feedback tijdens een huisbezichtiging.`,
     imageSrc: '/three-images/Three-Image-3.webp',
     link: '/advies',
-    linkText: 'Laat u duurzaam adviseren',
+    linkText: $localize`:@@home.pillar.advice.link:Laat u duurzaam adviseren`,
   },
 ];
 
 export const HOME_CONTENT = {
-  topContainerTextBlue:
-    'Groen bouwen of traditioneel of een combinatie van beiden? Energiezuinige woning of appartement kopen? Milieubewust renoveren of inrichten?',
-  topContainerText:
-    'Duurzame aannemer Thorbouw deelt met véél plezier zijn eindeloze passie voor vol te houden woonvormen oftewel ‘volhoudbaar wonen’. Wij bouwen, renoveren en ontwikkelen voor een vaste prijs en volgens uw budget uw zorgeloze thuis en een duurzame toekomst in Vlaams-Brabant. ',
-  middleTitle: 'Van meubel tot verbouwingen met totaalinrichting.',
-  middleText:
-    'Hebt u interesse? Neem zeker een kijkje door onze vorige projecten voor wat meer informatie.',
-  bottomTitle: 'Wist u dat?',
-  bottomTextIntro:
-    'De Zuid-Afrikaanse taal zit boordevol warme termen, zoals volhoudbaar wat letterlijk duurzaam betekent. Met een volhoudbare aanpak respecteren ze oorsprong, houden ze vol in hetnu en zorgen ze dat het houdbaar blijft voor wie na hen komt.',
-  bottomTextMiddle:
-    'Het verschil tussen duurzaam en volhoudbaar? Duurzaam is niet noodzakelijk ecologisch. Denk bijvoorbeeld aan tuinmeubilair uit gerecycleerde pvc in je tuin. Na jaren buiten in weer en wind zit uw tuin vol microplastic. Thorbouw licht alle voor- en nadelen toe van de verschillende materialen, zodat je als klant een voor jezelf verantwoorde keuze kan maken. Wie kiest voor een volhoudbare aanpak, maakt de juiste keuze voor zichzelf, de volgende generaties en onze planeet. Deze wijze spreuk van de Canadese Haida indianen vat het perfect samen: „We erven de wereld niet van onze ouders, maar lenen de wereld van onze kinderen.”',
-  bottomTextEnd:
-    'Als aannemersbedrijf in Leuven zetten wij 100% in op toekomstgericht wonen. We adviseren haalbare ingrepen, betaalbare energie-oplossingen en zowel traditionele als natuurlijke bouwmaterialen. Ethiek en integriteit houden wij hoog in het vaandel, onze klanten correct informeren maakt deel uit van onze werkwijze.',
-  bottomTextConclusionBeforeLink:
-    'Algemeen aannemer en binnenhuisarchitect Jan Vansteenwegen begeleidt u, samen met de ',
-  bottomTextConclusionAfterLink:
-    ', naar een huis, appartement, kangoeroewoning of nieuwbouwproject met respect voor onze planeet en met veel liefde voor de volgende generatie Leuvenaars. Wij bieden u het volledige totaalpakket: woningbouw, verbouwing, inrichting, meubilair en tuin. Volledig op uw maat en met oog voor het milieu.',
-  bottomTextConlcusionLink: 'North South Architecten',
+  topContainerTextBlue: $localize`:@@home.content.top.blue:Groen bouwen of traditioneel of een combinatie van beiden? Energiezuinige woning of appartement kopen? Milieubewust renoveren of inrichten?`,
+
+  topContainerText: $localize`:@@home.content.top.text:Duurzame aannemer Thorbouw deelt met véél plezier zijn eindeloze passie voor vol te houden woonvormen oftewel ‘volhoudbaar wonen’. Wij bouwen, renoveren en ontwikkelen voor een vaste prijs en volgens uw budget uw zorgeloze thuis en een duurzame toekomst in Vlaams-Brabant.`,
+
+  middleTitle: $localize`:@@home.content.middle.title:Van meubel tot verbouwingen met totaalinrichting.`,
+
+  middleText: $localize`:@@home.content.middle.text:Hebt u interesse? Neem zeker een kijkje door onze vorige projecten voor wat meer informatie.`,
+
+  bottomTitle: $localize`:@@home.content.bottom.title:Wist u dat?`,
+
+  bottomTextIntro: $localize`:@@home.content.bottom.intro:De Zuid-Afrikaanse taal zit boordevol warme termen, zoals volhoudbaar wat letterlijk duurzaam betekent. Met een volhoudbare aanpak respecteren ze oorsprong, houden ze vol in het nu en zorgen ze dat het houdbaar blijft voor wie na hen komt.`,
+
+  bottomTextMiddle: $localize`:@@home.content.bottom.middle:Het verschil tussen duurzaam en volhoudbaar? Duurzaam is niet noodzakelijk ecologisch. Denk bijvoorbeeld aan tuinmeubilair uit gerecycleerde pvc in je tuin. Na jaren buiten in weer en wind zit uw tuin vol microplastic. Thorbouw licht alle voor- en nadelen toe van de verschillende materialen, zodat je als klant een voor jezelf verantwoorde keuze kan maken. Wie kiest voor een volhoudbare aanpak, maakt de juiste keuze voor zichzelf, de volgende generaties en onze planeet. Deze wijze spreuk van de Canadese Haida indianen vat het perfect samen: „We erven de wereld niet van onze ouders, maar lenen de wereld van onze kinderen.”`,
+
+  bottomTextEnd: $localize`:@@home.content.bottom.end:Als aannemersbedrijf in Leuven zetten wij 100% in op toekomstgericht wonen. We adviseren haalbare ingrepen, betaalbare energie-oplossingen en zowel traditionele als natuurlijke bouwmaterialen. Ethiek en integriteit houden wij hoog in het vaandel, onze klanten correct informeren maakt deel uit van onze werkwijze.`,
 };

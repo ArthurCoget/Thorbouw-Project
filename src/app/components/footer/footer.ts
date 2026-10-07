@@ -90,8 +90,7 @@ export class FooterComponent {
     { route: '/contact', label: 'Contact' },
     /*
     { route: '/privacy', label: 'Privacy' },
-    { route: '/voorwaarde', label: 'Algemene Voorwaarden' },
-    */
+    { route: '/voorwaarde', label: 'Algemene Voorwaarden' },*/
     { route: '/sitemap', label: 'Sitemap' },
   ];
 
