@@ -1,61 +1,141 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="nl-BE" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="advies.cta.imgAlt" datatype="html">
+        <source>Foto van een verbouwde eetkamer met een moderne uitstraling, gerealiseerd door Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="advies.cta1.button" datatype="html">
+        <source>Neem contact met ons op</source>
+      </trans-unit>
+      <trans-unit id="advies.cta1.subtitle" datatype="html">
+        <source>Maak doordachte keuzes vanaf de start. Wij begeleiden u met eerlijk, duurzaam en praktisch advies voor uw bouw- of renovatieproject.</source>
+      </trans-unit>
+      <trans-unit id="advies.cta1.title" datatype="html">
+        <source>Bouwkundig advies zonder verrassingen</source>
+      </trans-unit>
+      <trans-unit id="advies.cta2.button" datatype="html">
+        <source>Bekijk onze werkwijze</source>
+      </trans-unit>
+      <trans-unit id="advies.cta2.subtitle" datatype="html">
+        <source>Met ons bouwkundig advies begeleiden we u van idee tot realistisch plan, zodat u verrassingen, onnodige kosten en technische problemen vermijdt. Wij denken met u mee, niet alleen over wat mogelijk is, maar vooral over wat de beste oplossing is op lange termijn.</source>
+      </trans-unit>
+      <trans-unit id="advies.cta2.title" datatype="html">
+        <source>Een succesvolle renovatie of bouwproject start niet op de werf</source>
+      </trans-unit>
+      <trans-unit id="advies.img.bedroom" datatype="html">
+        <source>Afgewerkte slaapkamer door Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="advies.img.groundfloor" datatype="html">
+        <source>Foto van gelijksvloers in een huis gerenoveerd door Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="advies.img.kitchen" datatype="html">
+        <source>Foto van een deel van de woonkamen en keuken</source>
+      </trans-unit>
+      <trans-unit id="advies.img.livingroom" datatype="html">
+        <source>Moderne woonkamer gerenoveerd door Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="advies.img.terrace" datatype="html">
+        <source>Afbeelding van een gerenoveerd terras door Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="advies.img.veranda" datatype="html">
+        <source>Foto van veranda getrokken vanuit vijver</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.1.subtitle" datatype="html">
+        <source>Thorbouw kiest voor volhoudbare oplossingen die comfort, energiezuinigheid en een gezond binnenklimaat combineren.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.1.title" datatype="html">
+        <source>Duurzaam en toekomstgericht</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.10.subtitle" datatype="html">
+        <source>Door samen te werken met de seizoenen kunnen we technische problemen aanpakken. Zo ontstaat er ruimte voor duurzame oplossingen die meegroeien met veranderende omstandigheden.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.10.title" datatype="html">
+        <source>Hand in hand met natuur</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.11.subtitle" datatype="html">
+        <source>Wij geloven in samenwerken op lange termijn en werken steeds af alsof het ons eigen project is.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.11.title" datatype="html">
+        <source>Een partner die meedenkt</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.2.subtitle" datatype="html">
+        <source>Van eerste idee tot uitvoering begeleiden wij u stap voor stap met een directe en transparante aanpak.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.2.title" datatype="html">
+        <source>Persoonlijke begeleiding</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.3.subtitle" datatype="html">
+        <source>We bekijken de technische mogelijkheden van uw woning en geven helder advies afgestemd op uw situatie en budget.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.3.title" datatype="html">
+        <source>Analyse van uw woning</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.4.subtitle" datatype="html">
+        <source>Geen ingewikkelde theorieën, maar realistische oplossingen die werken op lange termijn en écht meerwaarde bieden.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.4.title" datatype="html">
+        <source>Praktische oplossingen</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.5.subtitle" datatype="html">
+        <source>Met professioneel bouwkundig advies voorkomt u verkeerde keuzes, onverwachte kosten en technische problemen achteraf. We leiden de weg door een landschap met putten als vendor lock-in, schijnkwaliteit en verborgen kosten.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.5.title" datatype="html">
+        <source>Voorkom dure fouten</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.6.subtitle" datatype="html">
+        <source>In onze projecten houden we rekening met huisdieren en andere dieren in uw omgeving.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.6.title" datatype="html">
+        <source>Fauna inclusief bouwen</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.7.subtitle" datatype="html">
+        <source>We denken mee over indeling, isolatie, ventilatie en materiaalkeuzes om uw woning efficiënter en aangenamer te maken.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.7.title" datatype="html">
+        <source>Slim renoveren</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.8.subtitle" datatype="html">
+        <source>Heldere communicatie en eerlijk advies vormen de basis van elk project dat wij begeleiden.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.8.title" datatype="html">
+        <source>Transparantie centraal</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.9.subtitle" datatype="html">
+        <source>Waar mogelijk adviseren we natuurlijke en duurzame materialen die bijdragen aan een gezonde en energiezuinige woning.</source>
+      </trans-unit>
+      <trans-unit id="advies.snake.9.title" datatype="html">
+        <source>Bio-ecologisch bouwen</source>
+      </trans-unit>
       <trans-unit id="home.content.bottom.end" datatype="html">
-        <source>Als aannemersbedrijf in Leuven zetten wij 100% in op toekomstgericht wonen. We
-          adviseren haalbare ingrepen, betaalbare energie-oplossingen en zowel traditionele als
-          natuurlijke bouwmaterialen. Ethiek en integriteit houden wij hoog in het vaandel, onze
-          klanten correct informeren maakt deel uit van onze werkwijze.</source>
+        <source>Als aannemersbedrijf in Leuven zetten wij 100% in op toekomstgericht wonen. We adviseren haalbare ingrepen, betaalbare energie-oplossingen en zowel traditionele als natuurlijke bouwmaterialen. Ethiek en integriteit houden wij hoog in het vaandel, onze klanten correct informeren maakt deel uit van onze werkwijze.</source>
       </trans-unit>
       <trans-unit id="home.content.bottom.intro" datatype="html">
-        <source>De Zuid-Afrikaanse taal zit boordevol warme termen, zoals volhoudbaar wat letterlijk
-          duurzaam betekent. Met een volhoudbare aanpak respecteren ze oorsprong, houden ze vol in
-          het nu en zorgen ze dat het houdbaar blijft voor wie na hen komt.</source>
+        <source>De Zuid-Afrikaanse taal zit boordevol warme termen, zoals volhoudbaar wat letterlijk duurzaam betekent. Met een volhoudbare aanpak respecteren ze oorsprong, houden ze vol in het nu en zorgen ze dat het houdbaar blijft voor wie na hen komt.</source>
       </trans-unit>
       <trans-unit id="home.content.bottom.middle" datatype="html">
-        <source>Het verschil tussen duurzaam en volhoudbaar? Duurzaam is niet noodzakelijk
-          ecologisch. Denk bijvoorbeeld aan tuinmeubilair uit gerecycleerde pvc in je tuin. Na jaren
-          buiten in weer en wind zit uw tuin vol microplastic. Thorbouw licht alle voor- en nadelen
-          toe van de verschillende materialen, zodat je als klant een voor jezelf verantwoorde keuze
-          kan maken. Wie kiest voor een volhoudbare aanpak, maakt de juiste keuze voor zichzelf, de
-          volgende generaties en onze planeet. Deze wijze spreuk van de Canadese Haida indianen vat
-          het perfect samen: „We erven de wereld niet van onze ouders, maar lenen de wereld van onze
-          kinderen.”</source>
+        <source>Het verschil tussen duurzaam en volhoudbaar? Duurzaam is niet noodzakelijk ecologisch. Denk bijvoorbeeld aan tuinmeubilair uit gerecycleerde pvc in je tuin. Na jaren buiten in weer en wind zit uw tuin vol microplastic. Thorbouw licht alle voor- en nadelen toe van de verschillende materialen, zodat je als klant een voor jezelf verantwoorde keuze kan maken. Wie kiest voor een volhoudbare aanpak, maakt de juiste keuze voor zichzelf, de volgende generaties en onze planeet. Deze wijze spreuk van de Canadese Haida indianen vat het perfect samen: „We erven de wereld niet van onze ouders, maar lenen de wereld van onze kinderen.”</source>
       </trans-unit>
       <trans-unit id="home.content.bottom.title" datatype="html">
         <source>Wist u dat?</source>
       </trans-unit>
       <trans-unit id="home.content.conclusion" datatype="html">
-        <source> Algemeen aannemer en binnenhuisarchitect Jan Vansteenwegen begeleidt u, samen met
-          de <x id="START_LINK" ctype="x-a"
-            equiv-text="&lt;a href=&quot;https://www.northsoutharchitecten.be&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />
-          North South Architecten <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;" />, naar
-          een huis, appartement, kangoeroewoning of nieuwbouwproject met respect voor onze planeet
-          en met veel liefde voor de volgende generatie Leuvenaars. Wij bieden u het volledige
-          totaalpakket: woningbouw, verbouwing, inrichting, meubilair en tuin. Volledig op uw maat
-          en met oog voor het milieu. </source>
+        <source> Algemeen aannemer en binnenhuisarchitect Jan Vansteenwegen begeleidt u, samen met de <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.northsoutharchitecten.be&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;"/> North South Architecten <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;"/>, naar een huis, appartement, kangoeroewoning of nieuwbouwproject met respect voor onze planeet en met veel liefde voor de volgende generatie Leuvenaars. Wij bieden u het volledige totaalpakket: woningbouw, verbouwing, inrichting, meubilair en tuin. Volledig op uw maat en met oog voor het milieu. </source>
       </trans-unit>
       <trans-unit id="home.content.middle.text" datatype="html">
-        <source>Hebt u interesse? Neem zeker een kijkje door onze vorige projecten voor wat meer
-          informatie.</source>
+        <source>Hebt u interesse? Neem zeker een kijkje door onze vorige projecten voor wat meer informatie.</source>
       </trans-unit>
       <trans-unit id="home.content.middle.title" datatype="html">
         <source>Van meubel tot verbouwingen met totaalinrichting.</source>
       </trans-unit>
       <trans-unit id="home.content.top.blue" datatype="html">
-        <source>Groen bouwen of traditioneel of een combinatie van beiden? Energiezuinige woning of
-          appartement kopen? Milieubewust renoveren of inrichten?</source>
+        <source>Groen bouwen of traditioneel of een combinatie van beiden? Energiezuinige woning of appartement kopen? Milieubewust renoveren of inrichten?</source>
       </trans-unit>
       <trans-unit id="home.content.top.text" datatype="html">
-        <source>Duurzame aannemer Thorbouw deelt met véél plezier zijn eindeloze passie voor vol te
-          houden woonvormen oftewel ‘volhoudbaar wonen’. Wij bouwen, renoveren en ontwikkelen voor
-          een vaste prijs en volgens uw budget uw zorgeloze thuis en een duurzame toekomst in
-          Vlaams-Brabant.</source>
+        <source>Duurzame aannemer Thorbouw deelt met véél plezier zijn eindeloze passie voor vol te houden woonvormen oftewel ‘volhoudbaar wonen’. Wij bouwen, renoveren en ontwikkelen voor een vaste prijs en volgens uw budget uw zorgeloze thuis en een duurzame toekomst in Vlaams-Brabant en omstreken.</source>
       </trans-unit>
       <trans-unit id="home.hero.alt" datatype="html">
-        <source>Modern, duurzaam huis, gebouwd met hout en glas, dat een voorbeeld is van
-          milieuvriendelijke architectuur</source>
+        <source>Modern, duurzaam huis, gebouwd met hout en glas, dat een voorbeeld is van milieuvriendelijke architectuur</source>
       </trans-unit>
       <trans-unit id="home.hero.button" datatype="html">
         <source>Contacteer Thorbouw voor Volhoudbaar wonen</source>
@@ -67,8 +147,7 @@
         <source>Volhoudbaar bouwen aan een nieuwe wereld</source>
       </trans-unit>
       <trans-unit id="home.pillar.advice.description" datatype="html">
-        <source>Stap in uw woonverhaal in Leuven &amp; ruime omgeving. Wij vergezellen u met
-          eerlijke feedback tijdens een huisbezichtiging.</source>
+        <source>Stap in uw woonverhaal in Leuven &amp; ruime omgeving. Wij vergezellen u met eerlijke feedback tijdens een huisbezichtiging.</source>
       </trans-unit>
       <trans-unit id="home.pillar.advice.link" datatype="html">
         <source>Laat u duurzaam adviseren</source>
@@ -77,8 +156,7 @@
         <source>Bouwkundig Advies</source>
       </trans-unit>
       <trans-unit id="home.pillar.development.description" datatype="html">
-        <source>Leegstaand pand of een stuk grond te verkavelen? Zin in cohousing of samenhuizen?
-          Thorbouw zet zijn schouders onder uw vooruitstrevend bouwproject.</source>
+        <source>Leegstaand pand of een stuk grond te verkavelen? Zin in cohousing of samenhuizen? Thorbouw zet zijn schouders onder uw vooruitstrevend bouwproject.</source>
       </trans-unit>
       <trans-unit id="home.pillar.development.link" datatype="html">
         <source>Maak kennis met onze projectaanpak</source>
@@ -87,8 +165,7 @@
         <source>Projectontwikkeling</source>
       </trans-unit>
       <trans-unit id="home.pillar.sustainable.description" datatype="html">
-        <source>Uw huis omtoveren tot energiezuinige thuis? Toekomstgericht bouwen? Kleiner wonen?
-          Thorbouw is gespecialiseerd in volhoudbaar (ver)bouwen &amp; inrichten.</source>
+        <source>Uw huis omtoveren tot energiezuinige thuis? Toekomstgericht bouwen? Kleiner wonen? Thorbouw is gespecialiseerd in volhoudbaar (ver)bouwen &amp; inrichten.</source>
       </trans-unit>
       <trans-unit id="home.pillar.sustainable.link" datatype="html">
         <source>Investeer in milieubewust wonen</source>

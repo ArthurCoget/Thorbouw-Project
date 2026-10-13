@@ -41,7 +41,7 @@ export const HOME_PILLARS: IPillar[] = [
 export const HOME_CONTENT = {
   topContainerTextBlue: $localize`:@@home.content.top.blue:Groen bouwen of traditioneel of een combinatie van beiden? Energiezuinige woning of appartement kopen? Milieubewust renoveren of inrichten?`,
 
-  topContainerText: $localize`:@@home.content.top.text:Duurzame aannemer Thorbouw deelt met véél plezier zijn eindeloze passie voor vol te houden woonvormen oftewel ‘volhoudbaar wonen’. Wij bouwen, renoveren en ontwikkelen voor een vaste prijs en volgens uw budget uw zorgeloze thuis en een duurzame toekomst in Vlaams-Brabant.`,
+  topContainerText: $localize`:@@home.content.top.text:Duurzame aannemer Thorbouw deelt met véél plezier zijn eindeloze passie voor vol te houden woonvormen oftewel ‘volhoudbaar wonen’. Wij bouwen, renoveren en ontwikkelen voor een vaste prijs en volgens uw budget uw zorgeloze thuis en een duurzame toekomst in Vlaams-Brabant en omstreken.`,
 
   middleTitle: $localize`:@@home.content.middle.title:Van meubel tot verbouwingen met totaalinrichting.`,
 
