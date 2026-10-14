@@ -8,353 +8,189 @@ import {
   IMAGES_VERHOEF,
 } from './project-images.data';
 
+const ALT = {
+  brandts: $localize`:@@project.brandts.alt:Foto van nieuwbouw in Korbeek-Lo`,
+  herent: $localize`:@@project.herent.alt:Foto van nieuwbouw in Herent`,
+  justiuslipsius: $localize`:@@project.justiuslipsius.alt:Foto van renovatie in Leuven`,
+  uten: $localize`:@@project.uten.alt:Foto van nieuwbouw in Ottenburg`,
+  meulen: $localize`:@@project.meulen.alt:Foto van renovatie in Leuven`,
+  sucaet: $localize`:@@project.sucaet.alt:Foto van renovatie in Heverlee`,
+  verhoef: $localize`:@@project.verhoef.alt:Foto van renovatie in Hoog Linden`,
+  engelen: $localize`:@@project.engelen.alt:Foto van verbouwing in Engelen`,
+  haasrode: $localize`:@@project.haasrode.alt:Foto van verbouwing in Haasrode`,
+  heverlee: $localize`:@@project.heverlee.alt:Foto van verbouwing Heverlee`,
+};
+
 export const PROJECTS: IProjectContent[] = [
   {
     slug: 'Brandts',
-    title: 'Nieuwbouw Korbeek-Lo',
-    subtitle: 'Modern wooncomfort, vakkundig gerealiseerd',
-    description:
-      'Met kwalitatieve materialen en oog voor detail realiseren we duurzame woonoplossingen.',
+    title: $localize`:@@project.brandts.title:Nieuwbouw Korbeek-Lo`,
+    subtitle: $localize`:@@project.brandts.subtitle:Modern wooncomfort, vakkundig gerealiseerd`,
+    description: $localize`:@@project.brandts.description:Met kwalitatieve materialen en oog voor detail realiseren we duurzame woonoplossingen.`,
     location: 'Korbeek-Lo',
     locationCoord: [4.76687, 50.862358],
     year: 2024,
     cardImages: [
-      {
-        src: '/fotos&realisaties/BuurBrandts/brandts_1.webp',
-        alt: 'Foto van nieuwbouw in Korbeek-Lo',
-      },
-      {
-        src: '/fotos&realisaties/BuurBrandts/brandts_10.webp',
-        alt: 'Foto van nieuwbouw in Korbeek-Lo',
-      },
-      {
-        src: '/fotos&realisaties/BuurBrandts/brandts_20.webp',
-        alt: 'Foto van nieuwbouw in Korbeek-Lo',
-      },
+      { src: '/fotos&realisaties/BuurBrandts/brandts_1.webp', alt: ALT.brandts },
+      { src: '/fotos&realisaties/BuurBrandts/brandts_10.webp', alt: ALT.brandts },
+      { src: '/fotos&realisaties/BuurBrandts/brandts_20.webp', alt: ALT.brandts },
     ],
     images: IMAGES_BRANDTS,
   },
   {
     slug: 'herent',
-    title: 'Nieuwbouw te Herent',
-    subtitle: 'Hedendaagse nieuwbouw met focus op kwaliteit en comfort',
-    description:
-      'Voor dit nieuwbouwproject in Herent realiseerden we een moderne woning met hoogwaardige afwerking en oog voor detail. Duurzaamheid en wooncomfort stonden centraal in elke fase van het bouwproces.',
+    title: $localize`:@@project.herent.title:Nieuwbouw te Herent`,
+    subtitle: $localize`:@@project.herent.subtitle:Hedendaagse nieuwbouw met focus op kwaliteit en comfort`,
+    description: $localize`:@@project.herent.description:Voor dit nieuwbouwproject in Herent realiseerden we een moderne woning met hoogwaardige afwerking en oog voor detail. Duurzaamheid en wooncomfort stonden centraal in elke fase van het bouwproces.`,
     location: 'Herent',
     locationCoord: [4.671824, 50.90535],
     year: 2025,
     cardImages: [
-      {
-        src: '/fotos&realisaties/Herent/Herent_1.webp',
-        alt: 'Foto van nieuwbouw in Herent',
-      },
-      {
-        src: '/fotos&realisaties/Herent/Herent_2.webp',
-        alt: 'Foto van nieuwbouw in Herent',
-      },
-      {
-        src: '/fotos&realisaties/Herent/Herent_3.webp',
-        alt: 'Foto van nieuwbouw in Herent',
-      },
+      { src: '/fotos&realisaties/Herent/Herent_1.webp', alt: ALT.herent },
+      { src: '/fotos&realisaties/Herent/Herent_2.webp', alt: ALT.herent },
+      { src: '/fotos&realisaties/Herent/Herent_3.webp', alt: ALT.herent },
     ],
     images: Array.from({ length: 50 }, (_, i) => ({
       src: `/fotos&realisaties/Herent/Herent_${i + 1}.webp`,
-      alt: 'Foto van nieuwbouw in Herent',
+      alt: ALT.herent,
     })),
   },
   {
     slug: 'justiuslipsius',
-    title: 'Appartement Justius Lipsius',
-    subtitle: 'Appartement met respect voor moderne woonbehoeften',
-    description:
-      'Voor de renovatie van deze historische woning in Leuven combineerden we vakmanschap met moderne technieken om een comfortabele leefruimte te creëren, terwijl we het karakter en de charme van het oorspronkelijke gebouw behouden.',
+    title: $localize`:@@project.justiuslipsius.title:Appartement Justius Lipsius`,
+    subtitle: $localize`:@@project.justiuslipsius.subtitle:Appartement met respect voor moderne woonbehoeften`,
+    description: $localize`:@@project.justiuslipsius.description:Voor de renovatie van deze historische woning in Leuven combineerden we vakmanschap met moderne technieken om een comfortabele leefruimte te creëren, terwijl we het karakter en de charme van het oorspronkelijke gebouw behouden.`,
     location: 'Leuven',
     locationCoord: [4.703989, 50.88378],
     year: 2024,
     cardImages: [
-      {
-        src: '/fotos&realisaties/JustiusLipsius/Justius_1.webp',
-        alt: 'Foto van renovatie in Leuven',
-      },
-      {
-        src: '/fotos&realisaties/JustiusLipsius/Lipsius_1.webp',
-        alt: 'Foto van renovatie in Leuven',
-      },
-      {
-        src: '/fotos&realisaties/JustiusLipsius/Justius_15.webp',
-        alt: 'Foto van renovatie in Leuven',
-      },
+      { src: '/fotos&realisaties/JustiusLipsius/Justius_1.webp', alt: ALT.justiuslipsius },
+      { src: '/fotos&realisaties/JustiusLipsius/Lipsius_1.webp', alt: ALT.justiuslipsius },
+      { src: '/fotos&realisaties/JustiusLipsius/Justius_15.webp', alt: ALT.justiuslipsius },
     ],
     images: IMAGES_JUSTIUS_LIPSIUS,
   },
   {
     slug: 'uten',
-    title: 'Nieuwbouw te Ottenburg',
-    subtitle: 'Nieuwbouw met een focus op verbinding met de natuur',
-    description: 'Nieuwbouw in Ottenburg waarbij de link met natuur en buitenleven centraal staat.',
+    title: $localize`:@@project.uten.title:Nieuwbouw te Ottenburg`,
+    subtitle: $localize`:@@project.uten.subtitle:Nieuwbouw met een focus op verbinding met de natuur`,
+    description: $localize`:@@project.uten.description:Nieuwbouw in Ottenburg waarbij de link met natuur en buitenleven centraal staat.`,
     location: 'Ottenburg',
     locationCoord: [4.611899, 50.75265],
     year: 2024,
     cardImages: [
-      {
-        src: '/fotos&realisaties/Uten/Uten_1.webp',
-        alt: 'Foto van nieuwbouw in Ottenburg',
-      },
-      {
-        src: '/fotos&realisaties/Uten/Uten_2.webp',
-        alt: 'Foto van nieuwbouw in Ottenburg',
-      },
-      {
-        src: '/fotos&realisaties/Uten/Uten_3.webp',
-        alt: 'Foto van nieuwbouw in Ottenburg',
-      },
+      { src: '/fotos&realisaties/Uten/Uten_1.webp', alt: ALT.uten },
+      { src: '/fotos&realisaties/Uten/Uten_2.webp', alt: ALT.uten },
+      { src: '/fotos&realisaties/Uten/Uten_3.webp', alt: ALT.uten },
     ],
     images: IMAGES_UTEN,
   },
   {
     slug: 'meulen',
-    title: 'Renovatie te Leuven',
-    subtitle: 'Renovatie met focus op het creëren van een warme en gezellige leefruimte',
-    description:
-      'Oude woning in leuven gerenoveerd tot een warme en gezellige leefruimte. De renovatie omvatte het behoud van karakteristieke elementen, terwijl moderne voorzieningen werden geïntegreerd om een comfortabele en functionele woonomgeving te creëren.',
+    title: $localize`:@@project.meulen.title:Renovatie te Leuven`,
+    subtitle: $localize`:@@project.meulen.subtitle:Renovatie met focus op het creëren van een warme en gezellige leefruimte`,
+    description: $localize`:@@project.meulen.description:Oude woning in Leuven gerenoveerd tot een warme en gezellige leefruimte. De renovatie omvatte het behoud van karakteristieke elementen, terwijl moderne voorzieningen werden geïntegreerd om een comfortabele en functionele woonomgeving te creëren.`,
     location: 'Leuven',
     locationCoord: [4.692895, 50.87609],
     year: 2024,
     cardImages: [
-      {
-        src: '/fotos&realisaties/Vandermeulen/leuven_1.webp',
-        alt: 'Foto van renovatie in Leuven',
-      },
-      {
-        src: '/fotos&realisaties/Vandermeulen/leuven_10.webp',
-        alt: 'Foto van renovatie in Leuven',
-      },
-      {
-        src: '/fotos&realisaties/Vandermeulen/leuven_15.webp',
-        alt: 'Foto van renovatie in Leuven',
-      },
+      { src: '/fotos&realisaties/Vandermeulen/leuven_1.webp', alt: ALT.meulen },
+      { src: '/fotos&realisaties/Vandermeulen/leuven_10.webp', alt: ALT.meulen },
+      { src: '/fotos&realisaties/Vandermeulen/leuven_15.webp', alt: ALT.meulen },
     ],
     images: IMAGES_MEULEN,
   },
   {
     slug: 'sucaet',
-    title: 'Renovatie voor Heverlee',
+    title: $localize`:@@project.sucaet.title:Renovatie voor Heverlee`,
     offset: 35,
-    subtitle: 'Renovatie met focus op moderniteit en comfort',
-    description:
-      'Voor deze renovatie in Heverlee hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.',
+    subtitle: $localize`:@@project.sucaet.subtitle:Renovatie met focus op moderniteit en comfort`,
+    description: $localize`:@@project.sucaet.description:Voor deze renovatie in Heverlee hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.`,
     location: 'Heverlee',
     locationCoord: [4.690487, 50.85946],
     year: 2024,
     cardImages: [
-      {
-        src: '/fotos&realisaties/Sucaet/heverlee_1.webp',
-        alt: 'Foto van renovatie in Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Sucaet/heverlee_10.webp',
-        alt: 'Foto van renovatie in Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Sucaet/heverlee_20.webp',
-        alt: 'Foto van renovatie in Heverlee',
-      },
+      { src: '/fotos&realisaties/Sucaet/heverlee_1.webp', alt: ALT.sucaet },
+      { src: '/fotos&realisaties/Sucaet/heverlee_10.webp', alt: ALT.sucaet },
+      { src: '/fotos&realisaties/Sucaet/heverlee_20.webp', alt: ALT.sucaet },
     ],
     images: IMAGES_SUCAET,
   },
   {
     slug: 'verhoef',
-    title: 'Renovatie te Hoog Linden',
-    subtitle: 'Renovatie met focus op moderniteit en comfort',
-    description:
-      'Voor deze renovatie in Hoog Linden hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.',
+    title: $localize`:@@project.verhoef.title:Renovatie te Hoog Linden`,
+    subtitle: $localize`:@@project.verhoef.subtitle:Renovatie met focus op moderniteit en comfort`,
+    description: $localize`:@@project.verhoef.description:Voor deze renovatie in Hoog Linden hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.`,
     location: 'Hoog Linden',
     locationCoord: [4.765579, 50.90407],
     year: 2024,
     cardImages: [
-      {
-        src: '/fotos&realisaties/Verhoef/verhoef_1.webp',
-        alt: 'Foto van renovatie in Hoog Linden',
-      },
-      {
-        src: '/fotos&realisaties/Verhoef/verhoef_10.webp',
-        alt: 'Foto van renovatie in Hoog Linden',
-      },
-      {
-        src: '/fotos&realisaties/Verhoef/verhoef_20.webp',
-        alt: 'Foto van renovatie in Hoog Linden',
-      },
+      { src: '/fotos&realisaties/Verhoef/verhoef_1.webp', alt: ALT.verhoef },
+      { src: '/fotos&realisaties/Verhoef/verhoef_10.webp', alt: ALT.verhoef },
+      { src: '/fotos&realisaties/Verhoef/verhoef_20.webp', alt: ALT.verhoef },
     ],
     images: IMAGES_VERHOEF,
   },
   {
     slug: 'Engelen',
-    title: 'Modernisering in Engelen',
-    subtitle: 'Modernisering Bad- en slaapkamer',
-    description: 'Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.',
+    title: $localize`:@@project.engelen.title:Modernisering in Engelen`,
+    subtitle: $localize`:@@project.engelen.subtitle:Modernisering Bad- en slaapkamer`,
+    description: $localize`:@@project.engelen.description:Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.`,
     location: 'Engelen',
     locationCoord: [4.636699, 50.95818],
     year: 2014,
     cardImages: [
-      {
-        src: '/fotos&realisaties/Engelen/Engelen001HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen002HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen003HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
+      { src: '/fotos&realisaties/Engelen/Engelen001HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen002HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen003HR.webp', alt: ALT.engelen },
     ],
     images: [
-      {
-        src: '/fotos&realisaties/Engelen/Engelen001HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen002HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen003HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen004HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen005HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen006HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen007HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen008HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen009HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen010HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen011HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen012HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen013HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen014HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen015HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen016HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen017HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen018HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen019HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen020HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
-      {
-        src: '/fotos&realisaties/Engelen/Engelen021HR.webp',
-        alt: 'Foto van verbouwing in Engelen',
-      },
+      { src: '/fotos&realisaties/Engelen/Engelen001HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen002HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen003HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen004HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen005HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen006HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen007HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen008HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen009HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen010HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen011HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen012HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen013HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen014HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen015HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen016HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen017HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen018HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen019HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen020HR.webp', alt: ALT.engelen },
+      { src: '/fotos&realisaties/Engelen/Engelen021HR.webp', alt: ALT.engelen },
     ],
   },
   {
     slug: 'Haasrode',
-    title: 'Wasbeurt in Haasrode',
-    subtitle: 'Verbouwing in Haasrode.',
-    description: 'Verbouwing van de leef en wasruimten.',
+    title: $localize`:@@project.haasrode.title:Wasbeurt in Haasrode`,
+    subtitle: $localize`:@@project.haasrode.subtitle:Verbouwing in Haasrode.`,
+    description: $localize`:@@project.haasrode.description:Verbouwing van de leef en wasruimten.`,
     location: 'Haasrode',
     locationCoord: [4.72616, 50.83461],
     year: 2015,
     cardImages: [
-      {
-        src: '/fotos&realisaties/Haasrode/4DSF6667.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/5DSF6545.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/6DSF6660.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
+      { src: '/fotos&realisaties/Haasrode/4DSF6667.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/5DSF6545.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/6DSF6660.webp', alt: ALT.haasrode },
     ],
     images: [
-      {
-        src: '/fotos&realisaties/Haasrode/4DSF6667.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/5DSF6545.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/6DSF6660.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/8DSF6613.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/_DSF6540.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/_DSF6561.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/_DSF6573.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/_DSF6598.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
-      {
-        src: '/fotos&realisaties/Haasrode/_DSF6603.webp',
-        alt: 'Foto van verbouwing in Haasrode',
-      },
+      { src: '/fotos&realisaties/Haasrode/4DSF6667.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/5DSF6545.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/6DSF6660.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/8DSF6613.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/_DSF6540.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/_DSF6561.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/_DSF6573.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/_DSF6598.webp', alt: ALT.haasrode },
+      { src: '/fotos&realisaties/Haasrode/_DSF6603.webp', alt: ALT.haasrode },
     ],
   },
   /*
@@ -389,90 +225,54 @@ export const PROJECTS: IProjectContent[] = [
   },*/
   {
     slug: 'Heverlee',
-    title: 'Stijlvolle verbouwing',
-    subtitle: 'Verbouwing in Heverlee.',
-    description: 'Inrichting wookamer en verbouwing veranda.',
+    title: $localize`:@@project.heverlee.title:Stijlvolle verbouwing`,
+    subtitle: $localize`:@@project.heverlee.subtitle:Verbouwing in Heverlee.`,
+    description: $localize`:@@project.heverlee.description:Inrichting woonkamer en verbouwing veranda.`,
     location: 'Heverlee',
     locationCoord: [4.69872, 50.85272],
     year: 2015,
     cardImages: [
-      {
-        src: '/fotos&realisaties/Heverlee/achtergevelvanafpadvoorterras.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Heverlee/achtergevelvanuitvijver.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
+      { src: '/fotos&realisaties/Heverlee/achtergevelvanafpadvoorterras.webp', alt: ALT.heverlee },
+      { src: '/fotos&realisaties/Heverlee/achtergevelvanuitvijver.webp', alt: ALT.heverlee },
       {
         src: '/fotos&realisaties/Heverlee/eethoekmetzichtopkeukentelefoonhoekeninkomhall.webp',
-        alt: 'Fotos van verbouwing Heverlee',
+        alt: ALT.heverlee,
       },
     ],
     images: [
-      {
-        src: '/fotos&realisaties/Heverlee/achtergevelvanafpadvoorterras.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Heverlee/achtergevelvanuitvijver.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
+      { src: '/fotos&realisaties/Heverlee/achtergevelvanafpadvoorterras.webp', alt: ALT.heverlee },
+      { src: '/fotos&realisaties/Heverlee/achtergevelvanuitvijver.webp', alt: ALT.heverlee },
       {
         src: '/fotos&realisaties/Heverlee/eethoekmetzichtopkeukentelefoonhoekeninkomhall.webp',
-        alt: 'Fotos van verbouwing Heverlee',
+        alt: ALT.heverlee,
       },
-      {
-        src: '/fotos&realisaties/Heverlee/interinkomhall2.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Heverlee/interlivingkast.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Heverlee/keukenoverzicht.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Heverlee/living.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Heverlee/paal.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
+      { src: '/fotos&realisaties/Heverlee/interinkomhall2.webp', alt: ALT.heverlee },
+      { src: '/fotos&realisaties/Heverlee/interlivingkast.webp', alt: ALT.heverlee },
+      { src: '/fotos&realisaties/Heverlee/keukenoverzicht.webp', alt: ALT.heverlee },
+      { src: '/fotos&realisaties/Heverlee/living.webp', alt: ALT.heverlee },
+      { src: '/fotos&realisaties/Heverlee/paal.webp', alt: ALT.heverlee },
       {
         src: '/fotos&realisaties/Heverlee/paalmeteetkamerkastenzichtkeuken2.webp',
-        alt: 'Fotos van verbouwing Heverlee',
+        alt: ALT.heverlee,
       },
       {
         src: '/fotos&realisaties/Heverlee/tweemannekesmetzichtnaaroverloop.webp',
-        alt: 'Fotos van verbouwing Heverlee',
+        alt: ALT.heverlee,
       },
       {
         src: '/fotos&realisaties/Heverlee/vanafeettafeloptelefoonhoekeninkomhall.webp',
-        alt: 'Fotos van verbouwing Heverlee',
+        alt: ALT.heverlee,
       },
       {
         src: '/fotos&realisaties/Heverlee/vanafvoordeurnaarvijverenterras.webp',
-        alt: 'Fotos van verbouwing Heverlee',
+        alt: ALT.heverlee,
       },
-      {
-        src: '/fotos&realisaties/Heverlee/voordeur.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Heverlee/voorgevelvierkant.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
-      {
-        src: '/fotos&realisaties/Heverlee/zichtoptuindeur.webp',
-        alt: 'Fotos van verbouwing Heverlee',
-      },
+      { src: '/fotos&realisaties/Heverlee/voordeur.webp', alt: ALT.heverlee },
+      { src: '/fotos&realisaties/Heverlee/voorgevelvierkant.webp', alt: ALT.heverlee },
+      { src: '/fotos&realisaties/Heverlee/zichtoptuindeur.webp', alt: ALT.heverlee },
       {
         src: '/fotos&realisaties/Heverlee/zichtvanuitvijveroptafelkleinterras.webp',
-        alt: 'Fotos van verbouwing Heverlee',
+        alt: ALT.heverlee,
       },
     ],
   },

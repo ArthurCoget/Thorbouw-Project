@@ -2,6 +2,117 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="nl-BE" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="about.bottom.list.1" datatype="html">
+        <source>Volhoudbaar: Thorbouw werkt in het nu, met een blik op morgen.</source>
+      </trans-unit>
+      <trans-unit id="about.bottom.list.2" datatype="html">
+        <source>Eerlijk: Duiding in het verschil tussen traditionele en bio-ecologische bouwtechnieken zodat je een gefundeerde keuze kan maken als klant.</source>
+      </trans-unit>
+      <trans-unit id="about.bottom.list.3" datatype="html">
+        <source>Correcte prijszetting waarbij aan alles gedacht wordt.</source>
+      </trans-unit>
+      <trans-unit id="about.bottom.list.4" datatype="html">
+        <source>Low tech: M.a.w. eerst inzetten op de isolatieschil en zo weinig mogelijk technieken gebruiken om tot een energiezuinige woning te komen.</source>
+      </trans-unit>
+      <trans-unit id="about.bottom.list.5" datatype="html">
+        <source>Natuurlijk: respect voor fauna en flora en fascinatie voor water.</source>
+      </trans-unit>
+      <trans-unit id="about.bottom.list.6" datatype="html">
+        <source>Haalbaar: traditioneel of bio-ecologisch wonen zonder extreme ingrepen binnen je eigen grenzen en mogelijkheden.</source>
+      </trans-unit>
+      <trans-unit id="about.bottom.list.7" datatype="html">
+        <source>Familiaal: de bewoner met zijn/haar ritme, waarden en gezin staan voorop.</source>
+      </trans-unit>
+      <trans-unit id="about.bottom.title" datatype="html">
+        <source>Herkent u zich in de visie van Thorbouw?</source>
+      </trans-unit>
+      <trans-unit id="about.more.1.description_one" datatype="html">
+        <source>Met meer dan <x id="PH" equiv-text="new Date().getFullYear() - START_YEAR"/> jaar ervaring in de bouwsector en een groeiend bewustzijn rond milieu-impact en duurzaamheid, ontstond de drang om het anders aan te pakken. In september 2018 startte daarom de opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven, met als doel bewuster en toekomstgericht te bouwen.</source>
+      </trans-unit>
+      <trans-unit id="about.more.1.description_two" datatype="html">
+        <source>Eind 2018 lanceert hij dan de Bvba Thorbouw: een ecologisch bouwbedrijf dat een rechtlijnige, transparante en persoonlijke aanpak hanteert. Met Thorbouw wil hij niet alleen vandaag inzetten op puur bouwen en comfortabel wonen, maar ook investeren in morgen en een zorgeloos leven voor de volgende generaties, met aandacht voor mens, natuur en omgeving.</source>
+      </trans-unit>
+      <trans-unit id="about.more.1.title" datatype="html">
+        <source>Ervaren, oprecht en gepassioneerd</source>
+      </trans-unit>
+      <trans-unit id="about.more.2.description_one" datatype="html">
+        <source>Ondanks onze ervaring in nieuwbouw, renovaties en verbouwingen blijven we bewust jong en gedreven in onze aanpak. Onze ambitie en nieuwsgierigheid zorgen ervoor dat we continu willen bijleren en groeien, met aandacht voor kwaliteit, detail en een sterke betrokkenheid bij elk project dat we realiseren.</source>
+      </trans-unit>
+      <trans-unit id="about.more.2.description_two" datatype="html">
+        <source>Deze ingesteldheid zien we ook terug in onze projecten, waar we voortdurend op zoek gaan naar innovatieve oplossingen en duurzame materialen. Zo combineren we nieuwe inzichten met praktijkervaring om onze klanten een kwalitatief, toekomstgericht en doordacht eindresultaat te bieden.</source>
+      </trans-unit>
+      <trans-unit id="about.more.2.title" datatype="html">
+        <source>Jong, ambitieus en nieuwsgierig</source>
+      </trans-unit>
+      <trans-unit id="about.more.3.description_one" datatype="html">
+        <source>We kunnen rekenen op een sterk netwerk van deskundigen en betrouwbare partners, elk met hun eigen specialisatie binnen de bouwsector. Deze samenwerkingen stellen ons in staat om kennis te delen en elk project te ondersteunen met de juiste expertise, van voorbereiding tot uitvoering.</source>
+      </trans-unit>
+      <trans-unit id="about.more.3.description_two" datatype="html">
+        <source>Dankzij deze sterke samenwerkingen kunnen we elk project met vertrouwen aanpakken en tot in detail uitwerken. We waken over kwaliteit, budget en planning, zodat het eindresultaat niet alleen technisch klopt, maar ook volledig aansluit bij de verwachtingen van de klant.</source>
+      </trans-unit>
+      <trans-unit id="about.more.3.title" datatype="html">
+        <source>Goed omringd, deskundig en professioneel</source>
+      </trans-unit>
+      <trans-unit id="about.top.projects.label" datatype="html">
+        <source>Afgeleverde Projecten</source>
+      </trans-unit>
+      <trans-unit id="about.top.projects.number" datatype="html">
+        <source>50</source>
+      </trans-unit>
+      <trans-unit id="about.top.subtext" datatype="html">
+        <source>Welkom bij Thorbouw, uw betrouwbare bouwpartner en algemeen aannemersbedrijf met een visie op de toekomst en een groot hart voor de volgende generaties. Persoonlijk en milieubewust aankopen, bouwen, renoveren, inrichten of ontwikkelen in Leuven en ruime omgeving. Ruime ervaring in zowel traditionele als bio-ecologische bouwtechnieken.</source>
+      </trans-unit>
+      <trans-unit id="about.top.title" datatype="html">
+        <source>Wie Zijn We?</source>
+      </trans-unit>
+      <trans-unit id="about.values.1.description" datatype="html">
+        <source>Bij Thorbouw nemen we de volledige verantwoordelijkheid voor uw bouwproject, van begin tot eind. We zorgen ervoor dat alles soepel verloopt, zodat u zich geen zorgen hoeft te maken.</source>
+      </trans-unit>
+      <trans-unit id="about.values.1.title" datatype="html">
+        <source>Ontzorging</source>
+      </trans-unit>
+      <trans-unit id="about.values.2.description" datatype="html">
+        <source>We begrijpen dat budgettering cruciaal is voor elk bouwproject. Daarom werken we nauw samen met onze klanten om ervoor te zorgen dat we binnen het afgesproken budget blijven, zonder concessies te doen aan de kwaliteit.</source>
+      </trans-unit>
+      <trans-unit id="about.values.2.title" datatype="html">
+        <source>Budget</source>
+      </trans-unit>
+      <trans-unit id="about.values.3.description" datatype="html">
+        <source>We zorgen ervoor dat alle bouwactiviteiten voldoen aan de relevante wet- en regelgeving, zodat uw project veilig en legaal wordt uitgevoerd.</source>
+      </trans-unit>
+      <trans-unit id="about.values.3.title" datatype="html">
+        <source>Naleving</source>
+      </trans-unit>
+      <trans-unit id="about.values.4.description" datatype="html">
+        <source>We coördineren alle aspecten van het bouwproces, van de planning tot de uitvoering, om ervoor te zorgen dat alles op tijd en volgens plan verloopt.</source>
+      </trans-unit>
+      <trans-unit id="about.values.4.title" datatype="html">
+        <source>Coördinatie</source>
+      </trans-unit>
+      <trans-unit id="about.values.5.description" datatype="html">
+        <source>We maken gedetailleerde planningen voor elk project, zodat u altijd weet wat waar en wanneer gebeurt. We zorgen ervoor dat alle werkzaamheden op elkaar zijn afgestemd voor een efficiënte uitvoering.</source>
+      </trans-unit>
+      <trans-unit id="about.values.5.title" datatype="html">
+        <source>Planning</source>
+      </trans-unit>
+      <trans-unit id="about.values.6.description" datatype="html">
+        <source>We nemen volledige verantwoordelijkheid over de kwaliteit van ons werk en de tevredenheid van onze klanten. We streven ernaar om elk project tot een succesvol einde te brengen.</source>
+      </trans-unit>
+      <trans-unit id="about.values.6.title" datatype="html">
+        <source>Verantwoordelijkheid</source>
+      </trans-unit>
+      <trans-unit id="about.values.7.description" datatype="html">
+        <source>We bieden uitgebreide begeleiding gedurende het hele bouwproces, vanaf het eerste verkennend gesprek tot de uiteindelijke oplevering, om ervoor te zorgen dat uw visie werkelijkheid wordt.</source>
+      </trans-unit>
+      <trans-unit id="about.values.7.title" datatype="html">
+        <source>Begeleiding</source>
+      </trans-unit>
+      <trans-unit id="about.values.8.description" datatype="html">
+        <source>Kwaliteit staat bij ons voorop. We gebruiken alleen de beste materialen en werken met ervaren vakmensen om ervoor te zorgen dat elk project van de hoogste kwaliteit is.</source>
+      </trans-unit>
+      <trans-unit id="about.values.8.title" datatype="html">
+        <source>Kwalitatief</source>
+      </trans-unit>
       <trans-unit id="advies.cta.imgAlt" datatype="html">
         <source>Foto van een verbouwde eetkamer met een moderne uitstraling, gerealiseerd door Thorbouw</source>
       </trans-unit>
@@ -107,6 +218,84 @@
       <trans-unit id="advies.snake.9.title" datatype="html">
         <source>Bio-ecologisch bouwen</source>
       </trans-unit>
+      <trans-unit id="contact.hero.alt" datatype="html">
+        <source>Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="contact.hero.title" datatype="html">
+        <source>Contact</source>
+      </trans-unit>
+      <trans-unit id="contact.list.instagram.aria" datatype="html">
+        <source>Follow us on Instagram</source>
+      </trans-unit>
+      <trans-unit id="contact.list.instagram.description" datatype="html">
+        <source>Bekijk onze Instagram-pagina voor de nieuwste updates en foto&apos;s.</source>
+      </trans-unit>
+      <trans-unit id="contact.list.instagram.linkText" datatype="html">
+        <source>Bekijk op Instagram</source>
+      </trans-unit>
+      <trans-unit id="contact.list.instagram.title" datatype="html">
+        <source>Volg ons op Instagram</source>
+      </trans-unit>
+      <trans-unit id="contact.list.linkedin.aria" datatype="html">
+        <source>Follow us on LinkedIn</source>
+      </trans-unit>
+      <trans-unit id="contact.list.linkedin.description" datatype="html">
+        <source>Bekijk onze LinkedIn-pagina voor de nieuwste updates en foto&apos;s.</source>
+      </trans-unit>
+      <trans-unit id="contact.list.linkedin.linkText" datatype="html">
+        <source>Bekijk op LinkedIn</source>
+      </trans-unit>
+      <trans-unit id="contact.list.linkedin.title" datatype="html">
+        <source>Volg ons op LinkedIn</source>
+      </trans-unit>
+      <trans-unit id="contact.list.mail.aria" datatype="html">
+        <source>Send us an email</source>
+      </trans-unit>
+      <trans-unit id="contact.list.mail.description" datatype="html">
+        <source>Heeft u vragen of wilt u meer informatie? Stuur ons een email op &lt;b&gt;info@thorbouw.be&lt;/b&gt; en we zullen zo snel mogelijk reageren.</source>
+      </trans-unit>
+      <trans-unit id="contact.list.mail.linkText" datatype="html">
+        <source>Stuur een email</source>
+      </trans-unit>
+      <trans-unit id="contact.list.mail.title" datatype="html">
+        <source>Contacteer ons via email</source>
+      </trans-unit>
+      <trans-unit id="contact.list.map.aria" datatype="html">
+        <source>View our location on Google Maps</source>
+      </trans-unit>
+      <trans-unit id="contact.list.map.description" datatype="html">
+        <source>U kunt ons vinden op &lt;b&gt;Hoveniersdreef 64, 3001 Heverlee&lt;/b&gt;. Klik hier om onze locatie op Google Maps te bekijken.</source>
+      </trans-unit>
+      <trans-unit id="contact.list.map.linkText" datatype="html">
+        <source>Bekijk op Google Maps</source>
+      </trans-unit>
+      <trans-unit id="contact.list.map.title" datatype="html">
+        <source>Onze Locatie</source>
+      </trans-unit>
+      <trans-unit id="contact.list.phone.aria" datatype="html">
+        <source>Call us</source>
+      </trans-unit>
+      <trans-unit id="contact.list.phone.description" datatype="html">
+        <source>Heeft u vragen of wilt u meer informatie? Bel ons op &lt;b&gt;0032 475 530 214&lt;/b&gt;.</source>
+      </trans-unit>
+      <trans-unit id="contact.list.phone.linkText" datatype="html">
+        <source>Bel ons</source>
+      </trans-unit>
+      <trans-unit id="contact.list.phone.title" datatype="html">
+        <source>Snelste manier om ons te bereiken: Bel ons</source>
+      </trans-unit>
+      <trans-unit id="contact.top.subtitle" datatype="html">
+        <source>We helpen u met plezier verder.</source>
+      </trans-unit>
+      <trans-unit id="contact.top.title" datatype="html">
+        <source>Neem zeker contact op. Indien u vragen heeft zijn wij er om u te helpen.</source>
+      </trans-unit>
+      <trans-unit id="fotos.hero.alt" datatype="html">
+        <source>Thorbouw-team werkt aan een duurzaam bouwproject</source>
+      </trans-unit>
+      <trans-unit id="fotos.hero.title" datatype="html">
+        <source>Foto&apos;s &amp; Realisaties</source>
+      </trans-unit>
       <trans-unit id="home.content.bottom.end" datatype="html">
         <source>Als aannemersbedrijf in Leuven zetten wij 100% in op toekomstgericht wonen. We adviseren haalbare ingrepen, betaalbare energie-oplossingen en zowel traditionele als natuurlijke bouwmaterialen. Ethiek en integriteit houden wij hoog in het vaandel, onze klanten correct informeren maakt deel uit van onze werkwijze.</source>
       </trans-unit>
@@ -172,6 +361,699 @@
       </trans-unit>
       <trans-unit id="home.pillar.sustainable.title" datatype="html">
         <source>Duurzaam Wonen</source>
+      </trans-unit>
+      <trans-unit id="nav.advies" datatype="html">
+        <source>Bouwkundig advies</source>
+      </trans-unit>
+      <trans-unit id="nav.contact" datatype="html">
+        <source>Contact</source>
+      </trans-unit>
+      <trans-unit id="nav.fotos" datatype="html">
+        <source>Foto&apos;s Realisaties</source>
+      </trans-unit>
+      <trans-unit id="nav.language" datatype="html">
+        <source>Taal</source>
+      </trans-unit>
+      <trans-unit id="nav.overThorbouw" datatype="html">
+        <source>Over Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="nav.werkwijze" datatype="html">
+        <source>Werkwijze</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.bedroom" datatype="html">
+        <source>Foto van slaapkamer met rood beddengoed in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.blueSofas" datatype="html">
+        <source>Foto van zithoek met blauwe zetels in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.builtInCloset" datatype="html">
+        <source>Foto van witte inbouwkast in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.cabinetWall" datatype="html">
+        <source>Foto van houten kastenwand met groene accentwand in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.diningArea" datatype="html">
+        <source>Foto van eetruimte met tafel en stoelen in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.exterior" datatype="html">
+        <source>Foto van renovatie in Leuven exterieur</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.freestandingBath" datatype="html">
+        <source>Foto van moderne badkamer met vrijstaand bad in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.gardenView" datatype="html">
+        <source>Foto van woonkamer met zetel en uitzicht op de tuin in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.glassDoor" datatype="html">
+        <source>Foto van glazen deur en houten element in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.glassView" datatype="html">
+        <source>Foto van glazen doorkijk en trap in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.greenAccentWall" datatype="html">
+        <source>Foto van woonkamer met groene accentwand in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.lightLiving" datatype="html">
+        <source>Foto van zetel in lichte woonkamer in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.longTable" datatype="html">
+        <source>Foto van lange eettafel met stoelen en raampartij in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.mediaUnit" datatype="html">
+        <source>Foto van mediameubel met houten nis in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.openLiving" datatype="html">
+        <source>Foto van open leefruimte met zetel en eettafel in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.railing" datatype="html">
+        <source>Zoom op de keuken.</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.sittingArea" datatype="html">
+        <source>Foto van woonkamer met zetel en kleuraccenten in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.stairHall" datatype="html">
+        <source>Foto van witte trappenhal in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.stairSkylight" datatype="html">
+        <source>Foto van trap en bovenlicht in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.vanity" datatype="html">
+        <source>Foto van badkamer met dubbele wastafel in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.whiteKitchen" datatype="html">
+        <source>Foto van witte keuken met zwarte stoelen in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.woodKitchen" datatype="html">
+        <source>Foto van keuken met houten werkblad en leefruimte in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.woodPanel" datatype="html">
+        <source>Foto van houten wandpaneel in interieur van renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.brandts.woodTable" datatype="html">
+        <source>Foto van houten tafel met stoelen en glazen wand in renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.bathroom" datatype="html">
+        <source>Foto van renovatie in Leuven interieur badkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.bedroom" datatype="html">
+        <source>Foto van renovatie in Leuven interieur slaapkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.diningTable" datatype="html">
+        <source>Foto van renovatie in Leuven interieur eettafel</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.exterior" datatype="html">
+        <source>Foto van renovatie in Leuven exterieur</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.hall" datatype="html">
+        <source>Foto van renovatie in Leuven interieur hal</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.kitchen" datatype="html">
+        <source>Foto van renovatie in Leuven interieur keuken</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.kitchenIsland" datatype="html">
+        <source>Foto van renovatie in Leuven interieur overzicht Keuken eiland</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.living" datatype="html">
+        <source>Foto van renovatie in Leuven interieur living</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.livingOverview" datatype="html">
+        <source>Foto van renovatie in Leuven interieur overzicht living</source>
+      </trans-unit>
+      <trans-unit id="project.alt.lipsius.salon" datatype="html">
+        <source>Foto van renovatie in Leuven interieur salon</source>
+      </trans-unit>
+      <trans-unit id="project.alt.meulen.bedroom" datatype="html">
+        <source>Foto van renovatie in Leuven slaapkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.meulen.diningTable" datatype="html">
+        <source>Foto van renovatie in Leuven eettafel</source>
+      </trans-unit>
+      <trans-unit id="project.alt.meulen.hallway" datatype="html">
+        <source>Foto van renovatie in Leuven gang/hal</source>
+      </trans-unit>
+      <trans-unit id="project.alt.meulen.kitchen" datatype="html">
+        <source>Foto van renovatie in Leuven keuken</source>
+      </trans-unit>
+      <trans-unit id="project.alt.meulen.laundry" datatype="html">
+        <source>Foto van renovatie in Leuven waskot</source>
+      </trans-unit>
+      <trans-unit id="project.alt.meulen.living" datatype="html">
+        <source>Foto van renovatie in Leuven living</source>
+      </trans-unit>
+      <trans-unit id="project.alt.meulen.office" datatype="html">
+        <source>Foto van renovatie in Leuven bureau</source>
+      </trans-unit>
+      <trans-unit id="project.alt.meulen.sinks" datatype="html">
+        <source>Foto van renovatie in Leuven spoelbakken badkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.meulen.wardrobe" datatype="html">
+        <source>Foto van renovatie in Leuven klerenkast</source>
+      </trans-unit>
+      <trans-unit id="project.alt.sucaet.bathroom" datatype="html">
+        <source>Foto van renovatie in Heverlee badkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.sucaet.bedroom" datatype="html">
+        <source>Foto van renovatie in Heverlee slaapkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.sucaet.diningRoom" datatype="html">
+        <source>Foto van renovatie in Heverlee eetkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.sucaet.exterior" datatype="html">
+        <source>Foto van renovatie in Heverlee exterieur</source>
+      </trans-unit>
+      <trans-unit id="project.alt.sucaet.kitchen" datatype="html">
+        <source>Foto van renovatie in Heverlee keuken</source>
+      </trans-unit>
+      <trans-unit id="project.alt.sucaet.living" datatype="html">
+        <source>Foto van renovatie in Heverlee living</source>
+      </trans-unit>
+      <trans-unit id="project.alt.sucaet.office" datatype="html">
+        <source>Foto van renovatie in Heverlee bureau</source>
+      </trans-unit>
+      <trans-unit id="project.alt.sucaet.stairs" datatype="html">
+        <source>Foto van renovatie in Heverlee trappen</source>
+      </trans-unit>
+      <trans-unit id="project.alt.sucaet.stairsHallway" datatype="html">
+        <source>Foto van renovatie in Heverlee trappen/hal</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.artStudio" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg art studio</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.bathroom" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg badkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.bedroom" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg slaapkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.entryHall" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg inkom hall</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.exterior" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg exterieur</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.kitchen" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg keuken</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.kitchenIsland" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg keuken eiland</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.living" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg living</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.relaxRoom" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg ontspanningsruimte</source>
+      </trans-unit>
+      <trans-unit id="project.alt.uten.stairsHall" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg trappen hall</source>
+      </trans-unit>
+      <trans-unit id="project.alt.verhoef.bathroom" datatype="html">
+        <source>Foto van renovatie in Leuven badkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.verhoef.exterior" datatype="html">
+        <source>Foto van renovatie in Leuven exterieur</source>
+      </trans-unit>
+      <trans-unit id="project.alt.verhoef.livingRoom" datatype="html">
+        <source>Foto van renovatie in Leuven woonkamer</source>
+      </trans-unit>
+      <trans-unit id="project.alt.verhoef.roomOffice" datatype="html">
+        <source>Foto van renovatie in Leuven kamer/bureau</source>
+      </trans-unit>
+      <trans-unit id="project.alt.verhoef.stairs" datatype="html">
+        <source>Foto van renovatie in Leuven trappen</source>
+      </trans-unit>
+      <trans-unit id="project.alt.verhoef.veranda" datatype="html">
+        <source>Foto van renovatie in Leuven veranda</source>
+      </trans-unit>
+      <trans-unit id="project.brandts.alt" datatype="html">
+        <source>Foto van nieuwbouw in Korbeek-Lo</source>
+      </trans-unit>
+      <trans-unit id="project.brandts.description" datatype="html">
+        <source>Met kwalitatieve materialen en oog voor detail realiseren we duurzame woonoplossingen.</source>
+      </trans-unit>
+      <trans-unit id="project.brandts.subtitle" datatype="html">
+        <source>Modern wooncomfort, vakkundig gerealiseerd</source>
+      </trans-unit>
+      <trans-unit id="project.brandts.title" datatype="html">
+        <source>Nieuwbouw Korbeek-Lo</source>
+      </trans-unit>
+      <trans-unit id="project.category.bathroom" datatype="html">
+        <source>Badkamer</source>
+      </trans-unit>
+      <trans-unit id="project.category.bedroom" datatype="html">
+        <source>Slaapkamer</source>
+      </trans-unit>
+      <trans-unit id="project.category.diningRoom" datatype="html">
+        <source>Eetkamer</source>
+      </trans-unit>
+      <trans-unit id="project.category.exterior" datatype="html">
+        <source>Exterieur</source>
+      </trans-unit>
+      <trans-unit id="project.category.interior" datatype="html">
+        <source>Interieur</source>
+      </trans-unit>
+      <trans-unit id="project.category.kitchen" datatype="html">
+        <source>Keuken</source>
+      </trans-unit>
+      <trans-unit id="project.category.livingRoom" datatype="html">
+        <source>Woonkamer</source>
+      </trans-unit>
+      <trans-unit id="project.category.stairs" datatype="html">
+        <source>Trap</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.blueSofas" datatype="html">
+        <source>Zitruimte met opvallende blauwe zetels, grote ramen en een lichte, open sfeer.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.builtInCloset" datatype="html">
+        <source>Naadloos geïntegreerde witte inbouwkast die extra bergruimte biedt zonder de strakke lijnen te verstoren.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.diningArea" datatype="html">
+        <source>Heldere eetruimte met een tafel en stoelen, afgewerkt in neutrale tinten en met veel natuurlijk licht.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.freestandingBath" datatype="html">
+        <source>Strakke badkamer met een vrijstaand wit bad tegen een donkere wand, aangevuld met een grote spiegel en ruime lichtinval.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.gardenView" datatype="html">
+        <source>Zicht op de woonkamer vanuit een schuine hoek, met de zetel, het tapijt en de tuin als achtergrond.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.glassDoor" datatype="html">
+        <source>Glazen deur en scheidingswand zorgen voor transparantie tussen de ruimtes en laten het licht doorstromen.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.glassView" datatype="html">
+        <source>Verticale doorkijk door glazen elementen, met zicht op de verschillende niveaus van de woning.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.greenAccentWall" datatype="html">
+        <source>Overzicht van de woonkamer vanuit een hoge hoek, met een groene accentwand en een geïntegreerde mediawand.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.lightLiving" datatype="html">
+        <source>Ruime zetel in een lichte woonkamer met uitzicht op de tuin via de grote ramen.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.longTable" datatype="html">
+        <source>Lange eettafel met stoelen langs een raampartij, perfect voor het samenbrengen van familie en vrienden.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.openLiving" datatype="html">
+        <source>Open leefruimte waarin zitgedeelte en eetruimte vloeiend in elkaar overlopen.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.sittingArea" datatype="html">
+        <source>Gezellige zitruimte met een grote zetel.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.stairHall" datatype="html">
+        <source>Lichte trappenhal met witte wanden en natuurlijke lichtinval via een bovenlicht.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.stairSkylight" datatype="html">
+        <source>Verticaal beeld van de trap met zicht op de verdiepingen en het licht dat binnenvalt.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.vanity" datatype="html">
+        <source>Witte badkamer met een zwevend wastafelmeubel, grote spiegelwand en donkere accenten voor een rustige, hedendaagse uitstraling.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.whiteKitchen" datatype="html">
+        <source>Strakke witte keuken met zwarte stoelen als contrast en een zorgvuldig uitgewerkte, handgreeploze afwerking.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.woodKitchen" datatype="html">
+        <source>Moderne keuken met een warm houten werkblad die open uitkomt op de leefruimte.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.woodPanel" datatype="html">
+        <source>Warm houten wandpaneel dat een zachte contrastlijn vormt met de donkere vloer en witte wanden.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.brandts.woodTable" datatype="html">
+        <source>Massief houten eettafel met stoelen, naast een glazen wand die de ruimtes visueel verbindt.</source>
+      </trans-unit>
+      <trans-unit id="project.desc.sucaet.diningRoom" datatype="html">
+        <source>Ruime eetkamer met een grote eettafel</source>
+      </trans-unit>
+      <trans-unit id="project.desc.sucaet.living" datatype="html">
+        <source>Prachtige gezellige living ruimte</source>
+      </trans-unit>
+      <trans-unit id="project.desc.sucaet.stairs" datatype="html">
+        <source>Trappen die zich bevinden op de eerste verdieping van de woning met glazen balustrade</source>
+      </trans-unit>
+      <trans-unit id="project.desc.uten.kidsRoom" datatype="html">
+        <source>Renovatie van de kinderkamer</source>
+      </trans-unit>
+      <trans-unit id="project.desc.uten.kitchenIsland" datatype="html">
+        <source>Prachtige keuken met een groot eiland in het midden</source>
+      </trans-unit>
+      <trans-unit id="project.engelen.alt" datatype="html">
+        <source>Foto van verbouwing in Engelen</source>
+      </trans-unit>
+      <trans-unit id="project.engelen.description" datatype="html">
+        <source>Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.</source>
+      </trans-unit>
+      <trans-unit id="project.engelen.subtitle" datatype="html">
+        <source>Modernisering Bad- en slaapkamer</source>
+      </trans-unit>
+      <trans-unit id="project.engelen.title" datatype="html">
+        <source>Modernisering in Engelen</source>
+      </trans-unit>
+      <trans-unit id="project.haasrode.alt" datatype="html">
+        <source>Foto van verbouwing in Haasrode</source>
+      </trans-unit>
+      <trans-unit id="project.haasrode.description" datatype="html">
+        <source>Verbouwing van de leef en wasruimten.</source>
+      </trans-unit>
+      <trans-unit id="project.haasrode.subtitle" datatype="html">
+        <source>Verbouwing in Haasrode.</source>
+      </trans-unit>
+      <trans-unit id="project.haasrode.title" datatype="html">
+        <source>Wasbeurt in Haasrode</source>
+      </trans-unit>
+      <trans-unit id="project.herent.alt" datatype="html">
+        <source>Foto van nieuwbouw in Herent</source>
+      </trans-unit>
+      <trans-unit id="project.herent.description" datatype="html">
+        <source>Voor dit nieuwbouwproject in Herent realiseerden we een moderne woning met hoogwaardige afwerking en oog voor detail. Duurzaamheid en wooncomfort stonden centraal in elke fase van het bouwproces.</source>
+      </trans-unit>
+      <trans-unit id="project.herent.subtitle" datatype="html">
+        <source>Hedendaagse nieuwbouw met focus op kwaliteit en comfort</source>
+      </trans-unit>
+      <trans-unit id="project.herent.title" datatype="html">
+        <source>Nieuwbouw te Herent</source>
+      </trans-unit>
+      <trans-unit id="project.heverlee.alt" datatype="html">
+        <source>Foto van verbouwing Heverlee</source>
+      </trans-unit>
+      <trans-unit id="project.heverlee.description" datatype="html">
+        <source>Inrichting woonkamer en verbouwing veranda.</source>
+      </trans-unit>
+      <trans-unit id="project.heverlee.subtitle" datatype="html">
+        <source>Verbouwing in Heverlee.</source>
+      </trans-unit>
+      <trans-unit id="project.heverlee.title" datatype="html">
+        <source>Stijlvolle verbouwing</source>
+      </trans-unit>
+      <trans-unit id="project.justiuslipsius.alt" datatype="html">
+        <source>Foto van renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.justiuslipsius.description" datatype="html">
+        <source>Voor de renovatie van deze historische woning in Leuven combineerden we vakmanschap met moderne technieken om een comfortabele leefruimte te creëren, terwijl we het karakter en de charme van het oorspronkelijke gebouw behouden.</source>
+      </trans-unit>
+      <trans-unit id="project.justiuslipsius.subtitle" datatype="html">
+        <source>Appartement met respect voor moderne woonbehoeften</source>
+      </trans-unit>
+      <trans-unit id="project.justiuslipsius.title" datatype="html">
+        <source>Appartement Justius Lipsius</source>
+      </trans-unit>
+      <trans-unit id="project.meulen.alt" datatype="html">
+        <source>Foto van renovatie in Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.meulen.description" datatype="html">
+        <source>Oude woning in Leuven gerenoveerd tot een warme en gezellige leefruimte. De renovatie omvatte het behoud van karakteristieke elementen, terwijl moderne voorzieningen werden geïntegreerd om een comfortabele en functionele woonomgeving te creëren.</source>
+      </trans-unit>
+      <trans-unit id="project.meulen.subtitle" datatype="html">
+        <source>Renovatie met focus op het creëren van een warme en gezellige leefruimte</source>
+      </trans-unit>
+      <trans-unit id="project.meulen.title" datatype="html">
+        <source>Renovatie te Leuven</source>
+      </trans-unit>
+      <trans-unit id="project.sucaet.alt" datatype="html">
+        <source>Foto van renovatie in Heverlee</source>
+      </trans-unit>
+      <trans-unit id="project.sucaet.description" datatype="html">
+        <source>Voor deze renovatie in Heverlee hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.</source>
+      </trans-unit>
+      <trans-unit id="project.sucaet.subtitle" datatype="html">
+        <source>Renovatie met focus op moderniteit en comfort</source>
+      </trans-unit>
+      <trans-unit id="project.sucaet.title" datatype="html">
+        <source>Renovatie voor Heverlee</source>
+      </trans-unit>
+      <trans-unit id="project.title.artStudio" datatype="html">
+        <source>Art studio</source>
+      </trans-unit>
+      <trans-unit id="project.title.bathroom" datatype="html">
+        <source>Badkamer</source>
+      </trans-unit>
+      <trans-unit id="project.title.bedroom" datatype="html">
+        <source>Slaapkamer</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.blueSofas" datatype="html">
+        <source>Zithoek met blauwe zetels</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.builtInCloset" datatype="html">
+        <source>Witte inbouwkast</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.diningArea" datatype="html">
+        <source>Eetruimte</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.freestandingBath" datatype="html">
+        <source>Vrijstaand bad</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.gardenView" datatype="html">
+        <source>Woonkamer met tuinzicht</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.glassDoor" datatype="html">
+        <source>Glazen deur</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.glassView" datatype="html">
+        <source>Doorkijk met glas</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.greenAccentWall" datatype="html">
+        <source>Woonkamer met groene accentwand</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.lightLiving" datatype="html">
+        <source>Zetel in lichte woonkamer</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.longTable" datatype="html">
+        <source>Lange eettafel</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.mediaUnit" datatype="html">
+        <source>Mediameubel</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.openLiving" datatype="html">
+        <source>Open leefruimte</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.sittingArea" datatype="html">
+        <source>Zitruimte</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.stairHall" datatype="html">
+        <source>Trappenhal</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.stairSkylight" datatype="html">
+        <source>Trap met lichtinval</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.vanity" datatype="html">
+        <source>Wastafelmeubel</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.whiteKitchen" datatype="html">
+        <source>Witte keuken</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.woodKitchen" datatype="html">
+        <source>Keuken met houten werkblad</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.woodPanel" datatype="html">
+        <source>Houten wandpaneel</source>
+      </trans-unit>
+      <trans-unit id="project.title.brandts.woodTable" datatype="html">
+        <source>Houten eettafel</source>
+      </trans-unit>
+      <trans-unit id="project.title.diningRoom" datatype="html">
+        <source>Eetkamer</source>
+      </trans-unit>
+      <trans-unit id="project.title.diningTable" datatype="html">
+        <source>Eettafel</source>
+      </trans-unit>
+      <trans-unit id="project.title.entryHall" datatype="html">
+        <source>Inkom hall</source>
+      </trans-unit>
+      <trans-unit id="project.title.hall" datatype="html">
+        <source>Hal</source>
+      </trans-unit>
+      <trans-unit id="project.title.hallway" datatype="html">
+        <source>Gang/Hal</source>
+      </trans-unit>
+      <trans-unit id="project.title.kitchen" datatype="html">
+        <source>Keuken</source>
+      </trans-unit>
+      <trans-unit id="project.title.kitchenIsland" datatype="html">
+        <source>Keuken eiland</source>
+      </trans-unit>
+      <trans-unit id="project.title.laundry" datatype="html">
+        <source>Waskot</source>
+      </trans-unit>
+      <trans-unit id="project.title.living" datatype="html">
+        <source>Living</source>
+      </trans-unit>
+      <trans-unit id="project.title.livingOverview" datatype="html">
+        <source>Overzicht Living</source>
+      </trans-unit>
+      <trans-unit id="project.title.livingRoom" datatype="html">
+        <source>Woonkamer</source>
+      </trans-unit>
+      <trans-unit id="project.title.office" datatype="html">
+        <source>Bureau</source>
+      </trans-unit>
+      <trans-unit id="project.title.relaxRoom" datatype="html">
+        <source>Ontspanningsruimte</source>
+      </trans-unit>
+      <trans-unit id="project.title.roomOffice" datatype="html">
+        <source>Kamer/Bureau</source>
+      </trans-unit>
+      <trans-unit id="project.title.salon" datatype="html">
+        <source>Salon</source>
+      </trans-unit>
+      <trans-unit id="project.title.sinks" datatype="html">
+        <source>Spoelbakken Badkamer</source>
+      </trans-unit>
+      <trans-unit id="project.title.stairs" datatype="html">
+        <source>Trappen</source>
+      </trans-unit>
+      <trans-unit id="project.title.stairsHall" datatype="html">
+        <source>Trappen hall</source>
+      </trans-unit>
+      <trans-unit id="project.title.stairsHallway" datatype="html">
+        <source>Trappen/Hal</source>
+      </trans-unit>
+      <trans-unit id="project.title.veranda" datatype="html">
+        <source>Veranda</source>
+      </trans-unit>
+      <trans-unit id="project.title.wardrobe" datatype="html">
+        <source>Klerenkast</source>
+      </trans-unit>
+      <trans-unit id="project.uten.alt" datatype="html">
+        <source>Foto van nieuwbouw in Ottenburg</source>
+      </trans-unit>
+      <trans-unit id="project.uten.description" datatype="html">
+        <source>Nieuwbouw in Ottenburg waarbij de link met natuur en buitenleven centraal staat.</source>
+      </trans-unit>
+      <trans-unit id="project.uten.subtitle" datatype="html">
+        <source>Nieuwbouw met een focus op verbinding met de natuur</source>
+      </trans-unit>
+      <trans-unit id="project.uten.title" datatype="html">
+        <source>Nieuwbouw te Ottenburg</source>
+      </trans-unit>
+      <trans-unit id="project.verhoef.alt" datatype="html">
+        <source>Foto van renovatie in Hoog Linden</source>
+      </trans-unit>
+      <trans-unit id="project.verhoef.description" datatype="html">
+        <source>Voor deze renovatie in Hoog Linden hebben we een moderne leefruimte gecreëerd die voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.</source>
+      </trans-unit>
+      <trans-unit id="project.verhoef.subtitle" datatype="html">
+        <source>Renovatie met focus op moderniteit en comfort</source>
+      </trans-unit>
+      <trans-unit id="project.verhoef.title" datatype="html">
+        <source>Renovatie te Hoog Linden</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-1.alt" datatype="html">
+        <source>Foto van een verbouwd huis in de sneeuw</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-1.blocks.1.description" datatype="html">
+        <source>begint met het in kaart brengen van uw wensen en het opstellen van een gedetailleerde lijst met een geraamd totaalbudget. Of u al een vast budget heeft of dat wij een schatting voor u maken, de eerste stap kost slechts €75/u ex btw. Dit bedrag dient als voorschot voor de voorstudie en het wordt ook opgenomen in het totaalbudget van uw project.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-1.blocks.1.subtitle" datatype="html">
+        <source>Onze samenwerking</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-1.blocks.2.description" datatype="html">
+        <source>is onze toewijding vanaf het eerste moment. We geven u transparant en realistisch advies, geen verkooppraatjes. Duidelijke inzichten in wat haalbaar is binnen uw budget en situatie zorgt voor een project afgeleverd zonder concessies in kwaliteit.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-1.blocks.2.subtitle" datatype="html">
+        <source>Eerlijk advies</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-1.blocks.3.description" datatype="html">
+        <source>in zowel traditionale als bio-ecologische bouwmethodes begeleiden we u naar de juiste keuzes voor vandaag en morgen.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-1.blocks.3.subtitle" datatype="html">
+        <source>Met onze expertise</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-1.title" datatype="html">
+        <source>Raming</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-2.alt" datatype="html">
+        <source>Foto van een vernieuwde keuken</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-2.blocks.1.description" datatype="html">
+        <source>gaan we gezamenlijk aan de slag met de voorstudie. Tijdens deze studie worden, in samenspraak met u, plannen gemaakt die naadloos aansluiten op het eerder vastgestelde budget en uw wensen. Het opstellen van deze plannen gebeurd stapsgewijs, eerst een voorontwerp en dan verschillende aanpassingen tot alles naar jullie wens is uitgetekend. Ook deze som, die je betaald voor deze voorstudie, zit inbegrepen in het totaalbudget.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-2.blocks.1.subtitle" datatype="html">
+        <source>Na het bepalen van het budget</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-2.blocks.2.description" datatype="html">
+        <source>een duidelijke offerte met 1 vaste prijs. Alles wordt helder uitgelegd: materialen, werken en planning. Zo weet u exact waar u aan toe bent en komt u nooit voor onverwachte kosten te staan. Een aanpak waar eerlijkheid centraal staat.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-2.blocks.2.subtitle" datatype="html">
+        <source>U ontvangt</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-2.blocks.3.description" datatype="html">
+        <source>kost €3.500 à €5.000 ex btw, afhankelijk van de grootte van uw project. Zo bespaart u geld in het opstellen van een kleiner project.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-2.blocks.3.subtitle" datatype="html">
+        <source>De voorstudie</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-2.title" datatype="html">
+        <source>Voorstudie</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-3.alt" datatype="html">
+        <source>Foto van een verbouwd huis</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-3.blocks.1.description" datatype="html">
+        <source>is een volledige ontzorging van A tot Z. Nu we het exacte budget kennen en uw wensen volledig in kaart en op plan hebben gezet tijdens de voorstudie, gaan we over naar de contractfase. Tijdens deze fase worden de gemaakte plannen gefinaliseerd en ingediend bij de stad. Wij bepalen eveneens samen de laatste details, stellen een realistische timing voorop en zorgen voor een vlekkeloze uitvoering en opvolging van al de nodige werken. Van plaatsbeschrijvingen tot vergunningsaanvragen, van ABR-verzekering tot praktische voorzieningen zoals toilet en aanvraag, plaatsing en keuring van de tijdelijke werfkast, het controleren van alle belangrijke details, wij regelen het allemaal.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-3.blocks.1.subtitle" datatype="html">
+        <source>Deze Stap</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-3.blocks.2.description" datatype="html">
+        <source>is in goede handen. Wij staan garant voor een zorgeloos proces van begin tot eind. Ook tijdens de contractfase staan wij open voor aanpassingen en opmerkingen.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-3.blocks.2.subtitle" datatype="html">
+        <source>Uw project</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-3.blocks.3.description" datatype="html">
+        <source>zorgen wij voor een strakke planning en dagelijkse opvolging van de werf. Ons team van ervaren vakmensen werkt efficiënt en met oog voor detail, zodat uw project perfect volgens afspraak gerealiseerd wordt.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-3.blocks.3.subtitle" datatype="html">
+        <source>Tijdens de uitvoering</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-3.title" datatype="html">
+        <source>Contractfase</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-4.alt" datatype="html">
+        <source>Foto van een verbouwd huis met zicht van het terras op de tuin</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-4.blocks.1.description" datatype="html">
+        <source>U krijgt niet alleen een afgewerkt project, maar een duurzame thuis waarin comfort, energie-efficiëntie en levenskwaliteit centraal staan. Een investering waar u jarenlang van geniet.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-4.blocks.1.subtitle" datatype="html">
+        <source>Klaar voor een zorgenloze toekomst</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-4.blocks.2.description" datatype="html">
+        <source>na de oplevering blijven we open voor vragen, advies of gedachteveranderingen. Als u uw project later nog wil uitbreiden of aanpassen kunt u dus zeker bij ons terecht, zo kunnen we meteen verder.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-4.blocks.2.subtitle" datatype="html">
+        <source>We blijven bereikbaar</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.step-4.title" datatype="html">
+        <source>Nazorg</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.buttonText" datatype="html">
+        <source>Lees meer</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.description" datatype="html">
+        <source>We willen uw ervaringen in renovatie, inrichting en tuinaanleg van uw woning zo goed mogelijk maken. Daarom hebben we een duidelijk proces ontwikkeld dat u in 4 stappen begeleid. Van de eerste kennismaking tot de oplevering en nazorg, we staan altijd klaar om u te ondersteunen en te zorgen dat alles soepel verloopt.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.items.1.description" datatype="html">
+        <source>Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u uw plannen voor.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.items.1.title" datatype="html">
+        <source>Raming</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.items.2.description" datatype="html">
+        <source>We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is uitgetekend.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.items.2.title" datatype="html">
+        <source>Voorstudie</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.items.3.description" datatype="html">
+        <source>Hier steken we de armen uit de mouwen en maken we uw project realiteit.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.items.3.title" datatype="html">
+        <source>Contractfase</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.items.4.description" datatype="html">
+        <source>We bieden nazorg en ondersteuning na de oplevering. We willen ervoor zorgen dat u tevreden bent met het resultaat en staan altijd voor u klaar.</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.items.4.title" datatype="html">
+        <source>Nazorg</source>
+      </trans-unit>
+      <trans-unit id="werkwijze.timeline.title" datatype="html">
+        <source>Thorbouw werkwijze process</source>
       </trans-unit>
     </body>
   </file>
