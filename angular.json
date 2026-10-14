@@ -10,7 +10,7 @@
       "sourceRoot": "src",
       "prefix": "app",
       "i18n": {
-        "sourceLocale": "nl-BE",
+        "sourceLocale": { "code": "nl-BE", "subPath": "nl" },
         "locales": {
           "fr-BE": { "translation": "src/locale/messages.fr.xlf", "subPath": "fr" },
           "en-US": { "translation": "src/locale/messages.en.xlf", "subPath": "en" }
@@ -55,6 +55,9 @@
               "outputHashing": "all"
             },
             "development": {
+              "security": {
+                "allowedHosts": ["localhost"]
+              },
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
@@ -89,10 +92,7 @@
             "buildTarget": "thorbouw-project:build",
             "format": "xlf",
             "outputPath": "src/locale",
-            "targetFiles": [
-              "messages.fr.xlf",
-              "messages.en.xlf"
-            ]
+            "targetFiles": ["messages.fr.xlf", "messages.en.xlf"]
           }
         },
         "test": {

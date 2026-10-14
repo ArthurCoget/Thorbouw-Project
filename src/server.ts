@@ -14,13 +14,29 @@ const angularApp = new AngularNodeAppEngine();
 
 const supported = ['nl', 'fr', 'en'];
 
+function pickLanguage(acceptedLanguages: string[]): string {
+  for (const tag of acceptedLanguages) {
+    const primary = tag.toLowerCase().split('-')[0];
+    if (supported.includes(primary)) return primary;
+  }
+  return 'nl';
+}
+
 app.get('/', (req, res) => {
-  const lang = req.acceptsLanguages(supported) || 'en';
+  const lang = pickLanguage(req.acceptsLanguages());
   res.redirect(302, `/${lang}/`);
 });
 
 app.use(
   express.static(browserDistFolder, {
+    maxAge: '1y',
+    index: false,
+    redirect: false,
+  }),
+);
+
+app.use(
+  express.static(join(browserDistFolder, 'nl'), {
     maxAge: '1y',
     index: false,
     redirect: false,
