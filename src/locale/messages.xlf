@@ -443,6 +443,12 @@
       <trans-unit id="home.pillar.sustainable.title" datatype="html">
         <source>Duurzaam Wonen</source>
       </trans-unit>
+      <trans-unit id="interactivemap.otherlocation" datatype="html">
+        <source>Andere locatie</source>
+      </trans-unit>
+      <trans-unit id="interactivemap.thislocation" datatype="html">
+        <source>Huidige locatie</source>
+      </trans-unit>
       <trans-unit id="nav.advies" datatype="html">
         <source>Bouwkundig advies</source>
       </trans-unit>

@@ -590,6 +590,14 @@
         <source>Duurzaam Wonen</source>
         <target>Sustainable Living</target>
       </trans-unit>
+      <trans-unit id="interactivemap.otherlocation" datatype="html">
+        <source>Andere locatie</source>
+        <target state="new">Andere locatie</target>
+      </trans-unit>
+      <trans-unit id="interactivemap.thislocation" datatype="html">
+        <source>Huidige locatie</source>
+        <target state="new">Huidige locatie</target>
+      </trans-unit>
       <trans-unit id="nav.advies" datatype="html">
         <source>Bouwkundig advies</source>
         <target>Construction Advice</target>
