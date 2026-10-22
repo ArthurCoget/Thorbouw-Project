@@ -464,6 +464,9 @@
       <trans-unit id="home.pillar.sustainable.title" datatype="html">
         <source>Duurzaam Wonen</source>
       </trans-unit>
+      <trans-unit id="home.pillars.title" datatype="html">
+        <source>Pijlers</source>
+      </trans-unit>
       <trans-unit id="imagecarousel.buttonInfo" datatype="html">
         <source>Meer Info</source>
       </trans-unit>

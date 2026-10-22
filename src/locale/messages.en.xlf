@@ -803,6 +803,10 @@
         <source>Duurzaam Wonen</source>
         <target>Sustainable Living</target>
       </trans-unit>
+      <trans-unit id="home.pillars.title" datatype="html">
+        <source>Pijlers</source>
+        <target state="new">Pillars</target>
+      </trans-unit>
       <trans-unit id="imagecarousel.buttonInfo" datatype="html">
         <source>Meer Info</source>
         <target state="new">More Info</target>

@@ -20,6 +20,8 @@ export class Home {
   readonly projects = PROJECTS;
   readonly carouselImages = this.setupCarouselImages();
 
+  readonly pillarsTitle = $localize`:@@home.pillars.title:Pijlers`;
+
   private setupCarouselImages(): ICarouselImage[] {
     return this.projects.map((project, index) => ({
       id: index + 1,
