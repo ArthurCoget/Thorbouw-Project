@@ -1160,7 +1160,7 @@
       </trans-unit>
       <trans-unit id="project.brandts.title" datatype="html">
         <source>Nieuwbouw Korbeek-Lo</source>
-        <target>Nouvelle construction à Korbeek-Lo</target>
+        <target>Du nouveau à Korbeek-Lo</target>
       </trans-unit>
       <trans-unit id="project.category.bathroom" datatype="html">
         <source>Badkamer</source>
