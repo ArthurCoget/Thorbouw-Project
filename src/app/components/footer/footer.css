@@ -189,14 +189,6 @@ footer h3 {
     grid-template-columns: 1fr;
     column-gap: 1em;
   }
-}
-
-@media (max-width: 800px) {
-  :host {
-    --footer-clip-angle: 5%;
-    --icon-size: 30px;
-    --footer-logo-size: 65px;
-  }
 
   footer {
     height: auto;
@@ -269,5 +261,13 @@ footer h3 {
 
   .footer-info-container.is-open {
     grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  :host {
+    --footer-clip-angle: 5%;
+    --icon-size: 30px;
+    --footer-logo-size: 65px;
   }
 }
