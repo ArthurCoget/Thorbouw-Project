@@ -10,11 +10,9 @@ export const NAV_LINKS: INavLink[] = [
   { label: $localize`:@@nav.advies:Bouwkundig advies`, path: '/advies' },
   /*  { label: $localize`:@@nav.projectontwikkeling:Projectontwikkeling & Wonen`, path: '/projectontwikkeling' },*/
   { label: $localize`:@@nav.contact:Contact`, path: '/contact' },
-  // TODO Needs to be a language toggle menu
-  { label: $localize`:@@nav.language:Taal`, path: '/WIP' },
 ];
 
-const navHalfLength = NAV_LINKS.length / 2;
+const navHalfLength = Math.ceil(NAV_LINKS.length / 2);
 
 export const LEFT_NAV_LINKS = NAV_LINKS.slice(0, navHalfLength);
 export const RIGHT_NAV_LINKS = NAV_LINKS.slice(navHalfLength);

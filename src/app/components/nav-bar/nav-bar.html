@@ -59,12 +59,15 @@
     [attr.inert]="!layoutService.isMenuOpen() && layoutService.isMobile() ? '' : null"
   >
     <ul class="nav-list left">
-      @for (link of leftNavLinks; track link.path){
-      <li>
-        <a [routerLink]="link.path" routerLinkActive="active" (click)="layoutService.closeMenu()">{{
-          link.label
-        }}</a>
-      </li>
+      @for (link of leftNavLinks; track link.path) {
+        <li>
+          <a
+            [routerLink]="link.path"
+            routerLinkActive="active"
+            (click)="layoutService.closeMenu()"
+            >{{ link.label }}</a
+          >
+        </li>
       }
     </ul>
     <div class="desktop-logo-container">
@@ -73,13 +76,19 @@
       </a>
     </div>
     <ul class="nav-list right">
-      @for (link of rightNavLinks; track link.path){
-      <li>
-        <a [routerLink]="link.path" routerLinkActive="active" (click)="layoutService.closeMenu()">{{
-          link.label
-        }}</a>
-      </li>
+      @for (link of rightNavLinks; track link.path) {
+        <li>
+          <a
+            [routerLink]="link.path"
+            routerLinkActive="active"
+            (click)="layoutService.closeMenu()"
+            >{{ link.label }}</a
+          >
+        </li>
       }
+      <li class="language-item">
+        <app-language-selector-component />
+      </li>
     </ul>
   </div>
 </nav>

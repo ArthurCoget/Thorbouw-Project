@@ -81,6 +81,10 @@ a.active {
   transition: none !important;
 }
 
+.language-item {
+  display: flex;
+}
+
 /* End of Navbar Layout and Structure for Desktop */
 
 /* Navbar Layout and Structure for Mobile */
@@ -263,5 +267,11 @@ button {
 
   .nav-links.open {
     opacity: 1;
+  }
+
+  .nav-list li.language-item {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
   }
 }
