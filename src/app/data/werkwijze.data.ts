@@ -1,4 +1,12 @@
+import { IHeroContent } from '../interfaces/hero-content';
 import { TextImageContent } from '../interfaces/text-and-image-content';
+
+export const HERO_WERKWIJZE_CONTENT: IHeroContent = {
+  variant: 'simple',
+  image: 'WerkwijzeHero.webp',
+  altText: $localize`:@@werkwijze.hero.alt:Renovatie van een bewoning, buiten foto`,
+  title: $localize`:@@werkwijze.hero.title:Onze Werkwijze`,
+};
 
 export const TIMELINE_TITLE_AND_DESCRIPTION_AND_BUTTON = {
   title: $localize`:@@werkwijze.timeline.title:Thorbouw werkwijze process`,

@@ -1694,6 +1694,14 @@
         <source>Meer Over Ons</source>
         <target state="new">En savoir plus sur nous</target>
       </trans-unit>
+      <trans-unit id="werkwijze.hero.alt" datatype="html">
+        <source>Renovatie van een bewoning, buiten foto</source>
+        <target state="new">Rénovation d&apos;une habitation, photo extérieure</target>
+      </trans-unit>
+      <trans-unit id="werkwijze.hero.title" datatype="html">
+        <source>Onze Werkwijze</source>
+        <target state="new">Notre méthodologie</target>
+      </trans-unit>
       <trans-unit id="werkwijze.step-1.alt" datatype="html">
         <source>Foto van een verbouwd huis in de sneeuw</source>
         <target>Photo d&apos;une maison rénovée sous la neige</target>
