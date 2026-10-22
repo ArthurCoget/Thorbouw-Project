@@ -662,6 +662,16 @@
         <source>Foto&apos;s &amp; Realisaties</source>
         <target>Photos &amp; Réalisations</target>
       </trans-unit>
+      <trans-unit id="fotos.otherprojects.subtitle" datatype="html">
+        <source> U kunt dit gebruiken als referentie, dit is geen representatie van uw finale
+          product </source>
+        <target state="new"> Vous pouvez utiliser cela comme référence, ce n'est pas une
+          représentation de votre produit final </target>
+      </trans-unit>
+      <trans-unit id="fotos.otherprojects.title" datatype="html">
+        <source> Lijst van eerder gerealisseerde projecten </source>
+        <target state="new"> Liste des projets précédemment réalisés </target>
+      </trans-unit>
       <trans-unit id="home.content.bottom.end" datatype="html">
         <source>Als aannemersbedrijf in Leuven zetten wij 100% in op toekomstgericht wonen. We
           adviseren haalbare ingrepen, betaalbare energie-oplossingen en zowel traditionele als

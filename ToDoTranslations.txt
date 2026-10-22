@@ -1,2 +1,3 @@
 navbar, french problem with scaling
 interactive map leuven, french problem with scaling, same for english
+contact, french scroll on applez nous

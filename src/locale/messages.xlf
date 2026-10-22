@@ -392,6 +392,12 @@
       <trans-unit id="fotos.hero.title" datatype="html">
         <source>Foto&apos;s &amp; Realisaties</source>
       </trans-unit>
+      <trans-unit id="fotos.otherprojects.subtitle" datatype="html">
+        <source> U kunt dit gebruiken als referentie, dit is geen representatie van uw finale product </source>
+      </trans-unit>
+      <trans-unit id="fotos.otherprojects.title" datatype="html">
+        <source> Lijst van eerder gerealisseerde projecten </source>
+      </trans-unit>
       <trans-unit id="home.content.bottom.end" datatype="html">
         <source>Als aannemersbedrijf in Leuven zetten wij 100% in op toekomstgericht wonen. We adviseren haalbare ingrepen, betaalbare energie-oplossingen en zowel traditionele als natuurlijke bouwmaterialen. Ethiek en integriteit houden wij hoog in het vaandel, onze klanten correct informeren maakt deel uit van onze werkwijze.</source>
       </trans-unit>
