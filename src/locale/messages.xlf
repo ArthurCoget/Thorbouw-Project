@@ -1019,6 +1019,9 @@
       <trans-unit id="project.verhoef.title" datatype="html">
         <source>Renovatie te Hoog Linden</source>
       </trans-unit>
+      <trans-unit id="tripletext.moreabout" datatype="html">
+        <source>Meer Over Ons</source>
+      </trans-unit>
       <trans-unit id="werkwijze.step-1.alt" datatype="html">
         <source>Foto van een verbouwd huis in de sneeuw</source>
       </trans-unit>
