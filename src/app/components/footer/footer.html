@@ -2,20 +2,23 @@
   <img
     class="footer-background"
     [ngSrc]="currentImage"
-    alt="Backgroud Images of other projects"
+    alt="Achtergrondafbeelding van projecten van Thorbouw"
+    i18n-alt="@@footer.background.alt"
     loading="lazy"
     fill
   />
   <div class="footer-overlay"></div>
   <div class="footer-content">
-    <h2 class="footer-title">Laat mij u helpen met slim & groen bouwen</h2>
-    <p class="footer-text">
-      Jan Vansteenwegen werkt nauw samen met zijn echtgenote Stefanie Wilms waardoor ze samen elk
-      project optillen naar een hoger niveau. Laat jezelf overtuigen door een bezoek aan <a
+    <h2 class="footer-title" i18n="@@footer.title">Laat mij u helpen met slim & groen bouwen</h2>
+    <p class="footer-text" i18n="@@footer.text">
+      Jan Vansteenwegen werkt nauw samen met zijn echtgenote Stefanie Wilms waardoor ze samen elk
+      project optillen naar een hoger niveau. Laat jezelf overtuigen door een bezoek aan
+      <a
         href="https://stefaniewilms.be/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Visit Stefanie Wilms website"
+        i18n-aria-label="@@footer.stefanie.ariaLabel"
         >haar website</a
       >.
     </p>
@@ -26,7 +29,7 @@
       </div>
       <ul class="footer-info-container" [class.is-open]="openSections['quicklinks']">
         <div>
-          @for (link of navLinks; track link.label) {
+          @for (link of navLinks; track link.route) {
             <li>
               <a [routerLink]="link.route">{{ link.label }}</a>
             </li>
@@ -107,12 +110,17 @@
     <div class="footer-bottom">
       <div class="footer-line-container">
         <div class="line"></div>
-        <img src="/logo/Thorbouw-Logo-Dark.webp" class="footer-logo" alt="Company logo" />
+        <img
+          src="/logo/Thorbouw-Logo-Dark.webp"
+          class="footer-logo"
+          alt="Logo van Thorbouw"
+          i18n-alt="@@footer.logo.alt"
+        />
         <div class="line"></div>
       </div>
       <div class="footer-meta">
-        <span>© Copyright 2025 Thorbouw BVBA, All Rights reserved</span>
-        <span
+        <span>© Copyright {{ currentYear }} Thorbouw BVBA, All Rights reserved</span>
+        <span i18n="@@footer.credits"
           >Website gemaakt door:
           <a
             href="https://www.linkedin.com/in/arthur-coget-inf/"

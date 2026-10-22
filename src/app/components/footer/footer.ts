@@ -19,6 +19,8 @@ import { filter } from 'rxjs';
   styleUrl: './footer.css',
 })
 export class FooterComponent {
+  readonly currentYear = new Date().getFullYear();
+
   private readonly FOOTER_IMAGE_PATH = '/footer';
   private readonly FOOTER_SVG_PATH = '/footer/svg';
   private readonly footerImages = [
@@ -81,17 +83,20 @@ export class FooterComponent {
   }
 
   readonly navLinks = [
-    { route: '/home', label: 'Home Pagina' },
-    { route: '/overThorbouw', label: 'Over Thorbouw' },
-    { route: '/fotos', label: "Foto's & Realisaties" },
-    { route: '/advies', label: 'Bouwkundig Advies' },
-    { route: '/werkwijze', label: 'Werkwijze' },
-    { route: '/project', label: 'Projectontwikkiling & Wonen' },
-    { route: '/contact', label: 'Contact' },
+    { route: '/home', label: $localize`:@@footer.nav.home:Home Pagina` },
+    { route: '/overThorbouw', label: $localize`:@@footer.nav.about:Over Thorbouw` },
+    { route: '/fotos', label: $localize`:@@footer.nav.photos:Foto's & Realisaties` },
+    { route: '/advies', label: $localize`:@@footer.nav.advice:Bouwkundig Advies` },
+    { route: '/werkwijze', label: $localize`:@@footer.nav.process:Werkwijze` },
+    /*{
+      route: '/project',
+      label: $localize`:@@footer.nav.project:Projectontwikkeling & Wonen`,
+    },*/
+    { route: '/contact', label: $localize`:@@footer.nav.contact:Contact` },
     /*
     { route: '/privacy', label: 'Privacy' },
     { route: '/voorwaarde', label: 'Algemene Voorwaarden' },*/
-    { route: '/sitemap', label: 'Sitemap' },
+    { route: '/sitemap', label: $localize`:@@footer.nav.sitemap:Sitemap` },
   ];
 
   readonly contactInfo = [
@@ -100,24 +105,24 @@ export class FooterComponent {
       icon: `${this.FOOTER_SVG_PATH}/map.svg`,
       href: 'https://maps.app.goo.gl/jWfsQAAXfc1Zs39F6',
       text: ['Hoveniersdreef 64', '3001 Heverlee'],
-      ariaLabel: 'View our location on Google Maps',
-      alt: 'Google Maps Icon',
+      ariaLabel: $localize`:@@footer.contact.map.ariaLabel:Bekijk onze locatie op Google Maps`,
+      alt: $localize`:@@footer.contact.map.alt:Google Maps-icoon`,
     },
     {
       id: 'mail',
       icon: `${this.FOOTER_SVG_PATH}/mail.svg`,
       href: 'mailto:info@thorbouw.be',
       text: ['info@thorbouw.be'],
-      ariaLabel: 'Send us an email',
-      alt: 'Email Icon',
+      ariaLabel: $localize`:@@footer.contact.mail.ariaLabel:Stuur ons een e-mail`,
+      alt: $localize`:@@footer.contact.mail.alt:E-mail-icoon`,
     },
     {
       id: 'phone',
       icon: `${this.FOOTER_SVG_PATH}/phone.svg`,
       href: 'tel:+32475530214',
       text: ['0032 475 530 214'],
-      ariaLabel: 'Call us',
-      alt: 'Phone Icon',
+      ariaLabel: $localize`:@@footer.contact.phone.ariaLabel:Bel ons`,
+      alt: $localize`:@@footer.contact.phone.alt:Telefoon-icoon`,
     },
   ];
 
@@ -127,32 +132,32 @@ export class FooterComponent {
       icon: `${this.FOOTER_SVG_PATH}/whatsapp.svg`,
       href: 'https://api.whatsapp.com/send?phone=32475530214',
       text: ['WhatsApp'],
-      ariaLabel: 'Contact us on WhatsApp',
-      alt: 'Whatsapp Icon',
+      ariaLabel: $localize`:@@footer.social.whatsapp.ariaLabel:Neem contact met ons op via WhatsApp`,
+      alt: $localize`:@@footer.social.whatsapp.alt:WhatsApp-icoon`,
     },
     {
       id: 'vibe',
       icon: `${this.FOOTER_SVG_PATH}/VIBE-logo.svg`,
       href: 'https://www.vibe.be/',
       text: ['Vibe'],
-      ariaLabel: 'Vind ons bij vibe.',
-      alt: 'Vibe Icon',
+      ariaLabel: $localize`:@@footer.social.vibe.ariaLabel:Vind ons op Vibe`,
+      alt: $localize`:@@footer.social.vibe.alt:Vibe-icoon`,
     },
     {
       id: 'instagram',
       icon: `${this.FOOTER_SVG_PATH}/instagram.svg`,
       href: 'https://www.instagram.com/thorbouw/',
       text: ['Instagram'],
-      ariaLabel: 'Follow us on Instagram',
-      alt: 'Instagram Icon',
+      ariaLabel: $localize`:@@footer.social.instagram.ariaLabel:Volg ons op Instagram`,
+      alt: $localize`:@@footer.social.instagram.alt:Instagram-icoon`,
     },
     {
       id: 'linkedin',
       icon: `${this.FOOTER_SVG_PATH}/LinkedIn.svg`,
       href: 'https://www.linkedin.com/in/3-100-thorbouw/',
       text: ['LinkedIn'],
-      ariaLabel: 'Follow us on LinkedIn',
-      alt: 'LinkedIn Icon',
+      ariaLabel: $localize`:@@footer.social.linkedin.ariaLabel:Volg ons op LinkedIn`,
+      alt: $localize`:@@footer.social.linkedin.alt:LinkedIn-icoon`,
     },
   ];
 }

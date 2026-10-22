@@ -290,6 +290,87 @@
       <trans-unit id="contact.top.title" datatype="html">
         <source>Neem zeker contact op. Indien u vragen heeft zijn wij er om u te helpen.</source>
       </trans-unit>
+      <trans-unit id="footer.background.alt" datatype="html">
+        <source>Achtergrondafbeelding van projecten van Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="footer.contact.mail.alt" datatype="html">
+        <source>E-mail-icoon</source>
+      </trans-unit>
+      <trans-unit id="footer.contact.mail.ariaLabel" datatype="html">
+        <source>Stuur ons een e-mail</source>
+      </trans-unit>
+      <trans-unit id="footer.contact.map.alt" datatype="html">
+        <source>Google Maps-icoon</source>
+      </trans-unit>
+      <trans-unit id="footer.contact.map.ariaLabel" datatype="html">
+        <source>Bekijk onze locatie op Google Maps</source>
+      </trans-unit>
+      <trans-unit id="footer.contact.phone.alt" datatype="html">
+        <source>Telefoon-icoon</source>
+      </trans-unit>
+      <trans-unit id="footer.contact.phone.ariaLabel" datatype="html">
+        <source>Bel ons</source>
+      </trans-unit>
+      <trans-unit id="footer.credits" datatype="html">
+        <source>Website gemaakt door: <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.linkedin.com/in/arthur-coget-inf/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; &gt;"/>Arthur Coget<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;"/> &amp;&amp; Tom Lauwers </source>
+      </trans-unit>
+      <trans-unit id="footer.logo.alt" datatype="html">
+        <source>Logo van Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="footer.nav.about" datatype="html">
+        <source>Over Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="footer.nav.advice" datatype="html">
+        <source>Bouwkundig Advies</source>
+      </trans-unit>
+      <trans-unit id="footer.nav.contact" datatype="html">
+        <source>Contact</source>
+      </trans-unit>
+      <trans-unit id="footer.nav.home" datatype="html">
+        <source>Home Pagina</source>
+      </trans-unit>
+      <trans-unit id="footer.nav.photos" datatype="html">
+        <source>Foto&apos;s &amp; Realisaties</source>
+      </trans-unit>
+      <trans-unit id="footer.nav.process" datatype="html">
+        <source>Werkwijze</source>
+      </trans-unit>
+      <trans-unit id="footer.nav.sitemap" datatype="html">
+        <source>Sitemap</source>
+      </trans-unit>
+      <trans-unit id="footer.social.instagram.alt" datatype="html">
+        <source>Instagram-icoon</source>
+      </trans-unit>
+      <trans-unit id="footer.social.instagram.ariaLabel" datatype="html">
+        <source>Volg ons op Instagram</source>
+      </trans-unit>
+      <trans-unit id="footer.social.linkedin.alt" datatype="html">
+        <source>LinkedIn-icoon</source>
+      </trans-unit>
+      <trans-unit id="footer.social.linkedin.ariaLabel" datatype="html">
+        <source>Volg ons op LinkedIn</source>
+      </trans-unit>
+      <trans-unit id="footer.social.vibe.alt" datatype="html">
+        <source>Vibe-icoon</source>
+      </trans-unit>
+      <trans-unit id="footer.social.vibe.ariaLabel" datatype="html">
+        <source>Vind ons op Vibe</source>
+      </trans-unit>
+      <trans-unit id="footer.social.whatsapp.alt" datatype="html">
+        <source>WhatsApp-icoon</source>
+      </trans-unit>
+      <trans-unit id="footer.social.whatsapp.ariaLabel" datatype="html">
+        <source>Neem contact met ons op via WhatsApp</source>
+      </trans-unit>
+      <trans-unit id="footer.stefanie.ariaLabel" datatype="html">
+        <source>Visit Stefanie Wilms website</source>
+      </trans-unit>
+      <trans-unit id="footer.text" datatype="html">
+        <source> Jan Vansteenwegen werkt nauw samen met zijn echtgenote Stefanie Wilms waardoor ze samen elk project optillen naar een hoger niveau. Laat jezelf overtuigen door een bezoek aan <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://stefaniewilms.be/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; aria-label=&quot;Visit Stefanie Wilms website&quot; i18n-aria-label=&quot;@@footer.stefanie.ariaLabel&quot; &gt;"/>haar website<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;"/>. </source>
+      </trans-unit>
+      <trans-unit id="footer.title" datatype="html">
+        <source>Laat mij u helpen met slim &amp; groen bouwen</source>
+      </trans-unit>
       <trans-unit id="fotos.hero.alt" datatype="html">
         <source>Thorbouw-team werkt aan een duurzaam bouwproject</source>
       </trans-unit>
