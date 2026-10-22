@@ -803,6 +803,14 @@
         <source>Duurzaam Wonen</source>
         <target>Sustainable Living</target>
       </trans-unit>
+      <trans-unit id="imagegallery.cta" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span"
+            equiv-text="&lt;span class=&quot;cta-line&quot;&gt;" /><x id="CLOSE_TAG_SPAN"
+            ctype="x-span" equiv-text="&lt;/span&gt;" /> Bekijken </source>
+        <target state="new"><x id="START_TAG_SPAN" ctype="x-span"
+            equiv-text="&lt;span class=&quot;cta-line&quot;&gt;" /><x id="CLOSE_TAG_SPAN"
+            ctype="x-span" equiv-text="&lt;/span&gt;" /> View </target>
+      </trans-unit>
       <trans-unit id="interactivemap.otherlocation" datatype="html">
         <source>Andere locatie</source>
         <target state="new">Other location</target>
