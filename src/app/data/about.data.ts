@@ -1,5 +1,13 @@
+import { IHeroContent } from '../interfaces/hero-content';
 import { ITextRouselContent } from '../interfaces/itext-rousel-content';
 import { ITripleText } from '../interfaces/itriple-text';
+
+export const HERO_ABOUT_CONTENT: IHeroContent = {
+  variant: 'simple',
+  image: 'AboutHeroPage.webp',
+  altText: $localize`:@@about.hero.alt:Het Thorbouw team werkt aan een duurzaam bouwproject`,
+  title: $localize`:@@about.hero.title:Over Thorbouw`,
+};
 
 export const ABOUT_CONTENT = {
   aboutTopTitle: $localize`:@@about.top.title:Wie Zijn We?`,
@@ -7,6 +15,7 @@ export const ABOUT_CONTENT = {
   numberOfProjectsLabel: $localize`:@@about.top.projects.label:Afgeleverde Projecten`,
   numberOfProjects: $localize`:@@about.top.projects.number:50`,
   aboutBottomTitle: $localize`:@@about.bottom.title:Herkent u zich in de visie van Thorbouw?`,
+  contactLinkText: $localize`:@@about.bottom.contact.link:Herkenbaar? Neem contact met ons op!`,
 };
 
 export const ABOUT_BOTTOM_LIST = [

@@ -2,6 +2,9 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="nl-BE" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="about.bottom.contact.link" datatype="html">
+        <source>Herkenbaar? Neem contact met ons op!</source>
+      </trans-unit>
       <trans-unit id="about.bottom.list.1" datatype="html">
         <source>Volhoudbaar: Thorbouw werkt in het nu, met een blik op morgen.</source>
       </trans-unit>
@@ -25,6 +28,12 @@
       </trans-unit>
       <trans-unit id="about.bottom.title" datatype="html">
         <source>Herkent u zich in de visie van Thorbouw?</source>
+      </trans-unit>
+      <trans-unit id="about.hero.alt" datatype="html">
+        <source>Het Thorbouw team werkt aan een duurzaam bouwproject</source>
+      </trans-unit>
+      <trans-unit id="about.hero.title" datatype="html">
+        <source>Over Thorbouw</source>
       </trans-unit>
       <trans-unit id="about.more.1.description_one" datatype="html">
         <source>Met meer dan <x id="PH" equiv-text="new Date().getFullYear() - START_YEAR"/> jaar ervaring in de bouwsector en een groeiend bewustzijn rond milieu-impact en duurzaamheid, ontstond de drang om het anders aan te pakken. In september 2018 startte daarom de opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven, met als doel bewuster en toekomstgericht te bouwen.</source>

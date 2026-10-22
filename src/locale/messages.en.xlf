@@ -2,6 +2,10 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="nl-BE" target-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="about.bottom.contact.link" datatype="html">
+        <source>Herkenbaar? Neem contact met ons op!</source>
+        <target state="new">Recognizable? Get in touch with us!</target>
+      </trans-unit>
       <trans-unit id="about.bottom.list.1" datatype="html">
         <source>Volhoudbaar: Thorbouw werkt in het nu, met een blik op morgen.</source>
         <target>Sustainable (« Volhoudbaar »): Thorbouw acts in the present, with an eye on
@@ -40,6 +44,14 @@
       <trans-unit id="about.bottom.title" datatype="html">
         <source>Herkent u zich in de visie van Thorbouw?</source>
         <target>Do you recognize yourself in Thorbouw&apos;s vision?</target>
+      </trans-unit>
+      <trans-unit id="about.hero.alt" datatype="html">
+        <source>Het Thorbouw team werkt aan een duurzaam bouwproject</source>
+        <target state="new">The Thorbouw team is working on a sustainable construction project</target>
+      </trans-unit>
+      <trans-unit id="about.hero.title" datatype="html">
+        <source>Over Thorbouw</source>
+        <target state="new">About Thorbouw</target>
       </trans-unit>
       <trans-unit id="about.more.1.description_one" datatype="html">
         <source>Met meer dan <x id="PH" equiv-text="new Date().getFullYear() - START_YEAR" /> jaar
