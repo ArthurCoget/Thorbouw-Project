@@ -5,7 +5,7 @@
     [customImagePosition]="project?.offset || 65"
   ></app-top-image-component>
   <nav class="breadcrumb">
-    <a routerLink="/fotos">Foto's</a>
+    <a routerLink="/fotos" i18n="@@projecdetail.breadcrumb">Foto's</a>
     <span>›</span>
     <span>{{ project?.title }}</span>
   </nav>
@@ -23,7 +23,7 @@
   </div>
   <app-image-gallery [items]="images"></app-image-gallery>
   <div class="content-header-container">
-    <h2 class="title">{{ DETAILS_CONTENT.mapTitile }}</h2>
+    <h2 class="title">{{ DETAILS_CONTENT.mapTitle }}</h2>
     <p class="subtitle">{{ DETAILS_CONTENT.mapSubtitle }}</p>
   </div>
   <app-interactive-leuven-map

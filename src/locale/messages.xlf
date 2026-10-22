@@ -488,6 +488,9 @@
       <trans-unit id="nav.werkwijze" datatype="html">
         <source>Werkwijze</source>
       </trans-unit>
+      <trans-unit id="projecdetail.breadcrumb" datatype="html">
+        <source>Foto&apos;s</source>
+      </trans-unit>
       <trans-unit id="project.alt.brandts.bedroom" datatype="html">
         <source>Foto van slaapkamer met rood beddengoed in renovatie in Leuven</source>
       </trans-unit>
@@ -1039,6 +1042,15 @@
       </trans-unit>
       <trans-unit id="project.verhoef.title" datatype="html">
         <source>Renovatie te Hoog Linden</source>
+      </trans-unit>
+      <trans-unit id="projectdetail.galleryTitle" datatype="html">
+        <source>Overzicht van alle afbeeldingen van dit project</source>
+      </trans-unit>
+      <trans-unit id="projectdetail.mapSubtitle" datatype="html">
+        <source>U mag scrollen om in en uit te zoomen en slepen om te navigeren. Klik op een marker voor meer informatie over dat project. De markers weergeven geen exacte locatie van onze projecten, maar geven een indicatie van de buurt waar ze zich bevinden.</source>
+      </trans-unit>
+      <trans-unit id="projectdetail.mapTitle" datatype="html">
+        <source>Kaart met al onze projecten</source>
       </trans-unit>
       <trans-unit id="tripletext.moreabout" datatype="html">
         <source>Meer Over Ons</source>

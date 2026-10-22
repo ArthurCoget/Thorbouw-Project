@@ -665,7 +665,7 @@
       <trans-unit id="fotos.otherprojects.subtitle" datatype="html">
         <source> U kunt dit gebruiken als referentie, dit is geen representatie van uw finale
           product </source>
-        <target state="new"> Vous pouvez utiliser cela comme référence, ce n'est pas une
+        <target state="new"> Vous pouvez utiliser cela comme référence, ce n&apos;est pas une
           représentation de votre produit final </target>
       </trans-unit>
       <trans-unit id="fotos.otherprojects.title" datatype="html">
@@ -853,6 +853,10 @@
       <trans-unit id="nav.werkwijze" datatype="html">
         <source>Werkwijze</source>
         <target>Méthode de travail</target>
+      </trans-unit>
+      <trans-unit id="projecdetail.breadcrumb" datatype="html">
+        <source>Foto&apos;s</source>
+        <target state="new">Photos</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.bedroom" datatype="html">
         <source>Foto van slaapkamer met rood beddengoed in renovatie in Leuven</source>
@@ -1660,6 +1664,23 @@
       <trans-unit id="project.verhoef.title" datatype="html">
         <source>Renovatie te Hoog Linden</source>
         <target>Rénovation à Hoog-Linden</target>
+      </trans-unit>
+      <trans-unit id="projectdetail.galleryTitle" datatype="html">
+        <source>Overzicht van alle afbeeldingen van dit project</source>
+        <target state="new">Aperçu de toutes les images de ce projet</target>
+      </trans-unit>
+      <trans-unit id="projectdetail.mapSubtitle" datatype="html">
+        <source>U mag scrollen om in en uit te zoomen en slepen om te navigeren. Klik op een marker
+          voor meer informatie over dat project. De markers weergeven geen exacte locatie van onze
+          projecten, maar geven een indicatie van de buurt waar ze zich bevinden.</source>
+        <target state="new">Vous pouvez faire scroller pour zoomer et dézoomer, et glisser pour
+          naviguer. Cliquez sur un marker pour obtenir plus d&apos;informations sur ce projet. Les
+          markers ne montrent pas l&apos;emplacement exact de nos projets, mais donnent une
+          indication sur le quartier où ils se trouvent.</target>
+      </trans-unit>
+      <trans-unit id="projectdetail.mapTitle" datatype="html">
+        <source>Kaart met al onze projecten</source>
+        <target state="new">Carte avec tous nos projets</target>
       </trans-unit>
       <trans-unit id="tripletext.moreabout" datatype="html">
         <source>Meer Over Ons</source>
