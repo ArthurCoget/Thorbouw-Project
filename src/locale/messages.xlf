@@ -143,6 +143,12 @@
       <trans-unit id="advies.cta2.title" datatype="html">
         <source>Een succesvolle renovatie of bouwproject start niet op de werf</source>
       </trans-unit>
+      <trans-unit id="advies.hero.altText" datatype="html">
+        <source>Renovatie van een badkamer gedaan door Thorbouw</source>
+      </trans-unit>
+      <trans-unit id="advies.hero.title" datatype="html">
+        <source>Bouwkundig Advies</source>
+      </trans-unit>
       <trans-unit id="advies.img.bedroom" datatype="html">
         <source>Afgewerkte slaapkamer door Thorbouw</source>
       </trans-unit>

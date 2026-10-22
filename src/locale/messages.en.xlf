@@ -274,6 +274,14 @@
         <target>A successful renovation or construction project doesn&apos;t start on the building
           site</target>
       </trans-unit>
+      <trans-unit id="advies.hero.altText" datatype="html">
+        <source>Renovatie van een badkamer gedaan door Thorbouw</source>
+        <target state="new">Renovation of a bathroom done by Thorbouw</target>
+      </trans-unit>
+      <trans-unit id="advies.hero.title" datatype="html">
+        <source>Bouwkundig Advies</source>
+        <target state="new">Construction Advice</target>
+      </trans-unit>
       <trans-unit id="advies.img.bedroom" datatype="html">
         <source>Afgewerkte slaapkamer door Thorbouw</source>
         <target>Finished bedroom by Thorbouw</target>

@@ -284,6 +284,14 @@
         <source>Een succesvolle renovatie of bouwproject start niet op de werf</source>
         <target>Un projet de rénovation ou de construction réussi ne commence pas sur le chantier</target>
       </trans-unit>
+      <trans-unit id="advies.hero.altText" datatype="html">
+        <source>Renovatie van een badkamer gedaan door Thorbouw</source>
+        <target state="new">Renovation d&apos;une salle de bains effectuée par Thorbouw</target>
+      </trans-unit>
+      <trans-unit id="advies.hero.title" datatype="html">
+        <source>Bouwkundig Advies</source>
+        <target state="new">Conseils en Construction</target>
+      </trans-unit>
       <trans-unit id="advies.img.bedroom" datatype="html">
         <source>Afgewerkte slaapkamer door Thorbouw</source>
         <target>Chambre terminée par Thorbouw</target>

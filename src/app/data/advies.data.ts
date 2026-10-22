@@ -1,4 +1,12 @@
+import { IHeroContent } from '../interfaces/hero-content';
 import { ISnakeContent, ISnakeImage } from '../interfaces/snake-image-interface';
+
+export const HERO_ADVIES_CONTENT: IHeroContent = {
+  variant: 'simple',
+  image: 'AdviesHero.webp',
+  altText: $localize`:@@advies.hero.altText:Renovatie van een badkamer gedaan door Thorbouw`,
+  title: $localize`:@@advies.hero.title:Bouwkundig Advies`,
+};
 
 export const CTA_ADVIES_CONTENT = {
   title1: $localize`:@@advies.cta1.title:Bouwkundig advies zonder verrassingen`,
