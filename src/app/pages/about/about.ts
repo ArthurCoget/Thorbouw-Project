@@ -6,6 +6,7 @@ import {
   ABOUT_CONTENT,
   ABOUT_MORE_US,
   ABOUT_VALUES,
+  HERO_ABOUT_CONTENT,
 } from '../../data/about.data';
 import { NgOptimizedImage } from '@angular/common';
 import { TextRousel } from '../../components/text-rousel/text-rousel';
@@ -21,13 +22,7 @@ import { RouterLink } from '@angular/router';
   styleUrl: './about.css',
 })
 export class About {
-  readonly heroContent: IHeroContent = {
-    variant: 'simple',
-    image: 'AboutHeroPage.webp',
-    altText: 'Thorbouw team working on sustainable construction project',
-    title: 'Over Thorbouw',
-  };
-
+  readonly heroContent: IHeroContent = HERO_ABOUT_CONTENT;
   readonly aboutContent = ABOUT_CONTENT;
   readonly aboutValues: ITextRouselContent[] = ABOUT_VALUES;
   readonly aboutMoreUs: ITripleText[] = ABOUT_MORE_US;
