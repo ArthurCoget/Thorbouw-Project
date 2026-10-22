@@ -807,6 +807,10 @@
         <source>Pijlers</source>
         <target state="new">Pillars</target>
       </trans-unit>
+      <trans-unit id="home.textRousel.title" datatype="html">
+        <source>Onze waarden</source>
+        <target state="new">Our Values</target>
+      </trans-unit>
       <trans-unit id="imagecarousel.buttonInfo" datatype="html">
         <source>Meer Info</source>
         <target state="new">More Info</target>

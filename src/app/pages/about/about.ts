@@ -27,4 +27,5 @@ export class About {
   readonly aboutValues: ITextRouselContent[] = ABOUT_VALUES;
   readonly aboutMoreUs: ITripleText[] = ABOUT_MORE_US;
   readonly aboutList = ABOUT_BOTTOM_LIST;
+  readonly textRousel = $localize`:@@home.textRousel.title:Onze waarden`;
 }

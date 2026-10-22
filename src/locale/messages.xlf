@@ -467,6 +467,9 @@
       <trans-unit id="home.pillars.title" datatype="html">
         <source>Pijlers</source>
       </trans-unit>
+      <trans-unit id="home.textRousel.title" datatype="html">
+        <source>Onze waarden</source>
+      </trans-unit>
       <trans-unit id="imagecarousel.buttonInfo" datatype="html">
         <source>Meer Info</source>
       </trans-unit>
