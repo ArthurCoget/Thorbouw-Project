@@ -822,6 +822,18 @@
         <source>Duurzaam Wonen</source>
         <target>Habitat durable</target>
       </trans-unit>
+      <trans-unit id="imagecarousel.buttonInfo" datatype="html">
+        <source>Meer Info</source>
+        <target state="new">Plus d'infos</target>
+      </trans-unit>
+      <trans-unit id="imagecarousel.firstInfoCard" datatype="html">
+        <source>Datum</source>
+        <target state="new">Date</target>
+      </trans-unit>
+      <trans-unit id="imagecarousel.secondInfoCard" datatype="html">
+        <source>Project</source>
+        <target state="new">Projet</target>
+      </trans-unit>
       <trans-unit id="imagegallery.cta" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span"
             equiv-text="&lt;span class=&quot;cta-line&quot;&gt;" /><x id="CLOSE_TAG_SPAN"
@@ -849,10 +861,6 @@
       <trans-unit id="nav.fotos" datatype="html">
         <source>Foto&apos;s Realisaties</source>
         <target>Photos Réalisations</target>
-      </trans-unit>
-      <trans-unit id="nav.language" datatype="html">
-        <source>Taal</source>
-        <target>Langue</target>
       </trans-unit>
       <trans-unit id="nav.overThorbouw" datatype="html">
         <source>Over Thorbouw</source>

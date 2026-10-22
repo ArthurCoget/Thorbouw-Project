@@ -31,9 +31,9 @@ export class ImageCarouselComponent implements OnDestroy, AfterViewInit {
 
   items = input.required<ICarouselImage[]>();
   showInfo = input(true);
-  firstInfoCard = input('Datum');
-  secondInfoCard = input('Project');
-  buttonInfo = input('Meer Info');
+  firstInfoCard = input($localize`:@@imagecarousel.firstInfoCard:Datum`);
+  secondInfoCard = input($localize`:@@imagecarousel.secondInfoCard:Project`);
+  buttonInfo = input($localize`:@@imagecarousel.buttonInfo:Meer Info`);
   maxNumberOfItems = input(false);
 
   displayedItems = computed(() => {
