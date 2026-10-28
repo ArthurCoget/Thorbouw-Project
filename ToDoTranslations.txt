@@ -1,4 +1,4 @@
-navbar, french problem with scaling
+navbar, french problem with scaling => Fixed
 interactive map leuven, french problem with scaling, same for english => fixed
 contact, french scroll on applez nous => fixed
 fotos, french to long title => Fixed
