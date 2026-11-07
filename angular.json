@@ -13,7 +13,8 @@
         "sourceLocale": { "code": "nl-BE", "subPath": "nl" },
         "locales": {
           "fr-BE": { "translation": "src/locale/messages.fr.xlf", "subPath": "fr" },
-          "en-US": { "translation": "src/locale/messages.en.xlf", "subPath": "en" }
+          "en-US": { "translation": "src/locale/messages.en.xlf", "subPath": "en" },
+          "es-ES": { "translation": "src/locale/messages.es.xlf", "subPath": "es" }
         }
       },
       "architect": {
@@ -67,6 +68,9 @@
             },
             "en": {
               "localize": ["en-US"]
+            },
+            "es": {
+              "localize": ["es-ES"]
             }
           },
           "defaultConfiguration": "production"
@@ -82,7 +86,8 @@
               "allowedHosts": ["localhost", "192.168.1.25", "0.0.0.0"]
             },
             "fr": { "buildTarget": "thorbouw-project:build:development,fr" },
-            "en": { "buildTarget": "thorbouw-project:build:development,en" }
+            "en": { "buildTarget": "thorbouw-project:build:development,en" },
+            "es": { "buildTarget": "thorbouw-project:build:development,es" }
           },
           "defaultConfiguration": "development"
         },
@@ -92,7 +97,7 @@
             "buildTarget": "thorbouw-project:build",
             "format": "xlf",
             "outputPath": "src/locale",
-            "targetFiles": ["messages.fr.xlf", "messages.en.xlf"]
+            "targetFiles": ["messages.fr.xlf", "messages.en.xlf", "messages.es.xlf"]
           }
         },
         "test": {
