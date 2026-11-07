@@ -307,3 +307,286 @@ export const IMAGES_VERHOEF = [
     prefix: verhoefPrefix,
   }),
 ];
+
+const brandtsLink = '/fotos&realisaties/BuurBrandts';
+const brandtsPrefix = 'brandts';
+export const IMAGES_BRANDTS = [
+  ...createImages(1, 18, brandtsLink, 'Foto van renovatie in Leuven exterieur', {
+    category: 'Exterieur',
+    prefix: brandtsPrefix,
+  }),
+
+  ...createImages(
+    19,
+    19,
+    brandtsLink,
+    'Foto van moderne badkamer met vrijstaand bad in renovatie in Leuven',
+    {
+      category: 'Badkamer',
+      title: 'Vrijstaand bad',
+      description:
+        'Strakke badkamer met een vrijstaand wit bad tegen een donkere wand, aangevuld met een grote spiegel en ruime lichtinval.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    20,
+    20,
+    brandtsLink,
+    'Foto van badkamer met dubbele wastafel in renovatie in Leuven',
+    {
+      category: 'Badkamer',
+      title: 'Wastafelmeubel',
+      description:
+        'Witte badkamer met een zwevend wastafelmeubel, grote spiegelwand en donkere accenten voor een rustige, hedendaagse uitstraling.',
+      prefix: brandtsPrefix,
+    },
+  ),
+
+  ...createImages(
+    21,
+    22,
+    brandtsLink,
+    'Foto van houten kastenwand met groene accentwand in renovatie in Leuven',
+    {
+      category: 'Interieur',
+      title: 'Bureau',
+
+      prefix: brandtsPrefix,
+    },
+  ),
+
+  ...createImages(23, 23, brandtsLink, 'Foto van witte trappenhal in renovatie in Leuven', {
+    category: 'Trap',
+    title: 'Trappenhal',
+    description: 'Lichte trappenhal met witte wanden en natuurlijke lichtinval via een bovenlicht.',
+    prefix: brandtsPrefix,
+  }),
+
+  ...createImages(24, 26, brandtsLink, 'Foto van trap en bovenlicht in renovatie in Leuven', {
+    category: 'Trap',
+    title: 'Trap met lichtinval',
+    description:
+      'Verticaal beeld van de trap met zicht op de verdiepingen en het licht dat binnenvalt.',
+    prefix: brandtsPrefix,
+  }),
+
+  ...createImages(
+    27,
+    27,
+    brandtsLink,
+    'Foto van houten wandpaneel in interieur van renovatie in Leuven',
+    {
+      category: 'Interieur',
+      title: 'Houten wandpaneel',
+      description:
+        'Warm houten wandpaneel dat een zachte contrastlijn vormt met de donkere vloer en witte wanden.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    28,
+    28,
+    brandtsLink,
+    'Foto van glazen deur en houten element in renovatie in Leuven',
+    {
+      category: 'Interieur',
+      title: 'Glazen deur',
+      description:
+        'Glazen deur en scheidingswand zorgen voor transparantie tussen de ruimtes en laten het licht doorstromen.',
+      prefix: brandtsPrefix,
+    },
+  ),
+
+  // ─── Woonkamer ──────────────────────────────────────────────
+  ...createImages(
+    29,
+    29,
+    brandtsLink,
+    'Foto van zithoek met blauwe zetels in renovatie in Leuven',
+    {
+      category: 'Woonkamer',
+      title: 'Zithoek met blauwe zetels',
+      description: 'Zitruimte met opvallende blauwe zetels, grote ramen en een lichte, open sfeer.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    30,
+    30,
+    brandtsLink,
+    'Foto van woonkamer met groene accentwand in renovatie in Leuven',
+    {
+      category: 'Woonkamer',
+      title: 'Woonkamer met groene accentwand',
+      description:
+        'Overzicht van de woonkamer vanuit een hoge hoek, met een groene accentwand en een geïntegreerde mediawand.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    31,
+    32,
+    brandtsLink,
+    'Foto van open leefruimte met zetel en eettafel in renovatie in Leuven',
+    {
+      category: 'Woonkamer',
+      title: 'Open leefruimte',
+      description: 'Open leefruimte waarin zitgedeelte en eetruimte vloeiend in elkaar overlopen.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    33,
+    33,
+    brandtsLink,
+    'Foto van keuken met houten werkblad en leefruimte in renovatie in Leuven',
+    {
+      category: 'Keuken',
+      title: 'Keuken met houten werkblad',
+      description: 'Moderne keuken met een warm houten werkblad die open uitkomt op de leefruimte.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    34,
+    35,
+    brandtsLink,
+    'Foto van woonkamer met zetel en kleuraccenten in renovatie in Leuven',
+    {
+      category: 'Woonkamer',
+      title: 'Zitruimte',
+      description: 'Gezellige zitruimte met een grote zetel.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    36,
+    36,
+    brandtsLink,
+    'Foto van mediameubel met houten nis in renovatie in Leuven',
+    {
+      category: 'Woonkamer',
+      title: 'Mediameubel',
+      prefix: brandtsPrefix,
+    },
+  ),
+
+  ...createImages(
+    37,
+    37,
+    brandtsLink,
+    'Foto van lange eettafel met stoelen en raampartij in renovatie in Leuven',
+    {
+      category: 'Eetkamer',
+      title: 'Lange eettafel',
+      description:
+        'Lange eettafel met stoelen langs een raampartij, perfect voor het samenbrengen van familie en vrienden.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(38, 38, brandtsLink, 'Foto van glazen doorkijk en trap in renovatie in Leuven', {
+    category: 'Interieur',
+    title: 'Doorkijk met glas',
+    description:
+      'Verticale doorkijk door glazen elementen, met zicht op de verschillende niveaus van de woning.',
+    prefix: brandtsPrefix,
+  }),
+  ...createImages(
+    39,
+    39,
+    brandtsLink,
+    'Foto van eetruimte met tafel en stoelen in renovatie in Leuven',
+    {
+      category: 'Eetkamer',
+      title: 'Eetruimte',
+      description:
+        'Heldere eetruimte met een tafel en stoelen, afgewerkt in neutrale tinten en met veel natuurlijk licht.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    40,
+    40,
+    brandtsLink,
+    'Foto van witte keuken met zwarte stoelen in renovatie in Leuven',
+    {
+      category: 'Keuken',
+      title: 'Witte keuken',
+      description:
+        'Strakke witte keuken met zwarte stoelen als contrast en een zorgvuldig uitgewerkte, handgreeploze afwerking.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    41,
+    42,
+    brandtsLink,
+    'Foto van houten tafel met stoelen en glazen wand in renovatie in Leuven',
+    {
+      category: 'Eetkamer',
+      title: 'Houten eettafel',
+      description:
+        'Massief houten eettafel met stoelen, naast een glazen wand die de ruimtes visueel verbindt.',
+      prefix: brandtsPrefix,
+    },
+  ),
+
+  ...createImages(
+    43,
+    43,
+    brandtsLink,
+    'Foto van zetel in lichte woonkamer in renovatie in Leuven',
+    {
+      category: 'Woonkamer',
+      title: 'Zetel in lichte woonkamer',
+      description:
+        'Ruime zetel in een lichte woonkamer met uitzicht op de tuin via de grote ramen.',
+      prefix: brandtsPrefix,
+    },
+  ),
+  ...createImages(
+    44,
+    44,
+    brandtsLink,
+    'Foto van woonkamer met zetel en uitzicht op de tuin in renovatie in Leuven',
+    {
+      category: 'Woonkamer',
+      title: 'Woonkamer met tuinzicht',
+      description:
+        'Zicht op de woonkamer vanuit een schuine hoek, met de zetel, het tapijt en de tuin als achtergrond.',
+      prefix: brandtsPrefix,
+    },
+  ),
+
+  ...createImages(45, 45, brandtsLink, 'Foto van witte inbouwkast in renovatie in Leuven', {
+    category: 'Interieur',
+    title: 'Witte inbouwkast',
+    description:
+      'Naadloos geïntegreerde witte inbouwkast die extra bergruimte biedt zonder de strakke lijnen te verstoren.',
+    prefix: brandtsPrefix,
+  }),
+  ...createImages(
+    46,
+    46,
+    brandtsLink,
+    'Foto van trapleuning en schuine lijnen in renovatie in Leuven',
+    {
+      category: 'Interieur',
+      title: 'Keuken',
+      prefix: brandtsPrefix,
+    },
+  ),
+
+  ...createImages(
+    47,
+    48,
+    brandtsLink,
+    'Foto van slaapkamer met rood beddengoed in renovatie in Leuven',
+    {
+      category: 'Slaapkamer',
+      title: 'Slaapkamer',
+      prefix: brandtsPrefix,
+    },
+  ),
+];

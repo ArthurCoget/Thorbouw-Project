@@ -100,18 +100,25 @@ export class ImageGallery implements OnDestroy {
       columnCount,
       rowCount,
       lastRowHasHorizontalItem,
+      figures,
     );
 
-    if (elementsInLastRow === 99) {
+    if (figures.length === 6) {
       figures.at(-1)?.classList.add('last-column');
       elementsInLastRow = 3;
-    }
-
-    if (!lastRowHasVerticalItem && elementsInLastRow != 1) {
+    } else if (elementsInLastRow === -99) {
+      figures.at(-1)?.classList.add('last-column');
+      elementsInLastRow = 3;
+    } else if (elementsInLastRow === -404) {
+      figures.at(-1)?.classList.add('last-column');
+      elementsInLastRow = 4;
+    } else if (!lastRowHasVerticalItem && elementsInLastRow != 1) {
       elementsInLastRow -= 1;
     }
 
-    figures.slice(-elementsInLastRow).forEach((fig) => fig.classList.add('last-row'));
+    if (figures.length >= 5) {
+      figures.slice(-elementsInLastRow).forEach((fig) => fig.classList.add('last-row'));
+    }
   }
 
   ngOnDestroy(): void {
@@ -213,10 +220,11 @@ export class ImageGallery implements OnDestroy {
   ): boolean {
     if (Number.isInteger((numberOfElements - 1) / 4)) return true;
     const totalCells = columns * (rows - 1);
+    if (totalCells + 1 === blocks) return true;
     if (blocks >= totalCells) {
       return false;
     }
-    return true;
+    return false;
   }
 
   private lastRowHasHorizontalItem(
@@ -240,12 +248,17 @@ export class ImageGallery implements OnDestroy {
     columns: number,
     rows: number,
     horizontal: boolean,
+    figures: HTMLElement[] = [],
   ): number {
     const totalCells = columns * rows;
     const emptyCells = totalCells - numberOfBlocks;
     const numberOfElementsInLastRow = columns - emptyCells;
-    if (numberOfElementsInLastRow === 0) {
-      return 99;
+
+    if (numberOfElementsInLastRow <= 0) {
+      return -99;
+    }
+    if (horizontal && (figures.length - 2) % 6 === 0) {
+      return -404;
     }
     return horizontal ? numberOfElementsInLastRow - 1 : numberOfElementsInLastRow;
   }

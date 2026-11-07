@@ -48,8 +48,8 @@ export class InteractiveLeuvenMap implements OnChanges {
     this.maplibregl = (await import('maplibre-gl')).default;
 
     const maxBounds = new LngLatBounds(
-      [4.418231, 50.7366], // Southwest coordinates
-      [5.101988, 50.991537], // Northeast coordinates
+      [3.769376, 50.623412], // Southwest coordinates
+      [5.542294, 51.107913], // Northeast coordinates
     );
 
     this.map = new this.maplibregl.Map({
