@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="about.bottom.contact.link" datatype="html">
         <source>Herkenbaar? Neem contact met ons op!</source>
-        <target state="new">¿Te suena? ¡Ponte en contacto con nosotros!</target>
+        <target state="new">&#191;Te suena? &#161;Ponte en contacto con nosotros!</target>
       </trans-unit>
       <trans-unit id="about.bottom.list.1" datatype="html">
         <source>Volhoudbaar: Thorbouw werkt in het nu, met een blik op morgen.</source>
@@ -13,28 +13,28 @@
       <trans-unit id="about.bottom.list.2" datatype="html">
         <source>Eerlijk: Duiding in het verschil tussen traditionele en bio-ecologische
           bouwtechnieken zodat je een gefundeerde keuze kan maken als klant.</source>
-        <target>Honest: Explicación de la diferencia entre «tradicional» y «bioecológico»
+        <target>Honest: Explicaci&#243;n de la diferencia entre &#171;tradicional&#187; y &#171;bioecol&#243;gico&#187;
 	</target>
       </trans-unit>
       <trans-unit id="about.bottom.list.3" datatype="html">
         <source>Correcte prijszetting waarbij aan alles gedacht wordt.</source>
-        <target>Una tarificación correcta en la que se tiene en cuenta todo.</target>
+        <target>Una tarificaci&#243;n correcta en la que se tiene en cuenta todo.</target>
       </trans-unit>
       <trans-unit id="about.bottom.list.4" datatype="html">
         <source>Low tech: M.a.w. eerst inzetten op de isolatieschil en zo weinig mogelijk technieken
           gebruiken om tot een energiezuinige woning te komen.</source>
-        <target>Baja tecnología: En otras palabras, centrarse en primer lugar en la envolvente térmica y utilizar el menor número
-          posible de sistemas técnicos para conseguir una vivienda energéticamente eficiente.</target>
+        <target>Baja tecnolog&#237;a: En otras palabras, centrarse en primer lugar en la envolvente t&#233;rmica y utilizar el menor n&#250;mero
+          posible de sistemas t&#233;cnicos para conseguir una vivienda energ&#233;ticamente eficiente.</target>
       </trans-unit>
       <trans-unit id="about.bottom.list.5" datatype="html">
         <source>Natuurlijk: respect voor fauna en flora en fascinatie voor water.</source>
-        <target>Natural: respeto por la fauna y la flora, y fascinación por el agua.</target>
+        <target>Natural: respeto por la fauna y la flora, y fascinaci&#243;n por el agua.</target>
       </trans-unit>
       <trans-unit id="about.bottom.list.6" datatype="html">
         <source>Haalbaar: traditioneel of bio-ecologisch wonen zonder extreme ingrepen binnen je
           eigen grenzen en mogelijkheden.</source>
-        <target>Alcanzable: un estilo de vida tradicional o bioecológico sin intervenciones extremas,
-          dentro de tus propios límites y posibilidades.</target>
+        <target>Alcanzable: un estilo de vida tradicional o bioecol&#243;gico sin intervenciones extremas,
+          dentro de tus propios l&#237;mites y posibilidades.</target>
       </trans-unit>
       <trans-unit id="about.bottom.list.7" datatype="html">
         <source>Familiaal: de bewoner met zijn/haar ritme, waarden en gezin staan voorop.</source>
@@ -42,11 +42,11 @@
       </trans-unit>
       <trans-unit id="about.bottom.title" datatype="html">
         <source>Herkent u zich in de visie van Thorbouw?</source>
-        <target>¿Te identificas con la visión de Thorbouw?</target>
+        <target>&#191;Te identificas con la visi&#243;n de Thorbouw?</target>
       </trans-unit>
       <trans-unit id="about.hero.alt" datatype="html">
         <source>Het Thorbouw team werkt aan een duurzaam bouwproject</source>
-	<target state="new">El equipo de Thorbouw está trabajando en un proyecto de construcción sostenible</target>
+	<target state="new">El equipo de Thorbouw est&#225; trabajando en un proyecto de construcci&#243;n sostenible</target>
       </trans-unit>
       <trans-unit id="about.hero.title" datatype="html">
         <source>Over Thorbouw</source>
@@ -56,13 +56,13 @@
         <source>Met meer dan <x id="PH" equiv-text="new Date().getFullYear() - START_YEAR" /> jaar
           ervaring in de bouwsector en een groeiend bewustzijn rond milieu-impact en duurzaamheid,
           ontstond de drang om het anders aan te pakken. In september 2018 startte daarom de
-          opleiding “Bio Ecologisch Bouwen” aan Odisee, KU Leuven, met als doel bewuster en
+          opleiding &#8220;Bio Ecologisch Bouwen&#8221; aan Odisee, KU Leuven, met als doel bewuster en
           toekomstgericht te bouwen.</source>
-        <target>Con más de <x id="PH" equiv-text="new Date().getFullYear() - START_YEAR" />
-          años de experiencia en el sector de la construcción y una creciente concienciación sobre el impacto medioambiental
-          y la sostenibilidad, surgió la necesidad de abordar las cosas de otra manera. En septiembre
-          de 2018, esto dio lugar al inicio de la formación en «Construcción bioecológica» en Odisee, KU
-          Leuven, con el objetivo de construir de forma más consciente y con la vista puesta en el futuro.</target>
+        <target>Con m&#225;s de <x id="PH" equiv-text="new Date().getFullYear() - START_YEAR" />
+          a&#241;os de experiencia en el sector de la construcci&#243;n y una creciente concienciaci&#243;n sobre el impacto medioambiental
+          y la sostenibilidad, surgi&#243; la necesidad de abordar las cosas de otra manera. En septiembre
+          de 2018, esto dio lugar al inicio de la formaci&#243;n en &#171;Construcci&#243;n bioecol&#243;gica&#187; en Odisee, KU
+          Leuven, con el objetivo de construir de forma m&#225;s consciente y con la vista puesta en el futuro.</target>
       </trans-unit>
       <trans-unit id="about.more.1.description_two" datatype="html">
         <source>Eind 2018 lanceert hij dan de Bvba Thorbouw: een ecologisch bouwbedrijf dat een
@@ -70,10 +70,10 @@
           alleen vandaag inzetten op puur bouwen en comfortabel wonen, maar ook investeren in morgen
           en een zorgeloos leven voor de volgende generaties, met aandacht voor mens, natuur en
           omgeving.</source>
-        <target>A finales de 2018, fundó Thorbouw: una empresa de construcción ecológica que
+        <target>A finales de 2018, fund&#243; Thorbouw: una empresa de construcci&#243;n ecol&#243;gica que
           aplica un enfoque sencillo, transparente y personal. Con Thorbouw, no solo quiere
-          centrarse en la construcción propiamente dicha y en el confort en el día a día, sino también invertir en el futuro
-          y en una vida sin preocupaciones para las generaciones venideras, prestando atención a las personas, la naturaleza y el
+          centrarse en la construcci&#243;n propiamente dicha y en el confort en el d&#237;a a d&#237;a, sino tambi&#233;n invertir en el futuro
+          y en una vida sin preocupaciones para las generaciones venideras, prestando atenci&#243;n a las personas, la naturaleza y el
           medio ambiente.</target>
       </trans-unit>
       <trans-unit id="about.more.1.title" datatype="html">
@@ -86,8 +86,8 @@
           continu willen bijleren en groeien, met aandacht voor kwaliteit, detail en een sterke
           betrokkenheid bij elk project dat we realiseren.</source>
         <target>A pesar de nuestra experiencia en obra nueva, reformas y remodelaciones,
-          mantenemos deliberadamente un enfoque joven y dinámico. Nuestra ambición y curiosidad garantizan
-          que tengamos un deseo constante de aprender y crecer, centrándonos en la calidad, el detalle y un firme
+          mantenemos deliberadamente un enfoque joven y din&#225;mico. Nuestra ambici&#243;n y curiosidad garantizan
+          que tengamos un deseo constante de aprender y crecer, centr&#225;ndonos en la calidad, el detalle y un firme
           compromiso con cada proyecto que llevamos a cabo.</target>
       </trans-unit>
       <trans-unit id="about.more.2.description_two" datatype="html">
@@ -95,9 +95,9 @@
           gaan naar innovatieve oplossingen en duurzame materialen. Zo combineren we nieuwe
           inzichten met praktijkervaring om onze klanten een kwalitatief, toekomstgericht en
           doordacht eindresultaat te bieden.</source>
-        <target>Esta mentalidad también se refleja en nuestros proyectos, en los que buscamos constantemente
+        <target>Esta mentalidad tambi&#233;n se refleja en nuestros proyectos, en los que buscamos constantemente
           soluciones innovadoras y materiales sostenibles. De este modo, combinamos nuevos conocimientos con
-          la experiencia práctica para ofrecer a nuestros clientes un resultado final de alta calidad, orientado al futuro y
+          la experiencia pr&#225;ctica para ofrecer a nuestros clientes un resultado final de alta calidad, orientado al futuro y
           bien pensado.</target>
       </trans-unit>
       <trans-unit id="about.more.2.title" datatype="html">
@@ -109,19 +109,19 @@
           met hun eigen specialisatie binnen de bouwsector. Deze samenwerkingen stellen ons in staat
           om kennis te delen en elk project te ondersteunen met de juiste expertise, van
           voorbereiding tot uitvoering.</source>
-        <target>Contamos con una sólida red de expertos y socios de confianza, cada uno con su
-          propia especialización dentro del sector de la construcción. Estas colaboraciones nos permiten compartir
-          conocimientos y respaldar cada proyecto con la experiencia adecuada, desde la preparación hasta
-          la ejecución.</target>
+        <target>Contamos con una s&#243;lida red de expertos y socios de confianza, cada uno con su
+          propia especializaci&#243;n dentro del sector de la construcci&#243;n. Estas colaboraciones nos permiten compartir
+          conocimientos y respaldar cada proyecto con la experiencia adecuada, desde la preparaci&#243;n hasta
+          la ejecuci&#243;n.</target>
       </trans-unit>
       <trans-unit id="about.more.3.description_two" datatype="html">
         <source>Dankzij deze sterke samenwerkingen kunnen we elk project met vertrouwen aanpakken en
           tot in detail uitwerken. We waken over kwaliteit, budget en planning, zodat het
           eindresultaat niet alleen technisch klopt, maar ook volledig aansluit bij de verwachtingen
           van de klant.</source>
-        <target>Gracias a estas sólidas colaboraciones, podemos abordar cualquier proyecto con confianza y
-          desarrollarlo hasta el más mínimo detalle. Controlamos la calidad, el presupuesto y la planificación para que
-          el resultado final no solo sea técnicamente sólido, sino que también se ajuste plenamente a las
+        <target>Gracias a estas s&#243;lidas colaboraciones, podemos abordar cualquier proyecto con confianza y
+          desarrollarlo hasta el m&#225;s m&#237;nimo detalle. Controlamos la calidad, el presupuesto y la planificaci&#243;n para que
+          el resultado final no solo sea t&#233;cnicamente s&#243;lido, sino que tambi&#233;n se ajuste plenamente a las
           expectativas del cliente.</target>
       </trans-unit>
       <trans-unit id="about.more.3.title" datatype="html">
@@ -141,23 +141,23 @@
           visie op de toekomst en een groot hart voor de volgende generaties. Persoonlijk en
           milieubewust aankopen, bouwen, renoveren, inrichten of ontwikkelen in Leuven en ruime
           omgeving. Ruime ervaring in zowel traditionele als bio-ecologische bouwtechnieken.</source>
-        <target>Bienvenidos a Thorbouw, vuestro socio de confianza en el sector de la construcción y contratista general con
-          una visión de futuro y un gran compromiso con las generaciones venideras. Compras, construcción,
-          renovación, decoración o promoción inmobiliaria con un enfoque personal y respetuoso con el medio ambiente
+        <target>Bienvenidos a Thorbouw, vuestro socio de confianza en el sector de la construcci&#243;n y contratista general con
+          una visi&#243;n de futuro y un gran compromiso con las generaciones venideras. Compras, construcci&#243;n,
+          renovaci&#243;n, decoraci&#243;n o promoci&#243;n inmobiliaria con un enfoque personal y respetuoso con el medio ambiente
           en Lovaina y toda la
-          región. Amplia experiencia en técnicas de construcción tanto tradicionales como bioecológicas
+          regi&#243;n. Amplia experiencia en t&#233;cnicas de construcci&#243;n tanto tradicionales como bioecol&#243;gicas
           .</target>
       </trans-unit>
       <trans-unit id="about.top.title" datatype="html">
         <source>Wie Zijn We?</source>
-        <target>¿Quiénes somos?</target>
+        <target>&#191;Qui&#233;nes somos?</target>
       </trans-unit>
       <trans-unit id="about.values.1.description" datatype="html">
         <source>Bij Thorbouw nemen we de volledige verantwoordelijkheid voor uw bouwproject, van
           begin tot eind. We zorgen ervoor dat alles soepel verloopt, zodat u zich geen zorgen hoeft
           te maken.</source>
-        <target>En Thorbouw, asumimos toda la responsabilidad de tu proyecto de construcción, de principio
-          a fin. Nos aseguramos de que todo salga a la perfección para que no tengas que preocuparte por nada.</target>
+        <target>En Thorbouw, asumimos toda la responsabilidad de tu proyecto de construcci&#243;n, de principio
+          a fin. Nos aseguramos de que todo salga a la perfecci&#243;n para que no tengas que preocuparte por nada.</target>
       </trans-unit>
       <trans-unit id="about.values.1.title" datatype="html">
         <source>Ontzorging</source>
@@ -167,7 +167,7 @@
         <source>We begrijpen dat budgettering cruciaal is voor elk bouwproject. Daarom werken we
           nauw samen met onze klanten om ervoor te zorgen dat we binnen het afgesproken budget
           blijven, zonder concessies te doen aan de kwaliteit.</source>
-        <target>Somos conscientes de que la gestión presupuestaria es fundamental en cualquier proyecto de construcción. Por eso
+        <target>Somos conscientes de que la gesti&#243;n presupuestaria es fundamental en cualquier proyecto de construcci&#243;n. Por eso
           colaboramos estrechamente con nuestros clientes para garantizar que nos mantenemos dentro del presupuesto acordado sin
           renunciar a la calidad.</target>
       </trans-unit>
@@ -178,7 +178,7 @@
       <trans-unit id="about.values.3.description" datatype="html">
         <source>We zorgen ervoor dat alle bouwactiviteiten voldoen aan de relevante wet- en
           regelgeving, zodat uw project veilig en legaal wordt uitgevoerd.</source>
-        <target>Nos aseguramos de que todas las actividades de construcción cumplan con la legislación y
+        <target>Nos aseguramos de que todas las actividades de construcci&#243;n cumplan con la legislaci&#243;n y
           la normativa pertinentes, para que su proyecto se lleve a cabo de forma segura y conforme a la ley.</target>
       </trans-unit>
       <trans-unit id="about.values.3.title" datatype="html">
@@ -186,32 +186,32 @@
         <target>Cumplimiento normativo</target>
       </trans-unit>
       <trans-unit id="about.values.4.description" datatype="html">
-        <source>We coördineren alle aspecten van het bouwproces, van de planning tot de uitvoering,
+        <source>We co&#246;rdineren alle aspecten van het bouwproces, van de planning tot de uitvoering,
           om ervoor te zorgen dat alles op tijd en volgens plan verloopt.</source>
-        <target>Coordinamos todos los aspectos del proceso de construcción, desde la planificación hasta la ejecución,
-          para garantizar que todo se desarrolle a tiempo y según lo previsto.</target>
+        <target>Coordinamos todos los aspectos del proceso de construcci&#243;n, desde la planificaci&#243;n hasta la ejecuci&#243;n,
+          para garantizar que todo se desarrolle a tiempo y seg&#250;n lo previsto.</target>
       </trans-unit>
       <trans-unit id="about.values.4.title" datatype="html">
-        <source>Coördinatie</source>
-        <target>Coordinación</target>
+        <source>Co&#246;rdinatie</source>
+        <target>Coordinaci&#243;n</target>
       </trans-unit>
       <trans-unit id="about.values.5.description" datatype="html">
         <source>We maken gedetailleerde planningen voor elk project, zodat u altijd weet wat waar en
           wanneer gebeurt. We zorgen ervoor dat alle werkzaamheden op elkaar zijn afgestemd voor een
-          efficiënte uitvoering.</source>
-        <target>Elaboramos calendarios detallados para cada proyecto, para que siempre sepas qué, dónde y
-          cuándo se llevan a cabo las distintas tareas. Nos aseguramos de que todas las actividades estén coordinadas para garantizar una ejecución eficiente.</target>
+          effici&#235;nte uitvoering.</source>
+        <target>Elaboramos calendarios detallados para cada proyecto, para que siempre sepas qu&#233;, d&#243;nde y
+          cu&#225;ndo se llevan a cabo las distintas tareas. Nos aseguramos de que todas las actividades est&#233;n coordinadas para garantizar una ejecuci&#243;n eficiente.</target>
       </trans-unit>
       <trans-unit id="about.values.5.title" datatype="html">
         <source>Planning</source>
-        <target>Planificación</target>
+        <target>Planificaci&#243;n</target>
       </trans-unit>
       <trans-unit id="about.values.6.description" datatype="html">
         <source>We nemen volledige verantwoordelijkheid over de kwaliteit van ons werk en de
           tevredenheid van onze klanten. We streven ernaar om elk project tot een succesvol einde te
           brengen.</source>
         <target>Asumimos toda la responsabilidad por la calidad de nuestro trabajo y la
-          satisfacción de nuestros clientes. Nos esforzamos por llevar cada proyecto a buen término.</target>
+          satisfacci&#243;n de nuestros clientes. Nos esforzamos por llevar cada proyecto a buen t&#233;rmino.</target>
       </trans-unit>
       <trans-unit id="about.values.6.title" datatype="html">
         <source>Verantwoordelijkheid</source>
@@ -221,18 +221,18 @@
         <source>We bieden uitgebreide begeleiding gedurende het hele bouwproces, vanaf het eerste
           verkennend gesprek tot de uiteindelijke oplevering, om ervoor te zorgen dat uw visie
           werkelijkheid wordt.</source>
-        <target>Ofrecemos un asesoramiento integral a lo largo de todo el proceso de construcción, desde la
-          reunión exploratoria inicial hasta la entrega final, para garantizar que su visión se haga realidad.</target>
+        <target>Ofrecemos un asesoramiento integral a lo largo de todo el proceso de construcci&#243;n, desde la
+          reuni&#243;n exploratoria inicial hasta la entrega final, para garantizar que su visi&#243;n se haga realidad.</target>
       </trans-unit>
       <trans-unit id="about.values.7.title" datatype="html">
         <source>Begeleiding</source>
-        <target>Orientación</target>
+        <target>Orientaci&#243;n</target>
       </trans-unit>
       <trans-unit id="about.values.8.description" datatype="html">
         <source>Kwaliteit staat bij ons voorop. We gebruiken alleen de beste materialen en werken
           met ervaren vakmensen om ervoor te zorgen dat elk project van de hoogste kwaliteit is.</source>
-        <target>La calidad es nuestra máxima prioridad. Solo utilizamos los mejores materiales y colaboramos con
-          profesionales con amplia experiencia para garantizar que cada proyecto sea de la máxima calidad.</target>
+        <target>La calidad es nuestra m&#225;xima prioridad. Solo utilizamos los mejores materiales y colaboramos con
+          profesionales con amplia experiencia para garantizar que cada proyecto sea de la m&#225;xima calidad.</target>
       </trans-unit>
       <trans-unit id="about.values.8.title" datatype="html">
         <source>Kwalitatief</source>
@@ -245,17 +245,17 @@
       </trans-unit>
       <trans-unit id="advies.cta1.button" datatype="html">
         <source>Neem contact met ons op</source>
-        <target>Contáctanos</target>
+        <target>Cont&#225;ctanos</target>
       </trans-unit>
       <trans-unit id="advies.cta1.subtitle" datatype="html">
         <source>Maak doordachte keuzes vanaf de start. Wij begeleiden u met eerlijk, duurzaam en
           praktisch advies voor uw bouw- of renovatieproject.</source>
         <target>Toma decisiones bien meditadas desde el principio. Te orientamos con consejos sinceros, sostenibles
-          y prácticos para tu proyecto de construcción o reforma.</target>
+          y pr&#225;cticos para tu proyecto de construcci&#243;n o reforma.</target>
       </trans-unit>
       <trans-unit id="advies.cta1.title" datatype="html">
         <source>Bouwkundig advies zonder verrassingen</source>
-        <target>Asesoramiento en construcción sin sorpresas</target>
+        <target>Asesoramiento en construcci&#243;n sin sorpresas</target>
       </trans-unit>
       <trans-unit id="advies.cta2.button" datatype="html">
         <source>Bekijk onze werkwijze</source>
@@ -265,22 +265,22 @@
         <source>Met ons bouwkundig advies begeleiden we u van idee tot realistisch plan, zodat u
           verrassingen, onnodige kosten en technische problemen vermijdt. Wij denken met u mee, niet
           alleen over wat mogelijk is, maar vooral over wat de beste oplossing is op lange termijn.</source>
-        <target>Con nuestro asesoramiento en materia de construcción, te acompañamos desde la idea inicial hasta un plan realista, ayudándote a
-          evitar sorpresas, gastos innecesarios y problemas técnicos. Pensamos contigo, no
-          solo en lo que es posible, sino, sobre todo, en cuál es la mejor solución a largo plazo.</target>
+        <target>Con nuestro asesoramiento en materia de construcci&#243;n, te acompa&#241;amos desde la idea inicial hasta un plan realista, ayud&#225;ndote a
+          evitar sorpresas, gastos innecesarios y problemas t&#233;cnicos. Pensamos contigo, no
+          solo en lo que es posible, sino, sobre todo, en cu&#225;l es la mejor soluci&#243;n a largo plazo.</target>
       </trans-unit>
       <trans-unit id="advies.cta2.title" datatype="html">
         <source>Een succesvolle renovatie of bouwproject start niet op de werf</source>
-        <target>Un proyecto de reforma o construcción que tenga éxito no empieza en la
+        <target>Un proyecto de reforma o construcci&#243;n que tenga &#233;xito no empieza en la
           obra</target>
       </trans-unit>
       <trans-unit id="advies.hero.altText" datatype="html">
         <source>Renovatie van een badkamer gedaan door Thorbouw</source>
-	<target state="new">Renovación de un cuarto de baño realizada por Thorbouw</target>
+	<target state="new">Renovaci&#243;n de un cuarto de ba&#241;o realizada por Thorbouw</target>
       </trans-unit>
       <trans-unit id="advies.hero.title" datatype="html">
         <source>Bouwkundig Advies</source>
-	<target state="new">Asesoramiento en construcción</target>
+	<target state="new">Asesoramiento en construcci&#243;n</target>
       </trans-unit>
       <trans-unit id="advies.img.bedroom" datatype="html">
         <source>Afgewerkte slaapkamer door Thorbouw</source>
@@ -292,11 +292,11 @@
       </trans-unit>
       <trans-unit id="advies.img.kitchen" datatype="html">
         <source>Foto van een deel van de woonkamen en keuken</source>
-        <target>Foto de parte del salón y la cocina</target>
+        <target>Foto de parte del sal&#243;n y la cocina</target>
       </trans-unit>
       <trans-unit id="advies.img.livingroom" datatype="html">
         <source>Moderne woonkamer gerenoveerd door Thorbouw</source>
-        <target>Salón moderno renovado por Thorbouw</target>
+        <target>Sal&#243;n moderno renovado por Thorbouw</target>
       </trans-unit>
       <trans-unit id="advies.img.terrace" datatype="html">
         <source>Afbeelding van een gerenoveerd terras door Thorbouw</source>
@@ -310,27 +310,27 @@
         <source>Thorbouw kiest voor volhoudbare oplossingen die comfort, energiezuinigheid en een
           gezond binnenklimaat combineren.</source>
         <target>Thorbouw apuesta por soluciones sostenibles (&quot;volhoudbaar&quot;) que combinan
-          el confort, la eficiencia energética y un clima interior saludable.</target>
+          el confort, la eficiencia energ&#233;tica y un clima interior saludable.</target>
       </trans-unit>
       <trans-unit id="advies.snake.1.title" datatype="html">
         <source>Duurzaam en toekomstgericht</source>
-        <target>Sostenible y con visión de futuro</target>
+        <target>Sostenible y con visi&#243;n de futuro</target>
       </trans-unit>
       <trans-unit id="advies.snake.10.subtitle" datatype="html">
         <source>Door samen te werken met de seizoenen kunnen we technische problemen aanpakken. Zo
           ontstaat er ruimte voor duurzame oplossingen die meegroeien met veranderende
           omstandigheden.</source>
-        <target>Si nos adaptamos al ritmo de las estaciones, podemos hacer frente a los problemas técnicos. Esto da lugar a
+        <target>Si nos adaptamos al ritmo de las estaciones, podemos hacer frente a los problemas t&#233;cnicos. Esto da lugar a
           soluciones sostenibles que evolucionan al ritmo de las condiciones cambiantes.</target>
       </trans-unit>
       <trans-unit id="advies.snake.10.title" datatype="html">
         <source>Hand in hand met natuur</source>
-        <target>En armonía con la naturaleza</target>
+        <target>En armon&#237;a con la naturaleza</target>
       </trans-unit>
       <trans-unit id="advies.snake.11.subtitle" datatype="html">
         <source>Wij geloven in samenwerken op lange termijn en werken steeds af alsof het ons eigen
           project is.</source>
-        <target>Creemos en la colaboración a largo plazo y siempre llevamos a cabo cada proyecto como si fuera
+        <target>Creemos en la colaboraci&#243;n a largo plazo y siempre llevamos a cabo cada proyecto como si fuera
           el nuestro.</target>
       </trans-unit>
       <trans-unit id="advies.snake.11.title" datatype="html">
@@ -340,7 +340,7 @@
       <trans-unit id="advies.snake.2.subtitle" datatype="html">
         <source>Van eerste idee tot uitvoering begeleiden wij u stap voor stap met een directe en
           transparante aanpak.</source>
-        <target>Desde la idea inicial hasta su puesta en práctica, te guiamos paso a paso con un enfoque directo y
+        <target>Desde la idea inicial hasta su puesta en pr&#225;ctica, te guiamos paso a paso con un enfoque directo y
           transparente.</target>
       </trans-unit>
       <trans-unit id="advies.snake.2.title" datatype="html">
@@ -350,30 +350,30 @@
       <trans-unit id="advies.snake.3.subtitle" datatype="html">
         <source>We bekijken de technische mogelijkheden van uw woning en geven helder advies
           afgestemd op uw situatie en budget.</source>
-        <target>Analizamos las posibilidades técnicas de tu vivienda y te ofrecemos un asesoramiento claro
-          adaptado a tu situación y a tu presupuesto.</target>
+        <target>Analizamos las posibilidades t&#233;cnicas de tu vivienda y te ofrecemos un asesoramiento claro
+          adaptado a tu situaci&#243;n y a tu presupuesto.</target>
       </trans-unit>
       <trans-unit id="advies.snake.3.title" datatype="html">
         <source>Analyse van uw woning</source>
-        <target>Análisis de tu vivienda</target>
+        <target>An&#225;lisis de tu vivienda</target>
       </trans-unit>
       <trans-unit id="advies.snake.4.subtitle" datatype="html">
-        <source>Geen ingewikkelde theorieën, maar realistische oplossingen die werken op lange
-          termijn en écht meerwaarde bieden.</source>
-        <target>Nada de teorías complicadas, sino soluciones realistas que funcionan a largo plazo y
-          que realmente aportan un valor añadido.</target>
+        <source>Geen ingewikkelde theorie&#235;n, maar realistische oplossingen die werken op lange
+          termijn en &#233;cht meerwaarde bieden.</source>
+        <target>Nada de teor&#237;as complicadas, sino soluciones realistas que funcionan a largo plazo y
+          que realmente aportan un valor a&#241;adido.</target>
       </trans-unit>
       <trans-unit id="advies.snake.4.title" datatype="html">
         <source>Praktische oplossingen</source>
-        <target>Soluciones prácticas</target>
+        <target>Soluciones pr&#225;cticas</target>
       </trans-unit>
       <trans-unit id="advies.snake.5.subtitle" datatype="html">
         <source>Met professioneel bouwkundig advies voorkomt u verkeerde keuzes, onverwachte kosten
           en technische problemen achteraf. We leiden de weg door een landschap met putten als
           vendor lock-in, schijnkwaliteit en verborgen kosten.</source>
-        <target>Con un asesoramiento profesional en materia de construcción, evitarás decisiones erróneas, gastos inesperados
-          y problemas técnicos posteriores. Te guiamos a través de un panorama plagado de dificultades, como
-          la dependencia de un único proveedor, la «pseudo-calidad» y los costes ocultos.</target>
+        <target>Con un asesoramiento profesional en materia de construcci&#243;n, evitar&#225;s decisiones err&#243;neas, gastos inesperados
+          y problemas t&#233;cnicos posteriores. Te guiamos a trav&#233;s de un panorama plagado de dificultades, como
+          la dependencia de un &#250;nico proveedor, la &#171;pseudo-calidad&#187; y los costes ocultos.</target>
       </trans-unit>
       <trans-unit id="advies.snake.5.title" datatype="html">
         <source>Voorkom dure fouten</source>
@@ -385,22 +385,22 @@
       </trans-unit>
       <trans-unit id="advies.snake.6.title" datatype="html">
         <source>Fauna inclusief bouwen</source>
-        <target>Construcción respetuosa con la fauna</target>
+        <target>Construcci&#243;n respetuosa con la fauna</target>
       </trans-unit>
       <trans-unit id="advies.snake.7.subtitle" datatype="html">
         <source>We denken mee over indeling, isolatie, ventilatie en materiaalkeuzes om uw woning
-          efficiënter en aangenamer te maken.</source>
-        <target>Tenemos en cuenta la distribución, el aislamiento, la ventilación y la elección de los materiales para que
-          tu hogar sea más eficiente y cómodo.</target>
+          effici&#235;nter en aangenamer te maken.</source>
+        <target>Tenemos en cuenta la distribuci&#243;n, el aislamiento, la ventilaci&#243;n y la elecci&#243;n de los materiales para que
+          tu hogar sea m&#225;s eficiente y c&#243;modo.</target>
       </trans-unit>
       <trans-unit id="advies.snake.7.title" datatype="html">
         <source>Slim renoveren</source>
-        <target>Renovación inteligente</target>
+        <target>Renovaci&#243;n inteligente</target>
       </trans-unit>
       <trans-unit id="advies.snake.8.subtitle" datatype="html">
         <source>Heldere communicatie en eerlijk advies vormen de basis van elk project dat wij
           begeleiden.</source>
-        <target>Una comunicación clara y un asesoramiento honesto constituyen la base de todos los proyectos que llevamos a cabo.</target>
+        <target>Una comunicaci&#243;n clara y un asesoramiento honesto constituyen la base de todos los proyectos que llevamos a cabo.</target>
       </trans-unit>
       <trans-unit id="advies.snake.8.title" datatype="html">
         <source>Transparantie centraal</source>
@@ -410,11 +410,11 @@
         <source>Waar mogelijk adviseren we natuurlijke en duurzame materialen die bijdragen aan een
           gezonde en energiezuinige woning.</source>
         <target>Siempre que sea posible, recomendamos materiales naturales y sostenibles que contribuyan a
-          una vivienda saludable y energéticamente eficiente.</target>
+          una vivienda saludable y energ&#233;ticamente eficiente.</target>
       </trans-unit>
       <trans-unit id="advies.snake.9.title" datatype="html">
         <source>Bio-ecologisch bouwen</source>
-        <target>Construcción bioecológica</target>
+        <target>Construcci&#243;n bioecol&#243;gica</target>
       </trans-unit>
       <trans-unit id="contact.hero.alt" datatype="html">
         <source>Thorbouw</source>
@@ -426,11 +426,11 @@
       </trans-unit>
       <trans-unit id="contact.list.instagram.aria" datatype="html">
         <source>Follow us on Instagram</source>
-        <target>Síguenos en Instagram</target>
+        <target>S&#237;guenos en Instagram</target>
       </trans-unit>
       <trans-unit id="contact.list.instagram.description" datatype="html">
         <source>Bekijk onze Instagram-pagina voor de nieuwste updates en foto&apos;s.</source>
-        <target>Echa un vistazo a nuestra página de Instagram para ver las últimas novedades y fotos.</target>
+        <target>Echa un vistazo a nuestra p&#225;gina de Instagram para ver las &#250;ltimas novedades y fotos.</target>
       </trans-unit>
       <trans-unit id="contact.list.instagram.linkText" datatype="html">
         <source>Bekijk op Instagram</source>
@@ -438,15 +438,15 @@
       </trans-unit>
       <trans-unit id="contact.list.instagram.title" datatype="html">
         <source>Volg ons op Instagram</source>
-        <target>Síguenos en Instagram</target>
+        <target>S&#237;guenos en Instagram</target>
       </trans-unit>
       <trans-unit id="contact.list.linkedin.aria" datatype="html">
         <source>Follow us on LinkedIn</source>
-        <target>Síguenos en LinkedIn</target>
+        <target>S&#237;guenos en LinkedIn</target>
       </trans-unit>
       <trans-unit id="contact.list.linkedin.description" datatype="html">
         <source>Bekijk onze LinkedIn-pagina voor de nieuwste updates en foto&apos;s.</source>
-        <target>Echa un vistazo a nuestra página de LinkedIn para ver las últimas novedades y fotos.</target>
+        <target>Echa un vistazo a nuestra p&#225;gina de LinkedIn para ver las &#250;ltimas novedades y fotos.</target>
       </trans-unit>
       <trans-unit id="contact.list.linkedin.linkText" datatype="html">
         <source>Bekijk op LinkedIn</source>
@@ -454,35 +454,35 @@
       </trans-unit>
       <trans-unit id="contact.list.linkedin.title" datatype="html">
         <source>Volg ons op LinkedIn</source>
-        <target>Síguenos en LinkedIn</target>
+        <target>S&#237;guenos en LinkedIn</target>
       </trans-unit>
       <trans-unit id="contact.list.mail.aria" datatype="html">
         <source>Send us an email</source>
-        <target>Envíanos un correo electrónico</target>
+        <target>Env&#237;anos un correo electr&#243;nico</target>
       </trans-unit>
       <trans-unit id="contact.list.mail.description" datatype="html">
         <source>Heeft u vragen of wilt u meer informatie? Stuur ons een email op
           &lt;b&gt;info@thorbouw.be&lt;/b&gt; en we zullen zo snel mogelijk reageren.</source>
-        <target>¿Tienes alguna duda o quieres más información? Envíanos un correo electrónico a
+        <target>&#191;Tienes alguna duda o quieres m&#225;s informaci&#243;n? Env&#237;anos un correo electr&#243;nico a
           &lt;b&gt;info@thorbouw.be&lt;/b&gt; y te responderemos lo antes posible.</target>
       </trans-unit>
       <trans-unit id="contact.list.mail.linkText" datatype="html">
         <source>Stuur een email</source>
-        <target>Envía un correo electrónico</target>
+        <target>Env&#237;a un correo electr&#243;nico</target>
       </trans-unit>
       <trans-unit id="contact.list.mail.title" datatype="html">
         <source>Contacteer ons via email</source>
-        <target>Contáctanos por correo electrónico</target>
+        <target>Cont&#225;ctanos por correo electr&#243;nico</target>
       </trans-unit>
       <trans-unit id="contact.list.map.aria" datatype="html">
         <source>View our location on Google Maps</source>
-        <target>Ver nuestra ubicación en Google Maps</target>
+        <target>Ver nuestra ubicaci&#243;n en Google Maps</target>
       </trans-unit>
       <trans-unit id="contact.list.map.description" datatype="html">
         <source>U kunt ons vinden op &lt;b&gt;Hoveniersdreef 64, 3001 Heverlee&lt;/b&gt;. Klik hier
           om onze locatie op Google Maps te bekijken.</source>
-        <target>Nos encontrarás en &lt;b&gt;Hoveniersdreef 64, 3001 Heverlee&lt;/b&gt;. Haz clic aquí
-          para ver nuestra ubicación en Google Maps.</target>
+        <target>Nos encontrar&#225;s en &lt;b&gt;Hoveniersdreef 64, 3001 Heverlee&lt;/b&gt;. Haz clic aqu&#237;
+          para ver nuestra ubicaci&#243;n en Google Maps.</target>
       </trans-unit>
       <trans-unit id="contact.list.map.linkText" datatype="html">
         <source>Bekijk op Google Maps</source>
@@ -490,25 +490,25 @@
       </trans-unit>
       <trans-unit id="contact.list.map.title" datatype="html">
         <source>Onze Locatie</source>
-        <target>Nuestra ubicación</target>
+        <target>Nuestra ubicaci&#243;n</target>
       </trans-unit>
       <trans-unit id="contact.list.phone.aria" datatype="html">
         <source>Call us</source>
-        <target>Llámanos</target>
+        <target>Ll&#225;manos</target>
       </trans-unit>
       <trans-unit id="contact.list.phone.description" datatype="html">
         <source>Heeft u vragen of wilt u meer informatie? Bel ons op &lt;b&gt;0032 475 530
           214&lt;/b&gt;.</source>
-        <target>¿Tienes alguna duda o quieres más información? Llámanos al &lt;b&gt;0032 475 530
+        <target>&#191;Tienes alguna duda o quieres m&#225;s informaci&#243;n? Ll&#225;manos al &lt;b&gt;0032 475 530
           214&lt;/b&gt;.</target>
       </trans-unit>
       <trans-unit id="contact.list.phone.linkText" datatype="html">
         <source>Bel ons</source>
-        <target>Llámanos</target>
+        <target>Ll&#225;manos</target>
       </trans-unit>
       <trans-unit id="contact.list.phone.title" datatype="html">
         <source>Snelste manier om ons te bereiken: Bel ons</source>
-        <target>La forma más rápida de contactar con nosotros: llámanos</target>
+        <target>La forma m&#225;s r&#225;pida de contactar con nosotros: ll&#225;manos</target>
       </trans-unit>
       <trans-unit id="contact.top.subtitle" datatype="html">
         <source>We helpen u met plezier verder.</source>
@@ -516,7 +516,7 @@
       </trans-unit>
       <trans-unit id="contact.top.title" datatype="html">
         <source>Neem zeker contact op. Indien u vragen heeft zijn wij er om u te helpen.</source>
-        <target>No dudes en ponerte en contacto con nosotros. Si tienes alguna pregunta, estamos aquí para ayudarte.</target>
+        <target>No dudes en ponerte en contacto con nosotros. Si tienes alguna pregunta, estamos aqu&#237; para ayudarte.</target>
       </trans-unit>
       <trans-unit id="footer.background.alt" datatype="html">
         <source>Achtergrondafbeelding van projecten van Thorbouw</source>
@@ -524,11 +524,11 @@
       </trans-unit>
       <trans-unit id="footer.contact.mail.alt" datatype="html">
         <source>E-mail-icoon</source>
-        <target>Icono de correo electrónico</target>
+        <target>Icono de correo electr&#243;nico</target>
       </trans-unit>
       <trans-unit id="footer.contact.mail.ariaLabel" datatype="html">
         <source>Stuur ons een e-mail</source>
-        <target>Envíanos un correo electrónico</target>
+        <target>Env&#237;anos un correo electr&#243;nico</target>
       </trans-unit>
       <trans-unit id="footer.contact.map.alt" datatype="html">
         <source>Google Maps-icoon</source>
@@ -536,21 +536,21 @@
       </trans-unit>
       <trans-unit id="footer.contact.map.ariaLabel" datatype="html">
         <source>Bekijk onze locatie op Google Maps</source>
-        <target>Ver nuestra ubicación en Google Maps</target>
+        <target>Ver nuestra ubicaci&#243;n en Google Maps</target>
       </trans-unit>
       <trans-unit id="footer.contact.phone.alt" datatype="html">
         <source>Telefoon-icoon</source>
-        <target>Icono de teléfono</target>
+        <target>Icono de tel&#233;fono</target>
       </trans-unit>
       <trans-unit id="footer.contact.phone.ariaLabel" datatype="html">
         <source>Bel ons</source>
-        <target>Llámanos</target>
+        <target>Ll&#225;manos</target>
       </trans-unit>
       <trans-unit id="footer.credits" datatype="html">
         <source>Website gemaakt door: <x id="START_LINK" ctype="x-a"
             equiv-text="&lt;a href=&quot;https://www.linkedin.com/in/arthur-coget-inf/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; &gt;" />Arthur
           Coget<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;" /> &amp;&amp; Tom Lauwers </source>
-        <target>Página web creada por: <x id="START_LINK" ctype="x-a"
+        <target>P&#225;gina web creada por: <x id="START_LINK" ctype="x-a"
             equiv-text="&lt;a href=&quot;https://www.linkedin.com/in/arthur-coget-inf/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; &gt;" />Arthur
           Coget<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;" /> &amp;&amp; Tom Lauwers </target>
       </trans-unit>
@@ -564,7 +564,7 @@
       </trans-unit>
       <trans-unit id="footer.nav.advice" datatype="html">
         <source>Bouwkundig Advies</source>
-        <target>Asesoramiento en construcción</target>
+        <target>Asesoramiento en construcci&#243;n</target>
       </trans-unit>
       <trans-unit id="footer.nav.contact" datatype="html">
         <source>Contact</source>
@@ -572,7 +572,7 @@
       </trans-unit>
       <trans-unit id="footer.nav.home" datatype="html">
         <source>Home Pagina</source>
-        <target>Página de inicio</target>
+        <target>P&#225;gina de inicio</target>
       </trans-unit>
       <trans-unit id="footer.nav.photos" datatype="html">
         <source>Foto&apos;s &amp; Realisaties</source>
@@ -592,7 +592,7 @@
       </trans-unit>
       <trans-unit id="footer.social.instagram.ariaLabel" datatype="html">
         <source>Volg ons op Instagram</source>
-        <target>Síguenos en Instagram</target>
+        <target>S&#237;guenos en Instagram</target>
       </trans-unit>
       <trans-unit id="footer.social.linkedin.alt" datatype="html">
         <source>LinkedIn-icoon</source>
@@ -600,7 +600,7 @@
       </trans-unit>
       <trans-unit id="footer.social.linkedin.ariaLabel" datatype="html">
         <source>Volg ons op LinkedIn</source>
-        <target>Síguenos en LinkedIn</target>
+        <target>S&#237;guenos en LinkedIn</target>
       </trans-unit>
       <trans-unit id="footer.social.vibe.alt" datatype="html">
         <source>Vibe-icoon</source>
@@ -608,7 +608,7 @@
       </trans-unit>
       <trans-unit id="footer.social.vibe.ariaLabel" datatype="html">
         <source>Vind ons op Vibe</source>
-        <target>Encuéntranos en Vibe</target>
+        <target>Encu&#233;ntranos en Vibe</target>
       </trans-unit>
       <trans-unit id="footer.social.whatsapp.alt" datatype="html">
         <source>WhatsApp-icoon</source>
@@ -616,11 +616,11 @@
       </trans-unit>
       <trans-unit id="footer.social.whatsapp.ariaLabel" datatype="html">
         <source>Neem contact met ons op via WhatsApp</source>
-        <target>Contáctanos a través de WhatsApp</target>
+        <target>Cont&#225;ctanos a trav&#233;s de WhatsApp</target>
       </trans-unit>
       <trans-unit id="footer.stefanie.ariaLabel" datatype="html">
         <source>Visit Stefanie Wilms website</source>
-        <target>Visita la página web de Stefanie Wilms</target>
+        <target>Visita la p&#225;gina web de Stefanie Wilms</target>
       </trans-unit>
       <trans-unit id="footer.text" datatype="html">
         <source> Jan Vansteenwegen werkt nauw samen met zijn echtgenote Stefanie Wilms waardoor ze
@@ -628,18 +628,18 @@
           aan <x id="START_LINK" ctype="x-a"
             equiv-text="&lt;a href=&quot;https://stefaniewilms.be/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; aria-label=&quot;Visit Stefanie Wilms website&quot; i18n-aria-label=&quot;@@footer.stefanie.ariaLabel&quot; &gt;" />haar
           website<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;" />. </source>
-        <target> Jan Vansteenwegen trabaja en estrecha colaboración con su esposa, Stefanie Wilms, y juntos llevan cada proyecto
-          a un nivel superior. Visita su página web <x id="START_LINK"
+        <target> Jan Vansteenwegen trabaja en estrecha colaboraci&#243;n con su esposa, Stefanie Wilms, y juntos llevan cada proyecto
+          a un nivel superior. Visita su p&#225;gina web <x id="START_LINK"
             ctype="x-a"
-            equiv-text="&lt;a href=&quot;https://stefaniewilms.be/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; aria-label=&quot;Visit Stefanie Wilms website&quot; i18n-aria-label=&quot;@@footer.stefanie.ariaLabel&quot; &gt;" />y déjate convencer. <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;" />. </target>
+            equiv-text="&lt;a href=&quot;https://stefaniewilms.be/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot; aria-label=&quot;Visit Stefanie Wilms website&quot; i18n-aria-label=&quot;@@footer.stefanie.ariaLabel&quot; &gt;" />y d&#233;jate convencer. <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a &gt;" />. </target>
       </trans-unit>
       <trans-unit id="footer.title" datatype="html">
         <source>Laat mij u helpen met slim &amp; groen bouwen</source>
-        <target>Déjame ayudarte a construir de forma inteligente y sostenible</target>
+        <target>D&#233;jame ayudarte a construir de forma inteligente y sostenible</target>
       </trans-unit>
       <trans-unit id="fotos.hero.alt" datatype="html">
         <source>Thorbouw-team werkt aan een duurzaam bouwproject</source>
-        <target>El equipo de Thorbouw trabajando en un proyecto de construcción sostenible</target>
+        <target>El equipo de Thorbouw trabajando en un proyecto de construcci&#243;n sostenible</target>
       </trans-unit>
       <trans-unit id="fotos.hero.title" datatype="html">
         <source>Foto&apos;s &amp; Realisaties</source>
@@ -661,19 +661,19 @@
           natuurlijke bouwmaterialen. Ethiek en integriteit houden wij hoog in het vaandel, onze
           klanten correct informeren maakt deel uit van onze werkwijze.</source>
         <target>Como empresa constructora de Lovaina, estamos comprometidos al 100 % con un estilo de vida
-          orientado al futuro. Asesoramos sobre intervenciones prácticas, soluciones energéticas asequibles y materiales de construcción tanto
-          tradicionales como naturales. La ética y la integridad son el núcleo de lo que
-          hacemos, y proporcionar a nuestros clientes información precisa es una parte esencial de nuestro
+          orientado al futuro. Asesoramos sobre intervenciones pr&#225;cticas, soluciones energ&#233;ticas asequibles y materiales de construcci&#243;n tanto
+          tradicionales como naturales. La &#233;tica y la integridad son el n&#250;cleo de lo que
+          hacemos, y proporcionar a nuestros clientes informaci&#243;n precisa es una parte esencial de nuestro
           enfoque.</target>
       </trans-unit>
       <trans-unit id="home.content.bottom.intro" datatype="html">
         <source>De Zuid-Afrikaanse taal zit boordevol warme termen, zoals volhoudbaar wat letterlijk
           duurzaam betekent. Met een volhoudbare aanpak respecteren ze oorsprong, houden ze vol in
           het nu en zorgen ze dat het houdbaar blijft voor wie na hen komt.</source>
-        <target>La lengua sudafricana está llena de expresiones cálidas, como «volhoudbaar», que
-          literalmente significa «sostenible». Con un enfoque sostenible, respetamos el origen de las cosas,
+        <target>La lengua sudafricana est&#225; llena de expresiones c&#225;lidas, como &#171;volhoudbaar&#187;, que
+          literalmente significa &#171;sostenible&#187;. Con un enfoque sostenible, respetamos el origen de las cosas,
           perseveramos en el presente y nos aseguramos de que lo que creamos siga siendo sostenible para
-          quienes vengan después de nosotros.</target>
+          quienes vengan despu&#233;s de nosotros.</target>
       </trans-unit>
       <trans-unit id="home.content.bottom.middle" datatype="html">
         <source>Het verschil tussen duurzaam en volhoudbaar? Duurzaam is niet noodzakelijk
@@ -682,20 +682,20 @@
           toe van de verschillende materialen, zodat je als klant een voor jezelf verantwoorde keuze
           kan maken. Wie kiest voor een volhoudbare aanpak, maakt de juiste keuze voor zichzelf, de
           volgende generaties en onze planeet. Deze wijze spreuk van de Canadese Haida indianen vat
-          het perfect samen: „We erven de wereld niet van onze ouders, maar lenen de wereld van onze
-          kinderen.”</source>
-        <target>¿Cuál es la diferencia entre «sostenible» y «volhoudbaar»? La sostenibilidad no es
-          necesariamente ecológica. Tomemos, por ejemplo, los muebles de jardín fabricados con PVC reciclado. Tras
-          años de exposición a la intemperie, tu jardín podría llenarse de microplásticos. Thorbouw
+          het perfect samen: &#8222;We erven de wereld niet van onze ouders, maar lenen de wereld van onze
+          kinderen.&#8221;</source>
+        <target>&#191;Cu&#225;l es la diferencia entre &#171;sostenible&#187; y &#171;volhoudbaar&#187;? La sostenibilidad no es
+          necesariamente ecol&#243;gica. Tomemos, por ejemplo, los muebles de jard&#237;n fabricados con PVC reciclado. Tras
+          a&#241;os de exposici&#243;n a la intemperie, tu jard&#237;n podr&#237;a llenarse de micropl&#225;sticos. Thorbouw
           te explica todas las ventajas y desventajas de los distintos materiales, lo que te permite, como
-          cliente, tomar una decisión responsable que se adapte a tus necesidades. Optar por un enfoque sostenible
-          significa tomar la decisión correcta para ti, para las generaciones futuras y para nuestro planeta.
-          Este sabio dicho del pueblo haida canadiense lo resume a la perfección: «No heredamos
-          el mundo de nuestros padres; lo tomamos prestado de nuestros hijos».</target>
+          cliente, tomar una decisi&#243;n responsable que se adapte a tus necesidades. Optar por un enfoque sostenible
+          significa tomar la decisi&#243;n correcta para ti, para las generaciones futuras y para nuestro planeta.
+          Este sabio dicho del pueblo haida canadiense lo resume a la perfecci&#243;n: &#171;No heredamos
+          el mundo de nuestros padres; lo tomamos prestado de nuestros hijos&#187;.</target>
       </trans-unit>
       <trans-unit id="home.content.bottom.title" datatype="html">
         <source>Wist u dat?</source>
-        <target>¿Sabías que...?</target>
+        <target>&#191;Sab&#237;as que...?</target>
       </trans-unit>
       <trans-unit id="home.content.conclusion" datatype="html">
         <source> Algemeen aannemer en binnenhuisarchitect Jan Vansteenwegen begeleidt u, samen met
@@ -710,34 +710,34 @@
             id="START_LINK" ctype="x-a"
             equiv-text="&lt;a href=&quot;https://www.northsoutharchitecten.be&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;" />
           North South Architecten <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />, te
-          guiará en el proyecto de tu casa, piso, «canguro» o nueva construcción, respetando
-          nuestro planeta y prestando especial atención a la próxima generación de habitantes de Lovaina. Te ofrecemos un
-          paquete completo: construcción de viviendas, reformas, diseño de interiores, mobiliario y jardines.
+          guiar&#225; en el proyecto de tu casa, piso, &#171;canguro&#187; o nueva construcci&#243;n, respetando
+          nuestro planeta y prestando especial atenci&#243;n a la pr&#243;xima generaci&#243;n de habitantes de Lovaina. Te ofrecemos un
+          paquete completo: construcci&#243;n de viviendas, reformas, dise&#241;o de interiores, mobiliario y jardines.
           Todo ello totalmente adaptado a tus necesidades y con un enfoque respetuoso con el medio ambiente.</target>
       </trans-unit>
       <trans-unit id="home.content.middle.text" datatype="html">
         <source>Hebt u interesse? Neem zeker een kijkje door onze vorige projecten voor wat meer
           informatie.</source>
-        <target>¿Te interesa? Echa un vistazo a nuestros proyectos anteriores para obtener más información.</target>
+        <target>&#191;Te interesa? Echa un vistazo a nuestros proyectos anteriores para obtener m&#225;s informaci&#243;n.</target>
       </trans-unit>
       <trans-unit id="home.content.middle.title" datatype="html">
         <source>Van meubel tot verbouwingen met totaalinrichting.</source>
-        <target>Desde mobiliario hasta reformas con diseño de interiores completo.</target>
+        <target>Desde mobiliario hasta reformas con dise&#241;o de interiores completo.</target>
       </trans-unit>
       <trans-unit id="home.content.top.blue" datatype="html">
         <source>Groen bouwen of traditioneel of een combinatie van beiden? Energiezuinige woning of
           appartement kopen? Milieubewust renoveren of inrichten?</source>
-        <target>¿Edificación sostenible, construcción tradicional o una combinación de ambas? ¿Estás pensando en comprar
-          una casa o un piso energéticamente eficiente? ¿Estás reformando o amueblando teniendo en cuenta el medio ambiente?</target>
+        <target>&#191;Edificaci&#243;n sostenible, construcci&#243;n tradicional o una combinaci&#243;n de ambas? &#191;Est&#225;s pensando en comprar
+          una casa o un piso energ&#233;ticamente eficiente? &#191;Est&#225;s reformando o amueblando teniendo en cuenta el medio ambiente?</target>
       </trans-unit>
       <trans-unit id="home.content.top.text" datatype="html">
-        <source>Duurzame aannemer Thorbouw deelt met véél plezier zijn eindeloze passie voor vol te
-          houden woonvormen oftewel ‘volhoudbaar wonen’. Wij bouwen, renoveren en ontwikkelen voor
+        <source>Duurzame aannemer Thorbouw deelt met v&#233;&#233;l plezier zijn eindeloze passie voor vol te
+          houden woonvormen oftewel &#8216;volhoudbaar wonen&#8217;. Wij bouwen, renoveren en ontwikkelen voor
           een vaste prijs en volgens uw budget uw zorgeloze thuis en een duurzame toekomst in
           Vlaams-Brabant en omstreken.</source>
-        <target>A la empresa de construcción sostenible Thorbouw le apasiona crear formas de vida duraderas,
-          o «volhoudbaar wonen». Construimos, renovamos y desarrollamos viviendas a un precio fijo
-          y ajustándonos a tu presupuesto, creando un hogar sin preocupaciones y un futuro sostenible en
+        <target>A la empresa de construcci&#243;n sostenible Thorbouw le apasiona crear formas de vida duraderas,
+          o &#171;volhoudbaar wonen&#187;. Construimos, renovamos y desarrollamos viviendas a un precio fijo
+          y ajust&#225;ndonos a tu presupuesto, creando un hogar sin preocupaciones y un futuro sostenible en
           Brabante Flamenco y alrededores.</target>
       </trans-unit>
       <trans-unit id="home.hero.alt" datatype="html">
@@ -752,7 +752,7 @@
       </trans-unit>
       <trans-unit id="home.hero.subtitle" datatype="html">
         <source>Aannemer gezocht?</source>
-        <target>¿Buscas un contratista?</target>
+        <target>&#191;Buscas un contratista?</target>
       </trans-unit>
       <trans-unit id="home.hero.title" datatype="html">
         <source>Volhoudbaar bouwen aan een nieuwe wereld</source>
@@ -761,22 +761,22 @@
       <trans-unit id="home.pillar.advice.description" datatype="html">
         <source>Stap in uw woonverhaal in Leuven &amp; ruime omgeving. Wij vergezellen u met
           eerlijke feedback tijdens een huisbezichtiging.</source>
-        <target>Da el siguiente paso en tu búsqueda de vivienda en Lovaina y sus alrededores. Te
-          acompañamos ofreciéndote nuestra opinión sincera durante la visita a la vivienda.</target>
+        <target>Da el siguiente paso en tu b&#250;squeda de vivienda en Lovaina y sus alrededores. Te
+          acompa&#241;amos ofreci&#233;ndote nuestra opini&#243;n sincera durante la visita a la vivienda.</target>
       </trans-unit>
       <trans-unit id="home.pillar.advice.link" datatype="html">
         <source>Laat u duurzaam adviseren</source>
-        <target>Obtén asesoramiento sobre sostenibilidad</target>
+        <target>Obt&#233;n asesoramiento sobre sostenibilidad</target>
       </trans-unit>
       <trans-unit id="home.pillar.advice.title" datatype="html">
         <source>Bouwkundig Advies</source>
-        <target>Asesoramiento en construcción</target>
+        <target>Asesoramiento en construcci&#243;n</target>
       </trans-unit>
       <trans-unit id="home.pillar.development.description" datatype="html">
         <source>Leegstaand pand of een stuk grond te verkavelen? Zin in cohousing of samenhuizen?
           Thorbouw zet zijn schouders onder uw vooruitstrevend bouwproject.</source>
-        <target>¿Tienes una vivienda desocupada o un terreno para urbanizar? ¿Te interesa la covivienda o
-          la vida compartida? Thorbouw te ayuda a llevar a cabo tu proyecto de construcción con visión de futuro.</target>
+        <target>&#191;Tienes una vivienda desocupada o un terreno para urbanizar? &#191;Te interesa la covivienda o
+          la vida compartida? Thorbouw te ayuda a llevar a cabo tu proyecto de construcci&#243;n con visi&#243;n de futuro.</target>
       </trans-unit>
       <trans-unit id="home.pillar.development.link" datatype="html">
         <source>Maak kennis met onze projectaanpak</source>
@@ -789,9 +789,9 @@
       <trans-unit id="home.pillar.sustainable.description" datatype="html">
         <source>Uw huis omtoveren tot energiezuinige thuis? Toekomstgericht bouwen? Kleiner wonen?
           Thorbouw is gespecialiseerd in volhoudbaar (ver)bouwen &amp; inrichten.</source>
-        <target>¿Quieres convertir tu casa en un hogar energéticamente eficiente? ¿Construir pensando en el futuro?
-          ¿Te planteas vivir en un espacio más pequeño? Thorbouw se especializa en construcción sostenible, rehabilitación y
-          diseño de interiores.</target>
+        <target>&#191;Quieres convertir tu casa en un hogar energ&#233;ticamente eficiente? &#191;Construir pensando en el futuro?
+          &#191;Te planteas vivir en un espacio m&#225;s peque&#241;o? Thorbouw se especializa en construcci&#243;n sostenible, rehabilitaci&#243;n y
+          dise&#241;o de interiores.</target>
       </trans-unit>
       <trans-unit id="home.pillar.sustainable.link" datatype="html">
         <source>Investeer in milieubewust wonen</source>
@@ -811,7 +811,7 @@
       </trans-unit>
       <trans-unit id="imagecarousel.buttonInfo" datatype="html">
         <source>Meer Info</source>
-	<target state="new">Más información</target>
+	<target state="new">M&#225;s informaci&#243;n</target>
       </trans-unit>
       <trans-unit id="imagecarousel.firstInfoCard" datatype="html">
         <source>Datum</source>
@@ -831,15 +831,15 @@
       </trans-unit>
       <trans-unit id="interactivemap.otherlocation" datatype="html">
         <source>Andere locatie</source>
-	<target state="new">Otra ubicación</target>
+	<target state="new">Otra ubicaci&#243;n</target>
       </trans-unit>
       <trans-unit id="interactivemap.thislocation" datatype="html">
         <source>Huidige locatie</source>
-	<target state="new">Ubicación actual</target>
+	<target state="new">Ubicaci&#243;n actual</target>
       </trans-unit>
       <trans-unit id="nav.advies" datatype="html">
         <source>Bouwkundig advies</source>
-        <target>Asesoramiento en construcción</target>
+        <target>Asesoramiento en construcci&#243;n</target>
       </trans-unit>
       <trans-unit id="nav.contact" datatype="html">
         <source>Contact</source>
@@ -867,7 +867,7 @@
       </trans-unit>
       <trans-unit id="project.alt.brandts.blueSofas" datatype="html">
         <source>Foto van zithoek met blauwe zetels in renovatie in Leuven</source>
-        <target>Foto de una zona de estar con sofás azules durante una reforma en Lovaina</target>
+        <target>Foto de una zona de estar con sof&#225;s azules durante una reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.builtInCloset" datatype="html">
         <source>Foto van witte inbouwkast in renovatie in Leuven</source>
@@ -883,15 +883,15 @@
       </trans-unit>
       <trans-unit id="project.alt.brandts.exterior" datatype="html">
         <source>Foto van renovatie in Leuven exterieur</source>
-        <target>Foto de la renovación exterior en Lovaina</target>
+        <target>Foto de la renovaci&#243;n exterior en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.freestandingBath" datatype="html">
         <source>Foto van moderne badkamer met vrijstaand bad in renovatie in Leuven</source>
-        <target>Foto de un cuarto de baño moderno con bañera independiente durante la reforma en Lovaina</target>
+        <target>Foto de un cuarto de ba&#241;o moderno con ba&#241;era independiente durante la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.gardenView" datatype="html">
         <source>Foto van woonkamer met zetel en uitzicht op de tuin in renovatie in Leuven</source>
-        <target>Foto del salón con sofá y vistas al jardín durante la reforma en Lovaina</target>
+        <target>Foto del sal&#243;n con sof&#225; y vistas al jard&#237;n durante la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.glassDoor" datatype="html">
         <source>Foto van glazen deur en houten element in renovatie in Leuven</source>
@@ -903,11 +903,11 @@
       </trans-unit>
       <trans-unit id="project.alt.brandts.greenAccentWall" datatype="html">
         <source>Foto van woonkamer met groene accentwand in renovatie in Leuven</source>
-        <target>Foto del salón con una pared decorativa en verde durante la reforma en Lovaina</target>
+        <target>Foto del sal&#243;n con una pared decorativa en verde durante la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.lightLiving" datatype="html">
         <source>Foto van zetel in lichte woonkamer in renovatie in Leuven</source>
-        <target>Foto de un sofá en un salón luminoso durante la reforma en Lovaina</target>
+        <target>Foto de un sof&#225; en un sal&#243;n luminoso durante la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.longTable" datatype="html">
         <source>Foto van lange eettafel met stoelen en raampartij in renovatie in Leuven</source>
@@ -919,7 +919,7 @@
       </trans-unit>
       <trans-unit id="project.alt.brandts.openLiving" datatype="html">
         <source>Foto van open leefruimte met zetel en eettafel in renovatie in Leuven</source>
-        <target>Foto del salón diáfano con sofá y mesa de comedor durante la reforma en Lovaina</target>
+        <target>Foto del sal&#243;n di&#225;fano con sof&#225; y mesa de comedor durante la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.railing" datatype="html">
         <source>Zoom op de keuken.</source>
@@ -927,11 +927,11 @@
       </trans-unit>
       <trans-unit id="project.alt.brandts.sittingArea" datatype="html">
         <source>Foto van woonkamer met zetel en kleuraccenten in renovatie in Leuven</source>
-        <target>Foto del salón con sofá y toques de color durante la reforma en Lovaina</target>
+        <target>Foto del sal&#243;n con sof&#225; y toques de color durante la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.stairHall" datatype="html">
         <source>Foto van witte trappenhal in renovatie in Leuven</source>
-        <target>Foto del vestíbulo con escalera blanca durante la reforma en Lovaina</target>
+        <target>Foto del vest&#237;bulo con escalera blanca durante la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.stairSkylight" datatype="html">
         <source>Foto van trap en bovenlicht in renovatie in Leuven</source>
@@ -939,7 +939,7 @@
       </trans-unit>
       <trans-unit id="project.alt.brandts.vanity" datatype="html">
         <source>Foto van badkamer met dubbele wastafel in renovatie in Leuven</source>
-        <target>Foto del cuarto de baño con lavabo doble durante la reforma en Lovaina</target>
+        <target>Foto del cuarto de ba&#241;o con lavabo doble durante la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.brandts.whiteKitchen" datatype="html">
         <source>Foto van witte keuken met zwarte stoelen in renovatie in Leuven</source>
@@ -959,7 +959,7 @@
       </trans-unit>
       <trans-unit id="project.alt.lipsius.bathroom" datatype="html">
         <source>Foto van renovatie in Leuven interieur badkamer</source>
-        <target>Foto del interior del cuarto de baño tras la reforma en Lovaina</target>
+        <target>Foto del interior del cuarto de ba&#241;o tras la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.lipsius.bedroom" datatype="html">
         <source>Foto van renovatie in Leuven interieur slaapkamer</source>
@@ -987,15 +987,15 @@
       </trans-unit>
       <trans-unit id="project.alt.lipsius.living" datatype="html">
         <source>Foto van renovatie in Leuven interieur living</source>
-        <target>Foto del interior del salón de la reforma en Lovaina</target>
+        <target>Foto del interior del sal&#243;n de la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.lipsius.livingOverview" datatype="html">
         <source>Foto van renovatie in Leuven interieur overzicht living</source>
-        <target>Foto de la reforma en Lovaina: vista general del interior del salón</target>
+        <target>Foto de la reforma en Lovaina: vista general del interior del sal&#243;n</target>
       </trans-unit>
       <trans-unit id="project.alt.lipsius.salon" datatype="html">
         <source>Foto van renovatie in Leuven interieur salon</source>
-        <target>Foto del interior del salón de la reforma en Lovaina</target>
+        <target>Foto del interior del sal&#243;n de la reforma en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.meulen.bedroom" datatype="html">
         <source>Foto van renovatie in Leuven slaapkamer</source>
@@ -1019,7 +1019,7 @@
       </trans-unit>
       <trans-unit id="project.alt.meulen.living" datatype="html">
         <source>Foto van renovatie in Leuven living</source>
-        <target>Foto de la reforma del salón en Lovaina</target>
+        <target>Foto de la reforma del sal&#243;n en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.meulen.office" datatype="html">
         <source>Foto van renovatie in Leuven bureau</source>
@@ -1027,7 +1027,7 @@
       </trans-unit>
       <trans-unit id="project.alt.meulen.sinks" datatype="html">
         <source>Foto van renovatie in Leuven spoelbakken badkamer</source>
-        <target>Foto de la reforma de los lavabos del cuarto de baño de Lovaina</target>
+        <target>Foto de la reforma de los lavabos del cuarto de ba&#241;o de Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.meulen.wardrobe" datatype="html">
         <source>Foto van renovatie in Leuven klerenkast</source>
@@ -1035,7 +1035,7 @@
       </trans-unit>
       <trans-unit id="project.alt.sucaet.bathroom" datatype="html">
         <source>Foto van renovatie in Heverlee badkamer</source>
-        <target>Foto de la reforma del cuarto de baño de Heverlee</target>
+        <target>Foto de la reforma del cuarto de ba&#241;o de Heverlee</target>
       </trans-unit>
       <trans-unit id="project.alt.sucaet.bedroom" datatype="html">
         <source>Foto van renovatie in Heverlee slaapkamer</source>
@@ -1055,7 +1055,7 @@
       </trans-unit>
       <trans-unit id="project.alt.sucaet.living" datatype="html">
         <source>Foto van renovatie in Heverlee living</source>
-        <target>Foto de la reforma del salón de Heverlee</target>
+        <target>Foto de la reforma del sal&#243;n de Heverlee</target>
       </trans-unit>
       <trans-unit id="project.alt.sucaet.office" datatype="html">
         <source>Foto van renovatie in Heverlee bureau</source>
@@ -1071,19 +1071,19 @@
       </trans-unit>
       <trans-unit id="project.alt.uten.artStudio" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg art studio</source>
-        <target>Foto de la nueva construcción del estudio de arte de Ottenburg</target>
+        <target>Foto de la nueva construcci&#243;n del estudio de arte de Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.alt.uten.bathroom" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg badkamer</source>
-        <target>Foto de la nueva construcción del cuarto de baño en Ottenburg</target>
+        <target>Foto de la nueva construcci&#243;n del cuarto de ba&#241;o en Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.alt.uten.bedroom" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg slaapkamer</source>
-        <target>Foto de la nueva construcción en el dormitorio de Ottenburg</target>
+        <target>Foto de la nueva construcci&#243;n en el dormitorio de Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.alt.uten.entryHall" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg inkom hall</source>
-        <target>Foto de la nueva construcción en el vestíbulo de Ottenburg</target>
+        <target>Foto de la nueva construcci&#243;n en el vest&#237;bulo de Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.alt.uten.exterior" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg exterieur</source>
@@ -1091,27 +1091,27 @@
       </trans-unit>
       <trans-unit id="project.alt.uten.kitchen" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg keuken</source>
-        <target>Foto de la nueva construcción en la cocina de Ottenburg</target>
+        <target>Foto de la nueva construcci&#243;n en la cocina de Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.alt.uten.kitchenIsland" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg keuken eiland</source>
-        <target>Foto de la nueva construcción en la isla de cocina de Ottenburg</target>
+        <target>Foto de la nueva construcci&#243;n en la isla de cocina de Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.alt.uten.living" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg living</source>
-        <target>Foto de la nueva construcción en el salón de Ottenburg</target>
+        <target>Foto de la nueva construcci&#243;n en el sal&#243;n de Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.alt.uten.relaxRoom" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg ontspanningsruimte</source>
-        <target>Foto de la nueva construcción en Ottenburg: sala de relajación</target>
+        <target>Foto de la nueva construcci&#243;n en Ottenburg: sala de relajaci&#243;n</target>
       </trans-unit>
       <trans-unit id="project.alt.uten.stairsHall" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg trappen hall</source>
-        <target>Foto del vestíbulo de la escalera de la nueva construcción en Ottenburg</target>
+        <target>Foto del vest&#237;bulo de la escalera de la nueva construcci&#243;n en Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.alt.verhoef.bathroom" datatype="html">
         <source>Foto van renovatie in Leuven badkamer</source>
-        <target>Foto de la reforma del cuarto de baño en Lovaina</target>
+        <target>Foto de la reforma del cuarto de ba&#241;o en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.verhoef.exterior" datatype="html">
         <source>Foto van renovatie in Leuven exterieur</source>
@@ -1119,11 +1119,11 @@
       </trans-unit>
       <trans-unit id="project.alt.verhoef.livingRoom" datatype="html">
         <source>Foto van renovatie in Leuven woonkamer</source>
-        <target>Foto de la reforma del salón en Lovaina</target>
+        <target>Foto de la reforma del sal&#243;n en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.verhoef.roomOffice" datatype="html">
         <source>Foto van renovatie in Leuven kamer/bureau</source>
-        <target>Foto de la reforma de una habitación/despacho en Lovaina</target>
+        <target>Foto de la reforma de una habitaci&#243;n/despacho en Lovaina</target>
       </trans-unit>
       <trans-unit id="project.alt.verhoef.stairs" datatype="html">
         <source>Foto van renovatie in Leuven trappen</source>
@@ -1135,25 +1135,25 @@
       </trans-unit>
       <trans-unit id="project.brandts.alt" datatype="html">
         <source>Foto van nieuwbouw in Korbeek-Lo</source>
-        <target>Foto de la nueva construcción en Korbeek-Lo</target>
+        <target>Foto de la nueva construcci&#243;n en Korbeek-Lo</target>
       </trans-unit>
       <trans-unit id="project.brandts.description" datatype="html">
         <source>Met kwalitatieve materialen en oog voor detail realiseren we duurzame
           woonoplossingen.</source>
-        <target>Con materiales de calidad y atención al detalle, creamos
+        <target>Con materiales de calidad y atenci&#243;n al detalle, creamos
           soluciones para una vida sostenible.</target>
       </trans-unit>
       <trans-unit id="project.brandts.subtitle" datatype="html">
         <source>Modern wooncomfort, vakkundig gerealiseerd</source>
-        <target>Comodidad moderna, realizada con maestría</target>
+        <target>Comodidad moderna, realizada con maestr&#237;a</target>
       </trans-unit>
       <trans-unit id="project.brandts.title" datatype="html">
         <source>Nieuwbouw Korbeek-Lo</source>
-        <target>Nueva construcción en Korbeek-Lo</target>
+        <target>Nueva construcci&#243;n en Korbeek-Lo</target>
       </trans-unit>
       <trans-unit id="project.category.bathroom" datatype="html">
         <source>Badkamer</source>
-        <target>Cuarto de baño</target>
+        <target>Cuarto de ba&#241;o</target>
       </trans-unit>
       <trans-unit id="project.category.bedroom" datatype="html">
         <source>Slaapkamer</source>
@@ -1177,7 +1177,7 @@
       </trans-unit>
       <trans-unit id="project.category.livingRoom" datatype="html">
         <source>Woonkamer</source>
-        <target>Salón</target>
+        <target>Sal&#243;n</target>
       </trans-unit>
       <trans-unit id="project.category.stairs" datatype="html">
         <source>Trap</source>
@@ -1185,13 +1185,13 @@
       </trans-unit>
       <trans-unit id="project.desc.brandts.blueSofas" datatype="html">
         <source>Zitruimte met opvallende blauwe zetels, grote ramen en een lichte, open sfeer.</source>
-        <target>Zona de estar con llamativos sofás azules, amplios ventanales y un ambiente luminoso y diáfano.</target>
+        <target>Zona de estar con llamativos sof&#225;s azules, amplios ventanales y un ambiente luminoso y di&#225;fano.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.builtInCloset" datatype="html">
-        <source>Naadloos geïntegreerde witte inbouwkast die extra bergruimte biedt zonder de strakke
+        <source>Naadloos ge&#239;ntegreerde witte inbouwkast die extra bergruimte biedt zonder de strakke
           lijnen te verstoren.</source>
         <target>Armario empotrado blanco perfectamente integrado que ofrece espacio de almacenamiento adicional sin
-          romper la limpieza de las líneas.</target>
+          romper la limpieza de las l&#237;neas.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.diningArea" datatype="html">
         <source>Heldere eetruimte met een tafel en stoelen, afgewerkt in neutrale tinten en met veel
@@ -1202,36 +1202,36 @@
       <trans-unit id="project.desc.brandts.freestandingBath" datatype="html">
         <source>Strakke badkamer met een vrijstaand wit bad tegen een donkere wand, aangevuld met
           een grote spiegel en ruime lichtinval.</source>
-        <target>Un cuarto de baño elegante con una bañera blanca independiente frente a una pared oscura, complementado con un
+        <target>Un cuarto de ba&#241;o elegante con una ba&#241;era blanca independiente frente a una pared oscura, complementado con un
           gran espejo y abundante luz natural.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.gardenView" datatype="html">
         <source>Zicht op de woonkamer vanuit een schuine hoek, met de zetel, het tapijt en de tuin
           als achtergrond.</source>
-        <target>Vista del salón desde un ángulo oblicuo, con el sofá, la alfombra y el jardín al
+        <target>Vista del sal&#243;n desde un &#225;ngulo oblicuo, con el sof&#225;, la alfombra y el jard&#237;n al
           fondo.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.glassDoor" datatype="html">
         <source>Glazen deur en scheidingswand zorgen voor transparantie tussen de ruimtes en laten
           het licht doorstromen.</source>
         <target>La puerta de cristal y la pared divisoria aportan transparencia entre los espacios y permiten que la luz
-          fluya a través de ellos.</target>
+          fluya a trav&#233;s de ellos.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.glassView" datatype="html">
         <source>Verticale doorkijk door glazen elementen, met zicht op de verschillende niveaus van
           de woning.</source>
-        <target>Línea de visión vertical a través de los elementos acristalados, con vistas a los distintos niveles de
+        <target>L&#237;nea de visi&#243;n vertical a trav&#233;s de los elementos acristalados, con vistas a los distintos niveles de
           la vivienda.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.greenAccentWall" datatype="html">
         <source>Overzicht van de woonkamer vanuit een hoge hoek, met een groene accentwand en een
-          geïntegreerde mediawand.</source>
-        <target>Vista general del salón desde un ángulo elevado, en la que destaca una pared decorativa verde y un
+          ge&#239;ntegreerde mediawand.</source>
+        <target>Vista general del sal&#243;n desde un &#225;ngulo elevado, en la que destaca una pared decorativa verde y un
           mueble multimedia integrado.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.lightLiving" datatype="html">
         <source>Ruime zetel in een lichte woonkamer met uitzicht op de tuin via de grote ramen.</source>
-        <target>Un amplio sofá en un salón luminoso con vistas al jardín a través de los grandes
+        <target>Un amplio sof&#225; en un sal&#243;n luminoso con vistas al jard&#237;n a trav&#233;s de los grandes
           ventanales.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.longTable" datatype="html">
@@ -1242,11 +1242,11 @@
       </trans-unit>
       <trans-unit id="project.desc.brandts.openLiving" datatype="html">
         <source>Open leefruimte waarin zitgedeelte en eetruimte vloeiend in elkaar overlopen.</source>
-        <target>Espacio diáfano en el que la zona de estar y el comedor se funden a la perfección entre sí.</target>
+        <target>Espacio di&#225;fano en el que la zona de estar y el comedor se funden a la perfecci&#243;n entre s&#237;.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.sittingArea" datatype="html">
         <source>Gezellige zitruimte met een grote zetel.</source>
-        <target>Acogedora zona de estar con un gran sofá.</target>
+        <target>Acogedora zona de estar con un gran sof&#225;.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.stairHall" datatype="html">
         <source>Lichte trappenhal met witte wanden en natuurlijke lichtinval via een bovenlicht.</source>
@@ -1260,8 +1260,8 @@
       <trans-unit id="project.desc.brandts.vanity" datatype="html">
         <source>Witte badkamer met een zwevend wastafelmeubel, grote spiegelwand en donkere accenten
           voor een rustige, hedendaagse uitstraling.</source>
-        <target>Cuarto de baño blanco con un mueble de lavabo suspendido, una gran pared con espejos y detalles en tonos oscuros que le dan
-          un aspecto sereno y contemporáneo.</target>
+        <target>Cuarto de ba&#241;o blanco con un mueble de lavabo suspendido, una gran pared con espejos y detalles en tonos oscuros que le dan
+          un aspecto sereno y contempor&#225;neo.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.whiteKitchen" datatype="html">
         <source>Strakke witte keuken met zwarte stoelen als contrast en een zorgvuldig uitgewerkte,
@@ -1271,12 +1271,12 @@
       </trans-unit>
       <trans-unit id="project.desc.brandts.woodKitchen" datatype="html">
         <source>Moderne keuken met een warm houten werkblad die open uitkomt op de leefruimte.</source>
-        <target>Cocina moderna con una cálida encimera de madera que se abre al salón.</target>
+        <target>Cocina moderna con una c&#225;lida encimera de madera que se abre al sal&#243;n.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.woodPanel" datatype="html">
         <source>Warm houten wandpaneel dat een zachte contrastlijn vormt met de donkere vloer en
           witte wanden.</source>
-        <target>Un cálido panel de madera en la pared que crea un suave contraste con el suelo oscuro y las
+        <target>Un c&#225;lido panel de madera en la pared que crea un suave contraste con el suelo oscuro y las
           paredes blancas.</target>
       </trans-unit>
       <trans-unit id="project.desc.brandts.woodTable" datatype="html">
@@ -1300,7 +1300,7 @@
       </trans-unit>
       <trans-unit id="project.desc.uten.kidsRoom" datatype="html">
         <source>Renovatie van de kinderkamer</source>
-        <target>Renovación del dormitorio de los niños</target>
+        <target>Renovaci&#243;n del dormitorio de los ni&#241;os</target>
       </trans-unit>
       <trans-unit id="project.desc.uten.kitchenIsland" datatype="html">
         <source>Prachtige keuken met een groot eiland in het midden</source>
@@ -1312,15 +1312,15 @@
       </trans-unit>
       <trans-unit id="project.engelen.description" datatype="html">
         <source>Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.</source>
-        <target>Con visión espacial y los materiales adecuados, hemos transformado estas estancias.</target>
+        <target>Con visi&#243;n espacial y los materiales adecuados, hemos transformado estas estancias.</target>
       </trans-unit>
       <trans-unit id="project.engelen.subtitle" datatype="html">
         <source>Modernisering Bad- en slaapkamer</source>
-        <target>Modernización del cuarto de baño y del dormitorio</target>
+        <target>Modernizaci&#243;n del cuarto de ba&#241;o y del dormitorio</target>
       </trans-unit>
       <trans-unit id="project.engelen.title" datatype="html">
         <source>Modernisering in Engelen</source>
-        <target>Modernización en Engelen</target>
+        <target>Modernizaci&#243;n en Engelen</target>
       </trans-unit>
       <trans-unit id="project.haasrode.alt" datatype="html">
         <source>Foto van verbouwing in Haasrode</source>
@@ -1328,35 +1328,35 @@
       </trans-unit>
       <trans-unit id="project.haasrode.description" datatype="html">
         <source>Verbouwing van de leef en wasruimten.</source>
-        <target>Renovación del salón y el lavadero.</target>
+        <target>Renovaci&#243;n del sal&#243;n y el lavadero.</target>
       </trans-unit>
       <trans-unit id="project.haasrode.subtitle" datatype="html">
         <source>Verbouwing in Haasrode.</source>
-        <target>Renovación en Haasrode.</target>
+        <target>Renovaci&#243;n en Haasrode.</target>
       </trans-unit>
       <trans-unit id="project.haasrode.title" datatype="html">
         <source>Wasbeurt in Haasrode</source>
-        <target>Renovación en Haasrode</target>
+        <target>Renovaci&#243;n en Haasrode</target>
       </trans-unit>
       <trans-unit id="project.herent.alt" datatype="html">
         <source>Foto van nieuwbouw in Herent</source>
-        <target>Foto de una nueva construcción en Herent</target>
+        <target>Foto de una nueva construcci&#243;n en Herent</target>
       </trans-unit>
       <trans-unit id="project.herent.description" datatype="html">
         <source>Voor dit nieuwbouwproject in Herent realiseerden we een moderne woning met
           hoogwaardige afwerking en oog voor detail. Duurzaamheid en wooncomfort stonden centraal in
           elke fase van het bouwproces.</source>
-        <target>Para este nuevo proyecto de construcción en Herent, hemos construido una vivienda moderna con
-          acabados de alta calidad y gran atención al detalle. La sostenibilidad y el confort en la vivienda han sido
-          elementos fundamentales en todas las fases del proceso de construcción.</target>
+        <target>Para este nuevo proyecto de construcci&#243;n en Herent, hemos construido una vivienda moderna con
+          acabados de alta calidad y gran atenci&#243;n al detalle. La sostenibilidad y el confort en la vivienda han sido
+          elementos fundamentales en todas las fases del proceso de construcci&#243;n.</target>
       </trans-unit>
       <trans-unit id="project.herent.subtitle" datatype="html">
         <source>Hedendaagse nieuwbouw met focus op kwaliteit en comfort</source>
-        <target>Nueva construcción contemporánea centrada en la calidad y el confort</target>
+        <target>Nueva construcci&#243;n contempor&#225;nea centrada en la calidad y el confort</target>
       </trans-unit>
       <trans-unit id="project.herent.title" datatype="html">
         <source>Nieuwbouw te Herent</source>
-        <target>Nueva construcción en Herent</target>
+        <target>Nueva construcci&#243;n en Herent</target>
       </trans-unit>
       <trans-unit id="project.heverlee.alt" datatype="html">
         <source>Foto van verbouwing Heverlee</source>
@@ -1364,7 +1364,7 @@
       </trans-unit>
       <trans-unit id="project.heverlee.description" datatype="html">
         <source>Inrichting woonkamer en verbouwing veranda.</source>
-        <target>Diseño interior del salón y reforma de la terraza acristalada.</target>
+        <target>Dise&#241;o interior del sal&#243;n y reforma de la terraza acristalada.</target>
       </trans-unit>
       <trans-unit id="project.heverlee.subtitle" datatype="html">
         <source>Verbouwing in Heverlee.</source>
@@ -1372,7 +1372,7 @@
       </trans-unit>
       <trans-unit id="project.heverlee.title" datatype="html">
         <source>Stijlvolle verbouwing</source>
-        <target>Renovación con estilo</target>
+        <target>Renovaci&#243;n con estilo</target>
       </trans-unit>
       <trans-unit id="project.justiuslipsius.alt" datatype="html">
         <source>Foto van renovatie in Leuven</source>
@@ -1380,10 +1380,10 @@
       </trans-unit>
       <trans-unit id="project.justiuslipsius.description" datatype="html">
         <source>Voor de renovatie van deze historische woning in Leuven combineerden we vakmanschap
-          met moderne technieken om een comfortabele leefruimte te creëren, terwijl we het karakter
+          met moderne technieken om een comfortabele leefruimte te cre&#235;ren, terwijl we het karakter
           en de charme van het oorspronkelijke gebouw behouden.</source>
-        <target>Para la renovación de esta vivienda histórica en Lovaina, hemos combinado la artesanía con
-          técnicas modernas con el fin de crear un espacio habitable confortable, conservando al mismo tiempo el carácter y
+        <target>Para la renovaci&#243;n de esta vivienda hist&#243;rica en Lovaina, hemos combinado la artesan&#237;a con
+          t&#233;cnicas modernas con el fin de crear un espacio habitable confortable, conservando al mismo tiempo el car&#225;cter y
           el encanto del edificio original.</target>
       </trans-unit>
       <trans-unit id="project.justiuslipsius.subtitle" datatype="html">
@@ -1401,14 +1401,14 @@
       <trans-unit id="project.meulen.description" datatype="html">
         <source>Oude woning in Leuven gerenoveerd tot een warme en gezellige leefruimte. De
           renovatie omvatte het behoud van karakteristieke elementen, terwijl moderne voorzieningen
-          werden geïntegreerd om een comfortabele en functionele woonomgeving te creëren.</source>
-        <target>Una antigua casa en Lovaina renovada para convertirla en un espacio acogedor y cálido. La renovación
-          incluyó la conservación de los elementos característicos, al tiempo que se integraron comodidades modernas
+          werden ge&#239;ntegreerd om een comfortabele en functionele woonomgeving te cre&#235;ren.</source>
+        <target>Una antigua casa en Lovaina renovada para convertirla en un espacio acogedor y c&#225;lido. La renovaci&#243;n
+          incluy&#243; la conservaci&#243;n de los elementos caracter&#237;sticos, al tiempo que se integraron comodidades modernas
           para crear un entorno confortable y funcional.</target>
       </trans-unit>
       <trans-unit id="project.meulen.subtitle" datatype="html">
-        <source>Renovatie met focus op het creëren van een warme en gezellige leefruimte</source>
-        <target>Renovación centrada en crear un espacio acogedor y cálido</target>
+        <source>Renovatie met focus op het cre&#235;ren van een warme en gezellige leefruimte</source>
+        <target>Renovaci&#243;n centrada en crear un espacio acogedor y c&#225;lido</target>
       </trans-unit>
       <trans-unit id="project.meulen.title" datatype="html">
         <source>Renovatie te Leuven</source>
@@ -1419,14 +1419,14 @@
         <target>Foto de la reforma en Heverlee</target>
       </trans-unit>
       <trans-unit id="project.sucaet.description" datatype="html">
-        <source>Voor deze renovatie in Heverlee hebben we een moderne leefruimte gecreëerd die
+        <source>Voor deze renovatie in Heverlee hebben we een moderne leefruimte gecre&#235;erd die
           voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.</source>
         <target>Para esta reforma en Heverlee, hemos creado un espacio habitable moderno que se adapta a
-          las necesidades actuales, prestando especial atención a la calidad y al confort.</target>
+          las necesidades actuales, prestando especial atenci&#243;n a la calidad y al confort.</target>
       </trans-unit>
       <trans-unit id="project.sucaet.subtitle" datatype="html">
         <source>Renovatie met focus op moderniteit en comfort</source>
-        <target>La reforma se centró en la modernidad y el confort</target>
+        <target>La reforma se centr&#243; en la modernidad y el confort</target>
       </trans-unit>
       <trans-unit id="project.sucaet.title" datatype="html">
         <source>Renovatie voor Heverlee</source>
@@ -1438,7 +1438,7 @@
       </trans-unit>
       <trans-unit id="project.title.bathroom" datatype="html">
         <source>Badkamer</source>
-        <target>Cuarto de baño</target>
+        <target>Cuarto de ba&#241;o</target>
       </trans-unit>
       <trans-unit id="project.title.bedroom" datatype="html">
         <source>Slaapkamer</source>
@@ -1446,7 +1446,7 @@
       </trans-unit>
       <trans-unit id="project.title.brandts.blueSofas" datatype="html">
         <source>Zithoek met blauwe zetels</source>
-        <target>Zona de estar con sofás azules</target>
+        <target>Zona de estar con sof&#225;s azules</target>
       </trans-unit>
       <trans-unit id="project.title.brandts.builtInCloset" datatype="html">
         <source>Witte inbouwkast</source>
@@ -1458,11 +1458,11 @@
       </trans-unit>
       <trans-unit id="project.title.brandts.freestandingBath" datatype="html">
         <source>Vrijstaand bad</source>
-        <target>Bañera independiente</target>
+        <target>Ba&#241;era independiente</target>
       </trans-unit>
       <trans-unit id="project.title.brandts.gardenView" datatype="html">
         <source>Woonkamer met tuinzicht</source>
-        <target>Salón con vistas al jardín</target>
+        <target>Sal&#243;n con vistas al jard&#237;n</target>
       </trans-unit>
       <trans-unit id="project.title.brandts.glassDoor" datatype="html">
         <source>Glazen deur</source>
@@ -1474,11 +1474,11 @@
       </trans-unit>
       <trans-unit id="project.title.brandts.greenAccentWall" datatype="html">
         <source>Woonkamer met groene accentwand</source>
-        <target>Salón con pared decorativa en tonos verdes</target>
+        <target>Sal&#243;n con pared decorativa en tonos verdes</target>
       </trans-unit>
       <trans-unit id="project.title.brandts.lightLiving" datatype="html">
         <source>Zetel in lichte woonkamer</source>
-        <target>Sofá en un salón luminoso</target>
+        <target>Sof&#225; en un sal&#243;n luminoso</target>
       </trans-unit>
       <trans-unit id="project.title.brandts.longTable" datatype="html">
         <source>Lange eettafel</source>
@@ -1490,7 +1490,7 @@
       </trans-unit>
       <trans-unit id="project.title.brandts.openLiving" datatype="html">
         <source>Open leefruimte</source>
-        <target>Espacio diáfano</target>
+        <target>Espacio di&#225;fano</target>
       </trans-unit>
       <trans-unit id="project.title.brandts.sittingArea" datatype="html">
         <source>Zitruimte</source>
@@ -1542,7 +1542,7 @@
       </trans-unit>
       <trans-unit id="project.title.hallway" datatype="html">
         <source>Gang/Hal</source>
-        <target>Salón/Pasillo</target>
+        <target>Sal&#243;n/Pasillo</target>
       </trans-unit>
       <trans-unit id="project.title.kitchen" datatype="html">
         <source>Keuken</source>
@@ -1558,15 +1558,15 @@
       </trans-unit>
       <trans-unit id="project.title.living" datatype="html">
         <source>Living</source>
-        <target>Salón</target>
+        <target>Sal&#243;n</target>
       </trans-unit>
       <trans-unit id="project.title.livingOverview" datatype="html">
         <source>Overzicht Living</source>
-        <target>Vista general del salón</target>
+        <target>Vista general del sal&#243;n</target>
       </trans-unit>
       <trans-unit id="project.title.livingRoom" datatype="html">
         <source>Woonkamer</source>
-        <target>Salón</target>
+        <target>Sal&#243;n</target>
       </trans-unit>
       <trans-unit id="project.title.office" datatype="html">
         <source>Bureau</source>
@@ -1578,7 +1578,7 @@
       </trans-unit>
       <trans-unit id="project.title.roomOffice" datatype="html">
         <source>Kamer/Bureau</source>
-        <target>Habitación/Despacho</target>
+        <target>Habitaci&#243;n/Despacho</target>
       </trans-unit>
       <trans-unit id="project.title.salon" datatype="html">
         <source>Salon</source>
@@ -1586,7 +1586,7 @@
       </trans-unit>
       <trans-unit id="project.title.sinks" datatype="html">
         <source>Spoelbakken Badkamer</source>
-        <target>Lavabos de baño</target>
+        <target>Lavabos de ba&#241;o</target>
       </trans-unit>
       <trans-unit id="project.title.stairs" datatype="html">
         <source>Trappen</source>
@@ -1610,30 +1610,30 @@
       </trans-unit>
       <trans-unit id="project.uten.alt" datatype="html">
         <source>Foto van nieuwbouw in Ottenburg</source>
-        <target>Foto de una nueva construcción en Ottenburg</target>
+        <target>Foto de una nueva construcci&#243;n en Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.uten.description" datatype="html">
         <source>Nieuwbouw in Ottenburg waarbij de link met natuur en buitenleven centraal staat.</source>
-        <target>Nueva promoción inmobiliaria en Ottenburg, donde la conexión con la naturaleza y la vida al aire libre ocupan
+        <target>Nueva promoci&#243;n inmobiliaria en Ottenburg, donde la conexi&#243;n con la naturaleza y la vida al aire libre ocupan
           un lugar central.</target>
       </trans-unit>
       <trans-unit id="project.uten.subtitle" datatype="html">
         <source>Nieuwbouw met een focus op verbinding met de natuur</source>
-        <target>Nueva construcción centrada en la conexión con la naturaleza</target>
+        <target>Nueva construcci&#243;n centrada en la conexi&#243;n con la naturaleza</target>
       </trans-unit>
       <trans-unit id="project.uten.title" datatype="html">
         <source>Nieuwbouw te Ottenburg</source>
-        <target>Nueva construcción en Ottenburg</target>
+        <target>Nueva construcci&#243;n en Ottenburg</target>
       </trans-unit>
       <trans-unit id="project.verhoef.alt" datatype="html">
         <source>Foto van renovatie in Hoog Linden</source>
         <target>Foto de una reforma en Hoog Linden</target>
       </trans-unit>
       <trans-unit id="project.verhoef.description" datatype="html">
-        <source>Voor deze renovatie in Hoog Linden hebben we een moderne leefruimte gecreëerd die
+        <source>Voor deze renovatie in Hoog Linden hebben we een moderne leefruimte gecre&#235;erd die
           voldoet aan de hedendaagse woonbehoeften, met aandacht voor kwaliteit en comfort.</source>
         <target>Para esta reforma en Hoog Linden, hemos creado un espacio habitable moderno que se adapta a
-          las necesidades actuales, prestando especial atención a la calidad y al confort.</target>
+          las necesidades actuales, prestando especial atenci&#243;n a la calidad y al confort.</target>
       </trans-unit>
       <trans-unit id="project.verhoef.subtitle" datatype="html">
         <source>Renovatie met focus op moderniteit en comfort</source>
@@ -1645,14 +1645,14 @@
       </trans-unit>
       <trans-unit id="projectdetail.galleryTitle" datatype="html">
         <source>Overzicht van alle afbeeldingen van dit project</source>
-	<target state="new">Resumen de todas las imágenes de este proyecto</target>
+	<target state="new">Resumen de todas las im&#225;genes de este proyecto</target>
       </trans-unit>
       <trans-unit id="projectdetail.mapSubtitle" datatype="html">
         <source>U mag scrollen om in en uit te zoomen en slepen om te navigeren. Klik op een marker
           voor meer informatie over dat project. De markers weergeven geen exacte locatie van onze
           projecten, maar geven een indicatie van de buurt waar ze zich bevinden.</source>
         <target state="new">Puedes desplazarte para acercar o alejar la imagen y arrastrar para navegar. Haz clic en un
-          marcador para obtener más información sobre ese proyecto. Los marcadores no muestran la ubicación exacta
+          marcador para obtener m&#225;s informaci&#243;n sobre ese proyecto. Los marcadores no muestran la ubicaci&#243;n exacta
           de nuestros proyectos, sino que dan una idea del barrio en el que se encuentran.</target>
       </trans-unit>
       <trans-unit id="projectdetail.mapTitle" datatype="html">
@@ -1661,7 +1661,7 @@
       </trans-unit>
       <trans-unit id="tripletext.moreabout" datatype="html">
         <source>Meer Over Ons</source>
-	<target state="new">Más información sobre nosotros</target>
+	<target state="new">M&#225;s informaci&#243;n sobre nosotros</target>
       </trans-unit>
       <trans-unit id="werkwijze.hero.alt" datatype="html">
         <source>Renovatie van een bewoning, buiten foto</source>
@@ -1669,7 +1669,7 @@
       </trans-unit>
       <trans-unit id="werkwijze.hero.title" datatype="html">
         <source>Onze Werkwijze</source>
-	<target state="new">Nuestro método de trabajo</target>
+	<target state="new">Nuestro m&#233;todo de trabajo</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-1.alt" datatype="html">
         <source>Foto van een verbouwd huis in de sneeuw</source>
@@ -1678,25 +1678,25 @@
       <trans-unit id="werkwijze.step-1.blocks.1.description" datatype="html">
         <source>begint met het in kaart brengen van uw wensen en het opstellen van een
           gedetailleerde lijst met een geraamd totaalbudget. Of u al een vast budget heeft of dat
-          wij een schatting voor u maken, de eerste stap kost slechts €75/u ex btw. Dit bedrag dient
+          wij een schatting voor u maken, de eerste stap kost slechts &#8364;75/u ex btw. Dit bedrag dient
           als voorschot voor de voorstudie en het wordt ook opgenomen in het totaalbudget van uw
           project.</source>
         <target>comienza por definir tus deseos y elaborar una lista detallada con un presupuesto
           total estimado. Tanto si ya dispones de un presupuesto fijo como si te preparamos nosotros un presupuesto, el
-          primer paso cuesta solo 75 €/h, IVA no incluido. Esta cantidad sirve como anticipo para el
-          estudio preliminar y también se incluye en el presupuesto total de tu proyecto.</target>
+          primer paso cuesta solo 75 &#8364;/h, IVA no incluido. Esta cantidad sirve como anticipo para el
+          estudio preliminar y tambi&#233;n se incluye en el presupuesto total de tu proyecto.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-1.blocks.1.subtitle" datatype="html">
         <source>Onze samenwerking</source>
-        <target>Nuestra colaboración</target>
+        <target>Nuestra colaboraci&#243;n</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-1.blocks.2.description" datatype="html">
         <source>is onze toewijding vanaf het eerste moment. We geven u transparant en realistisch
           advies, geen verkooppraatjes. Duidelijke inzichten in wat haalbaar is binnen uw budget en
           situatie zorgt voor een project afgeleverd zonder concessies in kwaliteit.</source>
         <target>es nuestro compromiso desde el primer momento. Te ofrecemos un asesoramiento transparente y realista,
-          sin argumentos de venta. Una visión clara de lo que es factible dentro de tu presupuesto y
-          tu situación garantiza que el proyecto se lleve a cabo sin renunciar a la calidad.</target>
+          sin argumentos de venta. Una visi&#243;n clara de lo que es factible dentro de tu presupuesto y
+          tu situaci&#243;n garantiza que el proyecto se lleve a cabo sin renunciar a la calidad.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-1.blocks.2.subtitle" datatype="html">
         <source>Eerlijk advies</source>
@@ -1705,8 +1705,8 @@
       <trans-unit id="werkwijze.step-1.blocks.3.description" datatype="html">
         <source>in zowel traditionale als bio-ecologische bouwmethodes begeleiden we u naar de
           juiste keuzes voor vandaag en morgen.</source>
-        <target>tanto en los métodos de construcción tradicionales como en los bioecológicos, te orientamos para que tomes
-          las decisiones adecuadas para hoy y para el mañana.</target>
+        <target>tanto en los m&#233;todos de construcci&#243;n tradicionales como en los bioecol&#243;gicos, te orientamos para que tomes
+          las decisiones adecuadas para hoy y para el ma&#241;ana.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-1.blocks.3.subtitle" datatype="html">
         <source>Met onze expertise</source>
@@ -1726,11 +1726,11 @@
           budget en uw wensen. Het opstellen van deze plannen gebeurd stapsgewijs, eerst een
           voorontwerp en dan verschillende aanpassingen tot alles naar jullie wens is uitgetekend.
           Ook deze som, die je betaald voor deze voorstudie, zit inbegrepen in het totaalbudget.</source>
-        <target>Empezamos juntos con el estudio preliminar. Durante este estudio, en colaboración
-          contigo, se elaboran planos que se ajustan a la perfección al presupuesto establecido previamente
-          y a tus deseos. La elaboración de estos planos se realiza paso a paso: primero un
-          diseño preliminar y, a continuación, diversos ajustes hasta que todo quede tal y como tú deseas. Esta cantidad
-          pagada por el estudio preliminar también se incluye en el presupuesto total.</target>
+        <target>Empezamos juntos con el estudio preliminar. Durante este estudio, en colaboraci&#243;n
+          contigo, se elaboran planos que se ajustan a la perfecci&#243;n al presupuesto establecido previamente
+          y a tus deseos. La elaboraci&#243;n de estos planos se realiza paso a paso: primero un
+          dise&#241;o preliminar y, a continuaci&#243;n, diversos ajustes hasta que todo quede tal y como t&#250; deseas. Esta cantidad
+          pagada por el estudio preliminar tambi&#233;n se incluye en el presupuesto total.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-2.blocks.1.subtitle" datatype="html">
         <source>Na het bepalen van het budget</source>
@@ -1740,19 +1740,19 @@
         <source>een duidelijke offerte met 1 vaste prijs. Alles wordt helder uitgelegd: materialen,
           werken en planning. Zo weet u exact waar u aan toe bent en komt u nooit voor onverwachte
           kosten te staan. Een aanpak waar eerlijkheid centraal staat.</source>
-        <target>Recibirás un presupuesto claro con un precio fijo. Todo se explica con claridad:
-          los materiales, los trabajos y el calendario. De esta forma, sabrás exactamente qué esperar y
-          nunca te encontrarás con gastos inesperados. Un enfoque en el que la honestidad es fundamental.</target>
+        <target>Recibir&#225;s un presupuesto claro con un precio fijo. Todo se explica con claridad:
+          los materiales, los trabajos y el calendario. De esta forma, sabr&#225;s exactamente qu&#233; esperar y
+          nunca te encontrar&#225;s con gastos inesperados. Un enfoque en el que la honestidad es fundamental.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-2.blocks.2.subtitle" datatype="html">
         <source>U ontvangt</source>
-        <target>Recibirá</target>
+        <target>Recibir&#225;</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-2.blocks.3.description" datatype="html">
-        <source>kost €3.500 à €5.000 ex btw, afhankelijk van de grootte van uw project. Zo bespaart
+        <source>kost &#8364;3.500 &#224; &#8364;5.000 ex btw, afhankelijk van de grootte van uw project. Zo bespaart
           u geld in het opstellen van een kleiner project.</source>
-        <target>cuesta entre 3.500 y 5.000 €, IVA no incluido, dependiendo del tamaño de tu proyecto. De esta forma,
-          ahorras dinero al poner en marcha un proyecto más pequeño.</target>
+        <target>cuesta entre 3.500 y 5.000 &#8364;, IVA no incluido, dependiendo del tama&#241;o de tu proyecto. De esta forma,
+          ahorras dinero al poner en marcha un proyecto m&#225;s peque&#241;o.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-2.blocks.3.subtitle" datatype="html">
         <source>De voorstudie</source>
@@ -1777,12 +1777,12 @@
           het controleren van alle belangrijke details, wij regelen het allemaal.</source>
         <target>Es un servicio integral de principio a fin. Ahora que conocemos el presupuesto exacto y hemos
           definido y plasmado al detalle tus deseos durante el estudio preliminar, pasamos a la
-          fase de contratación. Durante esta fase, se ultiman los planos y se presentan al
-          ayuntamiento. Además, determinamos juntos los detalles finales, establecemos un calendario realista y garantizamos
-          una ejecución y supervisión impecables de todas las obras necesarias. Desde los informes de estado hasta las
-          solicitudes de permisos, desde el seguro CAR (All Risks Construction) hasta instalaciones prácticas como
-          un aseo y la solicitud, colocación e inspección de la caja de contadores
-          provisional de la obra, pasando por la comprobación de todos los detalles importantes: nos encargamos de todo.</target>
+          fase de contrataci&#243;n. Durante esta fase, se ultiman los planos y se presentan al
+          ayuntamiento. Adem&#225;s, determinamos juntos los detalles finales, establecemos un calendario realista y garantizamos
+          una ejecuci&#243;n y supervisi&#243;n impecables de todas las obras necesarias. Desde los informes de estado hasta las
+          solicitudes de permisos, desde el seguro CAR (All Risks Construction) hasta instalaciones pr&#225;cticas como
+          un aseo y la solicitud, colocaci&#243;n e inspecci&#243;n de la caja de contadores
+          provisional de la obra, pasando por la comprobaci&#243;n de todos los detalles importantes: nos encargamos de todo.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-3.blocks.1.subtitle" datatype="html">
         <source>Deze Stap</source>
@@ -1791,8 +1791,8 @@
       <trans-unit id="werkwijze.step-3.blocks.2.description" datatype="html">
         <source>is in goede handen. Wij staan garant voor een zorgeloos proces van begin tot eind.
           Ook tijdens de contractfase staan wij open voor aanpassingen en opmerkingen.</source>
-        <target>está en buenas manos. Te garantizamos un proceso sin preocupaciones de principio a fin. Además,
-          durante la fase de negociación del contrato, estamos abiertos a ajustes y comentarios.</target>
+        <target>est&#225; en buenas manos. Te garantizamos un proceso sin preocupaciones de principio a fin. Adem&#225;s,
+          durante la fase de negociaci&#243;n del contrato, estamos abiertos a ajustes y comentarios.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-3.blocks.2.subtitle" datatype="html">
         <source>Uw project</source>
@@ -1800,15 +1800,15 @@
       </trans-unit>
       <trans-unit id="werkwijze.step-3.blocks.3.description" datatype="html">
         <source>zorgen wij voor een strakke planning en dagelijkse opvolging van de werf. Ons team
-          van ervaren vakmensen werkt efficiënt en met oog voor detail, zodat uw project perfect
+          van ervaren vakmensen werkt effici&#235;nt en met oog voor detail, zodat uw project perfect
           volgens afspraak gerealiseerd wordt.</source>
-        <target>Garantizamos el cumplimiento riguroso del calendario y la supervisión diaria de la obra. Nuestro equipo
-          de profesionales con amplia experiencia trabaja de forma eficiente y prestando atención a los detalles, para que su
-          proyecto se lleve a cabo a la perfección, tal y como se ha acordado.</target>
+        <target>Garantizamos el cumplimiento riguroso del calendario y la supervisi&#243;n diaria de la obra. Nuestro equipo
+          de profesionales con amplia experiencia trabaja de forma eficiente y prestando atenci&#243;n a los detalles, para que su
+          proyecto se lleve a cabo a la perfecci&#243;n, tal y como se ha acordado.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-3.blocks.3.subtitle" datatype="html">
         <source>Tijdens de uitvoering</source>
-        <target>Durante la ejecución</target>
+        <target>Durante la ejecuci&#243;n</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-3.title" datatype="html">
         <source>Contractfase</source>
@@ -1816,15 +1816,15 @@
       </trans-unit>
       <trans-unit id="werkwijze.step-4.alt" datatype="html">
         <source>Foto van een verbouwd huis met zicht van het terras op de tuin</source>
-        <target>Foto de una casa reformada con vistas desde la terraza al jardín</target>
+        <target>Foto de una casa reformada con vistas desde la terraza al jard&#237;n</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-4.blocks.1.description" datatype="html">
         <source>U krijgt niet alleen een afgewerkt project, maar een duurzame thuis waarin comfort,
-          energie-efficiëntie en levenskwaliteit centraal staan. Een investering waar u jarenlang
+          energie-effici&#235;ntie en levenskwaliteit centraal staan. Een investering waar u jarenlang
           van geniet.</source>
-        <target>No solo obtendrás un proyecto terminado, sino una vivienda sostenible en la que el confort, la
-          eficiencia energética y la calidad de vida ocupan un lugar central. Una inversión de la que disfrutarás durante muchos
-          años.</target>
+        <target>No solo obtendr&#225;s un proyecto terminado, sino una vivienda sostenible en la que el confort, la
+          eficiencia energ&#233;tica y la calidad de vida ocupan un lugar central. Una inversi&#243;n de la que disfrutar&#225;s durante muchos
+          a&#241;os.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-4.blocks.1.subtitle" datatype="html">
         <source>Klaar voor een zorgenloze toekomst</source>
@@ -1834,13 +1834,13 @@
         <source>na de oplevering blijven we open voor vragen, advies of gedachteveranderingen. Als u
           uw project later nog wil uitbreiden of aanpassen kunt u dus zeker bij ons terecht, zo
           kunnen we meteen verder.</source>
-        <target>Tras la entrega, seguimos estando a tu disposición para cualquier pregunta, consejo o cambio de planes. Si más adelante quieres
+        <target>Tras la entrega, seguimos estando a tu disposici&#243;n para cualquier pregunta, consejo o cambio de planes. Si m&#225;s adelante quieres
           ampliar o ajustar tu proyecto, puedes contar con nosotros para que podamos
           seguir adelante de inmediato.</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-4.blocks.2.subtitle" datatype="html">
         <source>We blijven bereikbaar</source>
-        <target>Seguimos estando a tu disposición</target>
+        <target>Seguimos estando a tu disposici&#243;n</target>
       </trans-unit>
       <trans-unit id="werkwijze.step-4.title" datatype="html">
         <source>Nazorg</source>
@@ -1848,22 +1848,22 @@
       </trans-unit>
       <trans-unit id="werkwijze.timeline.buttonText" datatype="html">
         <source>Lees meer</source>
-        <target>Más información</target>
+        <target>M&#225;s informaci&#243;n</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.description" datatype="html">
         <source>We willen uw ervaringen in renovatie, inrichting en tuinaanleg van uw woning zo goed
           mogelijk maken. Daarom hebben we een duidelijk proces ontwikkeld dat u in 4 stappen
           begeleid. Van de eerste kennismaking tot de oplevering en nazorg, we staan altijd klaar om
           u te ondersteunen en te zorgen dat alles soepel verloopt.</source>
-        <target>Queremos que tu experiencia en la reforma, el diseño de interiores y el paisajismo de
-          tu hogar sea lo más fluida posible. Por eso hemos desarrollado un proceso claro que te guía
+        <target>Queremos que tu experiencia en la reforma, el dise&#241;o de interiores y el paisajismo de
+          tu hogar sea lo m&#225;s fluida posible. Por eso hemos desarrollado un proceso claro que te gu&#237;a
           a lo largo de cuatro pasos. Desde el primer contacto hasta la entrega y el servicio posventa, siempre estamos
-          dispuestos a ayudarte y a asegurarnos de que todo salga a la perfección.</target>
+          dispuestos a ayudarte y a asegurarnos de que todo salga a la perfecci&#243;n.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.1.description" datatype="html">
         <source>Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u
           uw plannen voor.</source>
-        <target>Nuestro primer contacto se realiza mediante un presupuesto; en esta ocasión, nos desplazamos hasta su domicilio y usted
+        <target>Nuestro primer contacto se realiza mediante un presupuesto; en esta ocasi&#243;n, nos desplazamos hasta su domicilio y usted
           nos expone sus planes.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.1.title" datatype="html">
@@ -1874,7 +1874,7 @@
         <source>We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is
           uitgetekend.</source>
         <target>Elaboramos un boceto preliminar y luego lo vamos ajustando hasta que todo quede tal y como
-          tú quieres.</target>
+          t&#250; quieres.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.2.title" datatype="html">
         <source>Voorstudie</source>
@@ -1882,17 +1882,17 @@
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.3.description" datatype="html">
         <source>Hier steken we de armen uit de mouwen en maken we uw project realiteit.</source>
-        <target>Aquí nos ponemos manos a la obra y hacemos realidad tu proyecto.</target>
+        <target>Aqu&#237; nos ponemos manos a la obra y hacemos realidad tu proyecto.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.3.title" datatype="html">
         <source>Contractfase</source>
-        <target>Fase de contratación</target>
+        <target>Fase de contrataci&#243;n</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.4.description" datatype="html">
         <source>We bieden nazorg en ondersteuning na de oplevering. We willen ervoor zorgen dat u
           tevreden bent met het resultaat en staan altijd voor u klaar.</source>
-        <target>Ofrecemos atención y apoyo tras la entrega. Queremos asegurarnos de que quedes satisfecho
-          con el resultado y estaremos siempre a tu disposición.</target>
+        <target>Ofrecemos atenci&#243;n y apoyo tras la entrega. Queremos asegurarnos de que quedes satisfecho
+          con el resultado y estaremos siempre a tu disposici&#243;n.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.4.title" datatype="html">
         <source>Nazorg</source>
