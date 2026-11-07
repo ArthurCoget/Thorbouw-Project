@@ -16,6 +16,7 @@ export class LanguageSelectorComponent {
     { code: 'nl-BE', path: 'nl', label: 'NL', name: 'Nederlands' },
     { code: 'fr-BE', path: 'fr', label: 'FR', name: 'Français' },
     { code: 'en-US', path: 'en', label: 'EN', name: 'English' },
+    { code: 'es-ES', path: 'es', label: 'ES', name: 'Espagnol' },
   ];
 
   readonly currentPath = toSignal(
