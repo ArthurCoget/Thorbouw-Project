@@ -51,6 +51,9 @@ a {
   position: relative;
 
   overflow: hidden;
+
+  display: table;
+  margin-inline: auto;
 }
 
 a::after {
@@ -79,6 +82,10 @@ a.active {
 
 .no-transition {
   transition: none !important;
+}
+
+.language-item {
+  display: flex;
 }
 
 /* End of Navbar Layout and Structure for Desktop */
@@ -236,7 +243,13 @@ button {
     stroke-dashoffset: 0;
   }
 }
-
+@media (max-width: 1500px) {
+  :lang(fr) .nav-list.left li {
+    padding: 1em 2em;
+    text-align: center;
+    text-wrap: balance;
+  }
+}
 @media (max-width: 1000px) and (prefers-reduced-motion) {
   .hamburger[aria-expanded='false'] :is(.top, .middle, .bottom),
   .hamburger[aria-expanded='true'] :is(.top, .middle, .bottom) {
@@ -263,5 +276,11 @@ button {
 
   .nav-links.open {
     opacity: 1;
+  }
+
+  .nav-list li.language-item {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 0;
   }
 }

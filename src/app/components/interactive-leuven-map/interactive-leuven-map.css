@@ -41,6 +41,14 @@
   cursor: default;
 }
 
+:lang(en) .legend {
+  width: 215px;
+}
+
+:lang(fr) .legend {
+  width: 250px;
+}
+
 .legend-info {
   display: flex;
   flex-direction: row;
@@ -63,6 +71,20 @@
     width: 165px;
   }
 
+  :lang(en) .legend {
+    width: 173px;
+  }
+  :lang(en) .legend-info {
+    margin: 0.15em 0.75em;
+  }
+
+  :lang(fr) .legend {
+    width: 185px;
+  }
+  :lang(fr) .legend-info {
+    margin: 0.15em 0.15em;
+  }
+
   .legend-info img {
     width: 25px;
     height: 25px;
@@ -77,6 +99,13 @@
   .legend {
     height: 45px;
     width: 130px;
+  }
+  :lang(en) .legend {
+    width: 138px;
+  }
+
+  :lang(fr) .legend {
+    width: 150px;
   }
 
   .legend-info img {

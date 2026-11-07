@@ -33,7 +33,12 @@ h2 {
   aspect-ratio: 1 / 1;
   overflow: hidden;
 
-  clip-path: polygon(var(--clip-angle-offset) 0%, 100% 0%, calc(100% - var(--clip-angle-offset)) 100%, 0% 100%);
+  clip-path: polygon(
+    var(--clip-angle-offset) 0%,
+    100% 0%,
+    calc(100% - var(--clip-angle-offset)) 100%,
+    0% 100%
+  );
 }
 
 .content-inner {
@@ -79,7 +84,7 @@ h2 {
 @media (max-width: 1400px) {
   :host {
     --card-overlay-width: 65%;
-    --clip-angle-offset: 65px
+    --clip-angle-offset: 65px;
   }
 }
 
@@ -103,7 +108,12 @@ h2 {
   }
 
   .image-holder:nth-of-type(even) {
-    clip-path: polygon(0% 0%, calc(100% - var(--clip-angle-offset)) 0%, 100% 100%, var(--clip-angle-offset) 100%);
+    clip-path: polygon(
+      0% 0%,
+      calc(100% - var(--clip-angle-offset)) 0%,
+      100% 100%,
+      var(--clip-angle-offset) 100%
+    );
   }
   .image-holder {
     width: 100%;

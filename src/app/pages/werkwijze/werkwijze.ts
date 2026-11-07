@@ -3,6 +3,7 @@ import { HeroComponent } from '../../components/hero-component/hero-component';
 import { IHeroContent } from '../../interfaces/hero-content';
 import { TimelineComponent } from '../../components/timeline-component/timeline-component';
 import {
+  HERO_WERKWIJZE_CONTENT,
   TEXT_AND_IMAGE_CONTENT,
   TIMELINE_ITEMS,
   TIMELINE_TITLE_AND_DESCRIPTION_AND_BUTTON,
@@ -16,13 +17,7 @@ import { TextAndImageComponent } from '../../components/text-and-image-component
   styleUrl: './werkwijze.css',
 })
 export class Werkwijze {
-  readonly heroContent: IHeroContent = {
-    variant: 'simple',
-    image: 'WerkwijzeHero.webp',
-    altText: 'Renovatie van een bewoning, buiten foto',
-    title: 'Onze Werkwijze',
-  };
-
+  readonly heroContent: IHeroContent = HERO_WERKWIJZE_CONTENT;
   readonly timelineItems = TIMELINE_ITEMS;
   readonly titleAndDescriptionAndButton = TIMELINE_TITLE_AND_DESCRIPTION_AND_BUTTON;
   readonly items = TEXT_AND_IMAGE_CONTENT;

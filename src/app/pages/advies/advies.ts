@@ -6,6 +6,7 @@ import {
   ADVIES_SNAKE_CONTENT,
   ADVIES_SNAKE_IMAGES,
   CTA_ADVIES_CONTENT,
+  HERO_ADVIES_CONTENT,
 } from '../../data/advies.data';
 import { SnakelikeImageComponent } from '../../components/snakelike-image-component/snakelike-image-component';
 import { ISnakeContent, ISnakeImage } from '../../interfaces/snake-image-interface';
@@ -20,12 +21,7 @@ import { SnakeService } from '../../services/snake-service';
 export class Advies {
   protected snakeService = inject(SnakeService);
 
-  readonly heroContent: IHeroContent = {
-    variant: 'simple',
-    image: 'AdviesHero.webp',
-    altText: 'Renovatie van een badkamer gedaan door Thorbouw',
-    title: 'Bouwkundig Advies',
-  };
+  readonly heroContent: IHeroContent = HERO_ADVIES_CONTENT;
 
   readonly topAdvies = CTA_ADVIES_CONTENT;
 

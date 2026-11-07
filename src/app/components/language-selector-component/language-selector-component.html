@@ -1,0 +1,15 @@
+<ul class="lang-list">
+  @for (lang of languages; track lang.code) {
+    <li>
+      <a
+        [href]="'/' + lang.path + currentPath()"
+        [attr.hreflang]="lang.path"
+        [attr.lang]="lang.path"
+        [attr.aria-label]="lang.name"
+        [attr.aria-current]="lang.code === locale ? 'true' : null"
+        [class.active]="lang.code === locale"
+        >{{ lang.label }}</a
+      >
+    </li>
+  }
+</ul>

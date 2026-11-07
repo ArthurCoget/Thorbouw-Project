@@ -34,7 +34,7 @@
   </div>
 </section>
 <section class="about-main-content">
-  <app-text-rousel title="Onze Waarden" [content]="aboutValues"></app-text-rousel>
+  <app-text-rousel [title]="textRousel" [content]="aboutValues"></app-text-rousel>
   <app-triple-text-info [content]="aboutMoreUs"></app-triple-text-info>
   <div class="bottom-text">
     <h2>{{ aboutContent.aboutBottomTitle }}</h2>
@@ -44,7 +44,7 @@
       }
     </ul>
     <div class="link-holder">
-      <a class="link-btn" routerLink="/contact">Herkenbaar? Neem contact met ons op!</a>
+      <a class="link-btn" routerLink="/contact" [innerHTML]="aboutContent.contactLinkText"></a>
     </div>
   </div>
 </section>
