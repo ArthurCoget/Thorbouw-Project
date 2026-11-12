@@ -370,7 +370,7 @@
       <trans-unit id="advies.snake.5.subtitle" datatype="html">
         <source>Met professioneel bouwkundig advies voorkomt u verkeerde keuzes, onverwachte kosten
           en technische problemen achteraf. We leiden de weg door een landschap met putten als
-          vendor lock-in, schijnkwaliteit en verborgen kosten.</source>
+          lock-in, schijnkwaliteit en verborgen kosten.</source>
         <target>Con un asesoramiento profesional en materia de construcci&#243;n, evitar&#225;s decisiones err&#243;neas, gastos inesperados
           y problemas t&#233;cnicos posteriores. Te guiamos a trav&#233;s de un panorama plagado de dificultades, como
           la dependencia de un &#250;nico proveedor, la &#171;pseudo-calidad&#187; y los costes ocultos.</target>
@@ -1307,8 +1307,8 @@
         <target>Preciosa cocina con una gran isla en el centro</target>
       </trans-unit>
       <trans-unit id="project.engelen.alt" datatype="html">
-        <source>Foto van verbouwing in Engelen</source>
-        <target>Foto de la reforma en Engelen</target>
+        <source>Foto van verbouwing in Herent</source>
+        <target>Foto de la reforma en Herent</target>
       </trans-unit>
       <trans-unit id="project.engelen.description" datatype="html">
         <source>Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.</source>
@@ -1319,24 +1319,24 @@
         <target>Modernizaci&#243;n del cuarto de ba&#241;o y del dormitorio</target>
       </trans-unit>
       <trans-unit id="project.engelen.title" datatype="html">
-        <source>Modernisering in Engelen</source>
-        <target>Modernizaci&#243;n en Engelen</target>
+        <source>Modernisering in Herent</source>
+        <target>Modernizaci&#243;n en Herent</target>
       </trans-unit>
       <trans-unit id="project.haasrode.alt" datatype="html">
-        <source>Foto van verbouwing in Haasrode</source>
-        <target>Foto de la reforma en Haasrode</target>
+        <source>Foto van nieuwbouw in Haasrode</source>
+        <target>Foto de una nueva construcci&#243;n en Haasrode</target>
       </trans-unit>
       <trans-unit id="project.haasrode.description" datatype="html">
-        <source>Verbouwing van de leef en wasruimten.</source>
-        <target>Renovaci&#243;n del sal&#243;n y el lavadero.</target>
+        <source>Stijlvol nieuwbouwproject van 6 woningen.</source>
+        <target>Elegante proyecto de nueva construcci&#243;n compuesto por 6 viviendas.</target>
       </trans-unit>
       <trans-unit id="project.haasrode.subtitle" datatype="html">
-        <source>Verbouwing in Haasrode.</source>
-        <target>Renovaci&#243;n en Haasrode.</target>
+        <source>Nieuwbouw in Haasrode</source>
+        <target>Nueva construcci&#243;n en Haasrode</target>
       </trans-unit>
       <trans-unit id="project.haasrode.title" datatype="html">
-        <source>Wasbeurt in Haasrode</source>
-        <target>Renovaci&#243;n en Haasrode</target>
+        <source>Nieuwbouw in Haasrode</source>
+        <target>Nueva construcci&#243;n en Haasrode</target>
       </trans-unit>
       <trans-unit id="project.herent.alt" datatype="html">
         <source>Foto van nieuwbouw in Herent</source>
