@@ -1864,9 +1864,9 @@
           ready to support you and ensure everything goes smoothly.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.1.description" datatype="html">
-        <source>Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u
+        <source>&#8364;75/u excl. btw: Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u
           uw plannen voor.</source>
-        <target>Our first introduction is in the form of an estimate; here we visit you and you
+        <target>&#8364;75/u excl. VAT: Our first introduction is in the form of an estimate; here we visit you and you
           present your plans.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.1.title" datatype="html">
@@ -1874,9 +1874,9 @@
         <target>Estimation</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.2.description" datatype="html">
-        <source>We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is
+        <source>&#8364;3.500-&#8364;5000 excl. btw: We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is
           uitgetekend.</source>
-        <target>We make a preliminary design, then adjust it until everything is drawn out to your
+        <target>&#8364;3.500-&#8364;5000 excl. VAT: We make a preliminary design, then adjust it until everything is drawn out to your
           liking.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.2.title" datatype="html">

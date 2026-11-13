@@ -1915,9 +1915,9 @@
           que tout se déroule sans accroc.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.1.description" datatype="html">
-        <source>Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u
+        <source>&#8364;75/u excl. btw: Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u
           uw plannen voor.</source>
-        <target>Notre première rencontre prend la forme d&apos;une estimation : nous nous déplaçons
+        <target>&#8364;75/u hors TVA: Notre première rencontre prend la forme d&apos;une estimation : nous nous déplaçons
           chez vous et vous nous présentez vos plans.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.1.title" datatype="html">
@@ -1925,9 +1925,9 @@
         <target>Estimation</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.2.description" datatype="html">
-        <source>We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is
+        <source>&#8364;3.500-&#8364;5000 excl. btw: We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is
           uitgetekend.</source>
-        <target>Nous réalisons un avant-projet, puis nous l&apos;adaptons jusqu&apos;à ce que tout
+        <target>&#8364;3.500-&#8364;5000 hors TVA: Nous réalisons un avant-projet, puis nous l&apos;adaptons jusqu&apos;à ce que tout
           soit dessiné selon vos désirs.</target>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.2.title" datatype="html">
