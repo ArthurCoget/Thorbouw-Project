@@ -21,13 +21,13 @@ export const TIMELINE_ITEMS = [
     title: $localize`:@@werkwijze.timeline.items.1.title:Raming`,
     link: '/werkwijze',
     fragment: 'step-1',
-    description: $localize`:@@werkwijze.timeline.items.1.description:Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u uw plannen voor.`,
+    description: $localize`:@@werkwijze.timeline.items.1.description:€75/u excl. btw: Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u uw plannen voor.`,
   },
   {
     title: $localize`:@@werkwijze.timeline.items.2.title:Voorstudie`,
     link: '/werkwijze',
     fragment: 'step-2',
-    description: $localize`:@@werkwijze.timeline.items.2.description:We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is uitgetekend.`,
+    description: $localize`:@@werkwijze.timeline.items.2.description:€3.500-€5000 excl. btw: We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is uitgetekend.`,
   },
   {
     title: $localize`:@@werkwijze.timeline.items.3.title:Contractfase`,

@@ -42,7 +42,7 @@ export const ADVIES_SNAKE_CONTENT: ISnakeContent[] = [
   },
   {
     title: $localize`:@@advies.snake.5.title:Voorkom dure fouten`,
-    subtitle: $localize`:@@advies.snake.5.subtitle:Met professioneel bouwkundig advies voorkomt u verkeerde keuzes, onverwachte kosten en technische problemen achteraf. We leiden de weg door een landschap met putten als vendor lock-in, schijnkwaliteit en verborgen kosten.`,
+    subtitle: $localize`:@@advies.snake.5.subtitle:Met professioneel bouwkundig advies voorkomt u verkeerde keuzes, onverwachte kosten en technische problemen achteraf. We leiden de weg door een landschap met putten als lock-in, schijnkwaliteit en verborgen kosten.`,
   },
   {
     title: $localize`:@@advies.snake.6.title:Fauna inclusief bouwen`,

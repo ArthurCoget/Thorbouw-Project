@@ -635,7 +635,7 @@ const brandtsPrefix = 'brandts';
 export const IMAGES_BRANDTS = [
   ...createImages(
     1,
-    18,
+    16,
     brandtsLink,
     $localize`:@@project.alt.brandts.exterior:Foto van renovatie in Leuven exterieur`,
     {
@@ -645,8 +645,8 @@ export const IMAGES_BRANDTS = [
   ),
 
   ...createImages(
-    19,
-    19,
+    17,
+    17,
     brandtsLink,
     $localize`:@@project.alt.brandts.freestandingBath:Foto van moderne badkamer met vrijstaand bad in renovatie in Leuven`,
     {
@@ -657,8 +657,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    20,
-    20,
+    18,
+    18,
     brandtsLink,
     $localize`:@@project.alt.brandts.vanity:Foto van badkamer met dubbele wastafel in renovatie in Leuven`,
     {
@@ -670,8 +670,8 @@ export const IMAGES_BRANDTS = [
   ),
 
   ...createImages(
-    21,
-    22,
+    19,
+    20,
     brandtsLink,
     $localize`:@@project.alt.brandts.cabinetWall:Foto van houten kastenwand met groene accentwand in renovatie in Leuven`,
     {
@@ -682,8 +682,8 @@ export const IMAGES_BRANDTS = [
   ),
 
   ...createImages(
-    23,
-    23,
+    21,
+    21,
     brandtsLink,
     $localize`:@@project.alt.brandts.stairHall:Foto van witte trappenhal in renovatie in Leuven`,
     {
@@ -695,8 +695,8 @@ export const IMAGES_BRANDTS = [
   ),
 
   ...createImages(
+    22,
     24,
-    26,
     brandtsLink,
     $localize`:@@project.alt.brandts.stairSkylight:Foto van trap en bovenlicht in renovatie in Leuven`,
     {
@@ -708,8 +708,8 @@ export const IMAGES_BRANDTS = [
   ),
 
   ...createImages(
-    27,
-    27,
+    25,
+    25,
     brandtsLink,
     $localize`:@@project.alt.brandts.woodPanel:Foto van houten wandpaneel in interieur van renovatie in Leuven`,
     {
@@ -720,8 +720,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    28,
-    28,
+    26,
+    26,
     brandtsLink,
     $localize`:@@project.alt.brandts.glassDoor:Foto van glazen deur en houten element in renovatie in Leuven`,
     {
@@ -734,8 +734,8 @@ export const IMAGES_BRANDTS = [
 
   // ─── Woonkamer ──────────────────────────────────────────────
   ...createImages(
-    29,
-    29,
+    27,
+    27,
     brandtsLink,
     $localize`:@@project.alt.brandts.blueSofas:Foto van zithoek met blauwe zetels in renovatie in Leuven`,
     {
@@ -746,8 +746,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    30,
-    30,
+    28,
+    28,
     brandtsLink,
     $localize`:@@project.alt.brandts.greenAccentWall:Foto van woonkamer met groene accentwand in renovatie in Leuven`,
     {
@@ -758,8 +758,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    31,
-    32,
+    29,
+    30,
     brandtsLink,
     $localize`:@@project.alt.brandts.openLiving:Foto van open leefruimte met zetel en eettafel in renovatie in Leuven`,
     {
@@ -770,8 +770,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    33,
-    33,
+    31,
+    31,
     brandtsLink,
     $localize`:@@project.alt.brandts.woodKitchen:Foto van keuken met houten werkblad en leefruimte in renovatie in Leuven`,
     {
@@ -782,8 +782,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    34,
-    35,
+    32,
+    33,
     brandtsLink,
     $localize`:@@project.alt.brandts.sittingArea:Foto van woonkamer met zetel en kleuraccenten in renovatie in Leuven`,
     {
@@ -794,8 +794,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    36,
-    36,
+    34,
+    34,
     brandtsLink,
     $localize`:@@project.alt.brandts.mediaUnit:Foto van mediameubel met houten nis in renovatie in Leuven`,
     {
@@ -806,8 +806,8 @@ export const IMAGES_BRANDTS = [
   ),
 
   ...createImages(
-    37,
-    37,
+    35,
+    35,
     brandtsLink,
     $localize`:@@project.alt.brandts.longTable:Foto van lange eettafel met stoelen en raampartij in renovatie in Leuven`,
     {
@@ -818,8 +818,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    38,
-    38,
+    36,
+    36,
     brandtsLink,
     $localize`:@@project.alt.brandts.glassView:Foto van glazen doorkijk en trap in renovatie in Leuven`,
     {
@@ -830,8 +830,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    39,
-    39,
+    37,
+    37,
     brandtsLink,
     $localize`:@@project.alt.brandts.diningArea:Foto van eetruimte met tafel en stoelen in renovatie in Leuven`,
     {
@@ -842,8 +842,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    40,
-    40,
+    38,
+    38,
     brandtsLink,
     $localize`:@@project.alt.brandts.whiteKitchen:Foto van witte keuken met zwarte stoelen in renovatie in Leuven`,
     {
@@ -854,8 +854,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    41,
-    42,
+    39,
+    40,
     brandtsLink,
     $localize`:@@project.alt.brandts.woodTable:Foto van houten tafel met stoelen en glazen wand in renovatie in Leuven`,
     {
@@ -867,8 +867,8 @@ export const IMAGES_BRANDTS = [
   ),
 
   ...createImages(
-    43,
-    43,
+    41,
+    41,
     brandtsLink,
     $localize`:@@project.alt.brandts.lightLiving:Foto van zetel in lichte woonkamer in renovatie in Leuven`,
     {
@@ -879,8 +879,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    44,
-    44,
+    42,
+    42,
     brandtsLink,
     $localize`:@@project.alt.brandts.gardenView:Foto van woonkamer met zetel en uitzicht op de tuin in renovatie in Leuven`,
     {
@@ -892,8 +892,8 @@ export const IMAGES_BRANDTS = [
   ),
 
   ...createImages(
-    45,
-    45,
+    43,
+    43,
     brandtsLink,
     $localize`:@@project.alt.brandts.builtInCloset:Foto van witte inbouwkast in renovatie in Leuven`,
     {
@@ -904,8 +904,8 @@ export const IMAGES_BRANDTS = [
     },
   ),
   ...createImages(
-    46,
-    46,
+    44,
+    44,
     brandtsLink,
     $localize`:@@project.alt.brandts.railing:Zoom op de keuken.`,
     {
@@ -916,8 +916,8 @@ export const IMAGES_BRANDTS = [
   ),
 
   ...createImages(
-    47,
-    48,
+    45,
+    46,
     brandtsLink,
     $localize`:@@project.alt.brandts.bedroom:Foto van slaapkamer met rood beddengoed in renovatie in Leuven`,
     {

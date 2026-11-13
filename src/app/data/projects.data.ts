@@ -16,7 +16,7 @@ const ALT = {
   meulen: $localize`:@@project.meulen.alt:Foto van renovatie in Leuven`,
   sucaet: $localize`:@@project.sucaet.alt:Foto van renovatie in Heverlee`,
   verhoef: $localize`:@@project.verhoef.alt:Foto van renovatie in Hoog Linden`,
-  engelen: $localize`:@@project.engelen.alt:Foto van verbouwing in Engelen`,
+  engelen: $localize`:@@project.engelen.alt:Foto van verbouwing in Herent`,
   haasrode: $localize`:@@project.haasrode.alt:Foto van verbouwing in Haasrode`,
   heverlee: $localize`:@@project.heverlee.alt:Foto van verbouwing Heverlee`,
 };
@@ -133,10 +133,10 @@ export const PROJECTS: IProjectContent[] = [
   },
   {
     slug: 'Engelen',
-    title: $localize`:@@project.engelen.title:Modernisering in Engelen`,
+    title: $localize`:@@project.engelen.title:Modernisering in Herent`,
     subtitle: $localize`:@@project.engelen.subtitle:Modernisering Bad- en slaapkamer`,
     description: $localize`:@@project.engelen.description:Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.`,
-    location: 'Engelen',
+    location: 'Herent',
     locationCoord: [4.636699, 50.95818],
     year: 2014,
     cardImages: [
@@ -170,9 +170,9 @@ export const PROJECTS: IProjectContent[] = [
   },
   {
     slug: 'Haasrode',
-    title: $localize`:@@project.haasrode.title:Wasbeurt in Haasrode`,
-    subtitle: $localize`:@@project.haasrode.subtitle:Verbouwing in Haasrode.`,
-    description: $localize`:@@project.haasrode.description:Verbouwing van de leef en wasruimten.`,
+    title: $localize`:@@project.haasrode.title:Nieuwbouw in Haasrode`,
+    subtitle: $localize`:@@project.haasrode.subtitle:Nieuwbouw in Haasrode.`,
+    description: $localize`:@@project.haasrode.description:Stijlvol nieuwbouwproject van 6 woningen.`,
     location: 'Haasrode',
     locationCoord: [4.72616, 50.83461],
     year: 2015,

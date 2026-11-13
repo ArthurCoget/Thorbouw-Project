@@ -256,7 +256,7 @@
       <trans-unit id="advies.snake.5.subtitle" datatype="html">
         <source>Met professioneel bouwkundig advies voorkomt u verkeerde keuzes, onverwachte kosten
           en technische problemen achteraf. We leiden de weg door een landschap met putten als
-          vendor lock-in, schijnkwaliteit en verborgen kosten.</source>
+          lock-in, schijnkwaliteit en verborgen kosten.</source>
       </trans-unit>
       <trans-unit id="advies.snake.5.title" datatype="html">
         <source>Voorkom dure fouten</source>
@@ -929,7 +929,7 @@
         <source>Prachtige keuken met een groot eiland in het midden</source>
       </trans-unit>
       <trans-unit id="project.engelen.alt" datatype="html">
-        <source>Foto van verbouwing in Engelen</source>
+        <source>Foto van verbouwing in Herent</source>
       </trans-unit>
       <trans-unit id="project.engelen.description" datatype="html">
         <source>Met ruimtelijk inzicht en de juiste materialen transformeerden we deze kamers.</source>
@@ -938,19 +938,19 @@
         <source>Modernisering Bad- en slaapkamer</source>
       </trans-unit>
       <trans-unit id="project.engelen.title" datatype="html">
-        <source>Modernisering in Engelen</source>
+        <source>Modernisering in Herent</source>
       </trans-unit>
       <trans-unit id="project.haasrode.alt" datatype="html">
         <source>Foto van verbouwing in Haasrode</source>
       </trans-unit>
       <trans-unit id="project.haasrode.description" datatype="html">
-        <source>Verbouwing van de leef en wasruimten.</source>
+        <source>Stijlvol nieuwbouwproject van 6 woningen.</source>
       </trans-unit>
       <trans-unit id="project.haasrode.subtitle" datatype="html">
-        <source>Verbouwing in Haasrode.</source>
+        <source>Nieuwbouw in Haasrode.</source>
       </trans-unit>
       <trans-unit id="project.haasrode.title" datatype="html">
-        <source>Wasbeurt in Haasrode</source>
+        <source>Nieuwbouw in Haasrode</source>
       </trans-unit>
       <trans-unit id="project.herent.alt" datatype="html">
         <source>Foto van nieuwbouw in Herent</source>
@@ -1324,14 +1324,14 @@
           u te ondersteunen en te zorgen dat alles soepel verloopt.</source>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.1.description" datatype="html">
-        <source>Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u
+        <source>&#8364;75/u excl. btw: Onze eerste kennismaking is in de vorm van een raming, hier komen we langs en legt u
           uw plannen voor.</source>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.1.title" datatype="html">
         <source>Raming</source>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.2.description" datatype="html">
-        <source>We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is
+        <source>&#8364;3.500-&#8364;5000 excl. btw: We maken een voorontwerp, dan passen we dit aan tot alles naar jullie wens is
           uitgetekend.</source>
       </trans-unit>
       <trans-unit id="werkwijze.timeline.items.2.title" datatype="html">
